@@ -1,0 +1,19 @@
+Building for Zelda OOT initially
+
+1. Do basic layout
+
+2. Do item tracking area
+
+3. Put in maps
+
+4. Add item locations/checklist
+
+5. Tie backend logic together
+
+
+
+10/20/18
+
+Data wise have everything we need to input
+Need to set up skeleton for UI
+Research canvas/icon overlay

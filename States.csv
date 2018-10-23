@@ -1,0 +1,4 @@
+id,code,name
+1,state_child,Child
+2,state_adult,Adult
+3,state_either,Either
