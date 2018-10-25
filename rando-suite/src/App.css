@@ -42,3 +42,8 @@ html,body{
 #MapRow{
   height: 80%;
 }
+
+.container-fluid{
+  border-color: black;
+  border-width: 1px;
+}

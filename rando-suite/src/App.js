@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import {MapComponent} from './Components/MapComponent.js';
+import {MapNavComponent} from './Components/MapNavComponent.js';
+import {ChecklistNavComponent} from './Components/ChecklistNavComponent.js';
+import {ChecklistComponent} from './Components/ChecklistComponent.js';
+import {ObtainableTrackerComponent} from './Components/ObtainableTrackerComponent.js';
+
+import map from './maps/full-map.jpg'
 
 class App extends Component {
   render() {
@@ -11,29 +18,31 @@ class App extends Component {
           <div className="grid-half col-4">
             <div className="row" id="ChecklistNavRow">
 
-                Checklist Nav
+                <ChecklistNavComponent />
 
             </div>
             <div className="row" id="ChecklistRow">
  
-                Checklist
+                <ChecklistComponent />
 
             </div>
             <div className="row" id="TrackerRow">
 
-                Tracker
+                <ObtainableTrackerComponent />
 
             </div>
           </div>
           <div className="grid-half col-8">
             <div className="row" id="MapNavRow">
  
-                MapNav
+                <MapNavComponent />
 
             </div>
             <div className="row" id="MapRow">
 
-                Map
+                <MapComponent 
+                  source={map}
+                />
 
             </div>
           </div>
