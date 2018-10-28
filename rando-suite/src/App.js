@@ -8,7 +8,8 @@ import {ChecklistNavComponent} from './Components/ChecklistNavComponent.js';
 import {ChecklistComponent} from './Components/ChecklistComponent.js';
 import {ObtainableTrackerComponent} from './Components/ObtainableTrackerComponent.js';
 
-import map from './maps/full-map.jpg'
+import full from './maps/full-map.jpg';
+import ganon from './maps/inside-ganons-castle.jpg';
 
 class App extends Component {
   render() {
@@ -41,7 +42,7 @@ class App extends Component {
             <div className="row" id="MapRow">
 
                 <MapComponent 
-                  source={map}
+                  map={ganon}
                 />
 
             </div>

@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import map from '../maps/full-map.jpg'
 
 export class MapComponent extends Component{
 
-	selectImage(){
-      let canvas = document.getElementById('MapCanvas');
+	componentDidMount(){
+      let canvas = document.getElementById('map-canvas');
       let context = canvas.getContext('2d');
-      let background = new Image();
-      background.src = this.props.source;
+ 			let background = document.getElementById('map-img');
+
       background.onload = function(){
-			    context.drawImage(background,0,0);   
+
+      		canvas.width = background.width;
+      		canvas.height = background.height;
 			}
 
      
@@ -18,9 +19,10 @@ export class MapComponent extends Component{
 
 	render() {
     return(
-      <div className="container-fluid">       
-        <canvas id="MapCanvas" />
-      </div>
+        <div className="map-container">
+	    		<img id="map-img" src={this.props.map} />
+	    		<canvas id="map-canvas" />
+	      </div>
     );
   }
 }

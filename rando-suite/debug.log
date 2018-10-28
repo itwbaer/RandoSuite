@@ -1,0 +1,5 @@
+[1025/192829.145:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name plat, discarding value Win64
+[1025/192829.146:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name prod, discarding value OperaDesktop
+[1025/192829.146:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name ver, discarding value 56.0.3051.52
+[1025/192829.146:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name channel, discarding value Stable
+[1025/192829.146:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name ptype, discarding value renderer
