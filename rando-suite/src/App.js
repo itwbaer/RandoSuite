@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {cloneDeep} from 'lodash';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {MapComponent} from './Components/MapComponent.js';
@@ -12,6 +12,42 @@ import full from './maps/full-map.jpg';
 import ganon from './maps/inside-ganons-castle.jpg';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    let obtainables = require("./data/Obtainables.json");
+    let obtainablesMap = this.mapCodeToID(obtainables);
+    this.state = {obtainables: obtainables 
+
+                  };
+ 
+  }
+
+
+  mapCodeToID(obj){
+    let codeMap = {} 
+    for(let i = 0; i < obj.length; i++){
+      let current = obj[i];
+      codeMap[current.code] = current.id;
+    }
+
+    return codeMap;
+  }
+
+  handleClickObtainable(id, click){
+    const obtainables = cloneDeep(this.state.obtainables);
+    console.log(obtainables);
+    if(click === 0){
+      obtainables[id].obtained = -(obtainables[id].obtained);
+    }
+    else if(click === 2){
+      
+    }
+    console.log(obtainables);
+    this.setState(obtainables);
+    console.log(this.state);
+  }
+
+
   render() {
     return (
       <div className="App container-fluid">
@@ -29,7 +65,10 @@ class App extends Component {
             </div>
             <div className="row" id="TrackerRow">
 
-                <ObtainableTrackerComponent />
+                <ObtainableTrackerComponent 
+                  onClick={(id, click) => this.handleClickObtainable(id, click)}
+                  obtainables={this.state.obtainables}
+                />
 
             </div>
           </div>

@@ -1,0 +1,401 @@
+﻿[
+	{
+		"id" : 1,
+		"code" : "stone_emerald",
+		"name" : "Kokiris Emerald",
+		"type" : 1,
+		"obtained" : -1
+	},
+	{
+		"id" : 2,
+		"code" : "stone_ruby",
+		"name" : "Gorons Ruby",
+		"type" : 1,
+		"obtained" : -1
+	},
+	{
+		"id" : 3,
+		"code" : "stone_sapphire",
+		"name" : "Zoras Sapphire",
+		"type" : 1,
+		"obtained" : -1
+	},
+	{
+		"id" : 4,
+		"code" : "medallion_forest",
+		"name" : "Forest Medallion",
+		"type" : 2,
+		"obtained" : -1
+	},
+	{
+		"id" : 5,
+		"code" : "medallion_fire",
+		"name" : "Fire Medallion",
+		"type" : 2,
+		"obtained" : -1
+	},
+	{
+		"id" : 6,
+		"code" : "medallion_water",
+		"name" : "Water Medallion",
+		"type" : 2,
+		"obtained" : -1
+	},
+	{
+		"id" : 7,
+		"code" : "medallion_shadow",
+		"name" : "Shadow Medallion",
+		"type" : 2,
+		"obtained" : -1
+	},
+	{
+		"id" : 8,
+		"code" : "medallion_spirit",
+		"name" : "Spirit Medallion",
+		"type" : 2,
+		"obtained" : -1
+	},
+	{
+		"id" : 9,
+		"code" : "medallion_light",
+		"name" : "Light Medallion",
+		"type" : 2,
+		"obtained" : -1
+	},
+	{
+		"id" : 10,
+		"code" : "song_zelda",
+		"name" : "Zeldas Lullaby",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 11,
+		"code" : "song_epona",
+		"name" : "Eponas Song",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 12,
+		"code" : "song_saria",
+		"name" : "Sarias Song",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 13,
+		"code" : "song_sun",
+		"name" : "Suns Song",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 14,
+		"code" : "song_time",
+		"name" : "Song of Time",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 15,
+		"code" : "song_storm",
+		"name" : "Song of Storms",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 16,
+		"code" : "song_forest",
+		"name" : "Minuet of Forest",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 17,
+		"code" : "song_fire",
+		"name" : "Bolero of Fire",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 18,
+		"code" : "song_water",
+		"name" : "Serenade of Water",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 19,
+		"code" : "song_spirit",
+		"name" : "Requiem of Spirit",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 20,
+		"code" : "song_shadow",
+		"name" : "Nocturne of Shadow",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 21,
+		"code" : "song_light",
+		"name" : "Prelude of Light",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 22,
+		"code" : "song_scarecrow",
+		"name" : "Scarecrows Song",
+		"type" : 3,
+		"obtained" : -1
+	},
+	{
+		"id" : 23,
+		"code" : "item_kokiri_sword",
+		"name" : "Kokiri Sword",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 24,
+		"code" : "item_slingshot",
+		"name" : "Slingshot",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 25,
+		"code" : "item_bracelet",
+		"name" : "Goron Bracelet",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 26,
+		"code" : "item_silvers",
+		"name" : "Silver Gauntlets",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 27,
+		"code" : "item_golds",
+		"name" : "Gold Gauntlets",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 28,
+		"code" : "item_bombs",
+		"name" : "Bomb Bag",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 29,
+		"code" : "item_silver_scale",
+		"name" : "Silver Scale",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 30,
+		"code" : "item_gold_scale",
+		"name" : "Gold Scale",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 31,
+		"code" : "item_boomerang",
+		"name" : "Boomerang",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 32,
+		"code" : "item_bottle",
+		"name" : "Bottle",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 33,
+		"code" : "item_goron_sword",
+		"name" : "Goron Sword",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 34,
+		"code" : "item_hookshot",
+		"name" : "Hookshot",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 35,
+		"code" : "item_longshot",
+		"name" : "Longshot",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 36,
+		"code" : "item_bow",
+		"name" : "Fairy Bow",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 37,
+		"code" : "item_hammer",
+		"name" : "Megaton Hammer",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 38,
+		"code" : "item_iron_boots",
+		"name" : "Iron Boots",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 39,
+		"code" : "item_hover_boots",
+		"name" : "Hover Boots",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 40,
+		"code" : "item_dins",
+		"name" : "Din�s Fire",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 41,
+		"code" : "item_fire_arrows",
+		"name" : "Fire Arrows",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 42,
+		"code" : "item_light_arrows",
+		"name" : "Light Arrows",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 43,
+		"code" : "item_magic",
+		"name" : "Magic",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 44,
+		"code" : "item_mirror_shield",
+		"name" : "Mirror Shield",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 45,
+		"code" : "item_letter",
+		"name" : "Rutos Letter",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 46,
+		"code" : "item_stone",
+		"name" : "Stone of Agony",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 47,
+		"code" : "item_skulls",
+		"name" : "Skulltula",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 48,
+		"code" : "item_tunic_goron",
+		"name" : "Gorons Tunic",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 49,
+		"code" : "item_tunic_zora",
+		"name" : "Zoras Tunic",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 50,
+		"code" : "item_bombchus",
+		"name" : "Bombchus",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 51,
+		"code" : "item_sticks",
+		"name" : "Sticks",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 52,
+		"code" : "item_nuts",
+		"name" : "Deku Nuts",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 53,
+		"code" : "item_farores",
+		"name" : "Farores Window",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 54,
+		"code" : "item_gerudo_card",
+		"name" : "Gerudo Membership Card",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 55,
+		"code" : "item_lens",
+		"name" : "Lens of Truth",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 56,
+		"code" : "item_adult_wallet",
+		"name" : "Adult Wallet",
+		"type" : 4,
+		"obtained" : -1
+	},
+	{
+		"id" : 57,
+		"code" : "item_giants_wallet",
+		"name" : "Giants Wallet",
+		"type" : 4,
+		"obtained" : -1
+	}
+]

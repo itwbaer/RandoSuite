@@ -1,6 +1,8 @@
 html,body{
     height:100%;
     overflow-x: hidden;
+    background: black;
+    color: white;
 }
 
 #root{
@@ -28,11 +30,11 @@ html,body{
 }
 
 #ChecklistRow{
-  height: 45%;
+  height: 35%;
 }
 
 #TrackerRow{
-  height: 45%;
+  height: 55%;
 }
 
 #MapNavRow{
@@ -53,8 +55,7 @@ html,body{
 
 .map-container #map-img {
     position: absolute;
- 
-    z-index: -1;
+    z-index: 1;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -67,7 +68,15 @@ html,body{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: -2;
+    z-index: 2;
     max-width:100%;
     max-height:100%
+}
+
+.unobtained{
+  opacity: 0.5;
+}
+
+.obtained{
+  opacity: 1;
 }
