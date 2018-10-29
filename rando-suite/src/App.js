@@ -16,8 +16,8 @@ class App extends Component {
     super(props);
     let obtainables = require("./data/Obtainables.json");
     let obtainablesMap = this.mapCodeToID(obtainables);
-    this.state = {obtainables: obtainables 
-
+    this.state = {obtainables: obtainables,
+                  obtainablesMap: obtainablesMap
                   };
  
   }
@@ -33,18 +33,15 @@ class App extends Component {
     return codeMap;
   }
 
-  handleClickObtainable(id, click){
+  handleClickObtainable(id){
+
     const obtainables = cloneDeep(this.state.obtainables);
-    console.log(obtainables);
-    if(click === 0){
-      obtainables[id].obtained = -(obtainables[id].obtained);
-    }
-    else if(click === 2){
-      
-    }
-    console.log(obtainables);
+
+    obtainables[id].obtained = -obtainables[id].obtained;
+
+
     this.setState(obtainables);
-    console.log(this.state);
+
   }
 
 
@@ -66,8 +63,9 @@ class App extends Component {
             <div className="row" id="TrackerRow">
 
                 <ObtainableTrackerComponent 
-                  onClick={(id, click) => this.handleClickObtainable(id, click)}
+                  onClick={(id) => this.handleClickObtainable(id)}
                   obtainables={this.state.obtainables}
+                  map={this.state.obtainablesMap}
                 />
 
             </div>
@@ -81,7 +79,7 @@ class App extends Component {
             <div className="row" id="MapRow">
 
                 <MapComponent 
-                  map={ganon}
+                  map={full}
                 />
 
             </div>

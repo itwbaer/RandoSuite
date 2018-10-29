@@ -1,37 +1,37 @@
 id,code,name
-1,location_kokiri_forest,Kokiri Forest
-2,location_deku_tree,Deku Tree
-3,location_lost_woods,Lost Woods
-4,location_sacred_meadow,Sacred Forest Meadow
-5,location_forest_temple,Forest Temple
-6,location_death_mountain_trail,Death Mountain Trail
-7,location_dodongos,Dodogo’s Cavern
-8,location_goron_city,Goron City
-9,location_death_mountain_crater,Death Mountain Crater
-10,location_fire_temple,Fire Temple
-11,location_zoras_river,Zora’s River
-12,location_zoras_domain,Zora’s Domain
-13,location_zoras_fountain,Zora’s Fountain
-14,location_jabu,Jabu Jabu
-15,location_ice_cavern,Ice Cavern
-16,location_lake_hylia,Lake Hylia
-17,location_water_temple,Water Temple
-18,location_kakariko_village,Kakariko Village
-19,location_shadow_temple,Shadow Temple
-20,location_well,Bottom of the Well
-21,location_graveyard,Graveyard
-22,location_dampes_grave,Dampe’s Grave
-23,location_gerudo_valley,Gerudo Valley
-24,location_gerudo_fortress,Gerudo Fortress
-25,location_gerudo_training_grounds,Gerudo Training Grounds
-26,location_haunted_wasteland,Haunted Wasteland
-27,location_desert_colossus,Desert Colossus
-28,location_spirit_temple,Spirit Temple
-29,location_hyrule_field,Hyrule Field
-30,location_lon_lon_ranch,Lon Lon Ranch
-31,location_hyrule_market,Hyrule Market
-32,location_hyrule_castle,Hyrule Castle
-33,location_zeldas_garden,Zelda’s Garden
-34,location_ganons_castle,Ganon’s Castle
-35,location_inside_ganons_castle,Inside Ganon’s Castle
-36,location_temple_of_time,Temple of Time
+0,location_kokiri_forest,Kokiri Forest
+1,location_deku_tree,Deku Tree
+2,location_lost_woods,Lost Woods
+3,location_sacred_meadow,Sacred Forest Meadow
+4,location_forest_temple,Forest Temple
+5,location_death_mountain_trail,Death Mountain Trail
+6,location_dodongos,Dodogo’s Cavern
+7,location_goron_city,Goron City
+8,location_death_mountain_crater,Death Mountain Crater
+9,location_fire_temple,Fire Temple
+10,location_zoras_river,Zora’s River
+11,location_zoras_domain,Zora’s Domain
+12,location_zoras_fountain,Zora’s Fountain
+13,location_jabu,Jabu Jabu
+14,location_ice_cavern,Ice Cavern
+15,location_lake_hylia,Lake Hylia
+16,location_water_temple,Water Temple
+17,location_kakariko_village,Kakariko Village
+18,location_shadow_temple,Shadow Temple
+19,location_well,Bottom of the Well
+20,location_graveyard,Graveyard
+21,location_dampes_grave,Dampe’s Grave
+22,location_gerudo_valley,Gerudo Valley
+23,location_gerudo_fortress,Gerudo Fortress
+24,location_gerudo_training_grounds,Gerudo Training Grounds
+25,location_haunted_wasteland,Haunted Wasteland
+26,location_desert_colossus,Desert Colossus
+27,location_spirit_temple,Spirit Temple
+28,location_hyrule_field,Hyrule Field
+29,location_lon_lon_ranch,Lon Lon Ranch
+30,location_hyrule_market,Hyrule Market
+31,location_hyrule_castle,Hyrule Castle
+32,location_zeldas_garden,Zelda’s Garden
+33,location_ganons_castle,Ganon’s Castle
+34,location_inside_ganons_castle,Inside Ganon’s Castle
+35,location_temple_of_time,Temple of Time
