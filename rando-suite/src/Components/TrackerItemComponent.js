@@ -4,15 +4,23 @@ export class TrackerItemComponent extends Component{
 	constructor(props) {
     super(props);
     this.state = {
-    						obtained: this.props.obtainable.obtained
+    						obtained: this.props.obtainable.obtained,
+    						secondary: this.props.obtainable.secondary
     					};
   }
 
   handleClick = (event) => {
-  	let obtained = {obtained: -this.state.obtained};
-  	this.setState(obtained);
-  	console.log(obtained);
-    this.props.onClick(event.button);
+  	if(!event.ctrlKey){
+	  	let obtained = {obtained: -this.state.obtained};
+	  	this.setState(obtained);
+
+	    this.props.onClick(event.button, event.ctrlKey);
+  	}
+  	else{
+  		let secondary = {secondary: -this.state.secondary};
+	  	this.setState(secondary);
+  		this.props.onClick(event.button, event.ctrlKey);
+  	}
   }
 
 	render() {
@@ -20,7 +28,7 @@ export class TrackerItemComponent extends Component{
 			<div className="col">
 	    	<img 
 	    		className={"img-fluid " + (this.state.obtained > 0 ? "obtained" : "unobtained")}
-	    		src={require("../icons/" +  this.props.obtainable.code + ".png")}
+	    		src={require("../icons/" +  this.props.obtainable.code + (this.state.secondary > 0 ? "_secondary" : "") + ".png")}
 	    		onClick={this.handleClick}
 	    	/>
 	    </div>

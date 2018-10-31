@@ -16,8 +16,14 @@ class App extends Component {
     super(props);
     let obtainables = require("./data/Obtainables.json");
     let obtainablesMap = this.mapCodeToID(obtainables);
+
+    let progressives = require("./data/Progressives.json");
+    let progressivesMap = this.mapCodeToID(progressives);
+
     this.state = {obtainables: obtainables,
-                  obtainablesMap: obtainablesMap
+                  obtainablesMap: obtainablesMap,
+                  progressives: progressives,
+                  progressivesMap: progressivesMap
                   };
  
   }
@@ -33,15 +39,18 @@ class App extends Component {
     return codeMap;
   }
 
-  handleClickObtainable(id){
+  handleClickObtainable(id, ctrl){
+    if(!ctrl){
+      const obtainables = cloneDeep(this.state.obtainables);
 
-    const obtainables = cloneDeep(this.state.obtainables);
-
-    obtainables[id].obtained = -obtainables[id].obtained;
+      obtainables[id].obtained = -obtainables[id].obtained;
 
 
-    this.setState(obtainables);
+      this.setState(obtainables);
+    }
+    else{
 
+    }
   }
 
 
@@ -63,9 +72,12 @@ class App extends Component {
             <div className="row" id="TrackerRow">
 
                 <ObtainableTrackerComponent 
-                  onClick={(id) => this.handleClickObtainable(id)}
+                  onClick={(id, ctlr) => this.handleClickObtainable(id, ctlr)}
                   obtainables={this.state.obtainables}
-                  map={this.state.obtainablesMap}
+                  obtainablesMap={this.state.obtainablesMap}
+                  progressives={this.state.progressives}
+                  progressivesMap={this.state.progressivesMap}
+                  
                 />
 
             </div>

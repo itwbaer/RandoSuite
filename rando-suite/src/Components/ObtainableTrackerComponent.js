@@ -1,223 +1,224 @@
 import React, { Component } from 'react';
 import {TrackerItemComponent} from './TrackerItemComponent';
+import {ProgressiveTrackerItemComponent} from './ProgressiveTrackerItemComponent';
+
 export class ObtainableTrackerComponent extends Component{
 	render() {
     return(
       <div className="container-fluid tracker-container">
         <div className="row">
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_slingshot"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_slingshot"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_slingshot"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_slingshot"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_bracelet"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_bracelet"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bracelet"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bracelet"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_bombs"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_bombs"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bombs"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bombs"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_bombchus"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_bombchus"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bombchus"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bombchus"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_silver_scale"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_silver_scale"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_silver_scale"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_silver_scale"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_boomerang"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_boomerang"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_boomerang"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_boomerang"], ctrl)}
         	/>
         </div>
         <div className="row">
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_bow"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_bow"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bow"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bow"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_hammer"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_hammer"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_hammer"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_hammer"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_hookshot"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_hookshot"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_hookshot"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_hookshot"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_mirror_shield"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_mirror_shield"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_mirror_shield"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_mirror_shield"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_iron_boots"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_iron_boots"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_iron_boots"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_iron_boots"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_hover_boots"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_hover_boots"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_hover_boots"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_hover_boots"], ctrl)}
         	/>
         </div>
         <div className="row">       	  	
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_dins"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_dins"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_dins"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_dins"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_farores"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_farores"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_farores"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_farores"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_magic"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_magic"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_magic"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_magic"], ctrl)}
         	/>     
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_fire_arrows"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_fire_arrows"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_fire_arrows"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_fire_arrows"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_light_arrows"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_light_arrows"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_light_arrows"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_light_arrows"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_lens"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_lens"])}
-        	/>
-        </div>
-        <div className="row">
-  	
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_tunic_goron"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_tunic_goron"])}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_tunic_zora"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_tunic_zora"])}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_letter"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_letter"])}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_bottle"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_bottle"])}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_kokiri_sword"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_kokiri_sword"])}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_goron_sword"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_goron_sword"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_lens"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_lens"], ctrl)}
         	/>
         </div>
         <div className="row">
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_claim"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_claim"])}
+  			<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_gerudo_card"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_gerudo_card"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_stone"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_stone"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_tunic_goron"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_tunic_goron"], ctrl)}
+        	/>
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_tunic_zora"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_tunic_zora"], ctrl)}
         	/>       	
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_keaton_mask"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_keaton_mask"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bottle"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bottle"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_adult_wallet"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_adult_wallet"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_kokiri_sword"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_kokiri_sword"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["item_skulls"]]}
-        		onClick={() => this.props.onClick(this.props.map["item_skulls"])}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_scarecrow"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_scarecrow"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_goron_sword"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_goron_sword"], ctrl)}
         	/>
         </div>
         <div className="row">
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_zelda"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_zelda"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_claim"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_claim"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_epona"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_epona"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_stone"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_stone"], ctrl)}
+        	/>       	
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_keaton_mask"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_keaton_mask"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_saria"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_saria"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_adult_wallet"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_adult_wallet"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_sun"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_sun"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_skulls"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_skulls"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_time"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_time"])}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_storm"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_storm"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_scarecrow"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_scarecrow"], ctrl)}
         	/>
         </div>
         <div className="row">
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_forest"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_forest"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_zelda"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_zelda"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_fire"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_fire"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_epona"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_epona"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_water"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_water"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_saria"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_saria"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_spirit"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_spirit"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_sun"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_sun"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_shadow"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_shadow"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_time"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_time"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["song_light"]]}
-        		onClick={() => this.props.onClick(this.props.map["song_light"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_storm"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_storm"], ctrl)}
+        	/>
+        </div>
+        <div className="row">
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_forest"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_forest"], ctrl)}
+        	/>
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_fire"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_fire"], ctrl)}
+        	/>
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_water"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_water"], ctrl)}
+        	/>
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_spirit"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_spirit"], ctrl)}
+        	/>
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_shadow"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_shadow"], ctrl)}
+        	/>
+        	<TrackerItemComponent
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["song_light"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_light"], ctrl)}
         	/>
         </div>
         <div className="row">       
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["medallion_forest"]]}
-        		onClick={() => this.props.onClick(this.props.map["medallion_forest"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["medallion_forest"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["medallion_forest"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["medallion_fire"]]}
-        		onClick={() => this.props.onClick(this.props.map["medallion_fire"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["medallion_fire"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["medallion_fire"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["medallion_water"]]}
-        		onClick={() => this.props.onClick(this.props.map["medallion_water"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["medallion_water"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["medallion_water"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["medallion_spirit"]]}
-        		onClick={() => this.props.onClick(this.props.map["medallion_spirit"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["medallion_spirit"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["medallion_spirit"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["medallion_shadow"]]}
-        		onClick={() => this.props.onClick(this.props.map["medallion_shadow"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["medallion_shadow"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["medallion_shadow"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["medallion_light"]]}
-        		onClick={() => this.props.onClick(this.props.map["medallion_light"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["medallion_light"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["medallion_light"], ctrl)}
         	/>
         	
         </div>
         <div className="row">       
-        	<div className="col">
-        		???
-        	</div>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
         	<div className="col">
         		???
         	</div>
@@ -237,16 +238,16 @@ export class ObtainableTrackerComponent extends Component{
         </div>
         <div className="row">
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["stone_emerald"]]}
-        		onClick={() => this.props.onClick(this.props.map["stone_emerald"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["stone_emerald"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["stone_emerald"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["stone_ruby"]]}
-        		onClick={() => this.props.onClick(this.props.map["stone_ruby"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["stone_ruby"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["stone_ruby"], ctrl)}
         	/>
         	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.map["stone_sapphire"]]}
-        		onClick={() => this.props.onClick(this.props.map["stone_sapphire"])}
+        		obtainable={this.props.obtainables[this.props.obtainablesMap["stone_sapphire"]]}
+        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["stone_sapphire"], ctrl)}
         	/>
         </div> 
         <div className="row">       

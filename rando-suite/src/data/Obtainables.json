@@ -67,91 +67,104 @@
 		"code" : "song_zelda",
 		"name" : "Zeldas Lullaby",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 10,
 		"code" : "song_epona",
 		"name" : "Eponas Song",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 11,
 		"code" : "song_saria",
 		"name" : "Sarias Song",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 12,
 		"code" : "song_sun",
 		"name" : "Suns Song",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 13,
 		"code" : "song_time",
 		"name" : "Song of Time",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 14,
 		"code" : "song_storm",
 		"name" : "Song of Storms",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 15,
 		"code" : "song_forest",
 		"name" : "Minuet of Forest",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 16,
 		"code" : "song_fire",
 		"name" : "Bolero of Fire",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 17,
 		"code" : "song_water",
 		"name" : "Serenade of Water",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 18,
 		"code" : "song_spirit",
 		"name" : "Requiem of Spirit",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 19,
 		"code" : "song_shadow",
 		"name" : "Nocturne of Shadow",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 20,
 		"code" : "song_light",
 		"name" : "Prelude of Light",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 21,
 		"code" : "song_scarecrow",
 		"name" : "Scarecrows Song",
 		"type" : 3,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : null
 	},
 	{
 		"id" : 22,
@@ -221,7 +234,8 @@
 		"code" : "item_bottle",
 		"name" : "Bottle",
 		"type" : 4,
-		"obtained" : -1
+		"obtained" : -1,
+        "secondary" : -1
 	},
 	{
 		"id" : 32,
