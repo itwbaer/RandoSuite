@@ -1,0 +1,194 @@
+﻿[
+	{
+		"id" : 0,
+		"code" : "access_sacred_meadow_adult",
+		"location" : 3,
+		"required_access" : "",
+		"required_obtainables" : "11|15",
+		"state" : 1
+	},
+	{
+		"id" : 1,
+		"code" : "access_forest_temple",
+		"location" : 4,
+		"required_access" : "",
+		"required_obtainables" : "33",
+		"state" : 1
+	},
+	{
+		"id" : 2,
+		"code" : "access_dodongos_child",
+		"location" : 6,
+		"required_access" : "",
+		"required_obtainables" : "27|24",
+		"state" : 0
+	},
+	{
+		"id" : 3,
+		"code" : "access_dodongos_adult",
+		"location" : 6,
+		"required_access" : "",
+		"required_obtainables" : "27|24|36",
+		"state" : 1
+	},
+	{
+		"id" : 4,
+		"code" : "access_fire_temple",
+		"location" : 9,
+		"required_access" : "",
+		"required_obtainables" : "33|38|16",
+		"state" : 1
+	},
+	{
+		"id" : 5,
+		"code" : "access_zoras_river_child",
+		"location" : 10,
+		"required_access" : "",
+		"required_obtainables" : "27|25",
+		"state" : 0
+	},
+	{
+		"id" : 6,
+		"code" : "access_zoras_river_adult",
+		"location" : 10,
+		"required_access" : "",
+		"required_obtainables" : "27|28|36",
+		"state" : 1
+	},
+	{
+		"id" : 7,
+		"code" : "access_zoras_domain_child",
+		"location" : 11,
+		"required_access" : "?????river",
+		"required_obtainables" : "9|28",
+		"state" : 0
+	},
+	{
+		"id" : 8,
+		"code" : "access_zoras_domain_adult",
+		"location" : 11,
+		"required_access" : "",
+		"required_obtainables" : "9|28",
+		"state" : 1
+	},
+	{
+		"id" : 9,
+		"code" : "access_zoras_fountain_child",
+		"location" : 12,
+		"required_access" : "11",
+		"required_obtainables" : "",
+		"state" : 0
+	},
+	{
+		"id" : 10,
+		"code" : "access_zoras_fountain_adult",
+		"location" : 12,
+		"required_access" : "11",
+		"required_obtainables" : "",
+		"state" : 1
+	},
+	{
+		"id" : 11,
+		"code" : "access_jabu",
+		"location" : 13,
+		"required_access" : "12",
+		"required_obtainables" : "44",
+		"state" : 0
+	},
+	{
+		"id" : 12,
+		"code" : "access_ice_cavern",
+		"location" : 14,
+		"required_access" : "12",
+		"required_obtainables" : "44",
+		"state" : 1
+	},
+	{
+		"id" : 13,
+		"code" : "access_water_temple",
+		"location" : 16,
+		"required_access" : "",
+		"required_obtainables" : "33|37",
+		"state" : 1
+	},
+	{
+		"id" : 14,
+		"code" : "access_shadow_temple",
+		"location" : 18,
+		"required_access" : "",
+		"required_obtainables" : "19&39&42",
+		"state" : 1
+	},
+	{
+		"id" : 15,
+		"code" : "access_well",
+		"location" : 19,
+		"required_access" : "",
+		"required_obtainables" : "14",
+		"state" : 0
+	},
+	{
+		"id" : 16,
+		"code" : "access_gerudo_fortress",
+		"location" : 23,
+		"required_access" : "",
+		"required_obtainables" : "10|34",
+		"state" : 1
+	},
+	{
+		"id" : 17,
+		"code" : "access_gerudo_training_grounds",
+		"location" : 24,
+		"required_access" : "23",
+		"required_obtainables" : "53",
+		"state" : 1
+	},
+	{
+		"id" : 18,
+		"code" : "access_haunted_wasteland",
+		"location" : 25,
+		"required_access" : "24|26",
+		"required_obtainables" : "34|18",
+		"state" : 1
+	},
+	{
+		"id" : 19,
+		"code" : "access_desert_colossus_child",
+		"location" : 26,
+		"required_access" : "",
+		"required_obtainables" : "18",
+		"state" : 0
+	},
+	{
+		"id" : 20,
+		"code" : "access_desert_colossus_adult",
+		"location" : 26,
+		"required_access" : "25",
+		"required_obtainables" : "18",
+		"state" : 1
+	},
+	{
+		"id" : 21,
+		"code" : "access_spirit_temple_child",
+		"location" : 27,
+		"required_access" : "26",
+		"required_obtainables" : "",
+		"state" : 0
+	},
+	{
+		"id" : 22,
+		"code" : "access_spirit_temple_adult",
+		"location" : 27,
+		"required_access" : "26",
+		"required_obtainables" : "25",
+		"state" : 1
+	},
+	{
+		"id" : 23,
+		"code" : "access_inside_ganons_castle",
+		"location" : 33,
+		"required_access" : "",
+		"required_obtainables" : "3&4&5&6&7&8",
+		"state" : 1
+	}
+]

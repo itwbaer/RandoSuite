@@ -1,0 +1,22 @@
+﻿[
+	{
+		"id" : 0,
+		"code" : "type_stone",
+		"name" : "Spiritual Stone"
+	},
+	{
+		"id" : 1,
+		"code" : "type_medallion",
+		"name" : "Medallion"
+	},
+	{
+		"id" : 2,
+		"code" : "type_song",
+		"name" : "Song"
+	},
+	{
+		"id" : 3,
+		"code" : "type_item",
+		"name" : "Item"
+	}
+]

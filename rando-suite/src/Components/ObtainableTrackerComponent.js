@@ -219,21 +219,21 @@ export class ObtainableTrackerComponent extends Component{
         	<ProgressiveTrackerItemComponent
         		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
         	/>
-        	<div className="col">
-        		???
-        	</div>
-        	<div className="col">
-        		???
-        	</div>
-        	<div className="col">
-        		???
-        	</div>
-        	<div className="col">
-        		???
-        	</div>
-        	<div className="col">
-        		???
-        	</div>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
         	
         </div>
         <div className="row">
@@ -251,15 +251,15 @@ export class ObtainableTrackerComponent extends Component{
         	/>
         </div> 
         <div className="row">       
-        	<div className="col">
-        		???
-        	</div>
-        	<div className="col">
-        		???
-        	</div>
-        	<div className="col">
-        		???
-        	</div>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
+        	<ProgressiveTrackerItemComponent
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        	/>
         	       	
         </div>
       </div>

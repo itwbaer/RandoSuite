@@ -1,0 +1,17 @@
+[
+	{
+		"id" : 0,
+		"code" : "state_child",
+		"name" : "Child"
+	},
+	{
+		"id" : 1,
+		"code" : "state_adult",
+		"name" : "Adult"
+	},
+	{
+		"id" : 2,
+		"code" : "state_either",
+		"name" : "Either"
+	}
+]

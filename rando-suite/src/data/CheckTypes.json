@@ -1,0 +1,12 @@
+﻿[
+	{
+		"id" : 0,
+		"code" : "check_song",
+		"name" : "Song Check"
+	},
+	{
+		"id" : 1,
+		"code" : "check_item",
+		"name" : "Item Check"
+	}
+]

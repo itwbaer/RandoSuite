@@ -18,7 +18,7 @@ export class ProgressiveTrackerItemComponent extends Component{
 	render() {
 		return(
 			<div className="col">
-	    	<span onClick={this.handleClick}>
+	    	<span className="noselect" onClick={this.handleClick}>
 	    		{this.props.progressive.options[this.state.index]}
 	    	</span>
 	    </div>

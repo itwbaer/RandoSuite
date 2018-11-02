@@ -14,16 +14,49 @@ import ganon from './maps/inside-ganons-castle.jpg';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    let access = require("./data/Access.json");
+    let accessMap = this.mapCodeToID(access);
+
+    let checks = require("./data/Checks.json");
+    let checksMap = this.mapCodeToID(checks);
+
+    let checkTypes = require("./data/CheckTypes.json");
+    let checkTypesMap = this.mapCodeToID(checkTypes);
+
+    let locations = require("./data/Locations.json");
+    let locationsMap = this.mapCodeToID(locations);
+
     let obtainables = require("./data/Obtainables.json");
     let obtainablesMap = this.mapCodeToID(obtainables);
+
+    let obtainableTypes = require("./data/ObtainableTypes.json");
+    let obtainableTypesMap = this.mapCodeToID(obtainableTypes);    
 
     let progressives = require("./data/Progressives.json");
     let progressivesMap = this.mapCodeToID(progressives);
 
-    this.state = {obtainables: obtainables,
+    let states = require("./data/States.json");
+    let statesMap = this.mapCodeToID(states);
+
+
+    this.state = {access: access,
+                  accessMap: accessMap,
+                  checks: checks,
+                  checksMap: checksMap,
+                  checkTypes: checkTypes,
+                  checkTypes: checkTypesMap,
+                  locations: locations,
+                  locationsMap: locationsMap,
+                  obtainables: obtainables,
                   obtainablesMap: obtainablesMap,
                   progressives: progressives,
-                  progressivesMap: progressivesMap
+                  progressivesMap: progressivesMap,
+                  states: states,
+                  statesMap: statesMap
+
+
+
                   };
  
   }
@@ -66,7 +99,12 @@ class App extends Component {
             </div>
             <div className="row" id="ChecklistRow">
  
-                <ChecklistComponent />
+                <ChecklistComponent 
+                  checks={this.state.checks}
+                  locations={this.state.locations}
+                  locationsMap={this.state.locationsMap}
+                  states={this.state.states}
+                />
 
             </div>
             <div className="row" id="TrackerRow">

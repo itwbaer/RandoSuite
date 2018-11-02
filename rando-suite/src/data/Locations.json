@@ -1,0 +1,182 @@
+﻿[
+	{
+		"id" : 0,
+		"code" : "location_kokiri_forest",
+		"name" : "Kokiri Forest"
+	},
+	{
+		"id" : 1,
+		"code" : "location_deku_tree",
+		"name" : "Deku Tree"
+	},
+	{
+		"id" : 2,
+		"code" : "location_lost_woods",
+		"name" : "Lost Woods"
+	},
+	{
+		"id" : 3,
+		"code" : "location_sacred_meadow",
+		"name" : "Sacred Forest Meadow"
+	},
+	{
+		"id" : 4,
+		"code" : "location_forest_temple",
+		"name" : "Forest Temple"
+	},
+	{
+		"id" : 5,
+		"code" : "location_death_mountain_trail",
+		"name" : "Death Mountain Trail"
+	},
+	{
+		"id" : 6,
+		"code" : "location_dodongos",
+		"name" : "Dodogos Cavern"
+	},
+	{
+		"id" : 7,
+		"code" : "location_goron_city",
+		"name" : "Goron City"
+	},
+	{
+		"id" : 8,
+		"code" : "location_death_mountain_crater",
+		"name" : "Death Mountain Crater"
+	},
+	{
+		"id" : 9,
+		"code" : "location_fire_temple",
+		"name" : "Fire Temple"
+	},
+	{
+		"id" : 10,
+		"code" : "location_zoras_river",
+		"name" : "Zoras River"
+	},
+	{
+		"id" : 11,
+		"code" : "location_zoras_domain",
+		"name" : "Zoras Domain"
+	},
+	{
+		"id" : 12,
+		"code" : "location_zoras_fountain",
+		"name" : "Zoras Fountain"
+	},
+	{
+		"id" : 13,
+		"code" : "location_jabu",
+		"name" : "Jabu Jabu"
+	},
+	{
+		"id" : 14,
+		"code" : "location_ice_cavern",
+		"name" : "Ice Cavern"
+	},
+	{
+		"id" : 15,
+		"code" : "location_lake_hylia",
+		"name" : "Lake Hylia"
+	},
+	{
+		"id" : 16,
+		"code" : "location_water_temple",
+		"name" : "Water Temple"
+	},
+	{
+		"id" : 17,
+		"code" : "location_kakariko_village",
+		"name" : "Kakariko Village"
+	},
+	{
+		"id" : 18,
+		"code" : "location_shadow_temple",
+		"name" : "Shadow Temple"
+	},
+	{
+		"id" : 19,
+		"code" : "location_well",
+		"name" : "Bottom of the Well"
+	},
+	{
+		"id" : 20,
+		"code" : "location_graveyard",
+		"name" : "Graveyard"
+	},
+	{
+		"id" : 21,
+		"code" : "location_dampes_grave",
+		"name" : "Dampes Grave"
+	},
+	{
+		"id" : 22,
+		"code" : "location_gerudo_valley",
+		"name" : "Gerudo Valley"
+	},
+	{
+		"id" : 23,
+		"code" : "location_gerudo_fortress",
+		"name" : "Gerudo Fortress"
+	},
+	{
+		"id" : 24,
+		"code" : "location_gerudo_training_grounds",
+		"name" : "Gerudo Training Grounds"
+	},
+	{
+		"id" : 25,
+		"code" : "location_haunted_wasteland",
+		"name" : "Haunted Wasteland"
+	},
+	{
+		"id" : 26,
+		"code" : "location_desert_colossus",
+		"name" : "Desert Colossus"
+	},
+	{
+		"id" : 27,
+		"code" : "location_spirit_temple",
+		"name" : "Spirit Temple"
+	},
+	{
+		"id" : 28,
+		"code" : "location_hyrule_field",
+		"name" : "Hyrule Field"
+	},
+	{
+		"id" : 29,
+		"code" : "location_lon_lon_ranch",
+		"name" : "Lon Lon Ranch"
+	},
+	{
+		"id" : 30,
+		"code" : "location_hyrule_market",
+		"name" : "Hyrule Market"
+	},
+	{
+		"id" : 31,
+		"code" : "location_hyrule_castle",
+		"name" : "Hyrule Castle"
+	},
+	{
+		"id" : 32,
+		"code" : "location_zeldas_garden",
+		"name" : "Zeldas Garden"
+	},
+	{
+		"id" : 33,
+		"code" : "location_ganons_castle",
+		"name" : "Ganons Castle"
+	},
+	{
+		"id" : 34,
+		"code" : "location_inside_ganons_castle",
+		"name" : "Inside Ganons Castle"
+	},
+	{
+		"id" : 35,
+		"code" : "location_temple_of_time",
+		"name" : "Temple of Time"
+	}
+]
