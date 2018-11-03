@@ -15,8 +15,20 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    const util =  {};
+
+    util.checks = require('./util/checks.js');
+    util.locations = require('./util/locations.js');
+    util.obtainables = require('./util/obtainables.js');
+    util.shared = require('./util/shared.js');
+
     let access = require("./data/Access.json");
-    let accessMap = this.mapCodeToID(access);
+    let locations = require("./data/Locations.json");
+    let locationsMap = this.mapCodeToID(locations);
+
+    util.locations.linkAccess(locations, access);
+
+
 
     let checks = require("./data/Checks.json");
     let checksMap = this.mapCodeToID(checks);
@@ -24,11 +36,10 @@ class App extends Component {
     let checkTypes = require("./data/CheckTypes.json");
     let checkTypesMap = this.mapCodeToID(checkTypes);
 
-    let locations = require("./data/Locations.json");
-    let locationsMap = this.mapCodeToID(locations);
-
     let obtainables = require("./data/Obtainables.json");
     let obtainablesMap = this.mapCodeToID(obtainables);
+
+    console.log(util.obtainables.canUse(obtainables[41] ,obtainables));
 
     let obtainableTypes = require("./data/ObtainableTypes.json");
     let obtainableTypesMap = this.mapCodeToID(obtainableTypes);    
@@ -39,9 +50,10 @@ class App extends Component {
     let states = require("./data/States.json");
     let statesMap = this.mapCodeToID(states);
 
+    let filter = require("./data/Filter.json");
 
-    this.state = {access: access,
-                  accessMap: accessMap,
+    this.state = {util: util,
+
                   checks: checks,
                   checksMap: checksMap,
                   checkTypes: checkTypes,
@@ -53,9 +65,9 @@ class App extends Component {
                   progressives: progressives,
                   progressivesMap: progressivesMap,
                   states: states,
-                  statesMap: statesMap
+                  statesMap: statesMap,
 
-
+                  filter: filter
 
                   };
  
@@ -78,6 +90,7 @@ class App extends Component {
 
       obtainables[id].obtained = -obtainables[id].obtained;
 
+      this.state.util.checks.isAccessible();
 
       this.setState(obtainables);
     }

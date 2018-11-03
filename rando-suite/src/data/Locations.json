@@ -2,181 +2,217 @@
 	{
 		"id" : 0,
 		"code" : "location_kokiri_forest",
-		"name" : "Kokiri Forest"
+		"name" : "Kokiri Forest",
+		"state": [0, 1]
 	},
 	{
 		"id" : 1,
 		"code" : "location_deku_tree",
-		"name" : "Deku Tree"
+		"name" : "Deku Tree",
+		"state": [0]
 	},
 	{
 		"id" : 2,
 		"code" : "location_lost_woods",
-		"name" : "Lost Woods"
+		"name" : "Lost Woods",
+		"state": [0, 1]
 	},
 	{
 		"id" : 3,
 		"code" : "location_sacred_meadow",
-		"name" : "Sacred Forest Meadow"
+		"name" : "Sacred Forest Meadow",
+		"state": [0, 1]
 	},
 	{
 		"id" : 4,
 		"code" : "location_forest_temple",
-		"name" : "Forest Temple"
+		"name" : "Forest Temple",
+		"state" : [1]
 	},
 	{
 		"id" : 5,
 		"code" : "location_death_mountain_trail",
-		"name" : "Death Mountain Trail"
+		"name" : "Death Mountain Trail",
+		"state": [0, 1]
 	},
 	{
 		"id" : 6,
 		"code" : "location_dodongos",
-		"name" : "Dodogos Cavern"
+		"name" : "Dodogos Cavern",
+		"state": [0, 1]
 	},
 	{
 		"id" : 7,
 		"code" : "location_goron_city",
-		"name" : "Goron City"
+		"name" : "Goron City",
+		"state": [0, 1]
 	},
 	{
 		"id" : 8,
 		"code" : "location_death_mountain_crater",
-		"name" : "Death Mountain Crater"
+		"name" : "Death Mountain Crater",
+		"state": [0, 1]
 	},
 	{
 		"id" : 9,
 		"code" : "location_fire_temple",
-		"name" : "Fire Temple"
+		"name" : "Fire Temple",
+		"state" : [1]
 	},
 	{
 		"id" : 10,
 		"code" : "location_zoras_river",
-		"name" : "Zoras River"
+		"name" : "Zoras River",
+		"state": [0, 1]
 	},
 	{
 		"id" : 11,
 		"code" : "location_zoras_domain",
-		"name" : "Zoras Domain"
+		"name" : "Zoras Domain",
+		"state": [0, 1]
 	},
 	{
 		"id" : 12,
 		"code" : "location_zoras_fountain",
-		"name" : "Zoras Fountain"
+		"name" : "Zoras Fountain",
+		"state": [0, 1]
 	},
 	{
 		"id" : 13,
 		"code" : "location_jabu",
-		"name" : "Jabu Jabu"
+		"name" : "Jabu Jabu",
+		"state": [0]
 	},
 	{
 		"id" : 14,
 		"code" : "location_ice_cavern",
-		"name" : "Ice Cavern"
+		"name" : "Ice Cavern",
+		"state" : [1]
 	},
 	{
 		"id" : 15,
 		"code" : "location_lake_hylia",
-		"name" : "Lake Hylia"
+		"name" : "Lake Hylia",
+		"state": [0, 1]
 	},
 	{
 		"id" : 16,
 		"code" : "location_water_temple",
-		"name" : "Water Temple"
+		"name" : "Water Temple",
+		"state" : [1]
 	},
 	{
 		"id" : 17,
 		"code" : "location_kakariko_village",
-		"name" : "Kakariko Village"
+		"name" : "Kakariko Village",
+		"state": [0, 1]
 	},
 	{
 		"id" : 18,
 		"code" : "location_shadow_temple",
-		"name" : "Shadow Temple"
+		"name" : "Shadow Temple",
+		"state" : [1]
 	},
 	{
 		"id" : 19,
 		"code" : "location_well",
-		"name" : "Bottom of the Well"
+		"name" : "Bottom of the Well",
+		"state": [0]
 	},
 	{
 		"id" : 20,
 		"code" : "location_graveyard",
-		"name" : "Graveyard"
+		"name" : "Graveyard",
+		"state": [0, 1]
 	},
 	{
 		"id" : 21,
 		"code" : "location_dampes_grave",
-		"name" : "Dampes Grave"
+		"name" : "Dampes Grave",
+		"state" : [1]
 	},
 	{
 		"id" : 22,
 		"code" : "location_gerudo_valley",
-		"name" : "Gerudo Valley"
+		"name" : "Gerudo Valley",
+		"state": [0, 1]
 	},
 	{
 		"id" : 23,
 		"code" : "location_gerudo_fortress",
-		"name" : "Gerudo Fortress"
+		"name" : "Gerudo Fortress",
+		"state" : [1]
 	},
 	{
 		"id" : 24,
 		"code" : "location_gerudo_training_grounds",
-		"name" : "Gerudo Training Grounds"
+		"name" : "Gerudo Training Grounds",
+		"state" : [1]
 	},
 	{
 		"id" : 25,
 		"code" : "location_haunted_wasteland",
-		"name" : "Haunted Wasteland"
+		"name" : "Haunted Wasteland",
+		"state": [0, 1]
 	},
 	{
 		"id" : 26,
 		"code" : "location_desert_colossus",
-		"name" : "Desert Colossus"
+		"name" : "Desert Colossus",
+		"state": [0, 1]
 	},
 	{
 		"id" : 27,
 		"code" : "location_spirit_temple",
-		"name" : "Spirit Temple"
+		"name" : "Spirit Temple",
+		"state": [0, 1]
 	},
 	{
 		"id" : 28,
 		"code" : "location_hyrule_field",
-		"name" : "Hyrule Field"
+		"name" : "Hyrule Field",
+		"state": [0, 1]
 	},
 	{
 		"id" : 29,
 		"code" : "location_lon_lon_ranch",
-		"name" : "Lon Lon Ranch"
+		"name" : "Lon Lon Ranch",
+		"state": [0, 1]
 	},
 	{
 		"id" : 30,
 		"code" : "location_hyrule_market",
-		"name" : "Hyrule Market"
+		"name" : "Hyrule Market",
+		"state": [0, 1]
 	},
 	{
 		"id" : 31,
 		"code" : "location_hyrule_castle",
-		"name" : "Hyrule Castle"
+		"name" : "Hyrule Castle",
+		"state": [0]
 	},
 	{
 		"id" : 32,
 		"code" : "location_zeldas_garden",
-		"name" : "Zeldas Garden"
+		"name" : "Zeldas Garden",
+		"state": [0]
 	},
 	{
 		"id" : 33,
 		"code" : "location_ganons_castle",
-		"name" : "Ganons Castle"
+		"name" : "Ganons Castle",
+		"state" : [1]
 	},
 	{
 		"id" : 34,
 		"code" : "location_inside_ganons_castle",
-		"name" : "Inside Ganons Castle"
+		"name" : "Inside Ganons Castle",
+		"state" : [1]
 	},
 	{
 		"id" : 35,
 		"code" : "location_temple_of_time",
-		"name" : "Temple of Time"
+		"name" : "Temple of Time",
+		"state": [0, 1]
 	}
 ]

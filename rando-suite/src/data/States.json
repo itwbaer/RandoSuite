@@ -8,10 +8,5 @@
 		"id" : 1,
 		"code" : "state_adult",
 		"name" : "Adult"
-	},
-	{
-		"id" : 2,
-		"code" : "state_either",
-		"name" : "Either"
 	}
 ]
