@@ -259,7 +259,7 @@
 	{
 		"id" : 24,
 		"code" : "access_inside_ganons_castle",
-		"location" : 33,
+		"location" : 34,
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["medallion_forest", "medallion_fire", "medallion_water", "medallion_shadow", "medallion_spirit", "medallion_light"]]

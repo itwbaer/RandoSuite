@@ -7,7 +7,10 @@ module.exports = {
 
 		//for each access, attach to location.access
 		access.forEach(function(a){
-			locations[a.location]["access"] = {};
+
+			if(locations[a.location]["access"] === undefined || locations[a.location]["access"] === null){
+				locations[a.location]["access"] = {};
+			}
 			locations[a.location]["access"][a.state.toString()] = {};
 			locations[a.location]["access"][a.state.toString()]["required"] = a.required;
 		});
@@ -18,7 +21,7 @@ module.exports = {
 	canAccess: function(state, location, locations, obtainables, locationsMap, obtainablesMap){
 
 		let isAccessible = function(state, location, locations, obtainables, locationsMap, obtainablesMap){
-
+				
 				//first check if our state can even get there
 				if(!location.state.includes(state)){
 					return false;
@@ -27,12 +30,12 @@ module.exports = {
 
 
 				//if no access modifier, we can get there
-				if(location.access === undefined){
+				if(location.access === undefined || location.access === null){
 					return true;
 
 				}
 				else{
-					if(location.access[state.toString()] === undefined){
+					if(location.access[state.toString()] === undefined || location.access[state.toString()] === null){
 						//if there is no modifier for the given state, we can get there
 						return true;	
 					}
@@ -42,33 +45,61 @@ module.exports = {
 					let access = location.access[state.toString()];
 
 
-					let reachable = true;
-					let haveObtainables = true;
+					let reachable = [];
+					let haveObtainables = [];
 					//look at each of the required things
 					for(let i = 0; i < access.required.length; i++){
 						let accessOption = access.required[i];
+						//is there required location
+						if(accessOption.location === undefined || accessOption.location === null){
+							reachable.push(true);
 
-						//need to check if we can get to the required location
-						let newLocation = locations[locationsMap[accessOption.location]];
-						//is there a required location?
-						if(newLocation !== null){
-							reachable = reachable && isAccessible(state, newLocation, locations, obtainables, locationsMap, obtainablesMap);
 						}
+						else{
+							//need to check if we can get to the required location
+							let newLocation = locations[locationsMap[accessOption.location]];
 
+							let locationReachable = isAccessible(state, newLocation, locations, obtainables, locationsMap, obtainablesMap);
+							
+
+							reachable.push(locationReachable);
+						}
+						
+
+						//if no required items
+						if(accessOption.obtainables === undefined || accessOption.obtainables === null){
+							//only 1 set, which is true;
+							haveObtainables.push([true]);
+						}
 						//and if we have required items
-						if(accessOption.obtainables !== null){
+						else{
+
 							//potentially multiple sets
+							let haveSet = [];
 							for(let j = 0; j < accessOption.obtainables.length; j++){
 								let currentSet = accessOption.obtainables[j];
+								let setValid = true;
 								for(let k = 0; k < currentSet.length; k++){
 									let obtainable = obtainables[obtainablesMap[currentSet[k]]];
-									haveObtainables = haveObtainables && util.obtainables.canUse(obtainable, obtainables);
+			
+									setValid = setValid && util.obtainables.canUse(state, obtainable, obtainables);
 								}
+								
+								haveSet.push(setValid)
 							}
+
+							haveObtainables.push(haveSet);
 						}
 					}
 
-					return reachable && haveObtainables;
+					//for every set, check if both reachable and obtainable
+					for(let i = 0; i < access.required.length; i++){
+						
+						if(reachable[i] && haveObtainables[i].includes(true)){return true;}
+
+					}
+
+					return false;
 
 				}
 

@@ -4,12 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {MapComponent} from './Components/MapComponent.js';
 import {MapNavComponent} from './Components/MapNavComponent.js';
-import {ChecklistNavComponent} from './Components/ChecklistNavComponent.js';
 import {ChecklistComponent} from './Components/ChecklistComponent.js';
 import {ObtainableTrackerComponent} from './Components/ObtainableTrackerComponent.js';
 
 import full from './maps/full-map.jpg';
-import ganon from './maps/inside-ganons-castle.jpg';
 
 class App extends Component {
   constructor(props) {
@@ -29,7 +27,6 @@ class App extends Component {
     util.locations.linkAccess(locations, access);
 
 
-
     let checks = require("./data/Checks.json");
     let checksMap = this.mapCodeToID(checks);
 
@@ -39,7 +36,10 @@ class App extends Component {
     let obtainables = require("./data/Obtainables.json");
     let obtainablesMap = this.mapCodeToID(obtainables);
 
-    console.log(util.obtainables.canUse(obtainables[41] ,obtainables));
+    //console.log(util.obtainables.canUse(0, obtainables[3] ,obtainables));
+    //console.log(util.locations.canAccess(0, locations[13], locations, obtainables, locationsMap, obtainablesMap));
+    //console.log(util.checks.canCheck(0, checks[1], locations, obtainables, checks, locationsMap, obtainablesMap, checksMap))
+   
 
     let obtainableTypes = require("./data/ObtainableTypes.json");
     let obtainableTypesMap = this.mapCodeToID(obtainableTypes);    
@@ -52,23 +52,27 @@ class App extends Component {
 
     let filter = require("./data/Filter.json");
 
+    let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
+
     this.state = {util: util,
 
                   checks: checks,
                   checksMap: checksMap,
                   checkTypes: checkTypes,
-                  checkTypes: checkTypesMap,
+                  checkTypesMap: checkTypesMap,
                   locations: locations,
                   locationsMap: locationsMap,
                   obtainables: obtainables,
                   obtainablesMap: obtainablesMap,
+                  obtainableTypes: obtainableTypes,
+                  obtainableTypesMap: obtainableTypesMap,
                   progressives: progressives,
                   progressivesMap: progressivesMap,
                   states: states,
                   statesMap: statesMap,
 
-                  filter: filter
-
+                  filter: filter,
+                  filteredChecks: filteredChecks
                   };
  
   }
@@ -90,8 +94,6 @@ class App extends Component {
 
       obtainables[id].obtained = -obtainables[id].obtained;
 
-      this.state.util.checks.isAccessible();
-
       this.setState(obtainables);
     }
     else{
@@ -105,11 +107,6 @@ class App extends Component {
       <div className="App container-fluid">
         <div className="row" id="PrimaryRow">
           <div className="grid-half col-4">
-            <div className="row" id="ChecklistNavRow">
-
-                <ChecklistNavComponent />
-
-            </div>
             <div className="row" id="ChecklistRow">
  
                 <ChecklistComponent 
@@ -117,6 +114,7 @@ class App extends Component {
                   locations={this.state.locations}
                   locationsMap={this.state.locationsMap}
                   states={this.state.states}
+                  filteredChecks={this.state.filteredChecks}
                 />
 
             </div>

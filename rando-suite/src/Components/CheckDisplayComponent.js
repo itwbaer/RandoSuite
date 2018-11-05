@@ -15,13 +15,13 @@ export class CheckDisplayComponent extends Component{
 
 	render() {
     return(
-      <div className="container-fluid check-display">
-      	<input className="form-check-input" type="checkbox" checked={this.state.checked} onClick={this.handleClick}/>
-        <p className="form-check-label noselect"
+      <div className="row check-display">
+      	<div className="col-sm-3"><input className="form-check-input" type="checkbox" checked={this.state.checked} onClick={this.handleClick} readOnly/></div>
+        <div className="col-sm-9"><p className="form-check-label noselect"
         	onClick={this.handleClick}
         >
           {this.props.name}, {this.props.location}, {this.props.state}
-        </p>
+        </p></div>
         
       </div>
     );

@@ -30,8 +30,10 @@ html,body{
 }
 
 #ChecklistRow{
-  height: 30%;
-  overflow:auto;
+  height: 40%;
+  overflow-y:auto;
+  overflow-x:hidden;
+
 }
 
 #TrackerRow{

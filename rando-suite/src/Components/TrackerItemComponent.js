@@ -30,6 +30,7 @@ export class TrackerItemComponent extends Component{
 	    		className={"img-fluid " + (this.state.obtained > 0 ? "obtained" : "unobtained")}
 	    		src={require("../icons/" +  this.props.obtainable.code + (this.state.secondary > 0 ? "_secondary" : "") + ".png")}
 	    		onClick={this.handleClick}
+	    		alt=""
 	    	/>
 	    </div>
 	   );

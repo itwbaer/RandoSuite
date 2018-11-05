@@ -4,7 +4,7 @@ export class MapComponent extends Component{
 
 	componentDidMount(){
       let canvas = document.getElementById('map-canvas');
-      let context = canvas.getContext('2d');
+      //let context = canvas.getContext('2d');
  			let background = document.getElementById('map-img');
 
       background.onload = function(){
@@ -20,7 +20,7 @@ export class MapComponent extends Component{
 	render() {
     return(
         <div className="map-container">
-	    		<img id="map-img" src={this.props.map} />
+	    		<img id="map-img" src={this.props.map} alt=""/>
 	    		<canvas id="map-canvas" />
 	      </div>
     );
