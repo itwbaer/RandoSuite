@@ -7,7 +7,6 @@ import {MapNavComponent} from './Components/MapNavComponent.js';
 import {ChecklistComponent} from './Components/ChecklistComponent.js';
 import {ObtainableTrackerComponent} from './Components/ObtainableTrackerComponent.js';
 
-import full from './maps/full-map.jpg';
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +17,7 @@ class App extends Component {
     util.checks = require('./util/checks.js');
     util.locations = require('./util/locations.js');
     util.obtainables = require('./util/obtainables.js');
+    util.maps = require('./util/maps.js');
     util.shared = require('./util/shared.js');
 
     let access = require("./data/Access.json");
@@ -52,8 +52,9 @@ class App extends Component {
 
     let filter = require("./data/Filter.json");
 
-    let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
 
+    let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
+    let maps = util.maps.loadMaps(filteredChecks);
     this.state = {util: util,
 
                   checks: checks,
@@ -72,7 +73,9 @@ class App extends Component {
                   statesMap: statesMap,
 
                   filter: filter,
-                  filteredChecks: filteredChecks
+                  filteredChecks: filteredChecks,
+
+                  maps: maps
                   };
  
   }
@@ -140,7 +143,7 @@ class App extends Component {
             <div className="row" id="MapRow">
 
                 <MapComponent 
-                  map={full}
+                  map={this.state.maps[0]}
                 />
 
             </div>

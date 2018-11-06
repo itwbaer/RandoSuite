@@ -1,0 +1,276 @@
+[
+	{
+		"id": 0,
+		"code": "map_full",
+		"extension": "jpg",
+		"location": 0,
+		"state": [0, 1]
+	},
+	{
+		"id": 1,
+		"code": "map_dampes_grave",
+		"extension": "jpg",
+		"location": 21,
+		"state": [1]
+	},
+	{
+		"id": 2,
+		"code": "map_death_mountain_crater",
+		"extension": "jpg",
+		"location": 8,
+		"state": [0, 1]
+	},
+	{
+		"id": 3,
+		"code": "map_deku_tree",
+		"extension": "jpg",
+		"location": 1,
+		"state": [0]
+	},
+	{
+		"id": 4,
+		"code": "map_desert_colossus",
+		"extension": "jpg",
+		"location": 26,
+		"state": [0, 1]
+	},
+	{
+		"id": 5,
+		"code": "map_dodongos",
+		"extension": "jpg",
+		"location": 6,
+		"state": [0, 1]
+	},
+	{
+		"id": 6,
+		"code": "map_fire_temple",
+		"extension": "jpg",
+		"location": 9,
+		"state": [1]
+	},
+	{
+		"id": 7,
+		"code": "map_forest_temple",
+		"extension": "jpg",
+		"location": 4,
+		"state": [1]
+	},
+	{
+		"id": 8,
+		"code": "map_fountain_adult",
+		"extension": "jpg",
+		"location": 12,
+		"state": [1]
+	},
+	{
+		"id": 9,
+		"code": "map_fountain_child",
+		"extension": "jpg",
+		"location": 12,
+		"state": [0]
+	},
+	{
+		"id": 10,
+		"code": "map_ganons_castle",
+		"extension": "jpg",
+		"location": 33,
+		"state": [1]
+	},
+	{
+		"id": 11,
+		"code": "map_ganons_trials",
+		"extension": "jpg",
+		"location": 34,
+		"state": [1]
+	},
+	{
+		"id": 12,
+		"code": "map_gerudo_valley",
+		"extension": "jpg",
+		"location": 22,
+		"state": [0, 1]
+	},
+	{
+		"id": 13,
+		"code": "map_gerudo_fortress",
+		"extension": "jpg",
+		"location": 23,
+		"state": [1]
+	},
+	{
+		"id": 14,
+		"code": "map_goron_city",
+		"extension": "jpg",
+		"location": 7,
+		"state": [0, 1]
+	},
+	{
+		"id": 15,
+		"code": "map_graveyard",
+		"extension": "jpg",
+		"location": 20,
+		"state": [0, 1]
+	},
+	{
+		"id": 16,
+		"code": "map_gtg",
+		"extension": "jpg",
+		"location": 24,
+		"state": [1]
+	},
+	{
+		"id": 17,
+		"code": "map_haunted_wasteland",
+		"extension": "jpg",
+		"location": 25,
+		"state": [0, 1]
+	},
+	{
+		"id": 18,
+		"code": "map_hylia_adult",
+		"extension": "jpg",
+		"location": 15,
+		"state": [1]
+	},
+	{
+		"id": 19,
+		"code": "map_hylia_child",
+		"extension": "jpg",
+		"location": 15,
+		"state": [0]
+	},
+	{
+		"id": 20,
+		"code": "map_hyrule_castle",
+		"extension": "jpg",
+		"location": 31,
+		"state": [0]
+	},
+	{
+		"id": 21,
+		"code": "map_hyrule_field",
+		"extension": "jpg",
+		"location": 28,
+		"state": [0, 1]
+	},
+	{
+		"id": 22,
+		"code": "map_ice_cavern",
+		"extension": "jpg",
+		"location": 14,
+		"state": [1]
+	},
+	{
+		"id": 23,
+		"code": "map_jabu",
+		"extension": "jpg",
+		"location": 13,
+		"state": [0]
+	},
+	{
+		"id": 24,
+		"code": "map_kakariko_adult",
+		"extension": "jpg",
+		"location": 17,
+		"state": [1]
+	},
+	{
+		"id": 25,
+		"code": "map_kakariko_child",
+		"extension": "jpg",
+		"location": 17,
+		"state": [0]
+	},
+	{
+		"id": 26,
+		"code": "map_kokiri_forest",
+		"extension": "jpg",
+		"location": 0,
+		"state": [0, 1]
+	},
+	{
+		"id": 27,
+		"code": "map_lon_lon_ranch",
+		"extension": "jpg",
+		"location": 29,
+		"state": [0, 1]
+	},
+	{
+		"id": 28,
+		"code": "map_lost_woods",
+		"extension": "jpg",
+		"location": 2,
+		"state": [0, 1]
+	},
+	{
+		"id": 29,
+		"code": "map_market_child",
+		"extension": "jpg",
+		"location": 30,
+		"state": [0]
+	},
+	{
+		"id": 30,
+		"code": "map_sacred_forest",
+		"extension": "jpg",
+		"location": 3,
+		"state": [0, 1]
+	},
+	{
+		"id": 31,
+		"code": "map_shadow_temple",
+		"extension": "jpg",
+		"location": 18,
+		"state": [1]
+	},
+	{
+		"id": 32,
+		"code": "map_spirit_temple",
+		"extension": "jpg",
+		"location": 27,
+		"state": [0, 1]
+	},
+	{
+		"id": 33,
+		"code": "map_temple_of_time",
+		"extension": "jpg",
+		"location": 35,
+		"state": [0, 1]
+	},
+	{
+		"id": 34,
+		"code": "map_water_temple",
+		"extension": "jpg",
+		"location": 16,
+		"state": [1]
+	},
+	{
+		"id": 35,
+		"code": "map_well",
+		"extension": "jpg",
+		"location": 19,
+		"state": [0]
+	},
+	{
+		"id": 36,
+		"code": "map_zoras_domain_adult",
+		"extension": "jpg",
+		"location": 11,
+		"state": [1]
+	},
+	{
+		"id": 37,
+		"code": "map_zoras_domain_child",
+		"extension": "jpg",
+		"location": 11,
+		"state": [0]
+	},
+	{
+		"id": 38,
+		"code": "map_zoras_river",
+		"extension": "jpg",
+		"location": 10,
+		"state": [0, 1]
+	}
+
+]
