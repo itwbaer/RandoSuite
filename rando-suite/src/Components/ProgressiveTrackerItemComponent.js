@@ -12,7 +12,7 @@ export class ProgressiveTrackerItemComponent extends Component{
 
 	  	let index = {index: (this.state.index + 1)};
 	  	this.setState(index);
-  		console.log(index);
+  		
   }
 
 	render() {

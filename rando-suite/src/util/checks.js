@@ -3,6 +3,7 @@ util.obtainables = require('./obtainables.js');
 util.locations = require('./locations.js');
 
 module.exports = {
+	//filters a given set of checks based on certain critera
 	applyFilter: function(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap){
 		let filteredChecks = [];
 
@@ -21,10 +22,6 @@ module.exports = {
 				canCheck.push(filter.accessible.includes(this.canCheck(currentState, check, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap)))
 				inState.push(filter.state.includes(currentState));
 			}
-/*			console.log(inLocation);
-			console.log(inState);
-			console.log(hasChecked);
-			console.log(canCheck);*/
 
 			if(inLocation && hasChecked && inState.includes(true) && canCheck.includes(true)){filteredChecks.push(check);}
 		}
@@ -32,8 +29,20 @@ module.exports = {
 		return filteredChecks;
 	},
 
+	//returns an array of the locations contained in these checks
+	getLocations: function(checks){
+		let locations = [];
+		for(let i = 0; i < checks.length; i++){
+			let current = checks[i];
+			if(!locations.includes(current.location)){locations.push(current.location)}
+		}
+
+		return locations;
+	},
+
+	//determines if a given check is able to be checked
 	canCheck: function(state, check, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap){
-		
+		//console.log(check);
 		//first check if allowed in state
 		if(!check.state.includes(state)){
 			return false;

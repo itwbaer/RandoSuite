@@ -37,3 +37,10 @@ Next things:
 tie data better
 make checks look nicer
 map nav
+
+
+to be usable:
+>user ability to filter
+>progression tracking items
+>map nav and big map
+>make sure checks and items are linked

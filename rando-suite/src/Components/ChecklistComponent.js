@@ -20,10 +20,12 @@ export class ChecklistComponent extends Component{
 
       checks.push(
         <CheckDisplayComponent
-          key={currentCheck.id} 
+          key={"check-" + currentCheck.id} 
           name={checkName}
           location={checkLocation}
           state={checkState}
+          checked={currentCheck.checked}
+          onClick={() => this.props.onClick(currentCheck.id)}
         />
       );
     }

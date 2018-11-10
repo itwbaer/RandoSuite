@@ -52,9 +52,9 @@ class App extends Component {
 
     let filter = require("./data/Filter.json");
 
-
+    let maps = require("./data/Maps.json");
     let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
-    let maps = util.maps.loadMaps(filteredChecks);
+    let filteredMaps = util.maps.filterMaps(filteredChecks, maps);
     this.state = {util: util,
 
                   checks: checks,
@@ -75,7 +75,9 @@ class App extends Component {
                   filter: filter,
                   filteredChecks: filteredChecks,
 
-                  maps: maps
+                  activeMap: 0,
+                  maps: maps,
+                  filteredMaps: filteredMaps
                   };
  
   }
@@ -92,16 +94,37 @@ class App extends Component {
   }
 
   handleClickObtainable(id, ctrl){
+    const obtainables = cloneDeep(this.state.obtainables);
     if(!ctrl){
-      const obtainables = cloneDeep(this.state.obtainables);
-
+      
       obtainables[id].obtained = -obtainables[id].obtained;
 
-      this.setState(obtainables);
+      this.setState({obtainables: obtainables});
     }
     else{
 
     }
+
+    this.runFilter(obtainables);
+  }
+
+  handleClickCheck(id){
+    const checks = cloneDeep(this.state.checks);
+    checks[id].checked = -checks[id].checked;
+    this.setState({checks: checks});
+    
+  }
+
+  handleClickMap(id){
+    this.setState({activeMap: id});
+  }
+
+  runFilter(obtainables){
+    let filteredChecks = this.state.util.checks.applyFilter(this.state.filter, 
+      this.state.checks, this.state.locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
+    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps);
+    this.setState({filteredChecks: filteredChecks,
+                    filteredMaps: filteredMaps});
   }
 
 
@@ -118,13 +141,14 @@ class App extends Component {
                   locationsMap={this.state.locationsMap}
                   states={this.state.states}
                   filteredChecks={this.state.filteredChecks}
+                  onClick={(id) => this.handleClickCheck(id)}
                 />
 
             </div>
             <div className="row" id="TrackerRow">
 
                 <ObtainableTrackerComponent 
-                  onClick={(id, ctlr) => this.handleClickObtainable(id, ctlr)}
+                  onClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   obtainables={this.state.obtainables}
                   obtainablesMap={this.state.obtainablesMap}
                   progressives={this.state.progressives}
@@ -137,13 +161,18 @@ class App extends Component {
           <div className="grid-half col-8">
             <div className="row" id="MapNavRow">
  
-                <MapNavComponent />
+                <MapNavComponent
+                  onClick={(id) => this.handleClickMap(id)} 
+                  maps={this.state.filteredMaps}
+                  util={this.state.util}
+                />
 
             </div>
             <div className="row" id="MapRow">
 
                 <MapComponent 
-                  map={this.state.maps[0]}
+                  map={this.state.maps[this.state.activeMap]}
+                  util={this.state.util}
                 />
 
             </div>

@@ -1995,7 +1995,7 @@
 		"state" : [0, 1],
 		"location" : 10,
 		"required": [{
-									"obtainables": [["song_storms"]],
+									"obtainables": [["song_storm"]],
 									"checks" : null
 								}],
 		"checked" : -1

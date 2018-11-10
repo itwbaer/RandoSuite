@@ -42,7 +42,33 @@ html,body{
 
 #MapNavRow{
   height: 20%;
+  white-space: nowrap;
 }
+
+#MapNavRow .img-fluid{
+  height: 80%;
+
+}
+
+#MapNavRow .container-fluid{
+  height: 100%;
+  display: inline-block;
+  width: auto;
+}
+
+#MapNavRow .container-fluid > img,span{
+
+  display: inline;
+
+}
+
+#MapNavRow .row{
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+
 
 #MapRow{
   height: 80%;

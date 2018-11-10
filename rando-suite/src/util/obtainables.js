@@ -2,7 +2,7 @@ module.exports = {
 	canUse: function(state, obtainable, obtainables){
 
 		let isUseable = function(state, obtainable, obtainables){
-
+				//console.log(obtainable)
 				//check if in right state
 				if(!obtainable.state.includes(state)){return false}
 
