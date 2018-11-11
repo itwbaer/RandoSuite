@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {CheckDisplayComponent} from './CheckDisplayComponent';
-import Select from 'react-select';
-import makeAnimated from 'react-select/lib/animated';
+import {FilterSelectComponent} from './FilterSelectComponent';
+import {LoadAreaComponent} from './LoadAreaComponent';
 
 export class ChecklistComponent extends Component{
 
@@ -19,7 +19,7 @@ export class ChecklistComponent extends Component{
         if(j === 0){checkState = checkState + this.props.states[currentState].name}
         else{checkState = checkState + "/" + this.props.states[currentState].name}
       }
-
+      let area = "checks";
       checks.push(
         <CheckDisplayComponent
           key={"check-" + currentCheck.id} 
@@ -27,7 +27,7 @@ export class ChecklistComponent extends Component{
           location={checkLocation}
           state={checkState}
           checked={currentCheck.checked}
-          onClick={() => this.props.onClick(currentCheck.id)}
+          onClick={() => this.props.onClick(area, currentCheck.id)}
         />
       );
     }
@@ -40,16 +40,15 @@ export class ChecklistComponent extends Component{
   filterState(){
     let options = this.props.util.shared.getOptions(this.props.states);
     let defaultValues = this.props.util.shared.getDefaultOptions(this.props.states, this.props.filter.state);
+    let key = "state";
+    let placeholder = "State"
     return(
-      <Select
-        key={"state"}
-        className="filterOption"
-        closeMenuOnSelect={false}
-        components={makeAnimated()}
-        isMulti
-        placeholder="State"
+      <FilterSelectComponent
+        key={key}
+        placeholder={placeholder}
         defaultValue={defaultValues}
         options={options}
+        onChange={(data) => this.props.onChange(key, data)}
       />
     );
   }
@@ -60,16 +59,15 @@ export class ChecklistComponent extends Component{
       { value: false, label: 'Not Accessible' },
     ];
     let defaultValues = this.props.util.shared.getDefaultOptionsStatic(options, this.props.filter.accessible);
+    let key = "accessible";
+    let placeholder = "Accessible?"
     return(
-      <Select
-        key={"accessible"}
-        className="filterOption"
-        closeMenuOnSelect={false}
-        components={makeAnimated()}
-        isMulti
-        placeholder="Accessible?"
+      <FilterSelectComponent
+        key={key}
+        placeholder={placeholder}
         defaultValue={defaultValues}
         options={options}
+        onChange={(data) => this.props.onChange(key, data)}
       />
     );
   }
@@ -80,33 +78,32 @@ export class ChecklistComponent extends Component{
       { value: 1, label: 'Checked' },
     ];
     let defaultValues = this.props.util.shared.getDefaultOptionsStatic(options, this.props.filter.checked);
+    let key = "checked";
+    let placeholder = "Checked?"
     return(
-      <Select
-        key={"checked"}
-        className="filterOption"
-        closeMenuOnSelect={false}
-        components={makeAnimated()}
-        isMulti
-        placeholder="Checked?"
+      <FilterSelectComponent
+        key={key}
+        placeholder={placeholder}
         defaultValue={defaultValues}
         options={options}
+        onChange={(data) => this.props.onChange(key, data)}
       />
     );
   }
 
+
   filterLocations(){
     let options = this.props.util.shared.getOptions(this.props.locations);
     let defaultValues = this.props.util.shared.getDefaultOptions(this.props.locations, this.props.filter.location);
+    let key = "location";
+    let placeholder = "Locations"
     return(
-      <Select
-        key={"locations"}
-        className="filterOption"
-        closeMenuOnSelect={false}
-        components={makeAnimated()}
-        isMulti
-        placeholder="Locations"
+      <FilterSelectComponent
+        key={key}
+        placeholder={placeholder}
         defaultValue={defaultValues}
         options={options}
+        onChange={(data) => this.props.onChange(key, data)}
       />
     );
   }
@@ -122,8 +119,18 @@ export class ChecklistComponent extends Component{
 
   displaySave(){
     return(
-      <p>{this.props.util.shared.saveFile(this.props.obtainables, this.props.checks, this.props.filter)}</p>
+      <textarea class="form-control" key="save-box" rows="5">{this.props.util.shared.saveFile(this.props.obtainables, this.props.checks, this.props.filter, this.props.progressives)}</textarea>
     );
+  }
+
+  displayLoad(){
+    let area = "load";
+    return(
+      <LoadAreaComponent
+        onClick={(data) => this.props.onClick(area, 0, data)}
+      />
+    );
+   
   }
 
   getDisplay(){
@@ -134,6 +141,8 @@ export class ChecklistComponent extends Component{
                 return this.displayFilter();
               case 3:
                 return this.displaySave();
+              case 4:
+                return this.displayLoad();
               default:
                   return this.displayChecks();
     }

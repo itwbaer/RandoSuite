@@ -11,10 +11,12 @@ export class ObtainableTrackerComponent extends Component{
         		obtainable={this.props.obtainables[this.props.obtainablesMap["item_slingshot"]]}
         		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_slingshot"], ctrl)}
         	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bracelet"]]}
-        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bracelet"], ctrl)}
-        	/>
+          <ProgressiveTrackerItemComponent
+            obtainables={this.props.obtainables}
+            obtainablesMap={this.props.obtainablesMap}
+            progressive={this.props.progressives[this.props.progressivesMap["progressive_item_strength"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_item_strength"], ctrl)}
+          />
         	<TrackerItemComponent
         		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bombs"]]}
         		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bombs"], ctrl)}
@@ -23,10 +25,12 @@ export class ObtainableTrackerComponent extends Component{
         		obtainable={this.props.obtainables[this.props.obtainablesMap["item_bombchus"]]}
         		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_bombchus"], ctrl)}
         	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_silver_scale"]]}
-        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_silver_scale"], ctrl)}
-        	/>
+          <ProgressiveTrackerItemComponent
+            obtainables={this.props.obtainables}
+            obtainablesMap={this.props.obtainablesMap}
+            progressive={this.props.progressives[this.props.progressivesMap["progressive_item_scale"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_item_scale"], ctrl)}
+          />
         	<TrackerItemComponent
         		obtainable={this.props.obtainables[this.props.obtainablesMap["item_boomerang"]]}
         		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_boomerang"], ctrl)}
@@ -41,9 +45,11 @@ export class ObtainableTrackerComponent extends Component{
         		obtainable={this.props.obtainables[this.props.obtainablesMap["item_hammer"]]}
         		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_hammer"], ctrl)}
         	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_hookshot"]]}
-        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_hookshot"], ctrl)}
+        	<ProgressiveTrackerItemComponent
+        		obtainables={this.props.obtainables}
+            obtainablesMap={this.props.obtainablesMap}
+            progressive={this.props.progressives[this.props.progressivesMap["progressive_item_hook"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_item_hook"], ctrl)}
         	/>
         	<TrackerItemComponent
         		obtainable={this.props.obtainables[this.props.obtainablesMap["item_mirror_shield"]]}
@@ -119,18 +125,24 @@ export class ObtainableTrackerComponent extends Component{
         		obtainable={this.props.obtainables[this.props.obtainablesMap["item_stone"]]}
         		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_stone"], ctrl)}
         	/>       	
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_keaton_mask"]]}
-        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_keaton_mask"], ctrl)}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_adult_wallet"]]}
-        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_adult_wallet"], ctrl)}
-        	/>
-        	<TrackerItemComponent
-        		obtainable={this.props.obtainables[this.props.obtainablesMap["item_skulls"]]}
-        		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["item_skulls"], ctrl)}
-        	/>
+          <ProgressiveTrackerItemComponent
+            obtainables={this.props.obtainables}
+            obtainablesMap={this.props.obtainablesMap}
+            progressive={this.props.progressives[this.props.progressivesMap["progressive_item_mask"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_item_mask"], ctrl)}
+          />
+          <ProgressiveTrackerItemComponent
+            obtainables={this.props.obtainables}
+            obtainablesMap={this.props.obtainablesMap}
+            progressive={this.props.progressives[this.props.progressivesMap["progressive_item_wallet"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_item_wallet"], ctrl)}
+          />
+          <ProgressiveTrackerItemComponent
+            obtainables={this.props.obtainables}
+            obtainablesMap={this.props.obtainablesMap}
+            progressive={this.props.progressives[this.props.progressivesMap["progressive_item_skulltua"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_item_skulltua"], ctrl)}
+          />
         	<TrackerItemComponent
         		obtainable={this.props.obtainables[this.props.obtainablesMap["song_scarecrow"]]}
         		onClick={(ctrl) => this.props.onClick(this.props.obtainablesMap["song_scarecrow"], ctrl)}
@@ -217,22 +229,28 @@ export class ObtainableTrackerComponent extends Component{
         </div>
         <div className="row">       
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_forest"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_forest"], ctrl)}
         	/>
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_fire"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_fire"], ctrl)}
         	/>
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_water"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_water"], ctrl)}
         	/>
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_spirit"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_spirit"], ctrl)}
         	/>
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_shadow"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_shadow"], ctrl)}
         	/>
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_light"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_light"], ctrl)}
         	/>
         	
         </div>
@@ -252,13 +270,16 @@ export class ObtainableTrackerComponent extends Component{
         </div> 
         <div className="row">       
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_deku"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_deku"], ctrl)}
         	/>
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_dodongo"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_dodongo"], ctrl)}
         	/>
         	<ProgressiveTrackerItemComponent
-        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon"]]}
+        		progressive={this.props.progressives[this.props.progressivesMap["progressive_dungeon_jabu"]]}
+            progressiveOnClick={(ctrl) => this.props.progressiveOnClick(this.props.progressivesMap["progressive_dungeon_jabu"], ctrl)}
         	/>
         	       	
         </div>

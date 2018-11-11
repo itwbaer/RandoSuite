@@ -1,12 +1,22 @@
 module.exports = {
 
-	saveFile: function(obtainables, checks, filter){
+	saveFile: function(obtainables, checks, filter, progressives){
 		let data = {};
 		data.obtainables = obtainables;
 		data.checks = checks;
 		data.filter = filter;
+		data.progressives = progressives;
 
 		return JSON.stringify(data);
+	},
+
+	optionsToFilter: function(options){
+		let filter = [];
+		for(let i = 0; i < options.length; i++){
+			filter.push(options[i].value);
+		}
+
+		return filter;
 	},
 
 	getOptions: function(obj){

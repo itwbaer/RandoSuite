@@ -3,14 +3,9 @@ import React, { Component } from 'react';
 export class TrackerItemComponent extends Component{
 
   handleClick = (event) => {
-  	if(!event.ctrlKey){
 
-	    this.props.onClick(event.button, event.ctrlKey);
-  	}
-  	else{
-  		
-  		this.props.onClick(event.button, event.ctrlKey);
-  	}
+	this.props.onClick(event.ctrlKey);
+
   }
 
 	render() {

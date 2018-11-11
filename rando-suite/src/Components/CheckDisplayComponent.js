@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export class CheckDisplayComponent extends Component{
 
   handleClick = (event) => {
-      console.log(this.props.checked)
+
 	  	this.props.onClick();
   }
 

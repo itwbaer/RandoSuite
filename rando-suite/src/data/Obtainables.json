@@ -385,8 +385,8 @@
 	},
 	{
 		"id" : 46,
-		"code" : "item_skulls",
-		"name" : "Skulltula",
+		"code" : "item_skulltula_ten",
+		"name" : "10 Skulltula",
 		"type" : 3,
 		"obtained" : -1,
         "state" : [0, 1]
@@ -487,5 +487,53 @@
         "type" : 3,
         "obtained" : -1,
         "state" : [1]
-    }
+    },
+    {
+        "id" : 59,
+        "code" : "item_skull_mask",
+        "name" : "Skull Mask",
+        "type" : 3,
+        "obtained" : -1,
+        "state" : [0]
+    },
+    {
+        "id" : 60,
+        "code" : "item_mask_truth",
+        "name" : "Mask of Truth",
+        "type" : 3,
+        "obtained" : -1,
+        "state" : [0]
+    },
+    {
+		"id" : 61,
+		"code" : "item_skulltula_twenty",
+		"name" : "10 Skulltula",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 62,
+		"code" : "item_skulltula_thirty",
+		"name" : "10 Skulltula",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 63,
+		"code" : "item_skulltula_fourty",
+		"name" : "10 Skulltula",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 64,
+		"code" : "item_skulltula_fifty",
+		"name" : "10 Skulltula",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	}
 ]

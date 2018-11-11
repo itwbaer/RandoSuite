@@ -22,5 +22,22 @@ module.exports = {
 		}
 
 		return isUseable(state, obtainable, obtainables);
+	},
+
+	progressiveObtain: function(progressive, obtainables, obtainablesMap){
+
+		//first assume all unobtained
+		for(let i = 0; i < progressive.options.length; i++){
+			let option = progressive.options[i];
+			obtainables[obtainablesMap[option]].obtained = -1;
+		}
+
+		//go through index and obtain all items along
+		for(let i = -1; i < progressive.index; i++){
+			let option = progressive.options[i+1];
+			obtainables[obtainablesMap[option]].obtained = 1;
+		}
+
+		return obtainables;
 	}
 }

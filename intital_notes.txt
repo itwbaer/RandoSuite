@@ -58,3 +58,13 @@ filter?
 filter does not get updated
 clicking does not update checks
 progression items not a thing yet
+
+
+11/10/18 night push
+in theory its playable
+things to improve on:
+	horizontal scroll for minimaps
+	quest item progressive
+	more/cleaner filter options
+	canvas on big map
+	flesh out the logic

@@ -1,10 +1,125 @@
 [
 	{
 		"id" : 0,
-		"code" : "progressive_dungeon",
+		"code" : "progressive_dungeon_forest",
 		"name" : "Dungeon Tracker",
 		"index" : 0,
+		"type" : "text",
 		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 1,
+		"code" : "progressive_dungeon_fire",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 2,
+		"code" : "progressive_dungeon_water",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 3,
+		"code" : "progressive_dungeon_spirit",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 4,
+		"code" : "progressive_dungeon_shadow",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 5,
+		"code" : "progressive_dungeon_light",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 6,
+		"code" : "progressive_dungeon_deku",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 7,
+		"code" : "progressive_dungeon_dodongo",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 8,
+		"code" : "progressive_dungeon_jabu",
+		"name" : "Dungeon Tracker",
+		"index" : 0,
+		"type" : "text",
+		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
+	},
+	{
+		"id" : 9,
+		"code" : "progressive_item_strength",
+		"name" : "Strength Upgrade",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_bracelet", "item_silvers", "item_golds"]
+	},
+	{
+		"id" : 10,
+		"code" : "progressive_item_scale",
+		"name" : "Scales",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_silver_scale", "item_gold_scale"]
+	},
+	{
+		"id" : 11,
+		"code" : "progressive_item_hook",
+		"name" : "Hookshot Upgrade",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_hookshot", "item_longshot"]
+	},
+	{
+		"id" : 12,
+		"code" : "progressive_item_mask",
+		"name" : "Masks",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_keaton_mask", "item_skull_mask", "item_mask_truth"]
+	},
+	{
+		"id" : 13,
+		"code" : "progressive_item_wallet",
+		"name" : "Wallet Upgrade",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_adult_wallet", "item_giants_wallet"]
+	},
+	{
+		"id" : 14,
+		"code" : "progressive_item_skulltua",
+		"name" : "Wallet Upgrade",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_skulltula_ten", "item_skulltula_twenty", "item_skulltula_thirty", "item_skulltula_fourty", "item_skulltula_fifty"]
 	}
+
+
 
 ]

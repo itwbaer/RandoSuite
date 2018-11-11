@@ -36,12 +36,7 @@ class App extends Component {
 
     let obtainables = require("./data/Obtainables.json");
     let obtainablesMap = this.mapCodeToID(obtainables);
-
-    //console.log(util.obtainables.canUse(0, obtainables[3] ,obtainables));
-    //console.log(util.locations.canAccess(0, locations[13], locations, obtainables, locationsMap, obtainablesMap));
-    //console.log(util.checks.canCheck(0, checks[1], locations, obtainables, checks, locationsMap, obtainablesMap, checksMap))
    
-
     let obtainableTypes = require("./data/ObtainableTypes.json");
     let obtainableTypesMap = this.mapCodeToID(obtainableTypes);    
 
@@ -97,20 +92,23 @@ class App extends Component {
   }
 
   loadFile(data){
+    data = JSON.parse(data);
     let obtainables = data.obtainables;
     let checks = data.checks;
     let filter = data.filter;
-
+    let progressives = data.progressives;
     let filteredChecks = this.state.util.checks.applyFilter(filter, checks, this.state.locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps);
 
     this.setState({obtainables: obtainables,
                     checks: checks,
                     filter: filter,
+                    progressives: progressives,
                     filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps
                   });
 
+    this.runFilter(filter, checks, this.state.locations, obtainables);
   }
 
   handleClickObtainable(id, ctrl){
@@ -122,18 +120,59 @@ class App extends Component {
       this.setState({obtainables: obtainables});
     }
     else{
+      obtainables[id].secondary = -obtainables[id].secondary;
 
+      this.setState({obtainables: obtainables});
     }
 
-    this.runFilterNewObtainables(obtainables);
+    this.runFilter(this.state.filter, this.state.checks, this.state.locations, obtainables);
+  }
+
+  handleClickProgressive(id, ctrl){
+    const progressives = cloneDeep(this.state.progressives);
+    let progressive = progressives[id];
+    let adj = 1 * ctrl;
+
+    let nextI = progressive.index + adj;
+
+    if(progressive.type === "text"){
+      if(nextI <= progressive.options.length - 1 && nextI >= 0){
+        progressive.index = nextI;
+      }
+      else if(nextI > progressive.options.length - 1){
+        progressive.index = 0;
+      }
+      else if(nextI < 0){
+        progressive.index = progressive.options.length - 1;
+      }
+    }
+
+    //if obtainable handle logic
+    if(progressive.type === "obtainable"){
+      if(nextI <= progressive.options.length - 1 && nextI >= -1){
+        progressive.index = nextI;
+      }
+      else if(nextI > progressive.options.length - 1){
+        progressive.index = -1;
+      }
+      else if(nextI < -1){
+        progressive.index = progressive.options.length - 1;
+      }
+
+      let obtainables = cloneDeep(this.state.obtainables);
+      obtainables = this.state.util.obtainables.progressiveObtain(progressive, obtainables, this.state.obtainablesMap);
+      this.runFilter(this.state.filter, this.state.checks, this.state.locations, obtainables);
+      this.setState({obtainables: obtainables});
+    }
+
+    this.setState({progressives: progressives});    
   }
 
 
-
-  handleClickChecklistNav(id){
+  handleClickChecklistNav(id, data){
     //bring back checks
     if(id === 0){
-      this.runFilter();
+      this.runFilter(this.state.filter, this.state.checks, this.state.locations, this.state.obtainables);
     }
 
     //undo last check
@@ -141,14 +180,9 @@ class App extends Component {
       this.undoLastCheck();
     }
 
-    //load
-    if(id === 4){
-      let data = require("./data/Load.json");
-      this.loadFile(data);
-    }
 
     //change display
-    if(id === 0 || id === 1 || id === 3){
+    if(id === 0 || id === 1 || id === 3 || id === 4){
       this.setState({checklistDisplay: id});
     }
 
@@ -162,25 +196,39 @@ class App extends Component {
       let click = checkHistory.pop();
       checks[click.id].checked = -click.check;
 
-      console.log(click);
-      console.log(checks);
       this.setState({checks: checks,
                       checkHistory: checkHistory
                     });
+      this.runFilter(this.state.filter, checks, this.state.locations, this.state.obtainables);
     }
     
   }
 
-  handleClickCheck(id){
-    const checks = cloneDeep(this.state.checks);
-    const checkHistory = cloneDeep(this.state.checkHistory);
-    checks[id].checked = -checks[id].checked;
-    checkHistory.push({"id": id, "check": checks[id].checked});
-    console.log(checks);
-    console.log(checkHistory)
-    this.setState({checks: checks,
-                    checkHistory: checkHistory
-                  });
+  handleFilterChange(key, data){
+    const filter = cloneDeep(this.state.filter);
+    filter[key] = this.state.util.shared.optionsToFilter(data);
+    this.setState({filter: filter});
+    this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
+  }
+
+  handleClickCheckList(area, id, data){
+
+    switch(area){
+      case "checks":
+        const checks = cloneDeep(this.state.checks);
+        const checkHistory = cloneDeep(this.state.checkHistory);
+        checks[id].checked = -checks[id].checked;
+        checkHistory.push({"id": id, "check": checks[id].checked});
+        this.setState({checks: checks,
+                        checkHistory: checkHistory
+                      });
+
+        this.runFilter(this.state.filter, checks, this.state.locations, this.state.obtainables);
+        break;
+      case "load":
+        this.loadFile(data);
+        break;
+    }
     
   }
 
@@ -188,17 +236,8 @@ class App extends Component {
     this.setState({activeMap: id});
   }
 
-  runFilter(){
-    let filteredChecks = this.state.util.checks.applyFilter(this.state.filter, 
-      this.state.checks, this.state.locations, this.state.obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps);
-    this.setState({filteredChecks: filteredChecks,
-                    filteredMaps: filteredMaps});
-  }
-
-  runFilterNewObtainables(obtainables){
-    let filteredChecks = this.state.util.checks.applyFilter(this.state.filter, 
-      this.state.checks, this.state.locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
+  runFilter(filter, checks, locations, obtainables){
+    let filteredChecks = this.state.util.checks.applyFilter(filter, checks, locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps);
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
@@ -228,10 +267,12 @@ class App extends Component {
                   locationsMap={this.state.locationsMap}
                   states={this.state.states}
                   filteredChecks={this.state.filteredChecks}
-                  onClick={(id) => this.handleClickCheck(id)}
+                  onClick={(area, id, data) => this.handleClickCheckList(area, id, data)}
                   display={this.state.checklistDisplay}
                   util={this.state.util}
                   filter={this.state.filter}
+                  progressives={this.state.progressives}
+                  onChange={(key, data) => this.handleFilterChange(key, data)}
                 />
 
             </div>
@@ -243,7 +284,7 @@ class App extends Component {
                   obtainablesMap={this.state.obtainablesMap}
                   progressives={this.state.progressives}
                   progressivesMap={this.state.progressivesMap}
-                  
+                  progressiveOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
                 />
 
             </div>

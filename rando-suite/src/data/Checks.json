@@ -5,7 +5,7 @@
 		"name" : "",
 		"type" : 0,
 		"state" : [0],
-		"location" : 32,
+		"location" : 31,
 		"checked" : -1
 	},
 	{
@@ -2002,47 +2002,67 @@
 	},
 	{
 		"id" : 193,
-		"code" : "check_item_gifts_ten_skulls",
+		"code" : "check_item_gifts_ten_skulltula",
 		"name" : "",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
+		"required": [{
+									"obtainables": [["item_skulltula_ten"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 194,
-		"code" : "check_item_gifts_twenty_skulls",
+		"code" : "check_item_gifts_twenty_skulltula",
 		"name" : "",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
+		"required": [{
+									"obtainables": [["item_skulltula_twenty"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 195,
-		"code" : "check_item_gifts_thirty_skulls",
+		"code" : "check_item_gifts_thirty_skulltula",
 		"name" : "",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
+		"required": [{
+									"obtainables": [["item_skulltula_thirty"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 196,
-		"code" : "check_item_gifts_fourty_skulls",
+		"code" : "check_item_gifts_fourty_skulltula",
 		"name" : "",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
+		"required": [{
+									"obtainables": [["item_skulltula_fourty"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 197,
-		"code" : "check_item_gifts_fifty_skulls",
+		"code" : "check_item_gifts_fifty_skulltula",
 		"name" : "",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
+		"required": [{
+									"obtainables": [["item_skulltula_fifty"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
