@@ -3,6 +3,7 @@ util.obtainables = require('./obtainables.js');
 
 module.exports = {
 
+
 	linkAccess: function(locations, access){
 
 		//for each access, attach to location.access

@@ -26,11 +26,17 @@ html,body{
 }
 
 #ChecklistNavRow{
-  height: 10%;
+  height: 7%;
 }
 
+
+#ChecklistNavRow .button{
+  margin: 10px;
+}
+
+
 #ChecklistRow{
-  height: 40%;
+  height: 33%;
   overflow-y:auto;
   overflow-x:hidden;
 
@@ -127,4 +133,8 @@ html,body{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+.filterOption{
+  color: black;
 }

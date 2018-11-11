@@ -44,3 +44,17 @@ to be usable:
 >progression tracking items
 >map nav and big map
 >make sure checks and items are linked
+
+filtered checks dont get updated when main checks are
+
+
+save file will need:
+checks
+obtainables
+filter?
+
+
+11/10/18 push
+filter does not get updated
+clicking does not update checks
+progression items not a thing yet
