@@ -68,3 +68,35 @@ things to improve on:
 	more/cleaner filter options
 	canvas on big map
 	flesh out the logic
+	save/load options
+	make whole left side toggleable
+
+how to factor in states with checks
+hovers unlock a lot of thing
+	zora river hearts
+
+forest
+	bow
+		outside_hookshot(eye)?
+		floormaster
+		*push block target
+		*boss key
+		*red/blue poe
+		*boss
+		*rotating
+		*falling
+	song time?
+		map
+	key
+		block room
+		ice eye
+		bow area
+	hovers
+		floormaster
+		map
+	strength
+		anything after block room
+
+
+child spirit
+	slingshot or boomerang locked

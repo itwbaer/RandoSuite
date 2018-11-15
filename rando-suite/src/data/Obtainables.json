@@ -233,7 +233,7 @@
 		"name" : "Bomb Bag",
 		"type" : 3,
 		"obtained" : -1,
-		"state" : [0]
+		"state" : [0, 1]
 	},
 	{
 		"id" : 28,
@@ -454,6 +454,7 @@
 		"name" : "Lens of Truth",
 		"type" : 3,
 		"obtained" : -1,
+		"required_obtainables" : [42],
         "state" : [0, 1]
 	},
 	{

@@ -16,7 +16,7 @@ module.exports = {
 						usable = usable && isUseable(state, obtainables[o], obtainables);
 					}
 
-					return usable;
+					return usable && obtainable.obtained > 0;
 				}
 
 		}

@@ -1,5 +1,17 @@
 module.exports = {
 
+	copyKeys: function(keys, original, load){
+
+		for(let i = 0; i < original.length; i++){
+			for(let j = 0; j < keys.length; j++){
+				let key = keys[j];
+				original[i][key] = load[i][key];
+			}
+		}
+
+		return original;
+	},
+
 	saveFile: function(obtainables, checks, filter, progressives){
 		let data = {};
 		data.obtainables = obtainables;

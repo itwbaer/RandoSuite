@@ -65,7 +65,7 @@
 		"location" : 10,
 		"required" : [{
 			          		"location": null,
-					  				"obtainables": [["item_bombs"], ["item_silver_scale"], ["item_hammer"], ["item_silvers"]]
+					  				"obtainables": null
 					 			 }],
 		"state" : 1
 	},

@@ -93,17 +93,22 @@ class App extends Component {
 
   loadFile(data){
     data = JSON.parse(data);
-    let obtainables = data.obtainables;
-    let checks = data.checks;
+    //only extracting clicked/obtained/index
+    const obtainables = cloneDeep(this.state.obtainables);
+    const checks = cloneDeep(this.state.checks);
+    const progressives = cloneDeep(this.state.progressives);
+    let loadObtainables = this.state.util.shared.copyKeys(["obtained", "secondary"], obtainables, data.obtainables);
+    let loadChecks = this.state.util.shared.copyKeys(["checked"], checks, data.checks);
+    let loadProgressives = this.state.util.shared.copyKeys(["index"], progressives, data.progressives);
+
     let filter = data.filter;
-    let progressives = data.progressives;
-    let filteredChecks = this.state.util.checks.applyFilter(filter, checks, this.state.locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
+    let filteredChecks = this.state.util.checks.applyFilter(filter, loadChecks, this.state.locations, loadObtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps);
 
-    this.setState({obtainables: obtainables,
-                    checks: checks,
+    this.setState({obtainables: loadObtainables,
+                    checks: loadChecks,
                     filter: filter,
-                    progressives: progressives,
+                    progressives: loadProgressives,
                     filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps
                   });
