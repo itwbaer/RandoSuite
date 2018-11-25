@@ -17,6 +17,10 @@ html,body{
   padding-left: 0px;
 }
 
+.space{
+  width: 5px;
+}
+
 #PrimaryRow{
   height: 100%;
 }
@@ -25,15 +29,16 @@ html,body{
   height: 100%;
 }
 
-#ChecklistNavRow{
-  height: 7%;
+#OptionsRow{
+  height: 10%;
 }
 
 
-#ChecklistNavRow .button{
-  margin: 10px;
+#ViewRow{
+  height: 90%;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
-
 
 #ChecklistRow{
   height: 33%;

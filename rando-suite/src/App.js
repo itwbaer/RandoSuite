@@ -4,14 +4,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {MapComponent} from './Components/MapComponent.js';
 import {MapNavComponent} from './Components/MapNavComponent.js';
-import {ChecklistNavComponent} from './Components/ChecklistNavComponent.js';
-import {ChecklistComponent} from './Components/ChecklistComponent.js';
-import {ObtainableTrackerComponent} from './Components/ObtainableTrackerComponent.js';
+import {OptionsComponent} from './Components/OptionsComponent.js';
+import {ActiveViewComponent} from './Components/ActiveViewComponent.js';
 
+import PopoutWindow from 'react-popout';
 
 class App extends Component {
   constructor(props) {
     super(props);
+
+  /*  <Popout url='popout.html' title='Window title' onClosing={this.popupClosed}>
+  <div>Popped out content!</div>
+</Popout>*/
 
     const util =  {};
 
@@ -27,7 +31,8 @@ class App extends Component {
 
     util.locations.linkAccess(locations, access);
 
-
+    const views = {"tracker": 0, "checks": 1, "filter": 2, "save": 3, "load" : 4}
+    const centeredViews = [views.tracker, views.save, views.load];
     let checks = require("./data/Checks.json");
     let checksMap = this.mapCodeToID(checks);
 
@@ -53,6 +58,9 @@ class App extends Component {
     let filteredMaps = util.maps.filterMaps(filteredChecks, maps);
     this.state = {util: util,
 
+                  views: views,
+                  activeView: 0,
+                  centeredViews: centeredViews,
                   checks: checks,
                   checksMap: checksMap,
                   checkTypes: checkTypes,
@@ -75,7 +83,7 @@ class App extends Component {
                   maps: maps,
                   filteredMaps: filteredMaps,
                   checkHistory: [],
-                  checklistDisplay: 0,
+
                   };
  
   }
@@ -92,6 +100,10 @@ class App extends Component {
   }
 
   loadFile(data){
+    if(data === undefined || data === null || data === ""){
+      return;
+    }
+
     data = JSON.parse(data);
     //only extracting clicked/obtained/index
     const obtainables = cloneDeep(this.state.obtainables);
@@ -174,23 +186,15 @@ class App extends Component {
   }
 
 
-  handleClickChecklistNav(id, data){
-    //bring back checks
-    if(id === 0){
-      this.runFilter(this.state.filter, this.state.checks, this.state.locations, this.state.obtainables);
-    }
-
-    //undo last check
-    if(id === 2){
-      this.undoLastCheck();
-    }
-
+  handleClickOptions(id, data){
 
     //change display
-    if(id === 0 || id === 1 || id === 3 || id === 4){
-      this.setState({checklistDisplay: id});
-    }
+    this.setState({activeView: id});
 
+    //run the filter?
+    /*if(id === this.state.views.checks){
+      this.runFilter(this.state.filter, this.state.checks, this.state.locations, this.state.obtainables);
+    }*/
   }
 
   undoLastCheck(){
@@ -216,24 +220,20 @@ class App extends Component {
     this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
   }
 
-  handleClickCheckList(area, id, data){
+  handleClickCheckList(id, data){
 
-    switch(area){
-      case "checks":
-        const checks = cloneDeep(this.state.checks);
-        const checkHistory = cloneDeep(this.state.checkHistory);
-        checks[id].checked = -checks[id].checked;
-        checkHistory.push({"id": id, "check": checks[id].checked});
-        this.setState({checks: checks,
-                        checkHistory: checkHistory
-                      });
 
-        this.runFilter(this.state.filter, checks, this.state.locations, this.state.obtainables);
-        break;
-      case "load":
-        this.loadFile(data);
-        break;
-    }
+      const checks = cloneDeep(this.state.checks);
+      const checkHistory = cloneDeep(this.state.checkHistory);
+      checks[id].checked = -checks[id].checked;
+      checkHistory.push({"id": id, "check": checks[id].checked});
+      this.setState({checks: checks,
+                      checkHistory: checkHistory
+                    });
+
+      this.runFilter(this.state.filter, checks, this.state.locations, this.state.obtainables);
+
+    
     
   }
 
@@ -254,45 +254,40 @@ class App extends Component {
       <div className="App container-fluid">
         <div className="row" id="PrimaryRow">
           <div className="grid-half col-4">
-            <div className="row" id="ChecklistNavRow">
- 
-                <ChecklistNavComponent 
-                  onClick={(id) => this.handleClickChecklistNav(id)}
-                  display={this.state.checklistDisplay}
-
+            <div className="row" id="OptionsRow">
+              <div className="col align-self-center">
+                <OptionsComponent
+                  onClick={(id, data) => this.handleClickOptions(id, data)}
+                  views={this.state.views}
                 />
-
+              </div>
             </div>
-            <div className="row" id="ChecklistRow">
- 
-                <ChecklistComponent 
+            <div className="row" id="ViewRow">
+              <div className={"col" + (this.state.centeredViews.includes(this.state.activeView) ? " align-self-center" : "")}>
+                <ActiveViewComponent
+                  views={this.state.views}
+                  activeView={this.state.activeView}
+                  states={this.state.states}
                   checks={this.state.checks}
-                  obtainables={this.state.obtainables}
                   locations={this.state.locations}
                   locationsMap={this.state.locationsMap}
                   states={this.state.states}
                   filteredChecks={this.state.filteredChecks}
-                  onClick={(area, id, data) => this.handleClickCheckList(area, id, data)}
-                  display={this.state.checklistDisplay}
                   util={this.state.util}
                   filter={this.state.filter}
-                  progressives={this.state.progressives}
-                  onChange={(key, data) => this.handleFilterChange(key, data)}
-                />
-
-            </div>
-            <div className="row" id="TrackerRow">
-
-                <ObtainableTrackerComponent 
-                  onClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   obtainables={this.state.obtainables}
                   obtainablesMap={this.state.obtainablesMap}
                   progressives={this.state.progressives}
                   progressivesMap={this.state.progressivesMap}
-                  progressiveOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
+                  obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
+                  progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
+                  loadOnClick={(data) => this.loadFile(data)}
+                  checklistOnClick={(id, data) => this.handleClickCheckList(id, data)}
+                  filterOnChange={(key, data) => this.handleFilterChange(key, data)}
                 />
-
+              </div>
             </div>
+
           </div>
           <div className="grid-half col-8">
             <div className="row" id="MapNavRow">

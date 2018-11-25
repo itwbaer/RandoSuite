@@ -4,7 +4,7 @@ export class TrackerItemComponent extends Component{
 
   handleClick = (event) => {
 
-	this.props.onClick(event.ctrlKey);
+	this.props.obtainablesOnClick(event.ctrlKey);
 
   }
 
@@ -13,7 +13,7 @@ export class TrackerItemComponent extends Component{
 			<div className="col">
 	    	<img 
 	    		className={"img-fluid " + (this.props.obtainable.obtained > 0 ? "obtained" : "unobtained")}
-	    		src={require("../icons/" +  this.props.obtainable.code + (this.props.obtainable.secondary > 0 ? "_secondary" : "") + ".png")}
+	    		src={require("../../icons/" +  this.props.obtainable.code + (this.props.obtainable.secondary > 0 ? "_secondary" : "") + ".png")}
 	    		onClick={this.handleClick}
 	    		alt=""
 	    	/>

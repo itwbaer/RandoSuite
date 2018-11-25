@@ -6,11 +6,11 @@ export class ProgressiveTrackerItemComponent extends Component{
   handleClick = (event) => {
   	if(!event.ctrlKey){
 
-	    this.props.progressiveOnClick(1);
+	    this.props.progressivesOnClick(1);
   	}
   	else{
   		
-  		this.props.progressiveOnClick(-1);
+  		this.props.progressivesOnClick(-1);
   	}
 		
   }
@@ -40,7 +40,7 @@ export class ProgressiveTrackerItemComponent extends Component{
   			return(
 		    	<img 
 		    		className={"img-fluid " + (obtainable.obtained > 0 ? "obtained" : "unobtained")}
-		    		src={require("../icons/" +  obtainable.code + ".png")}
+		    		src={require("../../icons/" +  obtainable.code + ".png")}
 		    		onClick={this.handleClick}
 		    		alt=""
 		    	/>
