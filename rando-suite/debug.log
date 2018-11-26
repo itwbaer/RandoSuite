@@ -5,3 +5,4 @@
 [1025/192829.146:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name ptype, discarding value renderer
 [1028/195209.004:ERROR:autoupdatechecker.cc(143)] Unable to prepare update checker runtime.
 [1114/191933.594:ERROR:autoupdatechecker.cc(143)] Unable to prepare update checker runtime.
+[1124/214010.324:ERROR:autoupdatechecker.cc(143)] Unable to prepare update checker runtime.

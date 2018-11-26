@@ -5,7 +5,7 @@ export class TrackerItemComponent extends Component{
   handleClick = (event) => {
 
 	this.props.obtainablesOnClick(event.ctrlKey);
-
+	console.log("click")
   }
 
 	render() {

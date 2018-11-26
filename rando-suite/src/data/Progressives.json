@@ -114,10 +114,18 @@
 	{
 		"id" : 14,
 		"code" : "progressive_item_skulltua",
-		"name" : "Wallet Upgrade",
+		"name" : "Skulltulas",
 		"index" : -1,
 		"type" : "obtainable",
 		"options": ["item_skulltula_ten", "item_skulltula_twenty", "item_skulltula_thirty", "item_skulltula_fourty", "item_skulltula_fifty"]
+	},
+	{
+		"id" : 15,
+		"code" : "progressive_item_bottle",
+		"name" : "Bottles",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_bottle", "item_letter"]
 	}
 
 

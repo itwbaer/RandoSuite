@@ -7,15 +7,9 @@ import {MapNavComponent} from './Components/MapNavComponent.js';
 import {OptionsComponent} from './Components/OptionsComponent.js';
 import {ActiveViewComponent} from './Components/ActiveViewComponent.js';
 
-import PopoutWindow from 'react-popout';
-
 class App extends Component {
   constructor(props) {
     super(props);
-
-  /*  <Popout url='popout.html' title='Window title' onClosing={this.popupClosed}>
-  <div>Popped out content!</div>
-</Popout>*/
 
     const util =  {};
 
@@ -27,35 +21,36 @@ class App extends Component {
 
     let access = require("./data/Access.json");
     let locations = require("./data/Locations.json");
-    let locationsMap = this.mapCodeToID(locations);
+    let locationsMap = util.shared.mapCodeToID(locations);
 
     util.locations.linkAccess(locations, access);
 
     const views = {"tracker": 0, "checks": 1, "filter": 2, "save": 3, "load" : 4}
     const centeredViews = [views.tracker, views.save, views.load];
     let checks = require("./data/Checks.json");
-    let checksMap = this.mapCodeToID(checks);
+    let checksMap = util.shared.mapCodeToID(checks);
 
     let checkTypes = require("./data/CheckTypes.json");
-    let checkTypesMap = this.mapCodeToID(checkTypes);
+    let checkTypesMap = util.shared.mapCodeToID(checkTypes);
 
     let obtainables = require("./data/Obtainables.json");
-    let obtainablesMap = this.mapCodeToID(obtainables);
+    let obtainablesMap = util.shared.mapCodeToID(obtainables);
    
     let obtainableTypes = require("./data/ObtainableTypes.json");
-    let obtainableTypesMap = this.mapCodeToID(obtainableTypes);    
+    let obtainableTypesMap = util.shared.mapCodeToID(obtainableTypes);    
 
     let progressives = require("./data/Progressives.json");
-    let progressivesMap = this.mapCodeToID(progressives);
+    let progressivesMap = util.shared.mapCodeToID(progressives);
 
     let states = require("./data/States.json");
-    let statesMap = this.mapCodeToID(states);
+    let statesMap = util.shared.mapCodeToID(states);
 
     let filter = require("./data/Filter.json");
 
     let maps = require("./data/Maps.json");
     let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
     let filteredMaps = util.maps.filterMaps(filteredChecks, maps);
+
     this.state = {util: util,
 
                   views: views,
@@ -85,18 +80,6 @@ class App extends Component {
                   checkHistory: [],
 
                   };
- 
-  }
-
-
-  mapCodeToID(obj){
-    let codeMap = {} 
-    for(let i = 0; i < obj.length; i++){
-      let current = obj[i];
-      codeMap[current.code] = current.id;
-    }
-
-    return codeMap;
   }
 
   loadFile(data){
@@ -271,7 +254,6 @@ class App extends Component {
                   checks={this.state.checks}
                   locations={this.state.locations}
                   locationsMap={this.state.locationsMap}
-                  states={this.state.states}
                   filteredChecks={this.state.filteredChecks}
                   util={this.state.util}
                   filter={this.state.filter}

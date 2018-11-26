@@ -1,5 +1,15 @@
 module.exports = {
 
+	mapCodeToID(obj){
+		let codeMap = {} 
+	    for(let i = 0; i < obj.length; i++){
+	      let current = obj[i];
+	      codeMap[current.code] = current.id;
+	    }
+
+	    return codeMap;
+ 	},
+
 	copyKeys: function(keys, original, load){
 
 		for(let i = 0; i < original.length; i++){

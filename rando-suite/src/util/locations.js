@@ -3,6 +3,22 @@ util.obtainables = require('./obtainables.js');
 
 module.exports = {
 
+	sortLocations: function(locations, locationsMap){
+		let sortedLocations = [];
+
+		let locationKeys = Object.keys(locationsMap);
+		locationKeys = locationKeys.sort()
+
+		for(let i = 0; i < locationKeys.length; i++){
+			let key = locationKeys[i];
+			let index = locationsMap[key]
+			sortedLocations.push(locations[index]);
+		}
+
+
+		//sorted indexes
+		return sortedLocations;
+	},
 
 	linkAccess: function(locations, access){
 

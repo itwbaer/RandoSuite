@@ -2,7 +2,7 @@
 	{
 		"id" : 0,
 		"code" : "check_song_impa",
-		"name" : "",
+		"name" : "Zeldas Lullaby",
 		"type" : 0,
 		"state" : [0],
 		"location" : 31,
@@ -11,7 +11,7 @@
 	{
 		"id" : 1,
 		"code" : "check_song_malon",
-		"name" : "",
+		"name" : "Eponas Song",
 		"type" : 0,
 		"state" : [0],
 		"location" : 29,
@@ -24,7 +24,7 @@
 	{
 		"id" : 2,
 		"code" : "check_song_saria",
-		"name" : "",
+		"name" : "Sarias Song",
 		"type" : 0,
 		"state" : [0],
 		"location" : 3,
@@ -37,7 +37,7 @@
 	{
 		"id" : 3,
 		"code" : "check_song_royal_tomb",
-		"name" : "",
+		"name" : "Sun Song",
 		"type" : 0,
 		"state" : [0, 1],
 		"location" : 20,
@@ -50,7 +50,7 @@
 	{
 		"id" : 4,
 		"code" : "check_song_oot",
-		"name" : "",
+		"name" : "Ocarina of Time",
 		"type" : 0,
 		"state" : [0],
 		"location" : 28,
@@ -63,7 +63,7 @@
 	{
 		"id" : 5,
 		"code" : "check_song_windmill",
-		"name" : "",
+		"name" : "Song of Storms",
 		"type" : 0,
 		"state" : [1],
 		"location" : 17,
@@ -72,7 +72,7 @@
 	{
 		"id" : 6,
 		"code" : "check_song_forest",
-		"name" : "",
+		"name" : "Minute of Forest",
 		"type" : 0,
 		"state" : [1],
 		"location" : 3,
@@ -81,7 +81,7 @@
 	{
 		"id" : 7,
 		"code" : "check_song_crater",
-		"name" : "",
+		"name" : "Bolero of Fire",
 		"type" : 0,
 		"state" : [0, 1],
 		"location" : 8,
@@ -94,7 +94,7 @@
 	{
 		"id" : 8,
 		"code" : "check_song_ice_cavern",
-		"name" : "",
+		"name" : "Sernade of Water",
 		"type" : 0,
 		"state" : [1],
 		"location" : 14,
@@ -103,7 +103,7 @@
 	{
 		"id" : 9,
 		"code" : "check_song_kakariko",
-		"name" : "",
+		"name" : "Nocturne of Shadow",
 		"type" : 0,
 		"state" : [1],
 		"location" : 17,
@@ -116,7 +116,7 @@
 	{
 		"id" : 10,
 		"code" : "check_song_colossus",
-		"name" : "",
+		"name" : "Requiem of medallion_spirit",
 		"type" : 0,
 		"state" : [0, 1],
 		"location" : 26,
@@ -125,7 +125,7 @@
 	{
 		"id" : 11,
 		"code" : "check_song_temple",
-		"name" : "",
+		"name" : "Prelude of Light",
 		"type" : 0,
 		"state" : [1],
 		"location" : 35,
@@ -140,7 +140,7 @@
 	{
 		"id" : 12,
 		"code" : "check_item_duku_lobby",
-		"name" : "",
+		"name" : "Lobby Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 1,
@@ -149,7 +149,7 @@
 	{
 		"id" : 13,
 		"code" : "check_item_duku_slingshot",
-		"name" : "",
+		"name" : "Slingshot Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 1,
@@ -158,7 +158,7 @@
 	{
 		"id" : 14,
 		"code" : "check_item_duku_slingshot_vines",
-		"name" : "",
+		"name" : "Chest Above Slingshot",
 		"type" : 1,
 		"state" : [0],
 		"location" : 1,
@@ -167,7 +167,7 @@
 	{
 		"id" : 15,
 		"code" : "check_item_deku_compass",
-		"name" : "",
+		"name" : "Compass Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 1,
@@ -176,7 +176,7 @@
 	{
 		"id" : 16,
 		"code" : "check_item_deku_compass_vines",
-		"name" : "",
+		"name" : "Small Chest Near Compass",
 		"type" : 1,
 		"state" : [0],
 		"location" : 1,
@@ -185,7 +185,7 @@
 	{
 		"id" : 17,
 		"code" : "check_item_deku_basement",
-		"name" : "",
+		"name" : "Basement Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 1,
@@ -194,7 +194,7 @@
 	{
 		"id" : 18,
 		"code" : "check_item_deku_boss",
-		"name" : "",
+		"name" : "Ghoma Heartpiece",
 		"type" : 1,
 		"state" : [0],
 		"location" : 1,
@@ -207,7 +207,7 @@
 	{
 		"id" : 19,
 		"code" : "check_item_dodongo_lobby",
-		"name" : "",
+		"name" : "Chest in Lobby",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 6,
@@ -216,7 +216,7 @@
 	{
 		"id" : 20,
 		"code" : "check_item_dodongo_near_huge_stairs",
-		"name" : "",
+		"name" : "Chest in Room Near Stairs",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 6,
@@ -225,7 +225,7 @@
 	{
 		"id" : 21,
 		"code" : "check_item_dodongo_bomb_flower_platform",
-		"name" : "",
+		"name" : "Chest Before Bomb Bag",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 6,
@@ -238,7 +238,7 @@
 	{
 		"id" : 22,
 		"code" : "check_item_dodongo_bomb_bag",
-		"name" : "",
+		"name" : "Bomb Bag Chest",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 6,
@@ -251,7 +251,7 @@
 	{
 		"id" : 23,
 		"code" : "check_item_dodongo_end_of_bridge",
-		"name" : "",
+		"name" : "Chest at End of Bridge",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 6,
@@ -264,7 +264,7 @@
 	{
 		"id" : 24,
 		"code" : "check_item_dodongo_above_boss",
-		"name" : "",
+		"name" : "Chest Above Dodongo",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 6,
@@ -277,7 +277,7 @@
 	{
 		"id" : 25,
 		"code" : "check_item_dodongo_boss",
-		"name" : "",
+		"name" : "Dodongo Heartpiece",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 6,
@@ -290,7 +290,7 @@
 	{
 		"id" : 26,
 		"code" : "check_item_jabu_boomerang",
-		"name" : "",
+		"name" : "Boomerang Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 13,
@@ -299,7 +299,7 @@
 	{
 		"id" : 27,
 		"code" : "check_item_jabu_map",
-		"name" : "",
+		"name" : "Map Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 13,
@@ -312,7 +312,7 @@
 	{
 		"id" : 28,
 		"code" : "check_item_jabu_compass",
-		"name" : "",
+		"name" : "Compass Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 13,
@@ -325,7 +325,7 @@
 	{
 		"id" : 29,
 		"code" : "check_item_jabu_boss",
-		"name" : "",
+		"name" : "Barinade Heartpiece",
 		"type" : 1,
 		"state" : [0],
 		"location" : 13,
@@ -340,7 +340,7 @@
 	{
 		"id" : 30,
 		"code" : "check_item_temple_forest_first_room",
-		"name" : "",
+		"name" : "Chest in First Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -349,7 +349,7 @@
 	{
 		"id" : 31,
 		"code" : "check_item_temple_forest_behind_lobby",
-		"name" : "",
+		"name" : "Chest Room Behind Lobby",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -358,7 +358,7 @@
 	{
 		"id" : 32,
 		"code" : "check_item_temple_forest_inside_well",
-		"name" : "",
+		"name" : "Well Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -367,7 +367,7 @@
 	{
 		"id" : 33,
 		"code" : "check_item_temple_forest_map",
-		"name" : "",
+		"name" : "Forest Map Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -376,7 +376,7 @@
 	{
 		"id" : 34,
 		"code" : "check_item_temple_forest_outside_hookshot_check",
-		"name" : "",
+		"name" : "Outside Hookshot Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -385,7 +385,7 @@
 	{
 		"id" : 35,
 		"code" : "check_item_temple_forest_push_block_wall_target",
-		"name" : "",
+		"name" : "Block Area Target Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -398,7 +398,7 @@
 	{
 		"id" : 36,
 		"code" : "check_item_temple_forest_boss_key",
-		"name" : "",
+		"name" : "Boss Key Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -411,7 +411,7 @@
 	{
 		"id" : 37,
 		"code" : "check_item_temple_forest_floormaster",
-		"name" : "",
+		"name" : "Floormaster Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -420,7 +420,7 @@
 	{
 		"id" : 38,
 		"code" : "check_item_temple_forest_bow",
-		"name" : "",
+		"name" : "Bow Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -429,12 +429,10 @@
 	{
 		"id" : 39,
 		"code" : "check_item_temple_forest_red_poe",
-		"name" : "",
+		"name" : "Red Poe Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
-		"required_obtainables" : "35",
-		"required_checks" : "",
 		"required": [{
 									"obtainables": [["item_bow"]],
 									"checks" : null
@@ -444,7 +442,7 @@
 	{
 		"id" : 40,
 		"code" : "check_item_temple_forest_blue_poe",
-		"name" : "",
+		"name" : "Blue Poe Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -457,7 +455,7 @@
 	{
 		"id" : 41,
 		"code" : "check_item_temple_forest_falling_room",
-		"name" : "",
+		"name" : "Falling Ceiling Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -470,7 +468,7 @@
 	{
 		"id" : 42,
 		"code" : "check_item_temple_forest_rotating_room",
-		"name" : "",
+		"name" : "Rotating Room Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -483,7 +481,7 @@
 	{
 		"id" : 43,
 		"code" : "check_item_temple_forest_boss",
-		"name" : "",
+		"name" : "Phantom Ganon Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
@@ -496,7 +494,7 @@
 	{
 		"id" : 44,
 		"code" : "check_item_temple_fire_near_boss",
-		"name" : "",
+		"name" : "Chest Near Boss",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
@@ -577,7 +575,7 @@
 	{
 		"id" : 53,
 		"code" : "check_item_temple_fire_scarecrow_song",
-		"name" : "",
+		"name" : "Scarecrow Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
@@ -613,7 +611,7 @@
 	{
 		"id" : 57,
 		"code" : "check_item_temple_fire_hammer",
-		"name" : "",
+		"name" : "Hammer Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
@@ -622,7 +620,7 @@
 	{
 		"id" : 58,
 		"code" : "check_item_temple_fire_boss",
-		"name" : "",
+		"name" : "Volvagia Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
@@ -635,7 +633,7 @@
 	{
 		"id" : 59,
 		"code" : "check_item_ice_map",
-		"name" : "",
+		"name" : "Ice Cavern Map Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 14,
@@ -644,7 +642,7 @@
 	{
 		"id" : 60,
 		"code" : "check_item_ice_compass",
-		"name" : "",
+		"name" : "Ice Cavern Compass Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 14,
@@ -653,7 +651,7 @@
 	{
 		"id" : 61,
 		"code" : "check_item_ice_frozen_poh",
-		"name" : "",
+		"name" : "Frozen Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 14,
@@ -662,7 +660,7 @@
 	{
 		"id" : 62,
 		"code" : "check_item_ice_iron_boots",
-		"name" : "",
+		"name" : "Iron Boots Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 14,
@@ -671,7 +669,7 @@
 	{
 		"id" : 63,
 		"code" : "check_item_temple_water_map",
-		"name" : "",
+		"name" : "Water Map Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -680,7 +678,7 @@
 	{
 		"id" : 64,
 		"code" : "check_item_temple_water_compass",
-		"name" : "",
+		"name" : "Water Compass Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -715,7 +713,7 @@
 	{
 		"id" : 67,
 		"code" : "check_item_temple_water_central_bow_target",
-		"name" : "",
+		"name" : "River Bow Target",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -728,7 +726,7 @@
 	{
 		"id" : 68,
 		"code" : "check_item_temple_water_central_pillar",
-		"name" : "",
+		"name" : "Central Pillar Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -750,7 +748,7 @@
 	{
 		"id" : 70,
 		"code" : "check_item_temple_water_boss_key",
-		"name" : "",
+		"name" : "Water Boss Key",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -759,7 +757,7 @@
 	{
 		"id" : 71,
 		"code" : "check_item_temple_water_longshot",
-		"name" : "",
+		"name" : "Longshot Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -768,7 +766,7 @@
 	{
 		"id" : 72,
 		"code" : "check_item_temple_water_river",
-		"name" : "",
+		"name" : "River Dragon Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -777,7 +775,7 @@
 	{
 		"id" : 73,
 		"code" : "check_item_temple_water_boss",
-		"name" : "",
+		"name" : "Morpha Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -790,7 +788,7 @@
 	{
 		"id" : 74,
 		"code" : "check_item_well_front_left_hidden",
-		"name" : "",
+		"name" : "Left Hidden Room",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -799,7 +797,7 @@
 	{
 		"id" : 75,
 		"code" : "check_item_well_right_bottom_hidden",
-		"name" : "",
+		"name" : "Right Hidden Room",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -808,7 +806,7 @@
 	{
 		"id" : 76,
 		"code" : "check_item_well_front_center_bomb",
-		"name" : "",
+		"name" : "Front Bomb Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -821,7 +819,7 @@
 	{
 		"id" : 77,
 		"code" : "check_item_well_center_large_chest",
-		"name" : "",
+		"name" : "Center Large Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -830,7 +828,7 @@
 	{
 		"id" : 78,
 		"code" : "check_item_well_center_small_chest",
-		"name" : "",
+		"name" : "Center Small Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -839,7 +837,7 @@
 	{
 		"id" : 79,
 		"code" : "check_item_well_back_left_bomb",
-		"name" : "",
+		"name" : "Back Left Bomb Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -852,12 +850,12 @@
 	{
 		"id" : 80,
 		"code" : "check_item_well_basement",
-		"name" : "",
+		"name" : "Well Basement Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
 		"required": [{
-									"obtainables": [["item_bombs"]],
+									"obtainables": [["item_bombs"], ["item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -865,7 +863,7 @@
 	{
 		"id" : 81,
 		"code" : "check_item_well_casket_key",
-		"name" : "",
+		"name" : "Casket Key",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -874,7 +872,7 @@
 	{
 		"id" : 82,
 		"code" : "check_item_well_left_underwater",
-		"name" : "",
+		"name" : "Underwater Chest Left",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -887,7 +885,7 @@
 	{
 		"id" : 83,
 		"code" : "check_item_well_front_underwater",
-		"name" : "",
+		"name" : "Underwater Chest Front",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -900,7 +898,7 @@
 	{
 		"id" : 84,
 		"code" : "check_item_well_deadhand",
-		"name" : "",
+		"name" : "Lens of Truth Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -913,7 +911,7 @@
 	{
 		"id" : 85,
 		"code" : "check_item_well_deadhand_invisible",
-		"name" : "",
+		"name" : "Deadhand Invisible Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -926,7 +924,7 @@
 	{
 		"id" : 86,
 		"code" : "check_item_well_locked_pits",
-		"name" : "",
+		"name" : "Locked Pits Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -935,7 +933,7 @@
 	{
 		"id" : 87,
 		"code" : "check_item_well_beyond_locked_pits",
-		"name" : "",
+		"name" : "Room Beyond Pits",
 		"type" : 1,
 		"state" : [0],
 		"location" : 19,
@@ -944,7 +942,7 @@
 	{
 		"id" : 88,
 		"code" : "check_item_temple_shadow_map",
-		"name" : "",
+		"name" : "Shadow Map Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -953,7 +951,7 @@
 	{
 		"id" : 89,
 		"code" : "check_item_temple_shadow_hover_boots",
-		"name" : "",
+		"name" : "Hover Boots Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -962,7 +960,7 @@
 	{
 		"id" : 90,
 		"code" : "check_item_temple_shadow_compass",
-		"name" : "",
+		"name" : "Shadow Compass Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -1066,7 +1064,7 @@
 	{
 		"id" : 98,
 		"code" : "check_item_temple_shadow_skull_pot",
-		"name" : "",
+		"name" : "Skull Pot Key",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -1118,7 +1116,7 @@
 	{
 		"id" : 102,
 		"code" : "check_item_temple_shadow_invisible_floormaster",
-		"name" : "",
+		"name" : "Floormaster Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -1131,7 +1129,7 @@
 	{
 		"id" : 103,
 		"code" : "check_item_temple_shadow_boss_key_one",
-		"name" : "",
+		"name" : "Shadow Boss Key",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -1144,7 +1142,7 @@
 	{
 		"id" : 104,
 		"code" : "check_item_temple_shadow_boss_key_two",
-		"name" : "",
+		"name" : "Chest in Boss Key Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -1157,7 +1155,7 @@
 	{
 		"id" : 105,
 		"code" : "check_item_temple_shadow_boss",
-		"name" : "",
+		"name" : "Bongo Bongo Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
@@ -1170,7 +1168,7 @@
 	{
 		"id" : 106,
 		"code" : "check_item_temple_spirit_child_first_chest",
-		"name" : "",
+		"name" : "Child First Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 27,
@@ -1183,7 +1181,7 @@
 	{
 		"id" : 107,
 		"code" : "check_item_temple_spirit_child_second_chest",
-		"name" : "",
+		"name" : "Child Second Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 27,
@@ -1214,7 +1212,7 @@
 	{
 		"id" : 110,
 		"code" : "check_item_temple_spirit_statue_base",
-		"name" : "",
+		"name" : "Statue Base Torches",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 27,
@@ -1223,7 +1221,7 @@
 	{
 		"id" : 111,
 		"code" : "check_item_temple_spirit_statue_hands",
-		"name" : "",
+		"name" : "Statue Hands Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1241,7 +1239,7 @@
 	{
 		"id" : 113,
 		"code" : "check_item_temple_spirit_lullaby_chest",
-		"name" : "",
+		"name" : "Zelda Lullaby Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1250,7 +1248,7 @@
 	{
 		"id" : 114,
 		"code" : "check_item_temple_spirit_silver_rupees",
-		"name" : "",
+		"name" : "Silver Rupees",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1286,7 +1284,7 @@
 	{
 		"id" : 118,
 		"code" : "check_item_temple_spirit_silver_gauntlets",
-		"name" : "",
+		"name" : "Silver Gauntlets Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1295,7 +1293,7 @@
 	{
 		"id" : 119,
 		"code" : "check_item_temple_spirit_mirror_shield",
-		"name" : "",
+		"name" : "Mirror Shield Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1331,7 +1329,7 @@
 	{
 		"id" : 123,
 		"code" : "check_item_temple_spirit_boss_key",
-		"name" : "",
+		"name" : "Spirit Boss Key",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1349,12 +1347,12 @@
 	{
 		"id" : 125,
 		"code" : "check_item_temple_spirit_boss",
-		"name" : "",
+		"name" : "Twinrova Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
 		"required": [{
-									"obtainables": [["item_mirror_shield"]],
+									"obtainables": [["item_mirror_shield", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1362,7 +1360,7 @@
 	{
 		"id" : 126,
 		"code" : "check_item_ganons_water_trial_one",
-		"name" : "",
+		"name" : "Water Trial One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1371,7 +1369,7 @@
 	{
 		"id" : 127,
 		"code" : "check_item_ganons_water_trial_two",
-		"name" : "",
+		"name" : "Water Trial Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1380,7 +1378,7 @@
 	{
 		"id" : 128,
 		"code" : "check_item_ganons_shadow_trial",
-		"name" : "",
+		"name" : "Shadow Trial Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1389,7 +1387,7 @@
 	{
 		"id" : 129,
 		"code" : "check_item_ganons_gold_gauntlets",
-		"name" : "",
+		"name" : "Gold Gauntlets Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1398,7 +1396,7 @@
 	{
 		"id" : 130,
 		"code" : "check_item_ganons_spirit_trial_switch",
-		"name" : "",
+		"name" : "Spirit Trial Bombchu Switch",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1407,7 +1405,7 @@
 	{
 		"id" : 131,
 		"code" : "check_item_ganons_spirit_trial_invisible",
-		"name" : "",
+		"name" : "Spirit Trial Invisible",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1416,7 +1414,7 @@
 	{
 		"id" : 132,
 		"code" : "check_item_ganons_light_trial_first_room_one",
-		"name" : "",
+		"name" : "Light Trial First Room One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1429,7 +1427,7 @@
 	{
 		"id" : 133,
 		"code" : "check_item_ganons_light_trial_first_room_two",
-		"name" : "",
+		"name" : "Light Trial First Room Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1442,7 +1440,7 @@
 	{
 		"id" : 134,
 		"code" : "check_item_ganons_light_trial_first_room_three",
-		"name" : "",
+		"name" : "Light Trial First Room Three",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1455,7 +1453,7 @@
 	{
 		"id" : 135,
 		"code" : "check_item_ganons_light_trial_first_room_four",
-		"name" : "",
+		"name" : "Light Trial First Room Four",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1468,7 +1466,7 @@
 	{
 		"id" : 136,
 		"code" : "check_item_ganons_light_trial_first_room_five",
-		"name" : "",
+		"name" : "Light Trial First Room Five",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1481,7 +1479,7 @@
 	{
 		"id" : 137,
 		"code" : "check_item_ganons_light_trial_first_room_six",
-		"name" : "",
+		"name" : "Light Trial First Room Six",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1494,7 +1492,7 @@
 	{
 		"id" : 138,
 		"code" : "check_item_ganons_light_trial_first_room_seven",
-		"name" : "",
+		"name" : "Light Trial First Room Seven",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1507,7 +1505,7 @@
 	{
 		"id" : 139,
 		"code" : "check_item_ganons_light_trial_second_room",
-		"name" : "",
+		"name" : "Light Trial Second Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1520,7 +1518,7 @@
 	{
 		"id" : 140,
 		"code" : "check_item_ganons_boss_key",
-		"name" : "",
+		"name" : "Ganons Castle Boss Key",
 		"type" : 1,
 		"state" : [1],
 		"location" : 34,
@@ -1529,7 +1527,7 @@
 	{
 		"id" : 141,
 		"code" : "check_item_overworld_chest_mido_one",
-		"name" : "",
+		"name" : "Midos House One",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 0,
@@ -1538,7 +1536,7 @@
 	{
 		"id" : 142,
 		"code" : "check_item_overworld_chest_mido_two",
-		"name" : "",
+		"name" : "Midos House Two",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 0,
@@ -1547,7 +1545,7 @@
 	{
 		"id" : 143,
 		"code" : "check_item_overworld_chest_mido_three",
-		"name" : "",
+		"name" : "Midos House Three",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 0,
@@ -1556,7 +1554,7 @@
 	{
 		"id" : 144,
 		"code" : "check_item_overworld_chest_mido_four",
-		"name" : "",
+		"name" : "Midos House Four",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 0,
@@ -1565,7 +1563,7 @@
 	{
 		"id" : 145,
 		"code" : "check_item_overworld_chest_kokiri_sword",
-		"name" : "",
+		"name" : "Kokiri Sword Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 0,
@@ -1574,7 +1572,7 @@
 	{
 		"id" : 146,
 		"code" : "check_item_overworld_chest_shield_grave",
-		"name" : "",
+		"name" : "Shield Grave Chest",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 20,
@@ -1583,7 +1581,7 @@
 	{
 		"id" : 147,
 		"code" : "check_item_overworld_chest_grave_with_redead",
-		"name" : "",
+		"name" : "Redead Grave Chest",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 20,
@@ -1596,7 +1594,7 @@
 	{
 		"id" : 148,
 		"code" : "check_item_overworld_chest_royal_tomb_torches",
-		"name" : "",
+		"name" : "Royal Tomb Torches",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 20,
@@ -1609,7 +1607,7 @@
 	{
 		"id" : 149,
 		"code" : "check_item_overworld_chest_death_mountain_trail_bomb_wall",
-		"name" : "",
+		"name" : "Mountain Trail Bomb Wall",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 5,
@@ -1622,7 +1620,7 @@
 	{
 		"id" : 150,
 		"code" : "check_item_overworld_chest_goron_city_maze_bomb_one",
-		"name" : "",
+		"name" : "Right Side Goron Maze One",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 7,
@@ -1635,7 +1633,7 @@
 	{
 		"id" : 151,
 		"code" : "check_item_overworld_chest_goron_city_maze_bomb_two",
-		"name" : "",
+		"name" : "Right Side Goron Maze Two",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 7,
@@ -1648,7 +1646,7 @@
 	{
 		"id" : 152,
 		"code" : "check_item_overworld_chest_goron_city_maze_hammer",
-		"name" : "",
+		"name" : "Left Side Goron Maze",
 		"type" : 1,
 		"state" : [1],
 		"location" : 7,
@@ -1661,7 +1659,7 @@
 	{
 		"id" : 153,
 		"code" : "check_item_overworld_chest_zora_torches",
-		"name" : "",
+		"name" : "Zora Torches Chest",
 		"type" : 1,
 		"state" : [0],
 		"location" : 11,
@@ -1670,7 +1668,7 @@
 	{
 		"id" : 154,
 		"code" : "check_item_overworld_chest_hammer_rocks",
-		"name" : "",
+		"name" : "Hammer Rocks Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 22,
@@ -1683,7 +1681,7 @@
 	{
 		"id" : 155,
 		"code" : "check_item_overworld_chest_gerudo_roof",
-		"name" : "",
+		"name" : "Chest on Gerudo Roof",
 		"type" : 1,
 		"state" : [1],
 		"location" : 23,
@@ -1696,7 +1694,7 @@
 	{
 		"id" : 156,
 		"code" : "check_item_overworld_chest_haunted_wastedland_building",
-		"name" : "",
+		"name" : "Torch Chest Wasteland Building",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 25,
@@ -1709,7 +1707,7 @@
 	{
 		"id" : 157,
 		"code" : "check_item_gtg_lobby_one",
-		"name" : "",
+		"name" : "First Lobby Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1722,7 +1720,7 @@
 	{
 		"id" : 158,
 		"code" : "check_item_gtg_lobby_two",
-		"name" : "",
+		"name" : "Second Lobby Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1735,7 +1733,7 @@
 	{
 		"id" : 159,
 		"code" : "check_item_gtg_stalfos",
-		"name" : "",
+		"name" : "Stalfos Room Enemies",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1744,7 +1742,7 @@
 	{
 		"id" : 160,
 		"code" : "check_item_gtg_beamos",
-		"name" : "",
+		"name" : "Beamos Room Enemies",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1757,7 +1755,7 @@
 	{
 		"id" : 161,
 		"code" : "check_item_gtg_hidden_ceiling",
-		"name" : "",
+		"name" : "Hidden Ceiling Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1766,7 +1764,7 @@
 	{
 		"id" : 162,
 		"code" : "check_item_gtg_maze_first",
-		"name" : "",
+		"name" : "Maze First Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1775,7 +1773,7 @@
 	{
 		"id" : 163,
 		"code" : "check_item_gtg_maze_second",
-		"name" : "",
+		"name" : "Maze Second Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1784,7 +1782,7 @@
 	{
 		"id" : 164,
 		"code" : "check_item_gtg_maze_third",
-		"name" : "",
+		"name" : "Maze Third Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1793,7 +1791,7 @@
 	{
 		"id" : 165,
 		"code" : "check_item_gtg_maze_final",
-		"name" : "",
+		"name" : "Ice Arrows Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1820,7 +1818,7 @@
 	{
 		"id" : 168,
 		"code" : "check_item_gtg_ledge_freestanding",
-		"name" : "",
+		"name" : "Key on Ledge",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1829,7 +1827,7 @@
 	{
 		"id" : 169,
 		"code" : "check_item_gtg_toilet_bowl",
-		"name" : "",
+		"name" : "Toilet Bowl",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1842,7 +1840,7 @@
 	{
 		"id" : 170,
 		"code" : "check_item_gtg_hammer_switch",
-		"name" : "",
+		"name" : "Hammer Room Burning Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1851,7 +1849,7 @@
 	{
 		"id" : 171,
 		"code" : "check_item_gtg_hammer_enemies",
-		"name" : "",
+		"name" : "Hammer Room Enemies",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1860,7 +1858,7 @@
 	{
 		"id" : 172,
 		"code" : "check_item_gtg_eye_statue",
-		"name" : "",
+		"name" : "Eye Statue",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1882,7 +1880,7 @@
 	{
 		"id" : 174,
 		"code" : "check_item_gtg_near_heavy_block",
-		"name" : "",
+		"name" : "Wolfos Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1895,7 +1893,7 @@
 	{
 		"id" : 175,
 		"code" : "check_item_gtg_behind_heavy_block_one",
-		"name" : "",
+		"name" : "First Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1908,7 +1906,7 @@
 	{
 		"id" : 176,
 		"code" : "check_item_gtg_behind_heavy_block_two",
-		"name" : "",
+		"name" : "Second Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1921,7 +1919,7 @@
 	{
 		"id" : 177,
 		"code" : "check_item_gtg_behind_heavy_block_three",
-		"name" : "",
+		"name" : "Third Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1934,7 +1932,7 @@
 	{
 		"id" : 178,
 		"code" : "check_item_gtg_behind_heavy_block_four",
-		"name" : "",
+		"name" : "Fourth Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1947,7 +1945,7 @@
 	{
 		"id" : 179,
 		"code" : "check_item_gifts_richard",
-		"name" : "",
+		"name" : "Richard",
 		"type" : 1,
 		"state" : [0],
 		"location" : 30,
@@ -1956,7 +1954,7 @@
 	{
 		"id" : 180,
 		"code" : "check_item_gifts_rooftop",
-		"name" : "",
+		"name" : "Man on Rooftop",
 		"type" : 1,
 		"state" : [1],
 		"location" : 17,
@@ -1969,7 +1967,7 @@
 	{
 		"id" : 181,
 		"code" : "check_item_gifts_chickens",
-		"name" : "",
+		"name" : "Anjus Chickens",
 		"type" : 1,
 		"state" : [0],
 		"location" : 17,
@@ -1978,7 +1976,7 @@
 	{
 		"id" : 182,
 		"code" : "check_item_gifts_anju",
-		"name" : "",
+		"name" : "Anju",
 		"type" : 1,
 		"state" : [1],
 		"location" : 17,
@@ -1987,7 +1985,7 @@
 	{
 		"id" : 183,
 		"code" : "check_item_gifts_slingshot_target",
-		"name" : "",
+		"name" : "Slingshot Target",
 		"type" : 1,
 		"state" : [0],
 		"location" : 2,
@@ -2000,7 +1998,7 @@
 	{
 		"id" : 184,
 		"code" : "check_item_gifts_skull_kid_saria",
-		"name" : "",
+		"name" : "Skull Kid",
 		"type" : 1,
 		"state" : "",
 		"location" : 2,
@@ -2013,7 +2011,7 @@
 	{
 		"id" : 185,
 		"code" : "check_item_gifts_skull_mask",
-		"name" : "",
+		"name" : "Skull Mask",
 		"type" : 1,
 		"state" : [0],
 		"location" : 2,
@@ -2026,7 +2024,7 @@
 	{
 		"id" : 186,
 		"code" : "check_item_gifts_mask_of_truth",
-		"name" : "",
+		"name" : "Mask of Truth",
 		"type" : 1,
 		"state" : [0],
 		"location" : 2,
@@ -2039,7 +2037,7 @@
 	{
 		"id" : 187,
 		"code" : "check_item_gifts_diving_lab",
-		"name" : "",
+		"name" : "Diving Hylia Lab",
 		"type" : 1,
 		"state" : [1],
 		"location" : 15,
@@ -2052,7 +2050,7 @@
 	{
 		"id" : 188,
 		"code" : "check_item_gifts_small_goron_bomb",
-		"name" : "",
+		"name" : "Link the Goron",
 		"type" : 1,
 		"state" : [1],
 		"location" : 7,
@@ -2065,7 +2063,7 @@
 	{
 		"id" : 189,
 		"code" : "check_item_gifts_large_goron_bomb",
-		"name" : "",
+		"name" : "Large Rolling Goron",
 		"type" : 1,
 		"state" : [0],
 		"location" : 7,
@@ -2078,7 +2076,7 @@
 	{
 		"id" : 190,
 		"code" : "check_item_gifts_darunia",
-		"name" : "",
+		"name" : "Sarias Song Darunia",
 		"type" : 1,
 		"state" : [0],
 		"location" : 7,
@@ -2091,7 +2089,7 @@
 	{
 		"id" : 191,
 		"code" : "check_item_gifts_king_zora",
-		"name" : "",
+		"name" : "Unfreezing King Zora",
 		"type" : 1,
 		"state" : [1],
 		"location" : 11,
@@ -2104,7 +2102,7 @@
 	{
 		"id" : 192,
 		"code" : "check_item_gifts_frogs_sos",
-		"name" : "",
+		"name" : "Frogs Song of Storms",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 10,
@@ -2117,7 +2115,7 @@
 	{
 		"id" : 193,
 		"code" : "check_item_gifts_ten_skulltula",
-		"name" : "",
+		"name" : "Ten Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2130,7 +2128,7 @@
 	{
 		"id" : 194,
 		"code" : "check_item_gifts_twenty_skulltula",
-		"name" : "",
+		"name" : "Twenty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2143,7 +2141,7 @@
 	{
 		"id" : 195,
 		"code" : "check_item_gifts_thirty_skulltula",
-		"name" : "",
+		"name" : "Thirty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2156,7 +2154,7 @@
 	{
 		"id" : 196,
 		"code" : "check_item_gifts_fourty_skulltula",
-		"name" : "",
+		"name" : "Fourty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2169,7 +2167,7 @@
 	{
 		"id" : 197,
 		"code" : "check_item_gifts_fifty_skulltula",
-		"name" : "",
+		"name" : "Fifty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2182,7 +2180,7 @@
 	{
 		"id" : 198,
 		"code" : "check_item_gifts_big_poes",
-		"name" : "",
+		"name" : "Big Poes",
 		"type" : 1,
 		"state" : [1],
 		"location" : 28,
@@ -2195,7 +2193,7 @@
 	{
 		"id" : 199,
 		"code" : "check_item_gifts_biggoron",
-		"name" : "",
+		"name" : "Big Goron Sword",
 		"type" : 1,
 		"state" : [1],
 		"location" : 5,
@@ -2208,7 +2206,7 @@
 	{
 		"id" : 200,
 		"code" : "check_item_gifts_light_arrows",
-		"name" : "",
+		"name" : "Light Arrows",
 		"type" : 1,
 		"state" : [1],
 		"location" : 35,
@@ -2221,7 +2219,7 @@
 	{
 		"id" : 201,
 		"code" : "check_item_misc_lost_woods_salesman",
-		"name" : "",
+		"name" : "Lost Woods Deku Salesman",
 		"type" : 1,
 		"state" : "",
 		"location" : 2,
@@ -2230,7 +2228,7 @@
 	{
 		"id" : 202,
 		"code" : "check_item_misc_underwater_bottle",
-		"name" : "",
+		"name" : "Rutos Letter Bottle",
 		"type" : 1,
 		"state" : [0],
 		"location" : 15,
@@ -2243,7 +2241,7 @@
 	{
 		"id" : 203,
 		"code" : "check_item_misc_shoot_sun",
-		"name" : "",
+		"name" : "Shoot the Sun",
 		"type" : 1,
 		"state" : [1],
 		"location" : 15,
@@ -2256,7 +2254,7 @@
 	{
 		"id" : 204,
 		"code" : "check_item_fairy_hyrule_castle",
-		"name" : "",
+		"name" : "Hyrule Castle Fairy",
 		"type" : 1,
 		"state" : [0],
 		"location" : 31,
@@ -2269,7 +2267,7 @@
 	{
 		"id" : 205,
 		"code" : "check_item_fairy_zoras",
-		"name" : "",
+		"name" : "Fountain Fairy",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 12,
@@ -2282,7 +2280,7 @@
 	{
 		"id" : 206,
 		"code" : "check_item_fairy_desert",
-		"name" : "",
+		"name" : "Desert Fairy",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 26,
@@ -2295,7 +2293,7 @@
 	{
 		"id" : 207,
 		"code" : "check_item_fairy_mountain_summit",
-		"name" : "",
+		"name" : "Mountain Summit Fairy",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 5,
@@ -2308,7 +2306,7 @@
 	{
 		"id" : 208,
 		"code" : "check_item_fairy_mountain_crater",
-		"name" : "",
+		"name" : "Crater Fairy",
 		"type" : 1,
 		"state" : [1],
 		"location" : 8,
@@ -2321,7 +2319,7 @@
 	{
 		"id" : 209,
 		"code" : "check_item_fairy_ganons_castle",
-		"name" : "",
+		"name" : "Ganons Castle Fairy",
 		"type" : 1,
 		"state" : [1],
 		"location" : 33,
@@ -2334,7 +2332,7 @@
 	{
 		"id" : 210,
 		"code" : "check_item_grottos_kakariko_front_bomb",
-		"name" : "",
+		"name" : "Grotto Near Tree",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2347,7 +2345,7 @@
 	{
 		"id" : 211,
 		"code" : "check_item_grottos_kakariko_rear",
-		"name" : "",
+		"name" : "Grotto Behind Potion Shop",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2356,7 +2354,7 @@
 	{
 		"id" : 212,
 		"code" : "check_item_grottos_kokiri_sos",
-		"name" : "",
+		"name" : "Storms Grotto Before Lost Woods",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 0,
@@ -2369,7 +2367,7 @@
 	{
 		"id" : 213,
 		"code" : "check_item_grottos_lost_woods_goron",
-		"name" : "",
+		"name" : "Grotto Near Goron Passage",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 2,
@@ -2382,7 +2380,7 @@
 	{
 		"id" : 214,
 		"code" : "check_item_grottos_deku_salesman",
-		"name" : "",
+		"name" : "Deku Salesman Grotto",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 28,
@@ -2395,7 +2393,7 @@
 	{
 		"id" : 215,
 		"code" : "check_item_grottos_forest_meadow_bomb",
-		"name" : "",
+		"name" : "Grotto Forest Meadow Entrance",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 3,
@@ -2408,7 +2406,7 @@
 	{
 		"id" : 216,
 		"code" : "check_item_grottos_death_mountain_sos",
-		"name" : "",
+		"name" : "Storms Grotto Near Goron City",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 5,
@@ -2421,7 +2419,7 @@
 	{
 		"id" : 217,
 		"code" : "check_item_grottos_crater",
-		"name" : "",
+		"name" : "Crater Grotto",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 8,
@@ -2434,7 +2432,7 @@
 	{
 		"id" : 218,
 		"code" : "check_item_grottos_zoras_river",
-		"name" : "",
+		"name" : "Grotto Above River",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 10,
@@ -2443,7 +2441,7 @@
 	{
 		"id" : 219,
 		"code" : "check_item_grottos_field_near_lake",
-		"name" : "",
+		"name" : "Grotto Near Hylia",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 28,
@@ -2452,7 +2450,7 @@
 	{
 		"id" : 220,
 		"code" : "check_item_grottos_field_near_lake_bomb",
-		"name" : "",
+		"name" : "Deku Salesman Near Hylia",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 28,
@@ -2478,7 +2476,7 @@
 	{
 		"id" : 222,
 		"code" : "check_item_grottos_ssjboulda",
-		"name" : "",
+		"name" : "Grotto Near Drawbridge",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 28,
@@ -2491,7 +2489,7 @@
 	{
 		"id" : 223,
 		"code" : "check_item_grottos_field_tree_iron_boots",
-		"name" : "",
+		"name" : "Tektite Grotto",
 		"type" : 1,
 		"state" : [1],
 		"location" : 28,
@@ -2504,7 +2502,7 @@
 	{
 		"id" : 224,
 		"code" : "check_item_hearts_ranch",
-		"name" : "",
+		"name" : "Heartpiece in Barn",
 		"type" : 1,
 		"state" : [0],
 		"location" : 29,
@@ -2513,7 +2511,7 @@
 	{
 		"id" : 225,
 		"code" : "check_item_hearts_impas_house",
-		"name" : "",
+		"name" : "Heartpiece in Impas House",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 17,
@@ -2522,7 +2520,7 @@
 	{
 		"id" : 226,
 		"code" : "check_item_hearts_windmill",
-		"name" : "",
+		"name" : "Heartpiece in Windmill",
 		"type" : 1,
 		"state" : [1],
 		"location" : 17,
@@ -2535,7 +2533,7 @@
 	{
 		"id" : 227,
 		"code" : "check_item_hearts_graveyard_bean",
-		"name" : "",
+		"name" : "Graveyard Bean Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 20,
@@ -2544,7 +2542,7 @@
 	{
 		"id" : 228,
 		"code" : "check_item_hearts_dodongos",
-		"name" : "",
+		"name" : "Heartpiece Above Dodongos",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 5,
@@ -2553,7 +2551,7 @@
 	{
 		"id" : 229,
 		"code" : "check_item_hearts_goron_pot",
-		"name" : "",
+		"name" : "Spinning Pot Heartpiece",
 		"type" : 1,
 		"state" : [0],
 		"location" : 7,
@@ -2566,7 +2564,7 @@
 	{
 		"id" : 230,
 		"code" : "check_item_hearts_crater_wall",
-		"name" : "",
+		"name" : "Wall Heartpiece",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 8,
@@ -2575,7 +2573,7 @@
 	{
 		"id" : 231,
 		"code" : "check_item_hearts_crater_bean",
-		"name" : "",
+		"name" : "Crater Bean Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 8,
@@ -2588,7 +2586,7 @@
 	{
 		"id" : 232,
 		"code" : "check_item_hearts_zora_lower",
-		"name" : "",
+		"name" : "Heartpiece Lower River",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 10,
@@ -2597,7 +2595,7 @@
 	{
 		"id" : 233,
 		"code" : "check_item_hearts_zora_upper",
-		"name" : "",
+		"name" : "Heartpiece Upper River",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 10,
@@ -2606,7 +2604,7 @@
 	{
 		"id" : 234,
 		"code" : "check_item_hearts_hylia_roof",
-		"name" : "",
+		"name" : "Heartpiece Above Lab",
 		"type" : 1,
 		"state" : [1],
 		"location" : 15,
@@ -2615,7 +2613,7 @@
 	{
 		"id" : 235,
 		"code" : "check_item_hearts_zora_iceberg",
-		"name" : "",
+		"name" : "Iceberg Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 12,
@@ -2624,7 +2622,7 @@
 	{
 		"id" : 236,
 		"code" : "check_item_hearts_zora_bottom",
-		"name" : "",
+		"name" : "Fountain Bottom Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 12,
@@ -2637,7 +2635,7 @@
 	{
 		"id" : 237,
 		"code" : "check_item_hearts_gerudo_waterfall",
-		"name" : "",
+		"name" : "Waterfall Heartpiece",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 22,
@@ -2646,7 +2644,7 @@
 	{
 		"id" : 238,
 		"code" : "check_item_hearts_gerudo_chicken",
-		"name" : "",
+		"name" : "Chicken Heartpiece",
 		"type" : 1,
 		"state" : [0],
 		"location" : 22,
@@ -2655,7 +2653,7 @@
 	{
 		"id" : 239,
 		"code" : "check_item_desert_bean",
-		"name" : "",
+		"name" : "Desert Bean Heartpiece",
 		"type" : 1,
 		"state" : [1],
 		"location" : 26,
@@ -2668,7 +2666,7 @@
 	{
 		"id" : 240,
 		"code" : "check_item_minigame_chest_game",
-		"name" : "",
+		"name" : "Chest Game",
 		"type" : 1,
 		"state" : [0],
 		"location" : 30,
@@ -2681,7 +2679,7 @@
 	{
 		"id" : 241,
 		"code" : "check_item_minigame_shooting_slingshot",
-		"name" : "",
+		"name" : "Slingshot Shooting Gallery",
 		"type" : 1,
 		"state" : [0],
 		"location" : 30,
@@ -2690,7 +2688,7 @@
 	{
 		"id" : 242,
 		"code" : "check_item_minigame_shooting_bow",
-		"name" : "",
+		"name" : "Archery Shooting Gallery",
 		"type" : 1,
 		"state" : [1],
 		"location" : 17,
@@ -2703,7 +2701,7 @@
 	{
 		"id" : 243,
 		"code" : "check_item_minigame_bombchu_one",
-		"name" : "",
+		"name" : "Bombchu Bowling One",
 		"type" : 1,
 		"state" : [0],
 		"location" : 30,
@@ -2716,7 +2714,7 @@
 	{
 		"id" : 244,
 		"code" : "check_item_minigame_bombchu_two",
-		"name" : "",
+		"name" : "Bombchu Bowling Two",
 		"type" : 1,
 		"state" : [0],
 		"location" : 30,
@@ -2729,7 +2727,7 @@
 	{
 		"id" : 245,
 		"code" : "check_item_minigame_ranch_chickens",
-		"name" : "",
+		"name" : "Ranch Chicken Game",
 		"type" : 1,
 		"state" : [0],
 		"location" : 29,
@@ -2742,7 +2740,7 @@
 	{
 		"id" : 246,
 		"code" : "check_item_minigame_ocarina_memory_game",
-		"name" : "",
+		"name" : "Ocarina Memory Game",
 		"type" : 1,
 		"state" : [0],
 		"location" : 2,
@@ -2751,7 +2749,7 @@
 	{
 		"id" : 247,
 		"code" : "check_item_minigame_diving",
-		"name" : "",
+		"name" : "Zora Diving Game",
 		"type" : 1,
 		"state" : [0],
 		"location" : 11,
@@ -2760,7 +2758,7 @@
 	{
 		"id" : 248,
 		"code" : "check_item_minigame_child_fishing",
-		"name" : "",
+		"name" : "Child Fishing",
 		"type" : 1,
 		"state" : [0],
 		"location" : 15,
@@ -2773,7 +2771,7 @@
 	{
 		"id" : 249,
 		"code" : "check_item_minigame_adult_fishing",
-		"name" : "",
+		"name" : "Adult Fishing",
 		"type" : 1,
 		"state" : [1],
 		"location" : 15,
@@ -2782,7 +2780,7 @@
 	{
 		"id" : 250,
 		"code" : "check_item_minigame_horseback_archery_one",
-		"name" : "",
+		"name" : "Horseback Archery One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 23,
@@ -2795,7 +2793,7 @@
 	{
 		"id" : 251,
 		"code" : "check_item_minigame_horseback_archery_two",
-		"name" : "",
+		"name" : "Horseback Archery Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 23,
@@ -2808,7 +2806,7 @@
 	{
 		"id" : 252,
 		"code" : "check_item_minigame_frogs",
-		"name" : "",
+		"name" : "Frogs Two",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 10,
@@ -2821,7 +2819,7 @@
 	{
 		"id" : 253,
 		"code" : "check_item_minigame_gravedigging",
-		"name" : "",
+		"name" : "Dampe Gravedigging",
 		"type" : 1,
 		"state" : [0],
 		"location" : 20,
@@ -2830,7 +2828,7 @@
 	{
 		"id" : 254,
 		"code" : "check_item_minigame_dampe_race_one",
-		"name" : "",
+		"name" : "Dampe Race One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 21,
@@ -2839,7 +2837,7 @@
 	{
 		"id" : 255,
 		"code" : "check_item_minigame_dampe_race_two",
-		"name" : "",
+		"name" : "Dampe Race Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 21,

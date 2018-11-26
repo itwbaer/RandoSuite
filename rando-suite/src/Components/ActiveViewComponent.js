@@ -5,6 +5,8 @@ import {FilterComponent} from './Views/FilterComponent';
 import {LoadComponent} from './Views/LoadComponent';
 import {SaveComponent} from './Views/SaveComponent';
 
+import {PopupWindow} from './PopupWindow';
+
 export class ActiveViewComponent extends Component{
 
   displayChecklist(){

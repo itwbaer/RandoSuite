@@ -3,9 +3,29 @@ util.obtainables = require('./obtainables.js');
 util.locations = require('./locations.js');
 
 module.exports = {
+
+	//this needs to be done after filtering
+	groupByLocation: function(checks, locations){
+		let groupedChecks = {};
+
+		//initialize
+		for(let i = 0; i < locations.length; i++){
+			groupedChecks[i] = [];
+		}
+
+		//need to sort locations, then go
+		for(let i = 0; i < checks.length; i++){
+			let check = checks[i];
+			groupedChecks[check.location].push(check);
+		}
+
+		return groupedChecks;
+	},
+
 	//filters a given set of checks based on certain critera
 	applyFilter: function(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap){
 		let filteredChecks = [];
+
 
 		//for every check
 		for(let i = 0; i < checks.length; i++){
