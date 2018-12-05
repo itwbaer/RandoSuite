@@ -51,6 +51,8 @@ class App extends Component {
     let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
     let filteredMaps = util.maps.filterMaps(filteredChecks, maps);
 
+    let filterOptions = util.shared.getAllFilterOptions(locations, states);
+
     this.state = {util: util,
 
                   views: views,
@@ -73,6 +75,7 @@ class App extends Component {
 
                   filter: filter,
                   filteredChecks: filteredChecks,
+                  filterOptions: filterOptions,
 
                   activeMap: 0,
                   maps: maps,
@@ -180,6 +183,20 @@ class App extends Component {
     }*/
   }
 
+  // handleClickSelectAll(key){
+  //   const filter = cloneDeep(this.state.filter);
+  //   filter[key] = this.state.util.shared.optionsToFilter(this.state.filterOptions[key]);
+  //   this.setState({filter: filter});
+  //   this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
+  // }
+
+  // handleClickSelectNone(key){
+  //   const filter = cloneDeep(this.state.filter);
+  //   filter[key] = [];
+  //   this.setState({filter: filter});
+  //   this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
+  // }
+
   undoLastCheck(){
 
     const checks = cloneDeep(this.state.checks);
@@ -197,10 +214,12 @@ class App extends Component {
   }
 
   handleFilterChange(key, data){
+
     const filter = cloneDeep(this.state.filter);
     filter[key] = this.state.util.shared.optionsToFilter(data);
     this.setState({filter: filter});
     this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
+
   }
 
   handleClickCheckList(id, data){
@@ -257,6 +276,7 @@ class App extends Component {
                   filteredChecks={this.state.filteredChecks}
                   util={this.state.util}
                   filter={this.state.filter}
+                  filterOptions={this.state.filterOptions}
                   obtainables={this.state.obtainables}
                   obtainablesMap={this.state.obtainablesMap}
                   progressives={this.state.progressives}

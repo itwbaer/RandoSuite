@@ -54,7 +54,7 @@ export class ProgressiveTrackerItemComponent extends Component{
 
 	render() {
 		return(
-			<div className="col">
+			<div className="col-sm-2">
 				{this.parseType()}
 	    </div>
 	   );

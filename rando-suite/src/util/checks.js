@@ -26,7 +26,6 @@ module.exports = {
 	applyFilter: function(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap){
 		let filteredChecks = [];
 
-
 		//for every check
 		for(let i = 0; i < checks.length; i++){
 			//for every state in the filter
@@ -40,7 +39,7 @@ module.exports = {
 			for(let j = 0; j < filter.state.length; j++){
 				let currentState = filter.state[j]
 				canCheck.push(filter.accessible.includes(this.canCheck(currentState, check, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap)))
-				inState.push(filter.state.includes(currentState));
+				inState.push(check.state.includes(currentState));
 			}
 
 			if(inLocation && hasChecked && inState.includes(true) && canCheck.includes(true)){filteredChecks.push(check);}

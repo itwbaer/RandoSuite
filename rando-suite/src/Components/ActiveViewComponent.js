@@ -44,6 +44,7 @@ export class ActiveViewComponent extends Component{
       <FilterComponent 
           filterOnChange={(key, data) => this.props.filterOnChange(key, data)}
           filter={this.props.filter}
+          filterOptions={this.props.filterOptions}
           states={this.props.states}
           locations={this.props.locations}
           util={this.props.util}

@@ -1,5 +1,25 @@
 module.exports = {
 
+	getAllFilterOptions: function(locations, states){
+		let options = {};
+		options["location"] = this.objectToOptions(locations);
+		options["state"] = this.objectToOptions(states);
+		options["accessible"] = [
+									{ value: true, label: 'Accessible' },
+      								{ value: false, label: 'Not Accessible' }
+      							];
+      	options["checked"] = 	[
+									{ value: -1, label: 'Unchecked' },
+      								{ value: 1, label: 'Checked' }
+      							];
+      	return options;
+
+	},
+
+	createIdArray: function(){
+
+	},
+
 	mapCodeToID(obj){
 		let codeMap = {} 
 	    for(let i = 0; i < obj.length; i++){
@@ -12,7 +32,7 @@ module.exports = {
 
 	copyKeys: function(keys, original, load){
 
-		for(let i = 0; i < original.length; i++){
+		for(let i = 0; i < load.length; i++){
 			for(let j = 0; j < keys.length; j++){
 				let key = keys[j];
 				original[i][key] = load[i][key];
@@ -41,7 +61,7 @@ module.exports = {
 		return filter;
 	},
 
-	getOptions: function(obj){
+	objectToOptions: function(obj){
 		let options = [];
 		for(let i = 0; i < obj.length; i++){
 			let option = {};
@@ -54,21 +74,6 @@ module.exports = {
 	},
 
 	getDefaultOptions: function(obj, filter){
-		let options = [];
-		for(let i = 0; i < obj.length; i++){
-			if(filter.includes(obj[i].id)){
-				let option = {};
-				option["value"] = obj[i].id
-				option["label"] = obj[i].name
-				options.push(option);
-			}
-
-		}
-
-		return options;
-	},
-
-	getDefaultOptionsStatic: function(obj, filter){
 		let options = [];
 		for(let i = 0; i < obj.length; i++){
 			if(filter.includes(obj[i].value)){

@@ -116,7 +116,7 @@
 	{
 		"id" : 10,
 		"code" : "check_song_colossus",
-		"name" : "Requiem of medallion_spirit",
+		"name" : "Requiem of Spirit",
 		"type" : 0,
 		"state" : [0, 1],
 		"location" : 26,
@@ -2537,6 +2537,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 20,
+		"required": [{
+									"obtainables": [["item_bean"], ["item_longshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -2578,7 +2582,7 @@
 		"state" : [1],
 		"location" : 8,
 		"required": [{
-									"obtainables": [["song_fire"]],
+									"obtainables": [["song_fire", "item_bean"], ["item_hover_boots"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -2608,6 +2612,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 15,
+		"required": [{
+									"obtainables": [["item_bean"], ["item_hookshot", "song_scarecrow"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -2658,7 +2666,7 @@
 		"state" : [1],
 		"location" : 26,
 		"required": [{
-									"obtainables": [["song_spirit"]],
+									"obtainables": [["song_spirit", "item_bean"]],
 									"checks" : null
 								}],
 		"checked" : -1

@@ -4,72 +4,71 @@ import {FilterSelectComponent} from './FilterSelectComponent';
 export class FilterComponent extends Component{
 
 	filterState(){
-    let options = this.props.util.shared.getOptions(this.props.states);
-    let defaultValues = this.props.util.shared.getDefaultOptions(this.props.states, this.props.filter.state);
     let key = "state";
+    let options = this.props.filterOptions[key];
+    let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "State"
     return(
       <FilterSelectComponent
         key={key}
         placeholder={placeholder}
-        defaultValue={defaultValues}
+        selected={selected}
         options={options}
         onChange={(data) => this.props.filterOnChange(key, data)}
+        isSearchable={false}
       />
     );
   }
 
   filterAccessible(){
-    let options = [
-      { value: true, label: 'Accessible' },
-      { value: false, label: 'Not Accessible' },
-    ];
-    let defaultValues = this.props.util.shared.getDefaultOptionsStatic(options, this.props.filter.accessible);
     let key = "accessible";
+    let options = this.props.filterOptions[key];
+    let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "Accessible?"
     return(
       <FilterSelectComponent
         key={key}
         placeholder={placeholder}
-        defaultValue={defaultValues}
+        selected={selected}
         options={options}
         onChange={(data) => this.props.filterOnChange(key, data)}
+        isSearchable={false}
       />
     );
   }
 
   filterChecked(){
-    let options = [
-      { value: -1, label: 'Unchecked' },
-      { value: 1, label: 'Checked' },
-    ];
-    let defaultValues = this.props.util.shared.getDefaultOptionsStatic(options, this.props.filter.checked);
     let key = "checked";
+    let options = this.props.filterOptions[key];
+    let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "Checked?"
     return(
       <FilterSelectComponent
         key={key}
         placeholder={placeholder}
-        defaultValue={defaultValues}
+        selected={selected}
         options={options}
         onChange={(data) => this.props.filterOnChange(key, data)}
+        isSearchable={false}
       />
     );
   }
 
 
   filterLocations(){
-    let options = this.props.util.shared.getOptions(this.props.locations);
-    let defaultValues = this.props.util.shared.getDefaultOptions(this.props.locations, this.props.filter.location);
     let key = "location";
+    let options = this.props.filterOptions[key];
+    let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "Locations"
     return(
       <FilterSelectComponent
         key={key}
         placeholder={placeholder}
-        defaultValue={defaultValues}
+        selected={selected}
         options={options}
         onChange={(data) => this.props.filterOnChange(key, data)}
+        isSearchable={true}
+        selectButtons={true}
       />
     );
   }

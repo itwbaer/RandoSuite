@@ -535,5 +535,13 @@
 		"type" : 3,
 		"obtained" : -1,
         "state" : [0, 1]
+	},
+	{
+		"id" : 65,
+		"code" : "item_bean",
+		"name" : "Magic Beans",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
 	}
 ]
