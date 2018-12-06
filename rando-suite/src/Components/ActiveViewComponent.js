@@ -28,7 +28,8 @@ export class ActiveViewComponent extends Component{
 
   displayTracker(){
     return(
-        <TrackerComponent 
+        <TrackerComponent
+          tracker={this.props.tracker}
           obtainablesOnClick={(id, ctrl) => this.props.obtainablesOnClick(id, ctrl)}
           obtainables={this.props.obtainables}
           obtainablesMap={this.props.obtainablesMap}

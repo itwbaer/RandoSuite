@@ -1,0 +1,308 @@
+[
+	[
+		{
+			"code" : "item_slingshot",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_strength",
+			"type" : "progressive"
+		},
+		{
+			"code" : "item_bombs",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_bombchus",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_scale",
+			"type" : "progressive"
+		},
+		{
+			"code" : "item_boomerang",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "item_bow",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_hammer",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_hook",
+			"type" : "progressive"
+		},
+		{
+			"code" : "item_mirror_shield",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_iron_boots",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_hover_boots",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "item_dins",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_farores",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_magic",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_fire_arrows",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_light_arrows",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_lens",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "item_bean",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_tunic_goron",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_tunic_zora",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_bottle",
+			"type" : "progressive"
+		},
+		{
+			"code" : "item_kokiri_sword",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_goron_sword",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "item_claim",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_stone",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_mask",
+			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_item_wallet",
+			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_item_skulltua",
+			"type" : "progressive"
+		},
+		{
+			"code" : "song_scarecrow",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "song_zelda",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_epona",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_saria",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_sun",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_time",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_storm",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "song_forest",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_fire",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_water",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_spirit",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_shadow",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "song_light",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "medallion_forest",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "medallion_fire",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "medallion_water",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "medallion_spirit",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "medallion_shadow",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "medallion_light",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "progressive_dungeon_forest",
+			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_dungeon_fire",
+			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_dungeon_water",
+			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_dungeon_spirit",
+			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_dungeon_shadow",
+			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_dungeon_light",
+			"type" : "progressive"
+		}
+
+	],
+	[
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		},
+		{
+			"code" : "stone_emerald",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "blank1",
+			"type" : "blank1"
+		},
+		{
+			"code" : "stone_ruby",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "blank1",
+			"type" : "blank1"
+		},
+		{
+			"code" : "stone_sapphire",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		}
+
+	],
+	[
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		},
+		{
+			"code" : "progressive_dungeon_deku",
+			"type" : "progressive"
+		},
+		{
+			"code" : "blank1",
+			"type" : "blank1"
+		},
+		{
+			"code" : "progressive_dungeon_dodongo",
+			"type" : "progressive"
+		},
+		{
+			"code" : "blank1",
+			"type" : "blank1"
+		},
+		{
+			"code" : "progressive_dungeon_jabu",
+			"type" : "progressive"
+		},
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		}
+
+	]
+
+]

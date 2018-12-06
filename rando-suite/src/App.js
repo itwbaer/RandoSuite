@@ -19,6 +19,8 @@ class App extends Component {
     util.maps = require('./util/maps.js');
     util.shared = require('./util/shared.js');
 
+    let tracker = require("./data/Tracker.json");
+
     let access = require("./data/Access.json");
     let locations = require("./data/Locations.json");
     let locationsMap = util.shared.mapCodeToID(locations);
@@ -54,6 +56,8 @@ class App extends Component {
     let filterOptions = util.shared.getAllFilterOptions(locations, states);
 
     this.state = {util: util,
+
+                  tracker: tracker,
 
                   views: views,
                   activeView: 0,
@@ -267,6 +271,7 @@ class App extends Component {
             <div className="row" id="ViewRow">
               <div className={"col" + (this.state.centeredViews.includes(this.state.activeView) ? " align-self-center" : "")}>
                 <ActiveViewComponent
+                  tracker={this.state.tracker}
                   views={this.state.views}
                   activeView={this.state.activeView}
                   states={this.state.states}
