@@ -23,7 +23,7 @@ export class MapNavComponent extends Component{
 
 	render() {
     return(
-      <div className="row">
+      <div>
       		{this.getMaps()}
       </div>
     );

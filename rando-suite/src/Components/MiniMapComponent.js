@@ -11,12 +11,12 @@ export class MiniMapComponent extends Component{
 
 	render() {
     return(
-      <div className="container-fluid"><img
-          className="img-fluid"        
+      <div className="container-fluid noselect"><img
+          className="img-fluid noselect"        
           src={this.props.mapImg}
           alt=""
           onClick={this.handleClick}
-        /><br /><span>{this.props.map.code}</span></div>
+        /><br /><span className="noselect">{this.props.map.code}</span></div>
     );
   }
 }

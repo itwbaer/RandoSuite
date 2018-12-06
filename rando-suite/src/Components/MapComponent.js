@@ -19,9 +19,9 @@ export class MapComponent extends Component{
 
 	render() {
     return(
-        <div className="map-container">
-	    		<img id="map-img" src={this.props.util.maps.loadMapImg(this.props.map)} alt=""/>
-	    		<canvas id="map-canvas" />
+        <div className="map-container noselect">
+	    		<img className="noselect" id="map-img" src={this.props.util.maps.loadMapImg(this.props.map)} alt=""/>
+	    		<canvas className="noselect" id="map-canvas" />
 	      </div>
     );
   }

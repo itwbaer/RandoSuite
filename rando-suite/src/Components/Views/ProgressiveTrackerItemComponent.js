@@ -40,7 +40,7 @@ export class ProgressiveTrackerItemComponent extends Component{
   			return(
 		    	<img
             id={this.props.trackerID}
-		    		className={"img-fluid " + (obtainable.obtained > 0 ? "obtained" : "unobtained")}
+		    		className={"img-fluid noselect " + (obtainable.obtained > 0 ? "obtained" : "unobtained")}
 		    		src={require("../../icons/" +  obtainable.code + ".png")}
 		    		onClick={this.handleClick}
 		    		alt=""

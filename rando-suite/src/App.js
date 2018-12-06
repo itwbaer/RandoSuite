@@ -187,20 +187,6 @@ class App extends Component {
     }*/
   }
 
-  // handleClickSelectAll(key){
-  //   const filter = cloneDeep(this.state.filter);
-  //   filter[key] = this.state.util.shared.optionsToFilter(this.state.filterOptions[key]);
-  //   this.setState({filter: filter});
-  //   this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
-  // }
-
-  // handleClickSelectNone(key){
-  //   const filter = cloneDeep(this.state.filter);
-  //   filter[key] = [];
-  //   this.setState({filter: filter});
-  //   this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
-  // }
-
   undoLastCheck(){
 
     const checks = cloneDeep(this.state.checks);
@@ -254,6 +240,11 @@ class App extends Component {
                     filteredMaps: filteredMaps});
   }
 
+  componentDidMount(){
+    //apply the 
+    require('./util/scrollbar.js');
+  }
+
 
   render() {
     return (
@@ -297,6 +288,14 @@ class App extends Component {
 
           </div>
           <div className="grid-half col-8">
+            <div className="row" id="MapRow">
+
+                <MapComponent 
+                  map={this.state.maps[this.state.activeMap]}
+                  util={this.state.util}
+                />
+
+            </div>
             <div className="row" id="MapNavRow">
  
                 <MapNavComponent
@@ -306,14 +305,7 @@ class App extends Component {
                 />
 
             </div>
-            <div className="row" id="MapRow">
-
-                <MapComponent 
-                  map={this.state.maps[this.state.activeMap]}
-                  util={this.state.util}
-                />
-
-            </div>
+            
           </div>
         </div>
       </div>

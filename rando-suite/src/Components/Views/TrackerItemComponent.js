@@ -13,7 +13,7 @@ export class TrackerItemComponent extends Component{
 			<div className="col-sm-2">
 	    	<img
 	    		id={this.props.trackerID}
-	    		className={"img-fluid " + (this.props.obtainable.obtained > 0 ? "obtained" : "unobtained")}
+	    		className={"img-fluid noselect " + (this.props.obtainable.obtained > 0 ? "obtained" : "unobtained")}
 	    		src={require("../../icons/" +  this.props.obtainable.code + (this.props.obtainable.secondary > 0 ? "_secondary" : "") + ".png")}
 	    		onClick={this.handleClick}
 	    		alt=""
