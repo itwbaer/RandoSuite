@@ -1,0 +1,7 @@
+south lava: bomb wall
+
+after raising block, need strength
+
+
+shadow
+key after first 4 + bombs/hammer

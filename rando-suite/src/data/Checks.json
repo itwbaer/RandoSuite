@@ -362,6 +362,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["item_bow", "item_bracelet"], ["song_time"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -371,6 +375,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["item_bow", "item_bracelet"], ["song_time"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -380,6 +388,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["item_bow", "item_bracelet"], ["song_time"], ["item_bow"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -390,7 +402,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -403,7 +415,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -415,6 +427,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["item_bow", "item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -424,6 +440,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["item_bow", "item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -434,7 +454,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -447,7 +467,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -460,7 +480,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -473,7 +493,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -486,7 +506,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -503,25 +523,33 @@
 	{
 		"id" : 45,
 		"code" : "check_item_temple_fire_boss_key_area_one",
-		"name" : "",
+		"name" : "Fire Dancer Boss Key",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 46,
 		"code" : "check_item_temple_fire_boss_key_area_two",
-		"name" : "",
+		"name" : "Boss Key chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 47,
 		"code" : "check_item_temple_fire_north_open_lava_room",
-		"name" : "",
+		"name" : "North of Lava Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
@@ -530,46 +558,66 @@
 	{
 		"id" : 48,
 		"code" : "check_item_temple_fire_south_open_lava_room",
-		"name" : "",
+		"name" : "South of Lava Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 49,
 		"code" : "check_item_temple_fire_boulder_maze",
-		"name" : "",
+		"name" : "Drop Down Bolder Maze",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet", "item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 50,
 		"code" : "check_item_temple_fire_room_near_boulder_maze",
-		"name" : "",
+		"name" : "Room Above Bolder Maze",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 51,
 		"code" : "check_item_temple_fire_above_boulder_maze",
-		"name" : "",
+		"name" : "Goron Above in Bolder Maze",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 52,
 		"code" : "check_item_temple_fire_boulder_maze_bombable",
-		"name" : "",
+		"name" : "Goron in Bolder Maze Bombable",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet", "item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -579,33 +627,49 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_hookshot", "song_scarecrow", "item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 54,
 		"code" : "check_item_temple_fire_fire_wall",
-		"name" : "",
+		"name" : "Map Chest Firewall Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 55,
 		"code" : "check_item_temple_fire_fire_maze_side",
-		"name" : "",
+		"name" : "Fire Maze Compass",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 56,
 		"code" : "check_item_temple_fire_fire_maze_center",
-		"name" : "",
+		"name" : "Fire Maze Center Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet", "song_time", "item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -615,6 +679,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bracelet", "item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -625,7 +693,7 @@
 		"state" : [1],
 		"location" : 9,
 		"required": [{
-									"obtainables": [["item_hammer"]],
+									"obtainables": [["item_hammer", "item_bracelet"], ["item_hammer", "item_hover_boots"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -687,7 +755,7 @@
 	{
 		"id" : 65,
 		"code" : "check_item_temple_water_early_torches",
-		"name" : "",
+		"name" : "Torches Room Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -700,27 +768,19 @@
 	{
 		"id" : 66,
 		"code" : "check_item_temple_water_dragon_head",
-		"name" : "",
+		"name" : "Dragon Head Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
-		"required": [{
-									"obtainables": [["song_time"]],
-									"checks" : null
-								}],
 		"checked" : -1
 	},
 	{
 		"id" : 67,
 		"code" : "check_item_temple_water_central_bow_target",
-		"name" : "River Bow Target",
+		"name" : "Mid Level Eye Target",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
-		"required": [{
-									"obtainables": [["item_bow", "song_time"]],
-									"checks" : null
-								}],
 		"checked" : -1
 	},
 	{
@@ -735,7 +795,7 @@
 	{
 		"id" : 69,
 		"code" : "check_item_temple_water_cracked_wall",
-		"name" : "",
+		"name" : "Mid Level Cracked Wall",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
@@ -766,10 +826,14 @@
 	{
 		"id" : 72,
 		"code" : "check_item_temple_water_river",
-		"name" : "River Dragon Chest",
+		"name" : "River Eye Target",
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["item_bow", "song_time"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -973,12 +1037,12 @@
 	{
 		"id" : 91,
 		"code" : "check_item_temple_shadow_early_silver_rupees",
-		"name" : "",
+		"name" : "First Silver Rupees",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -986,12 +1050,12 @@
 	{
 		"id" : 92,
 		"code" : "check_item_temple_shadow_invisible_blades_one",
-		"name" : "",
+		"name" : "Invisible Blade Room One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs"], ["item_hover_boots", "item_hammer"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -999,12 +1063,12 @@
 	{
 		"id" : 93,
 		"code" : "check_item_temple_shadow_invisible_blades_two",
-		"name" : "",
+		"name" : "Invisible Blade Room Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs"], ["item_hover_boots", "item_hammer"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1012,12 +1076,12 @@
 	{
 		"id" : 94,
 		"code" : "check_item_temple_shadow_falling_spikes_lower",
-		"name" : "",
+		"name" : "Falling Spikes Lower",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs"], ["item_hover_boots", "item_hammer"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1025,12 +1089,12 @@
 	{
 		"id" : 95,
 		"code" : "check_item_temple_shadow_falling_spikes_upper_one",
-		"name" : "",
+		"name" : "Falling Spikes Upper One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "item_bracelet"], ["item_hover_boots", "item_hammer", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1038,12 +1102,12 @@
 	{
 		"id" : 96,
 		"code" : "check_item_temple_shadow_falling_spikes_upper_two",
-		"name" : "",
+		"name" : "Falling Spikes Upper Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "item_bracelet"], ["item_hover_boots", "item_hammer", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1051,12 +1115,12 @@
 	{
 		"id" : 97,
 		"code" : "check_item_temple_shadow_invisible_spike_room",
-		"name" : "",
+		"name" : "Invisible Spike Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs"], ["item_hover_boots", "item_hammer"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1069,7 +1133,7 @@
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots", "item_bombs"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"], ["item_hover_boots", "item_hammer", "item_hookshot", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1077,12 +1141,12 @@
 	{
 		"id" : 99,
 		"code" : "check_item_temple_shadow_wind_room_invisible",
-		"name" : "",
+		"name" : "Wind Room Invisible",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"], ["item_hover_boots", "item_hammer", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1090,12 +1154,12 @@
 	{
 		"id" : 100,
 		"code" : "check_item_temple_shadow_after_wind_one",
-		"name" : "",
+		"name" : "After Wind Bomb",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1103,12 +1167,12 @@
 	{
 		"id" : 101,
 		"code" : "check_item_temple_shadow_after_wind_two",
-		"name" : "",
+		"name" : "After Wind Redeads",
 		"type" : 1,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"], ["item_hover_boots", "item_hammer", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1121,7 +1185,7 @@
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots", "song_zelda"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"], ["item_hover_boots", "item_hammer", "song_zelda", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1134,7 +1198,7 @@
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots", "song_zelda"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"], ["item_hover_boots", "item_hammer", "song_zelda", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1147,7 +1211,7 @@
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots", "song_zelda"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"], ["item_hover_boots", "item_hammer", "song_zelda", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1160,7 +1224,7 @@
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_hover_boots", "song_zelda"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot", "item_bow"], ["item_hover_boots", "item_hammer", "song_zelda", "item_hookshot", "item_bow"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1194,18 +1258,18 @@
 	{
 		"id" : 108,
 		"code" : "check_item_temple_spirit_child_climb_one",
-		"name" : "",
+		"name" : "Spider Bomb Wall One",
 		"type" : 1,
-		"state" : [0],
+		"state" : [0, 1],
 		"location" : 27,
 		"checked" : -1
 	},
 	{
 		"id" : 109,
 		"code" : "check_item_temple_spirit_child_climb_two",
-		"name" : "",
+		"name" : "Spider Bomb Wall One",
 		"type" : 1,
-		"state" : [0],
+		"state" : [0, 1],
 		"location" : 27,
 		"checked" : -1
 	},
@@ -1230,25 +1294,33 @@
 	{
 		"id" : 112,
 		"code" : "check_item_temple_spirit_main_lobby_upper_right",
-		"name" : "",
+		"name" : "Statue Zelda Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 113,
 		"code" : "check_item_temple_spirit_lullaby_chest",
-		"name" : "Zelda Lullaby Chest",
+		"name" : "Zelda Compass Chest",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 114,
 		"code" : "check_item_temple_spirit_silver_rupees",
-		"name" : "Silver Rupees",
+		"name" : "Silver Rupees Bolder Room",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1257,7 +1329,7 @@
 	{
 		"id" : 115,
 		"code" : "check_item_temple_spirit_suns_on_wall_one",
-		"name" : "",
+		"name" : "Suns Wall One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1266,7 +1338,7 @@
 	{
 		"id" : 116,
 		"code" : "check_item_temple_spirit_suns_on_wall_two",
-		"name" : "",
+		"name" : "Suns Wall Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1275,9 +1347,9 @@
 	{
 		"id" : 117,
 		"code" : "check_item_temple_spirit_sun_block_torches",
-		"name" : "",
+		"name" : "Sun Block Silver Rupees",
 		"type" : 1,
-		"state" : [1],
+		"state" : [0, 1],
 		"location" : 27,
 		"checked" : -1
 	},
@@ -1286,7 +1358,7 @@
 		"code" : "check_item_temple_spirit_silver_gauntlets",
 		"name" : "Silver Gauntlets Chest",
 		"type" : 1,
-		"state" : [1],
+		"state" : [0, 1],
 		"location" : 27,
 		"checked" : -1
 	},
@@ -1302,16 +1374,20 @@
 	{
 		"id" : 120,
 		"code" : "check_item_temple_spirit_sun_wall_near_mirror_shield",
-		"name" : "",
+		"name" : "Sun Wall Outside Mirror Shield",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["item_mirror_shield"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 121,
 		"code" : "check_item_temple_spirit_invisible_mirror_one",
-		"name" : "",
+		"name" : "Invisible Before Mirror Shield One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1320,7 +1396,7 @@
 	{
 		"id" : 122,
 		"code" : "check_item_temple_spirit_invisible_mirror_two",
-		"name" : "",
+		"name" : "Invisible Before Mirror Shield Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
@@ -1333,15 +1409,23 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 124,
 		"code" : "check_item_temple_spirit_topmost_sun_on_wall",
-		"name" : "",
+		"name" : "Mirror Shield Sun Before Snake Mirror",
 		"type" : 1,
 		"state" : [1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["item_mirror_shield"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -1800,7 +1884,7 @@
 	{
 		"id" : 166,
 		"code" : "check_item_gtg_maze_ledge_one",
-		"name" : "",
+		"name" : "Maze Ledge One",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1809,7 +1893,7 @@
 	{
 		"id" : 167,
 		"code" : "check_item_gtg_maze_ledge_two",
-		"name" : "",
+		"name" : "Maze Ledge Two",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
@@ -1844,6 +1928,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -1853,6 +1941,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -1863,7 +1955,7 @@
 		"state" : [1],
 		"location" : 24,
 		"required": [{
-									"obtainables": [["item_bow"]],
+									"obtainables": [["item_bow", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -1871,10 +1963,14 @@
 	{
 		"id" : 173,
 		"code" : "check_item_gtg_near_scarecrow",
-		"name" : "",
+		"name" : "Ledge By Eye Statue",
 		"type" : 1,
 		"state" : [1],
 		"location" : 24,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -2441,10 +2537,15 @@
 	{
 		"id" : 219,
 		"code" : "check_item_grottos_field_near_lake",
-		"name" : "Grotto Near Hylia",
+		"name" : "South Bolder",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 28,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
+
 		"checked" : -1
 	},
 	{
@@ -2463,14 +2564,10 @@
 	{
 		"id" : 221,
 		"code" : "check_item_grottos_field_south_west",
-		"name" : "",
+		"name" : "Open Grotto Near Hylia",
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 28,
-		"required": [{
-									"obtainables": [["item_bombs"], ["item_hammer"]],
-									"checks" : null
-								}],
 		"checked" : -1
 	},
 	{
@@ -2793,7 +2890,7 @@
 		"state" : [1],
 		"location" : 23,
 		"required": [{
-									"obtainables": [["item_gerudo_card", "item_bow", "song_epona"]],
+									"obtainables": [["item_bow", "song_epona"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -2806,7 +2903,7 @@
 		"state" : [1],
 		"location" : 23,
 		"required": [{
-									"obtainables": [["item_gerudo_card", "item_bow", "song_epona"]],
+									"obtainables": [[ "item_bow", "song_epona"]],
 									"checks" : null
 								}],
 		"checked" : -1

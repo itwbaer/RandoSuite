@@ -120,7 +120,7 @@
 		"location" : 13,
 		"required" : [{
 			          		"location": "location_zoras_fountain",
-					  				"obtainables": null
+					  				"obtainables": [["item_slingshot"], ["item_boomerang"]]
 					 			 }],
 		"state" : 0
 	},
@@ -150,7 +150,7 @@
 		"location" : 18,
 		"required" : [{
 			          		"location": null,
-					  				"obtainables": [["song_shadow", "item_dins"]]
+					  				"obtainables": [["song_shadow", "item_dins", "item_hookshot"], ["song_shadow", "item_dins", "item_hover_boots"]]
 					 			 }],
 		"state" : 1
 	},
@@ -180,7 +180,7 @@
 		"location" : 24,
 		"required" : [{
 			          		"location": "location_gerudo_fortress",
-					  				"obtainables": [["item_gerudo_card"]]
+					  				"obtainables": null
 					 			 }],
 		"state" : 1
 	},
@@ -202,7 +202,7 @@
 		"location" : 25,
 		"required" : [{
 			          		"location": null,
-					  				"obtainables": [["item_longshot", "item_gerudo_card"]]
+					  				"obtainables": [["item_longshot"]]
 					 			  },
 					 			  {
 			          		"location": "location_desert_colossus",
@@ -231,7 +231,7 @@
 					 			 	},
 					 			 	{
 					 			 		"location": null,
-					  				"obtainables": [["item_longshot", "item_gerudo_card"]]
+					  				"obtainables": [["item_longshot"]]
 					 			 	}
 					 			],
 		"state" : 1
