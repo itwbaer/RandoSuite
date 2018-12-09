@@ -2,19 +2,28 @@ const util = {};
 util.checks = require('./checks.js');
 
 module.exports = {
-	filterMaps: function(checks, maps){
+	filterMaps: function(checks, maps, mapImgs){
 		let filteredMaps = [];
 
 		let locations = util.checks.getLocations(checks);
 
 		let pushedMaps = [];
-		for(let i = 0; i < maps.length; i++){
 
+		for(let i = 0; i < maps.length; i++){
 			let current = maps[i];
 			if(locations.includes(current.location) && !pushedMaps.includes(current.id)){
-				filteredMaps.push(current);
-				pushedMaps.push(maps[i].id);
+				let pair = {"map": current, "image": mapImgs[i]};
+				filteredMaps.push(pair);
+				pushedMaps.push(current.id);
 			}
+			else if(current.location == -1 && !pushedMaps.includes(current.id)){
+				//always add -1
+				let pair = {"map": current, "image": mapImgs[i]};
+				filteredMaps.push(pair);
+				pushedMaps.push(current.id);
+			}
+
+
 			
 		}
 		
@@ -26,23 +35,16 @@ module.exports = {
 		let mapImgs = [];
 
 		for(let i = 0; i < maps.length; i++){
-
-			let current = require("../maps/" + maps[i].code + "." + maps[i].extension);
-
-				mapImgs.push(current);
+			let map = maps[i];
+			let image = new Image();
+			image.src = require("../maps/" + map.code + "." + map.extension);
+			mapImgs.push(image);
 
 			
 		}
 		
 		
 		return mapImgs;
-	},
-
-	loadMapImg: function(map){
-
-
-		return require("../maps/" + map.code + "." + map.extension);
-
 	}
 
 }

@@ -8,12 +8,17 @@ name maps
 
 import React, { Component } from 'react';
 import {cloneDeep} from 'lodash';
+
+import "../node_modules/leaflet/dist/leaflet.css";
+import L from "leaflet";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {MapComponent} from './Components/MapComponent.js';
 import {MapNavComponent} from './Components/MapNavComponent.js';
 import {OptionsComponent} from './Components/OptionsComponent.js';
 import {ActiveViewComponent} from './Components/ActiveViewComponent.js';
+
 
 class App extends Component {
   constructor(props) {
@@ -58,10 +63,14 @@ class App extends Component {
     let filter = require("./data/Filter.json");
 
     let maps = require("./data/Maps.json");
+    let mapImgs = util.maps.loadMapImgs(maps);
     let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
-    let filteredMaps = util.maps.filterMaps(filteredChecks, maps);
+    let filteredMaps = util.maps.filterMaps(filteredChecks, maps, mapImgs);
 
     let filterOptions = util.shared.getAllFilterOptions(locations, states);
+
+    this.map = null;
+    this.mapImage = null;
 
     this.state = {util: util,
 
@@ -91,6 +100,8 @@ class App extends Component {
 
                   activeMap: 0,
                   maps: maps,
+                  mapImgs: mapImgs,
+
                   filteredMaps: filteredMaps,
                   checkHistory: [],
 
@@ -113,7 +124,7 @@ class App extends Component {
 
     let filter = data.filter;
     let filteredChecks = this.state.util.checks.applyFilter(filter, loadChecks, this.state.locations, loadObtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps);
+    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps, this.state.mapImgs);
 
     this.setState({obtainables: loadObtainables,
                     checks: loadChecks,
@@ -239,19 +250,51 @@ class App extends Component {
 
   handleClickMap(id){
     this.setState({activeMap: id});
+    this.setMapImage(id);
   }
 
   runFilter(filter, checks, locations, obtainables){
     let filteredChecks = this.state.util.checks.applyFilter(filter, checks, locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps);
+    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps, this.state.mapImgs);
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
   }
 
+  setMapImage(id){
+    let image = this.state.mapImgs[id];
+    this.mapImage.setUrl(image.src);
+    //console.log(image.width/2);
+    this.mapImage.setBounds([[-(image.height/2/1000), (image.width/2/1000)], [(image.height/2/1000), -(image.width/2/1000)]]);
+    this.map.setView([0, 0], 8);
+
+    var corner1 = L.latLng(-(image.height/2/1000), (image.width/2/1000)),
+    corner2 = L.latLng((image.height/2/1000), -(image.width/2/1000)),
+    bounds = L.latLngBounds(corner1, corner2)
+
+    this.map.setMaxBounds(bounds)
+  }
+
+
   componentDidMount(){
     //apply the 
     require('./util/scrollbar.js');
+
+    let map = L.map('map-container', {attributionControl: false})
+    map.setView([0, 0], 8);
+    map.setMinZoom(8);
+    map.setMaxZoom(10);
+    let imageUrl = this.state.mapImgs[this.state.activeMap].src;
+    let imageBounds = [[0, 0], [0, 0]];
+    let mapImage = L.imageOverlay(imageUrl, imageBounds);
+    mapImage.addTo(map);
+    this.map = map;
+    this.mapImage = mapImage;
+
+    this.setMapImage(this.state.activeMap);
   }
+
+  //.061725
+  //.1011
 
 
   render() {
@@ -309,6 +352,7 @@ class App extends Component {
                 <MapNavComponent
                   onClick={(id) => this.handleClickMap(id)} 
                   maps={this.state.filteredMaps}
+                  mapImgs={this.state.mapImgs}
                   util={this.state.util}
                 />
 

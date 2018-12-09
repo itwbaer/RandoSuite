@@ -5,3 +5,7 @@ after raising block, need strength
 
 shadow
 key after first 4 + bombs/hammer
+
+spirit
+everything after spider bomb wall needs bombs for child
+mirror shield area locked behind bombs
