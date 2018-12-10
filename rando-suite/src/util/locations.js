@@ -32,7 +32,6 @@ module.exports = {
 			locations[a.location]["access"][a.state.toString()]["required"] = a.required;
 		});
 
-		return locations;
 	},
 
 	canAccess: function(state, location, locations, obtainables, locationsMap, obtainablesMap){

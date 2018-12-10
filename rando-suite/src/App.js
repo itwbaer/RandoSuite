@@ -63,7 +63,14 @@ class App extends Component {
     let filter = require("./data/Filter.json");
 
     let maps = require("./data/Maps.json");
+    let mapsMap = util.shared.mapCodeToID(maps);
+    let markers = require("./data/Markers.json");
+
+    util.maps.linkMarkers(maps, mapsMap, markers);
+    console.log(maps);
     let mapImgs = util.maps.loadMapImgs(maps);
+
+
     let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
     let filteredMaps = util.maps.filterMaps(filteredChecks, maps, mapImgs);
 
@@ -100,7 +107,9 @@ class App extends Component {
 
                   activeMap: 0,
                   maps: maps,
+                  mapsMap: mapsMap,
                   mapImgs: mapImgs,
+                  markers: markers,
 
                   filteredMaps: filteredMaps,
                   checkHistory: [],
@@ -258,43 +267,97 @@ class App extends Component {
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps, this.state.mapImgs);
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
+    console.log(this.state.markers);
   }
 
   setMapImage(id){
-    let image = this.state.mapImgs[id];
-    this.mapImage.setUrl(image.src);
-    //console.log(image.width/2);
-    this.mapImage.setBounds([[-(image.height/2/1000), (image.width/2/1000)], [(image.height/2/1000), -(image.width/2/1000)]]);
-    this.map.setView([0, 0], 8);
+    //first clear map
+    this.map.eachLayer(function(layer){
+        layer.remove();
+    });
 
-    var corner1 = L.latLng(-(image.height/2/1000), (image.width/2/1000)),
-    corner2 = L.latLng((image.height/2/1000), -(image.width/2/1000)),
+    let imageUrl = this.state.mapImgs[id].src;
+    let imageBounds = [[0, 0], [0, 0]];
+    let mapImage = L.imageOverlay(imageUrl, imageBounds);
+    mapImage.addTo(this.map);
+    this.mapImage = mapImage;
+
+    let image = this.state.mapImgs[id];
+    this.mapImage.setBounds([[0, 0], [(image.height/1000), (image.width/1000)]]);
+    this.map.setView([image.height/2/1000, image.width/2/1000], );
+
+    var corner1 = L.latLng(0, 0),
+    corner2 = L.latLng((image.height/1000), (image.width/1000)),
     bounds = L.latLngBounds(corner1, corner2)
 
     this.map.setMaxBounds(bounds)
+    this.drawMarkers(id);
   }
 
+  drawMarkers(id){
+    let map = this.state.maps[id];
+    if(map["markers"] === undefined || map["markers"] === null){
+      return;
+    }
+    let x = 0;
+    let y = 0;
+    for(let i = 0; i < map.markers.length; i++){
+      let data = map.markers[i];
 
-  componentDidMount(){
-    //apply the 
-    require('./util/scrollbar.js');
+      let color = "red";
+      let check = this.state.checks[this.state.checksMap[data.check]];
+      if(check.checked > 0){
+        color = "green";
+      }
+      else if(this.state.util.checks.canCheck(0, check, this.state.locations, this.state.obtainables, this.state.checks, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap)){
+        color = "yellow";
+      }
 
+      let marker = L.circle([y, x], {
+          color: color,
+          fillColor: color,
+          weight: 1.0,
+          fillOpacity: 0.5,
+          radius: 5000,
+      });
+
+      marker.bindPopup(check.name);
+      marker.on('mouseover', function (e) {
+          this.openPopup();
+      });
+      marker.on('mouseout', function (e) {
+          this.closePopup();
+      })
+      marker.on('click', () => this.handleClickCheckList(check.id));
+      marker.addTo(this.map);
+      x = x + .1;
+      y = y + .1;
+    }
+
+  }
+
+  initializeMap(){
     let map = L.map('map-container', {attributionControl: false})
     map.setView([0, 0], 8);
     map.setMinZoom(8);
     map.setMaxZoom(10);
-    let imageUrl = this.state.mapImgs[this.state.activeMap].src;
+    /*let imageUrl = this.state.mapImgs[this.state.activeMap].src;
     let imageBounds = [[0, 0], [0, 0]];
     let mapImage = L.imageOverlay(imageUrl, imageBounds);
     mapImage.addTo(map);
     this.map = map;
-    this.mapImage = mapImage;
-
-    this.setMapImage(this.state.activeMap);
+    this.mapImage = mapImage;*/
+    this.map = map;
   }
 
-  //.061725
-  //.1011
+
+  componentDidMount(){
+
+    require('./util/scrollbar.js');
+ 
+    this.initializeMap();
+    this.setMapImage(this.state.activeMap);
+  }
 
 
   render() {

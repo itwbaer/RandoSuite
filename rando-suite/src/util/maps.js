@@ -31,6 +31,27 @@ module.exports = {
 		return filteredMaps;
 	},
 
+	linkMarkers: function(maps, mapsMap, markers){
+
+		//for each access, attach to location.access
+		markers.forEach(function(marker){
+			for(let i = 0; i < marker.map.length; i++){
+				let mapCode = marker.map[i];
+
+				let map = maps[mapsMap[mapCode]];
+				if(map["markers"] === undefined || map["markers"] === null){
+					map["markers"] = [];
+				}
+				map["markers"].push({
+					"check" : marker.check,
+					"x": marker.x[i],
+					"y": marker.y[i]
+				});
+			}
+		});
+
+	},
+
 	loadMapImgs: function(maps){
 		let mapImgs = [];
 

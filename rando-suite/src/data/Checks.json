@@ -750,6 +750,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -772,6 +776,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_time"], ["song_zelda", "item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -781,6 +789,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_zelda", "item_bow", "item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -790,6 +802,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -800,7 +816,7 @@
 		"state" : [1],
 		"location" : 16,
 		"required": [{
-									"obtainables": [["item_bombs"]],
+									"obtainables": [["song_zelda", "item_bombs"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -812,6 +828,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_zelda", "item_longshot", "item_bombs", "item_bracelet"], ["song_zelda", "item_hover_boots"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -1988,7 +2008,7 @@
 		"state" : [1],
 		"location" : 24,
 		"required": [{
-									"obtainables": [["item_hookshot"]],
+									"obtainables": [["item_hookshot", "item_bow"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -2116,7 +2136,7 @@
 		"code" : "check_item_gifts_skull_kid_saria",
 		"name" : "Skull Kid",
 		"type" : 1,
-		"state" : "",
+		"state" : [0],
 		"location" : 2,
 		"required": [{
 									"obtainables": [["song_saria"]],
@@ -2220,7 +2240,7 @@
 		"code" : "check_item_gifts_frogs_sos",
 		"name" : "Frogs Song of Storms",
 		"type" : 1,
-		"state" : [0, 1],
+		"state" : [0],
 		"location" : 10,
 		"required": [{
 									"obtainables": [["song_storm"]],
@@ -2337,7 +2357,7 @@
 		"code" : "check_item_misc_lost_woods_salesman",
 		"name" : "Lost Woods Deku Salesman",
 		"type" : 1,
-		"state" : "",
+		"state" : [0],
 		"location" : 2,
 		"checked" : -1
 	},
@@ -2933,7 +2953,7 @@
 		"code" : "check_item_minigame_frogs",
 		"name" : "Frogs Two",
 		"type" : 1,
-		"state" : [0, 1],
+		"state" : [0],
 		"location" : 10,
 		"required": [{
 									"obtainables": [["song_zelda", "song_epona", "song_saria", "song_sun", "song_time"]],

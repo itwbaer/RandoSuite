@@ -310,6 +310,14 @@
 		"extension": "jpg",
 		"location": 10,
 		"state": [0, 1]
+	},
+	{
+		"id": 39,
+		"code": "map_death_mountain_trail",
+		"name": "Death Mountain Trail",
+		"extension": "jpg",
+		"location": 5,
+		"state": [0, 1]
 	}
 
 ]
