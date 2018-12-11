@@ -44,8 +44,8 @@ module.exports = {
 				}
 				map["markers"].push({
 					"check" : marker.check,
-					"x": marker.x[i],
-					"y": marker.y[i]
+					"lon": marker.lon[i],
+					"lat": marker.lat[i]
 				});
 			}
 		});

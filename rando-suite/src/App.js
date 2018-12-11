@@ -67,7 +67,7 @@ class App extends Component {
     let markers = require("./data/Markers.json");
 
     util.maps.linkMarkers(maps, mapsMap, markers);
-    console.log(maps);
+
     let mapImgs = util.maps.loadMapImgs(maps);
 
 
@@ -78,6 +78,7 @@ class App extends Component {
 
     this.map = null;
     this.mapImage = null;
+    this.activeMarkers = {};
 
     this.state = {util: util,
 
@@ -265,37 +266,50 @@ class App extends Component {
   runFilter(filter, checks, locations, obtainables){
     let filteredChecks = this.state.util.checks.applyFilter(filter, checks, locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps, this.state.mapImgs);
+
+    let markerKeys = Object.keys(this.activeMarkers)
+    for(let i = 0; i < markerKeys.length; i++){
+      let key = markerKeys[i];
+      this.colorMarker(filter, key, checks, locations, obtainables);
+    }
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
-    console.log(this.state.markers);
+
   }
 
   setMapImage(id){
-    //first clear map
+    //first clear markers
+    this.activeMarkers = {};
     this.map.eachLayer(function(layer){
         layer.remove();
     });
+
+
 
     let imageUrl = this.state.mapImgs[id].src;
     let imageBounds = [[0, 0], [0, 0]];
     let mapImage = L.imageOverlay(imageUrl, imageBounds);
     mapImage.addTo(this.map);
     this.mapImage = mapImage;
-
     let image = this.state.mapImgs[id];
-    this.mapImage.setBounds([[0, 0], [(image.height/1000), (image.width/1000)]]);
+    this.mapLat = image.height;
+    this.mapLon = image.width;
+    this.mapImage.setBounds([[0, 0], [(this.mapLat/1000), (this.mapLon/1000)]]);
     this.map.setView([image.height/2/1000, image.width/2/1000], );
 
     var corner1 = L.latLng(0, 0),
     corner2 = L.latLng((image.height/1000), (image.width/1000)),
     bounds = L.latLngBounds(corner1, corner2)
 
-    this.map.setMaxBounds(bounds)
-    this.drawMarkers(id);
+    this.map.setMaxBounds(bounds);
+
+    this.createMarkers(id);
   }
 
-  drawMarkers(id){
+  createMarkers(id){
     let map = this.state.maps[id];
+
+    this.activeMarkers = {};
     if(map["markers"] === undefined || map["markers"] === null){
       return;
     }
@@ -303,21 +317,14 @@ class App extends Component {
     let y = 0;
     for(let i = 0; i < map.markers.length; i++){
       let data = map.markers[i];
-
-      let color = "red";
       let check = this.state.checks[this.state.checksMap[data.check]];
-      if(check.checked > 0){
-        color = "green";
-      }
-      else if(this.state.util.checks.canCheck(0, check, this.state.locations, this.state.obtainables, this.state.checks, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap)){
-        color = "yellow";
-      }
-
-      let marker = L.circle([y, x], {
-          color: color,
-          fillColor: color,
+      console.log(data);
+      let marker = L.circle([Math.abs(data.lat-this.mapLat)/1000, data.lon/1000], {
+          color: "black",
+          fillColor: "black",
           weight: 1.0,
-          fillOpacity: 0.5,
+          fillOpacity: 0,
+          opacity: 0,
           radius: 5000,
       });
 
@@ -329,10 +336,48 @@ class App extends Component {
           this.closePopup();
       })
       marker.on('click', () => this.handleClickCheckList(check.id));
+
       marker.addTo(this.map);
+      this.activeMarkers[data.check] = marker;
+      this.colorMarker(this.state.filter, data.check, this.state.checks, this.state.locations, this.state.obtainables);
       x = x + .1;
       y = y + .1;
     }
+
+  }
+
+  colorMarker(filter, checkCode, checks, locations, obtainables){
+    if(this.activeMarkers === undefined || this.activeMarkers === null){
+      return;
+    }
+
+    let marker = this.activeMarkers[checkCode];
+
+    let color = "red";
+    let check = this.state.checks[this.state.checksMap[checkCode]];
+
+    if(check.checked > 0){
+      color = "green";
+    }
+    else{
+      let canCheck = [];
+      for(let i = 0; i < filter.state.length; i++){
+        let state = filter.state[i]
+        canCheck.push(
+          this.state.util.checks.canCheck(
+            state, check, locations, obtainables, checks, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap
+          )
+        );
+      }
+      if(canCheck.includes(true)){color = "yellow";}
+    }
+
+    marker.setStyle({
+      opacity: 1.0,
+      fillOpacity: 0.5,
+      color: color,
+      fillColor: color
+    })
 
   }
 
@@ -341,12 +386,6 @@ class App extends Component {
     map.setView([0, 0], 8);
     map.setMinZoom(8);
     map.setMaxZoom(10);
-    /*let imageUrl = this.state.mapImgs[this.state.activeMap].src;
-    let imageBounds = [[0, 0], [0, 0]];
-    let mapImage = L.imageOverlay(imageUrl, imageBounds);
-    mapImage.addTo(map);
-    this.map = map;
-    this.mapImage = mapImage;*/
     this.map = map;
   }
 
