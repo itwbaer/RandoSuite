@@ -73,8 +73,8 @@
 		"id" : 10,
 		"check" : "check_song_colossus",
 		"map" : ["map_desert_colossus"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1450],
+		"lon" : [772]
 	},
 	{
 		"id" : 11,
@@ -87,100 +87,100 @@
 		"id" : 12,
 		"check" : "check_item_duku_lobby",
 		"map" : ["map_deku_tree"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [833],
+		"lon" : [827]
 	},
 	{
 		"id" : 13,
 		"check" : "check_item_duku_slingshot",
 		"map" : ["map_deku_tree"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1288],
+		"lon" : [139]
 	},
 	{
 		"id" : 14,
 		"check" : "check_item_duku_slingshot_vines",
 		"map" : ["map_deku_tree"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1373],
+		"lon" : [261]
 	},
 	{
 		"id" : 15,
 		"check" : "check_item_deku_compass",
 		"map" : ["map_deku_tree"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [211],
+		"lon" : [99]
 	},
 	{
 		"id" : 16,
 		"check" : "check_item_deku_compass_vines",
 		"map" : ["map_deku_tree"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [366],
+		"lon" : [264]
 	},
 	{
 		"id" : 17,
 		"check" : "check_item_deku_basement",
 		"map" : ["map_deku_tree"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2444],
+		"lon" : [1180]
 	},
 	{
 		"id" : 18,
 		"check" : "check_item_deku_boss",
 		"map" : ["map_deku_tree"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1992],
+		"lon" : [1491]
 	},
 	{
 		"id" : 19,
 		"check" : "check_item_dodongo_lobby",
 		"map" : ["map_dodongos"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2708],
+		"lon" : [623]
 	},
 	{
 		"id" : 20,
 		"check" : "check_item_dodongo_near_huge_stairs",
 		"map" : ["map_dodongos"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2962],
+		"lon" : [223]
 	},
 	{
 		"id" : 21,
 		"check" : "check_item_dodongo_bomb_flower_platform",
 		"map" : ["map_dodongos"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1098],
+		"lon" : [1724]
 	},
 	{
 		"id" : 22,
 		"check" : "check_item_dodongo_bomb_bag",
 		"map" : ["map_dodongos"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [710],
+		"lon" : [1638]
 	},
 	{
 		"id" : 23,
 		"check" : "check_item_dodongo_end_of_bridge",
 		"map" : ["map_dodongos"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [558],
+		"lon" : [670]
 
 	},
 	{
 		"id" : 24,
 		"check" : "check_item_dodongo_above_boss",
 		"map" : ["map_dodongos"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1955],
+		"lon" : [565]
 	},
 	{
 		"id" : 25,
 		"check" : "check_item_dodongo_boss",
 		"map" : ["map_dodongos"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1536],
+		"lon" : [650]
 	},
 	{
 		"id" : 26,
@@ -214,204 +214,204 @@
 		"id" : 30,
 		"check" : "check_item_temple_forest_first_room",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [3096],
+		"lon" : [1238]
 	},
 	{
 		"id" : 31,
 		"check" : "check_item_temple_forest_behind_lobby",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1529],
+		"lon" : [1350]
 	},
 	{
 		"id" : 32,
 		"check" : "check_item_temple_forest_inside_well",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2720],
+		"lon" : [1525]
 	},
 	{
 		"id" : 33,
 		"check" : "check_item_temple_forest_map",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [604],
+		"lon" : [1358]
 	},
 	{
 		"id" : 34,
 		"check" : "check_item_temple_forest_outside_hookshot_check",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1821],
+		"lon" : [1979]
 	},
 	{
 		"id" : 35,
 		"check" : "check_item_temple_forest_push_block_wall_target",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1168],
+		"lon" : [297]
 	},
 	{
 		"id" : 36,
 		"check" : "check_item_temple_forest_boss_key",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [84],
+		"lon" : [658]
 	},
 	{
 		"id" : 37,
 		"check" : "check_item_temple_forest_floormaster",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2080],
+		"lon" : [469]
 	},
 	{
 		"id" : 38,
 		"check" : "check_item_temple_forest_bow",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [390],
+		"lon" : [1350]
 	},
 	{
 		"id" : 39,
 		"check" : "check_item_temple_forest_red_poe",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [313],
+		"lon" : [1137]
 	},
 	{
 		"id" : 40,
 		"check" : "check_item_temple_forest_blue_poe",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [318],
+		"lon" : [1534]
 	},
 	{
 		"id" : 41,
 		"check" : "check_item_temple_forest_falling_room",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1990],
+		"lon" : [2118]
 	},
 	{
 		"id" : 42,
 		"check" : "check_item_temple_forest_rotating_room",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2356],
+		"lon" : [2423]
 	},
 	{
 		"id" : 43,
 		"check" : "check_item_temple_forest_boss",
 		"map" : ["map_forest_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1397],
+		"lon" : [2633]
 	},
 	{
 		"id" : 44,
 		"check" : "check_item_temple_fire_near_boss",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [3825],
+		"lon" : [1007]
 	},
 	{
 		"id" : 45,
 		"check" : "check_item_temple_fire_boss_key_area_one",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2917],
+		"lon" : [1380]
 	},
 	{
 		"id" : 46,
 		"check" : "check_item_temple_fire_boss_key_area_two",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [3290],
+		"lon" : [1429]
 	},
 	{
 		"id" : 47,
 		"check" : "check_item_temple_fire_north_open_lava_room",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2672],
+		"lon" : [2320]
 	},
 	{
 		"id" : 48,
 		"check" : "check_item_temple_fire_south_open_lava_room",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [4297],
+		"lon" : [2130]
 	},
 	{
 		"id" : 49,
 		"check" : "check_item_temple_fire_boulder_maze",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2542],
+		"lon" : [2637]
 	},
 	{
 		"id" : 50,
 		"check" : "check_item_temple_fire_room_near_boulder_maze",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1224],
+		"lon" : [1910]
 	},
 	{
 		"id" : 51,
 		"check" : "check_item_temple_fire_above_boulder_maze",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2505],
+		"lon" : [2087]
 	},
 	{
 		"id" : 52,
 		"check" : "check_item_temple_fire_boulder_maze_bombable",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2446],
+		"lon" : [2255]
 	},
 	{
 		"id" : 53,
 		"check" : "check_item_temple_fire_scarecrow_song",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [226],
+		"lon" : [2132]
 	},
 	{
 		"id" : 54,
 		"check" : "check_item_temple_fire_fire_wall",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1870],
+		"lon" : [1860]
 	},
 	{
 		"id" : 55,
 		"check" : "check_item_temple_fire_fire_maze_side",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1445],
+		"lon" : [1091]
 	},
 	{
 		"id" : 56,
 		"check" : "check_item_temple_fire_fire_maze_center",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1974],
+		"lon" : [720]
 	},
 	{
 		"id" : 57,
 		"check" : "check_item_temple_fire_hammer",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [539],
+		"lon" : [478]
 	},
 	{
 		"id" : 58,
 		"check" : "check_item_temple_fire_boss",
 		"map" : ["map_fire_temple"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [3439],
+		"lon" : [456]
 	},
 	{
 		"id" : 59,
@@ -886,106 +886,106 @@
 		"id" : 126,
 		"check" : "check_item_ganons_water_trial_one",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1851],
+		"lon" : [2578]
 	},
 	{
 		"id" : 127,
 		"check" : "check_item_ganons_water_trial_two",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1660],
+		"lon" : [2576]
 	},
 	{
 		"id" : 128,
 		"check" : "check_item_ganons_shadow_trial",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1805],
+		"lon" : [1977]
 	},
 	{
 		"id" : 129,
 		"check" : "check_item_ganons_gold_gauntlets",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [654],
+		"lon" : [2466]
 	},
 	{
 		"id" : 130,
 		"check" : "check_item_ganons_spirit_trial_switch",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2330],
+		"lon" : [1552]
 	},
 	{
 		"id" : 131,
 		"check" : "check_item_ganons_spirit_trial_invisible",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2309],
+		"lon" : [1127]
 	},
 	{
 		"id" : 132,
 		"check" : "check_item_ganons_light_trial_first_room_one",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1755],
+		"lon" : [1113]
 	},
 	{
 		"id" : 133,
 		"check" : "check_item_ganons_light_trial_first_room_two",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1699],
+		"lon" : [1178]
 	},
 	{
 		"id" : 134,
 		"check" : "check_item_ganons_light_trial_first_room_three",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1811],
+		"lon" : [1699]
 	},
 	{
 		"id" : 135,
 		"check" : "check_item_ganons_light_trial_first_room_four",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1671],
+		"lon" : [1110]
 	},
 	{
 		"id" : 136,
 		"check" : "check_item_ganons_light_trial_first_room_five",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1835],
+		"lon" : [1110]
 	},
 	{
 		"id" : 137,
 		"check" : "check_item_ganons_light_trial_first_room_six",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1694],
+		"lon" : [1048]
 	},
 	{
 		"id" : 138,
 		"check" : "check_item_ganons_light_trial_first_room_seven",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1815],
+		"lon" : [1048]
 	},
 	{
 		"id" : 139,
 		"check" : "check_item_ganons_light_trial_second_room",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1711],
+		"lon" : [928]
 	},
 	{
 		"id" : 140,
 		"check" : "check_item_ganons_boss_key",
 		"map" : ["map_ganons_trials"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1851],
+		"lon" : [3673]
 	},
 	{
 		"id" : 141,
@@ -1047,8 +1047,8 @@
 		"id" : 149,
 		"check" : "check_item_overworld_chest_death_mountain_trail_bomb_wall",
 		"map" : ["map_death_mountain_trail"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2671],
+		"lon" : [1027]
 	},
 	{
 		"id" : 150,
@@ -1082,15 +1082,15 @@
 		"id" : 154,
 		"check" : "check_item_overworld_chest_hammer_rocks",
 		"map" : ["map_gerudo_valley"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2322],
+		"lon" : [1561]
 	},
 	{
 		"id" : 155,
 		"check" : "check_item_overworld_chest_gerudo_roof",
 		"map" : ["map_gerudo_fortress"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1145],
+		"lon" : [1027]
 	},
 	{
 		"id" : 156,
@@ -1397,8 +1397,8 @@
 		"id" : 199,
 		"check" : "check_item_gifts_biggoron",
 		"map" : ["map_death_mountain_trail"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1006],
+		"lon" : [1434]
 	},
 	{
 		"id" : 200,
@@ -1439,22 +1439,22 @@
 		"id" : 205,
 		"check" : "check_item_fairy_zoras",
 		"map" : ["map_fountain_adult", "map_fountain_child"],
-		"lat" : [0, 0],
-		"lon" : [0, 0]
+		"lat" : [2238, 2238],
+		"lon" : [1378, 1378]
 	},
 	{
 		"id" : 206,
 		"check" : "check_item_fairy_desert",
 		"map" : ["map_desert_colossus"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [830],
+		"lon" : [2188]
 	},
 	{
 		"id" : 207,
 		"check" : "check_item_fairy_mountain_summit",
 		"map" : ["map_death_mountain_trail"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [909],
+		"lon" : [1154]
 	},
 	{
 		"id" : 208,
@@ -1467,8 +1467,8 @@
 		"id" : 209,
 		"check" : "check_item_fairy_ganons_castle",
 		"map" : ["map_ganons_castle"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1112],
+		"lon" : [2488]
 	},
 	{
 		"id" : 210,
@@ -1516,8 +1516,8 @@
 		"id" : 216,
 		"check" : "check_item_grottos_death_mountain_sos",
 		"map" : ["map_death_mountain_trail"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2432],
+		"lon" : [2023]
 	},
 	{
 		"id" : 217,
@@ -1600,8 +1600,8 @@
 		"id" : 228,
 		"check" : "check_item_hearts_dodongos",
 		"map" : ["map_death_mountain_trail"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2260],
+		"lon" : [635]
 	},
 	{
 		"id" : 229,
@@ -1650,36 +1650,36 @@
 		"id" : 235,
 		"check" : "check_item_hearts_zora_iceberg",
 		"map" : ["map_fountain_adult"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1202],
+		"lon" : [1681]
 	},
 	{
 		"id" : 236,
 		"check" : "check_item_hearts_zora_bottom",
 		"map" : ["map_fountain_adult"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1169],
+		"lon" : [1273]
 	},
 	{
 		"id" : 237,
 		"check" : "check_item_hearts_gerudo_waterfall",
 		"map" : ["map_gerudo_valley"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1000],
+		"lon" : [2124]
 	},
 	{
 		"id" : 238,
 		"check" : "check_item_hearts_gerudo_chicken",
 		"map" : ["map_gerudo_valley"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [2578],
+		"lon" : [1958]
 	},
 	{
 		"id" : 239,
 		"check" : "check_item_desert_bean",
 		"map" : ["map_desert_colossus"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1444],
+		"lon" : [1055]
 	},
 	{
 		"id" : 240,
@@ -1755,15 +1755,15 @@
 		"id" : 250,
 		"check" : "check_item_minigame_horseback_archery_one",
 		"map" : ["map_gerudo_fortress"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1605],
+		"lon" : [1717]
 	},
 	{
 		"id" : 251,
 		"check" : "check_item_minigame_horseback_archery_two",
 		"map" : ["map_gerudo_fortress"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1670],
+		"lon" : [1717]
 	},
 	{
 		"id" : 252,
@@ -1783,14 +1783,14 @@
 		"id" : 254,
 		"check" : "check_item_minigame_dampe_race_one",
 		"map" : ["map_dampes_grave"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1355],
+		"lon" : [503]
 	},
 	{
 		"id" : 255,
 		"check" : "check_item_minigame_dampe_race_two",
 		"map" : ["map_dampes_grave"],
-		"lat" : [0],
-		"lon" : [0]
+		"lat" : [1407],
+		"lon" : [502]
 	}
 ]

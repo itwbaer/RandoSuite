@@ -563,7 +563,7 @@
 		"state" : [1],
 		"location" : 9,
 		"required": [{
-									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"obtainables": [["item_bombs"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -2782,7 +2782,7 @@
 		"code" : "check_item_hearts_gerudo_waterfall",
 		"name" : "Waterfall Heartpiece",
 		"type" : 1,
-		"state" : [0, 1],
+		"state" : [0],
 		"location" : 22,
 		"checked" : -1
 	},
