@@ -2731,6 +2731,10 @@
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 10,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hover_boots"], ["item_silver_scale"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -2740,6 +2744,10 @@
 		"type" : 1,
 		"state" : [0, 1],
 		"location" : 10,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hover_boots"], ["item_silver_scale"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
