@@ -900,7 +900,7 @@
 		"id" : 128,
 		"check" : "check_item_ganons_shadow_trial",
 		"map" : ["map_ganons_trials"],
-		"lat" : [1805],
+		"lat" : [1085],
 		"lon" : [1977]
 	},
 	{
@@ -914,15 +914,15 @@
 		"id" : 130,
 		"check" : "check_item_ganons_spirit_trial_switch",
 		"map" : ["map_ganons_trials"],
-		"lat" : [2330],
-		"lon" : [1552]
+		"lat" : [2309],
+		"lon" : [1127]
 	},
 	{
 		"id" : 131,
 		"check" : "check_item_ganons_spirit_trial_invisible",
 		"map" : ["map_ganons_trials"],
-		"lat" : [2309],
-		"lon" : [1127]
+		"lat" : [2330],
+		"lon" : [1552]
 	},
 	{
 		"id" : 132,
@@ -943,7 +943,7 @@
 		"check" : "check_item_ganons_light_trial_first_room_three",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1811],
-		"lon" : [1699]
+		"lon" : [1178]
 	},
 	{
 		"id" : 135,
