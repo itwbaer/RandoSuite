@@ -16,7 +16,7 @@ module.exports = {
 				filteredMaps.push(pair);
 				pushedMaps.push(current.id);
 			}
-			else if(current.location == -1 && !pushedMaps.includes(current.id)){
+			else if(current.location === -1 && !pushedMaps.includes(current.id)){
 				//always add -1
 				let pair = {"map": current, "image": mapImgs[i]};
 				filteredMaps.push(pair);

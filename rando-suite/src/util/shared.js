@@ -1,9 +1,10 @@
 module.exports = {
 
-	getAllFilterOptions: function(locations, states){
+	getAllFilterOptions: function(locations, states, checkTypes){
 		let options = {};
 		options["location"] = this.objectToOptions(locations);
 		options["state"] = this.objectToOptions(states);
+		options["checkType"] = this.objectToOptions(checkTypes);
 		options["accessible"] = [
 									{ value: true, label: 'Accessible' },
       								{ value: false, label: 'Not Accessible' }

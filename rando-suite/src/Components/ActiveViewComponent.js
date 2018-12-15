@@ -17,8 +17,10 @@ export class ActiveViewComponent extends Component{
           locations={this.props.locations}
           locationsMap={this.props.locationsMap}
           states={this.props.states}
+          checkTypes={this.props.checkTypes}
           filteredChecks={this.props.filteredChecks}
           checklistOnClick={(id, data) => this.props.checklistOnClick(id, data)}
+          undoOnClick={this.props.undoOnClick}
           util={this.props.util}
           filter={this.props.filter}
           progressives={this.props.progressives}
@@ -48,6 +50,7 @@ export class ActiveViewComponent extends Component{
           filterOptions={this.props.filterOptions}
           states={this.props.states}
           locations={this.props.locations}
+          checkTypes={this.props.checkTypes}
           util={this.props.util}
       />
     );

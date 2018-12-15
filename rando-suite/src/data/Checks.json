@@ -195,7 +195,7 @@
 		"id" : 18,
 		"code" : "check_item_deku_boss",
 		"name" : "Ghoma Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0],
 		"location" : 1,
 		"required": [{
@@ -278,7 +278,7 @@
 		"id" : 25,
 		"code" : "check_item_dodongo_boss",
 		"name" : "Dodongo Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0, 1],
 		"location" : 6,
 		"required": [{
@@ -326,7 +326,7 @@
 		"id" : 29,
 		"code" : "check_item_jabu_boss",
 		"name" : "Barinade Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0],
 		"location" : 13,
 		"required_obtainables" : "30",
@@ -502,7 +502,7 @@
 		"id" : 43,
 		"code" : "check_item_temple_forest_boss",
 		"name" : "Phantom Ganon Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 4,
 		"required": [{
@@ -689,7 +689,7 @@
 		"id" : 58,
 		"code" : "check_item_temple_fire_boss",
 		"name" : "Volvagia Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 9,
 		"required": [{
@@ -720,7 +720,7 @@
 		"id" : 61,
 		"code" : "check_item_ice_frozen_poh",
 		"name" : "Frozen Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 14,
 		"checked" : -1
@@ -860,7 +860,7 @@
 		"id" : 73,
 		"code" : "check_item_temple_water_boss",
 		"name" : "Morpha Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 16,
 		"required": [{
@@ -1240,7 +1240,7 @@
 		"id" : 105,
 		"code" : "check_item_temple_shadow_boss",
 		"name" : "Bongo Bongo Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 18,
 		"required": [{
@@ -1472,7 +1472,7 @@
 		"id" : 125,
 		"code" : "check_item_temple_spirit_boss",
 		"name" : "Twinrova Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 27,
 		"required": [{
@@ -2220,7 +2220,7 @@
 		"state" : [0],
 		"location" : 7,
 		"required": [{
-									"obtainables": [["item_bombs"], ["item_bracelet"]],
+									"obtainables": [["item_bombs"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -2656,7 +2656,7 @@
 		"id" : 224,
 		"code" : "check_item_hearts_ranch",
 		"name" : "Heartpiece in Barn",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0],
 		"location" : 29,
 		"checked" : -1
@@ -2665,7 +2665,7 @@
 		"id" : 225,
 		"code" : "check_item_hearts_impas_house",
 		"name" : "Heartpiece in Impas House",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0, 1],
 		"location" : 17,
 		"checked" : -1
@@ -2674,7 +2674,7 @@
 		"id" : 226,
 		"code" : "check_item_hearts_windmill",
 		"name" : "Heartpiece in Windmill",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 17,
 		"required": [{
@@ -2687,7 +2687,7 @@
 		"id" : 227,
 		"code" : "check_item_hearts_graveyard_bean",
 		"name" : "Graveyard Bean Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 20,
 		"required": [{
@@ -2700,7 +2700,7 @@
 		"id" : 228,
 		"code" : "check_item_hearts_dodongos",
 		"name" : "Heartpiece Above Dodongos",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0, 1],
 		"location" : 5,
 		"checked" : -1
@@ -2709,7 +2709,7 @@
 		"id" : 229,
 		"code" : "check_item_hearts_goron_pot",
 		"name" : "Spinning Pot Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0],
 		"location" : 7,
 		"required": [{
@@ -2722,7 +2722,7 @@
 		"id" : 230,
 		"code" : "check_item_hearts_crater_wall",
 		"name" : "Wall Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0, 1],
 		"location" : 8,
 		"checked" : -1
@@ -2731,7 +2731,7 @@
 		"id" : 231,
 		"code" : "check_item_hearts_crater_bean",
 		"name" : "Crater Bean Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 8,
 		"required": [{
@@ -2744,7 +2744,7 @@
 		"id" : 232,
 		"code" : "check_item_hearts_zora_lower",
 		"name" : "Heartpiece Lower River",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0, 1],
 		"location" : 10,
 		"required": [{
@@ -2757,7 +2757,7 @@
 		"id" : 233,
 		"code" : "check_item_hearts_zora_upper",
 		"name" : "Heartpiece Upper River",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0, 1],
 		"location" : 10,
 		"required": [{
@@ -2770,7 +2770,7 @@
 		"id" : 234,
 		"code" : "check_item_hearts_hylia_roof",
 		"name" : "Heartpiece Above Lab",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 15,
 		"required": [{
@@ -2783,7 +2783,7 @@
 		"id" : 235,
 		"code" : "check_item_hearts_zora_iceberg",
 		"name" : "Iceberg Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 12,
 		"checked" : -1
@@ -2792,7 +2792,7 @@
 		"id" : 236,
 		"code" : "check_item_hearts_zora_bottom",
 		"name" : "Fountain Bottom Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 12,
 		"required": [{
@@ -2805,7 +2805,7 @@
 		"id" : 237,
 		"code" : "check_item_hearts_gerudo_waterfall",
 		"name" : "Waterfall Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0],
 		"location" : 22,
 		"checked" : -1
@@ -2814,7 +2814,7 @@
 		"id" : 238,
 		"code" : "check_item_hearts_gerudo_chicken",
 		"name" : "Chicken Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [0],
 		"location" : 22,
 		"checked" : -1
@@ -2823,7 +2823,7 @@
 		"id" : 239,
 		"code" : "check_item_desert_bean",
 		"name" : "Desert Bean Heartpiece",
-		"type" : 1,
+		"type" : 2,
 		"state" : [1],
 		"location" : 26,
 		"required": [{

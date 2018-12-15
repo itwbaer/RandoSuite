@@ -2,11 +2,26 @@
 	{
 		"id" : 0,
 		"code" : "check_song",
-		"name" : "Song Check"
+		"name" : "Song"
 	},
 	{
 		"id" : 1,
 		"code" : "check_item",
-		"name" : "Item Check"
+		"name" : "Item"
+	},
+	{
+		"id" : 2,
+		"code" : "check_heartpiece",
+		"name" : "Heartpiece"
+	},
+	{
+		"id" : 3,
+		"code" : "check_skulls",
+		"name" : "Skulltula"
+	},
+	{
+		"id" : 4,
+		"code" : "check_scrubs",
+		"name" : "Scrubs"
 	}
 ]

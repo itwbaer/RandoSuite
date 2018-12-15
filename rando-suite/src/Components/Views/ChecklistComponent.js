@@ -19,6 +19,7 @@ export class ChecklistComponent extends Component{
       //heading
       for(let j = 0; j < this.props.filteredChecks.length; j++){
         if(this.props.filteredChecks[j].location === currentIndex){
+          checklist.push(<br />);
           checklist.push(<h5 key={"heading-" + this.props.locations[currentIndex].name}>{this.props.locations[currentIndex].name}</h5>);
           break;
         }
@@ -31,6 +32,7 @@ export class ChecklistComponent extends Component{
 
         let checkName = currentCheck.name;
         let checkLocation = this.props.locations[currentCheck.location].name;
+        let checkType = this.props.checkTypes[currentCheck.type].name;
         let checkState = "";
         for(let j = 0; j < currentCheck.state.length; j++){
           let currentState = currentCheck.state[j];
@@ -44,50 +46,29 @@ export class ChecklistComponent extends Component{
             name={checkName}
             location={checkLocation}
             state={checkState}
+            type={checkType}
             checked={currentCheck.checked}
             onClick={(data) => this.props.checklistOnClick(currentCheck.id, data)}
           />
        );
+
       }
     }
 
     return checklist;
-    /*for(let i = 0; i < this.props.filteredChecks.length; i++){
-
-
-      let currentCheck = this.props.filteredChecks[i];
-
-      let checkName = currentCheck.name;
-      let checkLocation = this.props.locations[currentCheck.location].name;
-      let checkState = "";
-      for(let j = 0; j < currentCheck.state.length; j++){
-        let currentState = currentCheck.state[j];
-        if(j === 0){checkState = checkState + this.props.states[currentState].name}
-        else{checkState = checkState + "/" + this.props.states[currentState].name}
-      }
-
-      checks.push(
-        <CheckDisplayComponent
-          key={"check-" + currentCheck.id} 
-          name={checkName}
-          location={checkLocation}
-          state={checkState}
-          checked={currentCheck.checked}
-          onClick={(data) => this.props.checklistOnClick(currentCheck.id, data)}
-        />
-      );
-    }
-
-    return checks;*/
-
 
   }
 
 
 	render() {
     return(
-      <div className="container-fluid" id="">       
-      	{this.createChecklist()}
+      <div>
+        <div className="container-fluid" id="ChecklistOptions">       
+          <button type="button" className="btn btn-danger" onClick={this.props.undoOnClick}>Undo</button>
+        </div>
+        <div className="container-fluid" id="Checklist">       
+        	{this.createChecklist()}
+        </div>
       </div>
     );
   }

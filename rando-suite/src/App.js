@@ -74,7 +74,7 @@ class App extends Component {
     let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
     let filteredMaps = util.maps.filterMaps(filteredChecks, maps, mapImgs);
 
-    let filterOptions = util.shared.getAllFilterOptions(locations, states);
+    let filterOptions = util.shared.getAllFilterOptions(locations, states, checkTypes);
 
     this.map = null;
     this.mapImage = null;
@@ -313,8 +313,7 @@ class App extends Component {
     if(map["markers"] === undefined || map["markers"] === null){
       return;
     }
-    let x = 0;
-    let y = 0;
+
     for(let i = 0; i < map.markers.length; i++){
       let data = map.markers[i];
       let check = this.state.checks[this.state.checksMap[data.check]];
@@ -340,8 +339,7 @@ class App extends Component {
       marker.addTo(this.map);
       this.activeMarkers[data.check] = marker;
       this.colorMarker(this.state.filter, data.check, this.state.checks, this.state.locations, this.state.obtainables);
-      x = x + .1;
-      y = y + .1;
+
     }
 
   }
@@ -354,7 +352,7 @@ class App extends Component {
     let marker = this.activeMarkers[checkCode];
 
     let color = "red";
-    let check = this.state.checks[this.state.checksMap[checkCode]];
+    let check = checks[this.state.checksMap[checkCode]];
 
     if(check.checked > 0){
       color = "green";
@@ -420,6 +418,7 @@ class App extends Component {
                   activeView={this.state.activeView}
                   states={this.state.states}
                   checks={this.state.checks}
+                  checkTypes={this.state.checkTypes}
                   locations={this.state.locations}
                   locationsMap={this.state.locationsMap}
                   filteredChecks={this.state.filteredChecks}
@@ -435,6 +434,7 @@ class App extends Component {
                   loadOnClick={(data) => this.loadFile(data)}
                   checklistOnClick={(id, data) => this.handleClickCheckList(id, data)}
                   filterOnChange={(key, data) => this.handleFilterChange(key, data)}
+                  undoOnClick={() => this.undoLastCheck()}
                 />
               </div>
             </div>

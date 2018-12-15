@@ -33,6 +33,7 @@ module.exports = {
 
 			let inLocation = filter.location.includes(check.location);
 			let hasChecked = filter.checked.includes(check.checked);
+			let isType = filter.checkType.includes(check.type);
 			//for each state, see if check falls in accessible rule
 			let canCheck = [];
 			let inState = [];
@@ -42,7 +43,7 @@ module.exports = {
 				inState.push(check.state.includes(currentState));
 			}
 
-			if(inLocation && hasChecked && inState.includes(true) && canCheck.includes(true)){filteredChecks.push(check);}
+			if(inLocation && hasChecked && isType && inState.includes(true) && canCheck.includes(true)){filteredChecks.push(check);}
 		}
 
 		return filteredChecks;

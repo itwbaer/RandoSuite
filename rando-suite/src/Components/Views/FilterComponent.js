@@ -37,6 +37,24 @@ export class FilterComponent extends Component{
     );
   }
 
+  filterType(){
+    let key = "checkType";
+    let options = this.props.filterOptions[key];
+    console.log(options);
+    let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
+    let placeholder = "Type?"
+    return(
+      <FilterSelectComponent
+        key={key}
+        placeholder={placeholder}
+        selected={selected}
+        options={options}
+        onChange={(data) => this.props.filterOnChange(key, data)}
+        isSearchable={false}
+      />
+    );
+  }
+
   filterChecked(){
     let key = "checked";
     let options = this.props.filterOptions[key];
@@ -77,6 +95,7 @@ export class FilterComponent extends Component{
     let filter = [];
     filter.push(this.filterState());
     filter.push(this.filterAccessible());
+    filter.push(this.filterType());
     filter.push(this.filterChecked());
     filter.push(this.filterLocations());
     return filter;
