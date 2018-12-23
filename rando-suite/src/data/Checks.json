@@ -3011,5 +3011,1193 @@
 		"state" : [1],
 		"location" : 21,
 		"checked" : -1
+	},
+	{
+		"id" : 256,
+		"code" : "check_skull_kokiri_house",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 0,
+		"checked" : -1
+	},
+	{
+		"id" : 257,
+		"code" : "check_skull_market_guard_house",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 30,
+		"checked" : -1
+	},
+	{
+		"id" : 258,
+		"code" : "check_skull_hyrule_castle_tree",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 31,
+		"checked" : -1
+	},
+	{
+		"id" : 259,
+		"code" : "check_skull_hyrule_castle_grotto",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 31,
+		"checked" : -1
+	},
+	{
+		"id" : 260,
+		"code" : "check_skull_ranch_tree",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 29,
+		"checked" : -1
+	},
+	{
+		"id" : 261,
+		"code" : "check_skull_ranch_house",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 29,
+		"checked" : -1
+	},
+	{
+		"id" : 262,
+		"code" : "check_skull_ranch_inner_fence",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 29,
+		"checked" : -1
+	},
+	{
+		"id" : 263,
+		"code" : "check_skull_ranch_outer_fence",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 29,
+		"checked" : -1
+	},
+	{
+		"id" : 264,
+		"code" : "check_skull_kakariko_shooting_gallery",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 17,
+		"checked" : -1
+	},
+	{
+		"id" : 265,
+		"code" : "check_skull_kakariko_house_of_skulltula",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 17,
+		"checked" : -1
+	},
+	{
+		"id" : 266,
+		"code" : "check_skull_kakariko_tree",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 17,
+		"checked" : -1
+	},
+	{
+		"id" : 267,
+		"code" : "check_skull_kakariko_bazaar",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 17,
+		"checked" : -1
+	},
+	{
+		"id" : 268,
+		"code" : "check_skull_kakariko_ladder",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 17,
+		"checked" : -1
+	},
+	{
+		"id" : 269,
+		"code" : "check_skull_graveyard_wall",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 20,
+		"checked" : -1
+	},
+	{
+		"id" : 270,
+		"code" : "check_skull_goron_city_maze",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 7,
+		"checked" : -1
+	},
+	{
+		"id" : 271,
+		"code" : "check_skull_death_mountain_crate",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 8,
+		"checked" : -1
+	},
+	{
+		"id" : 272,
+		"code" : "check_skull_zora_river_tree",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 10,
+		"checked" : -1
+	},
+	{
+		"id" : 273,
+		"code" : "check_skull_zora_river_ladder",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 10,
+		"checked" : -1
+	},
+	{
+		"id" : 274,
+		"code" : "check_skull_zora_fountain_wall",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 12,
+		"checked" : -1
+	},
+	{
+		"id" : 275,
+		"code" : "check_skull_zora_fountain_tree",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 12,
+		"checked" : -1
+	},
+	{
+		"id" : 276,
+		"code" : "check_skull_hylia_lab_wall",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 15,
+		"checked" : -1
+	},
+	{
+		"id" : 277,
+		"code" : "check_skull_hylia_island",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 15,
+		"checked" : -1
+	},
+	{
+		"id" : 278,
+		"code" : "check_skull_gerudo_valley_wall",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [0],
+		"location" : 22,
+		"checked" : -1
+	},
+	{
+		"id" : 279,
+		"code" : "check_skull_soil_kokiri",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 0,
+		"checked" : -1
+	},
+	{
+		"id" : 280,
+		"code" : "check_skull_soil_lost_woods_bridge",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 2,
+		"checked" : -1
+	},
+	{
+		"id" : 281,
+		"code" : "check_skull_soil_lost_woods_theater",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 2,
+		"checked" : -1
+	},
+	{
+		"id" : 282,
+		"code" : "check_skull_soil_graveyard",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 20,
+		"checked" : -1
+	},
+	{
+		"id" : 283,
+		"code" : "check_skull_soil_death_mountain_trail",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 5,
+		"checked" : -1
+	},
+	{
+		"id" : 284,
+		"code" : "check_skull_soil_death_mountain_crater",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 8,
+		"checked" : -1
+	},
+	{
+		"id" : 285,
+		"code" : "check_skull_soil_lake_hylia",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 15,
+		"checked" : -1
+	},
+	{
+		"id" : 286,
+		"code" : "check_skull_soil_gerudo_valley",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 22,
+		"checked" : -1
+	},
+	{
+		"id" : 287,
+		"code" : "check_skull_soil_desert_colossus",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 26,
+		"checked" : -1
+	},
+	{
+		"id" : 288,
+		"code" : "check_skull_freestanding_grotto_kakariko",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 17,
+		"checked" : -1
+	},
+	{
+		"id" : 289,
+		"code" : "check_skull_freestanding_grotto_gerudo",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 22,
+		"checked" : -1
+	},
+	{
+		"id" : 290,
+		"code" : "check_skull_freestanding_death_mountain",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 8,
+		"checked" : -1
+	},
+	{
+		"id" : 291,
+		"code" : "check_skull_freestanding_haunted_wasteland",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 25,
+		"checked" : -1
+	},
+	{
+		"id" : 292,
+		"code" : "check_skull_kokiri_house_twins",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 0,
+		"checked" : -1
+	},
+	{
+		"id" : 293,
+		"code" : "check_skull_lost_woods_bean",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 2,
+		"checked" : -1
+	},
+	{
+		"id" : 294,
+		"code" : "check_skull_sacred_forest_meadow",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 3,
+		"checked" : -1
+	},
+	{
+		"id" : 295,
+		"code" : "check_skull_ganons_castle",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 33,
+		"checked" : -1
+	},
+	{
+		"id" : 296,
+		"code" : "check_skull_death_mountain_trail_above_dodongos",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 5,
+		"checked" : -1
+	},
+	{
+		"id" : 297,
+		"code" : "check_skull_death_mountain_trail_before_wall",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 5,
+		"checked" : -1
+	},
+	{
+		"id" : 298,
+		"code" : "check_skull_goron_city",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 7,
+		"checked" : -1
+	},
+	{
+		"id" : 299,
+		"code" : "check_skull_zoras_river_grottos",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 10,
+		"checked" : -1
+	},
+	{
+		"id" : 300,
+		"code" : "check_skull_zoras_river_bridge",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 10,
+		"checked" : -1
+	},
+	{
+		"id" : 301,
+		"code" : "check_skull_zoras_domain_frozen_waterfall",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 11,
+		"checked" : -1
+	},
+	{
+		"id" : 302,
+		"code" : "check_skull_zoras_fountain_ledge",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 12,
+		"checked" : -1
+	},
+	{
+		"id" : 303,
+		"code" : "check_skull_hylia_tall_tree",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 15,
+		"checked" : -1
+	},
+	{
+		"id" : 304,
+		"code" : "check_skull_gerudo_valley_tent",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 22,
+		"checked" : -1
+	},
+	{
+		"id" : 305,
+		"code" : "check_skull_gerudo_valley_pillar",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 22,
+		"checked" : -1
+	},
+	{
+		"id" : 306,
+		"code" : "check_skull_gerudo_fortress_back_wall",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 23,
+		"checked" : -1
+	},
+	{
+		"id" : 307,
+		"code" : "check_skull_gerudo_fortress_target",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 23,
+		"checked" : -1
+	},
+	{
+		"id" : 308,
+		"code" : "check_skull_colossus_plateau",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 26,
+		"checked" : -1
+	},
+	{
+		"id" : 309,
+		"code" : "check_skull_colossus_tree",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 26,
+		"checked" : -1
+	},
+	{
+		"id" : 310,
+		"code" : "check_skull_kakariko_impa",
+		"name" : "Skulltula (N)",
+		"type" : 3,
+		"state" : [1],
+		"location" : 17,
+		"checked" : -1
+	},
+	{
+		"id" : 311,
+		"code" : "check_skull_deku_compass",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 1,
+		"checked" : -1
+	},
+	{
+		"id" : 312,
+		"code" : "check_skull_deku_basement_vines",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 1,
+		"checked" : -1
+	},
+	{
+		"id" : 313,
+		"code" : "check_skull_deku_basement_water_gate",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 1,
+		"checked" : -1
+	},
+	{
+		"id" : 314,
+		"code" : "check_skull_deku_basement_back_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 1,
+		"checked" : -1
+	},
+	{
+		"id" : 315,
+		"code" : "check_skull_dodongo_east_side_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 316,
+		"code" : "check_skull_dodongo_scarecrow",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 317,
+		"code" : "check_skull_dodongo_staircase_vines",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 318,
+		"code" : "check_skull_dodongo_top_staircase",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 319,
+		"code" : "check_skull_dodongo_near_boss",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 320,
+		"code" : "check_skull_jabu_water_switch_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 13,
+		"checked" : -1
+	},
+	{
+		"id" : 321,
+		"code" : "check_skull_jabu_near_octo_close_wall",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 13,
+		"checked" : -1
+	},
+	{
+		"id" : 322,
+		"code" : "check_skull_jabu_near_octo_far_wall",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 13,
+		"checked" : -1
+	},
+	{
+		"id" : 323,
+		"code" : "check_skull_jabu_before_barinade",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 13,
+		"checked" : -1
+	},
+	{
+		"id" : 324,
+		"code" : "check_skull_forest_entrance_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 4,
+		"checked" : -1
+	},
+	{
+		"id" : 325,
+		"code" : "check_skull_forest_central_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 4,
+		"checked" : -1
+	},
+	{
+		"id" : 326,
+		"code" : "check_skull_forest_northwest_outside",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 4,
+		"checked" : -1
+	},
+	{
+		"id" : 327,
+		"code" : "check_skull_forest_northeast_outside",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 4,
+		"checked" : -1
+	},
+	{
+		"id" : 328,
+		"code" : "check_skull_forest_near_boss",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 4,
+		"checked" : -1
+	},
+	{
+		"id" : 329,
+		"code" : "check_skull_fire_song_of_time_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 9,
+		"checked" : -1
+	},
+	{
+		"id" : 330,
+		"code" : "check_skull_fire_hammer_statues",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 9,
+		"checked" : -1
+	},
+	{
+		"id" : 331,
+		"code" : "check_skull_fire_boulder_maze_bomb_wall",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 9,
+		"checked" : -1
+	},
+	{
+		"id" : 332,
+		"code" : "check_skull_fire_scarecrow_chain_wall",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 9,
+		"checked" : -1
+	},
+	{
+		"id" : 333,
+		"code" : "check_skull_fire_scarecrow_wall",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 9,
+		"checked" : -1
+	},
+	{
+		"id" : 334,
+		"code" : "check_skull_water_southern_basement",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 16,
+		"checked" : -1
+	},
+	{
+		"id" : 335,
+		"code" : "check_skull_water_near_boss_chest",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 16,
+		"checked" : -1
+	},
+	{
+		"id" : 336,
+		"code" : "check_skull_water_inside_central_pillar",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 16,
+		"checked" : -1
+	},
+	{
+		"id" : 337,
+		"code" : "check_skull_water_falling_platform_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 16,
+		"checked" : -1
+	},
+	{
+		"id" : 338,
+		"code" : "check_skull_water_river",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 16,
+		"checked" : -1
+	},
+	{
+		"id" : 339,
+		"code" : "check_skull_ice_scythe_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 14,
+		"checked" : -1
+	},
+	{
+		"id" : 340,
+		"code" : "check_skull_ice_frozen_heart_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 14,
+		"checked" : -1
+	},
+	{
+		"id" : 341,
+		"code" : "check_skull_ice_block_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 14,
+		"checked" : -1
+	},
+	{
+		"id" : 342,
+		"code" : "check_skull_well_west_inner_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 19,
+		"checked" : -1
+	},
+	{
+		"id" : 343,
+		"code" : "check_skull_well_east_inner_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 19,
+		"checked" : -1
+	},
+	{
+		"id" : 344,
+		"code" : "check_skull_well_near_like_like",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 19,
+		"checked" : -1
+	},
+	{
+		"id" : 345,
+		"code" : "check_skull_shadow_invisible_scythe_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 18,
+		"checked" : -1
+	},
+	{
+		"id" : 346,
+		"code" : "check_skull_shadow_crusher_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 18,
+		"checked" : -1
+	},
+	{
+		"id" : 347,
+		"code" : "check_skull_shadow_single_pot_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 18,
+		"checked" : -1
+	},
+	{
+		"id" : 348,
+		"code" : "check_skull_shadow_near_boat",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 18,
+		"checked" : -1
+	},
+	{
+		"id" : 349,
+		"code" : "check_skull_shadow_triple_pit_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 18,
+		"checked" : -1
+	},
+	{
+		"id" : 350,
+		"code" : "check_skull_spirit_child_fence",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0],
+		"location" : 27,
+		"checked" : -1
+	},
+	{
+		"id" : 351,
+		"code" : "check_skull_spirit_child_sun_switch_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0, 1],
+		"location" : 27,
+		"checked" : -1
+	},
+	{
+		"id" : 352,
+		"code" : "check_skull_spirit_hallway_iron_knuckle",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [0, 1],
+		"location" : 27,
+		"checked" : -1
+	},
+	{
+		"id" : 353,
+		"code" : "check_skull_spirit_boulder_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 27,
+		"checked" : -1
+	},
+	{
+		"id" : 354,
+		"code" : "check_skull_spirit_central_room",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 27,
+		"checked" : -1
+	},
+	{
+		"id" : 355,
+		"code" : "check_scrub_dodongo_main_room",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 356,
+		"code" : "check_scrub_dodongo_mini_dodongo_side_room",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 357,
+		"code" : "check_scrub_dodongo_bomb_bag_side_room_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 358,
+		"code" : "check_scrub_dodongo_check_scrub_dodongo_bomb_bag_side_room_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 6,
+		"checked" : -1
+	},
+	{
+		"id" : 359,
+		"code" : "check_scrub_jabu",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0],
+		"location" : 13,
+		"checked" : -1
+	},
+	{
+		"id" : 360,
+		"code" : "check_scrub_ganons_castle_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 34,
+		"checked" : -1
+	},
+	{
+		"id" : 361,
+		"code" : "check_scrub_ganons_castle_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 34,
+		"checked" : -1
+	},
+	{
+		"id" : 362,
+		"code" : "check_scrub_ganons_castle_three",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 34,
+		"checked" : -1
+	},
+	{
+		"id" : 363,
+		"code" : "check_scrub_ganons_castle_four",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 34,
+		"checked" : -1
+	},
+	{
+		"id" : 363,
+		"code" : "check_scrub_lost_woods_grotto",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 2,
+		"checked" : -1
+	},
+	{
+		"id" : 364,
+		"code" : "check_scrub_deku_theater_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0],
+		"location" : 2,
+		"checked" : -1
+	},
+	{
+		"id" : 365,
+		"code" : "check_scrub_deku_theater_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 2,
+		"checked" : -1
+	},
+	{
+		"id" : 366,
+		"code" : "check_scrub_forest_meadow_storms_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" :3 ,
+		"checked" : -1
+	},
+	{
+		"id" : 367,
+		"code" : "check_scrub_forest_meadow_storms_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 3,
+		"checked" : -1
+	},
+	{
+		"id" : 368,
+		"code" : "check_scrub_ranch_grotto_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0],
+		"location" : 29,
+		"checked" : -1
+	},
+	{
+		"id" : 369,
+		"code" : "check_scrub_ranch_grotto_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0],
+		"location" : 29,
+		"checked" : -1
+	},
+	{
+		"id" : 370,
+		"code" : "check_scrub_ranch_grotto_three",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0],
+		"location" : 29,
+		"checked" : -1
+	},
+	{
+		"id" : 371,
+		"code" : "check_scrub_goron_city_lava_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 7,
+		"checked" : -1
+	},
+	{
+		"id" : 372,
+		"code" : "check_scrub_goron_city_lava_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 7,
+		"checked" : -1
+	},
+	{
+		"id" : 373,
+		"code" : "check_scrub_goron_city_lava_three",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 7,
+		"checked" : -1
+	},
+	{
+		"id" : 374,
+		"code" : "check_scrub_death_mountain_crater_ladder",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0],
+		"location" : 8,
+		"checked" : -1
+	},
+	{
+		"id" : 375,
+		"code" : "check_scrub_death_mountain_crater_hammer_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 8,
+		"checked" : -1
+	},
+	{
+		"id" : 376,
+		"code" : "check_scrub_death_mountain_crater_hammer_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 8,
+		"checked" : -1
+	},
+	{
+		"id" : 377,
+		"code" : "check_scrub_death_mountain_crater_hammer_three",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 8,
+		"checked" : -1
+	},
+	{
+		"id" : 378,
+		"code" : "check_scrub_zoras_river_storms_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 10,
+		"checked" : -1
+	},
+	{
+		"id" : 379,
+		"code" : "check_scrub_zoras_river_storms_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 10,
+		"checked" : -1
+	},
+	{
+		"id" : 380,
+		"code" : "check_scrub_hylia_gravestone_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 15,
+		"checked" : -1
+	},
+	{
+		"id" : 381,
+		"code" : "check_scrub_hylia_gravestone_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 15,
+		"checked" : -1
+	},
+	{
+		"id" : 382,
+		"code" : "check_scrub_hylia_gravestone_three",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [0, 1],
+		"location" : 15,
+		"checked" : -1
+	},
+	{
+		"id" : 383,
+		"code" : "check_scrub_gerudo_valley_tent_storms_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 22,
+		"checked" : -1
+	},
+	{
+		"id" : 384,
+		"code" : "check_scrub_gerudo_valley_tent_storms_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 22,
+		"checked" : -1
+	},
+	{
+		"id" : 385,
+		"code" : "check_scrub_colossus_silvers_grotto_one",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 26,
+		"checked" : -1
+	},
+	{
+		"id" : 385,
+		"code" : "check_scrub_colossus_silvers_grotto_two",
+		"name" : "Scrub",
+		"type" : 4,
+		"state" : [1],
+		"location" : 26,
+		"checked" : -1
 	}
 ]
