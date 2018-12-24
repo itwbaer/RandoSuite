@@ -3046,6 +3046,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 31,
+		"required": [{
+									"obtainables": [["song_storm", "item_bombs", "item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3064,6 +3068,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 29,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3082,6 +3090,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 29,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3127,6 +3139,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 17,
+		"required": [{
+									"obtainables": [["item_slingshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3136,6 +3152,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 20,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3145,6 +3165,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 7,
+		"required": [{
+									"obtainables": [["item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3181,6 +3205,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 12,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3199,6 +3227,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 15,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3217,6 +3249,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 22,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3226,6 +3262,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 0,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3235,6 +3275,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 2,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3244,6 +3288,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 2,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3253,6 +3301,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 20,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3262,6 +3314,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 5,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3271,6 +3327,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 8,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3280,6 +3340,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 15,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3289,6 +3353,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 22,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3298,6 +3366,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 26,
+		"required": [{
+									"obtainables": [["item_bottle"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3305,8 +3377,12 @@
 		"code" : "check_skull_freestanding_grotto_kakariko",
 		"name" : "Skulltula",
 		"type" : 3,
-		"state" : [0],
-		"location" : 17,
+		"state" : [0, 1],
+		"location" : 28,
+		"required": [{
+									"obtainables": [["item_bombs", "item_boomerang"], ["item_bombs", "item_hookshot"], ["item_hammer", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3314,8 +3390,12 @@
 		"code" : "check_skull_freestanding_grotto_gerudo",
 		"name" : "Skulltula",
 		"type" : 3,
-		"state" : [0],
-		"location" : 22,
+		"state" : [0, 1],
+		"location" : 28,
+		"required": [{
+									"obtainables": [["item_bombs", "item_dins", "item_hookshot"], ["item_bombs", "item_fire_arrows", "item_hookshot"], ["item_bombs", "item_dins", "item_boomerang"], ["item_hammer", "item_dins", "item_hookshot"], ["item_hammer", "item_fire_arrows", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3323,8 +3403,12 @@
 		"code" : "check_skull_freestanding_death_mountain",
 		"name" : "Skulltula",
 		"type" : 3,
-		"state" : [0],
+		"state" : [0, 1],
 		"location" : 8,
+		"required": [{
+									"obtainables": [["item_bombs"], [ "item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3332,8 +3416,12 @@
 		"code" : "check_skull_freestanding_haunted_wasteland",
 		"name" : "Skulltula",
 		"type" : 3,
-		"state" : [0],
+		"state" : [0, 1],
 		"location" : 25,
+		"required": [{
+									"obtainables": [["item_boomerang"], ["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3343,6 +3431,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 0,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3352,6 +3444,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 2,
+		"required": [{
+									"obtainables": [["item_bean"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3361,6 +3457,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 3,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3370,6 +3470,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 33,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3379,6 +3483,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 5,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3388,6 +3496,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 5,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3397,6 +3509,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 7,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3406,6 +3522,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 10,
+		"required": [{
+									"obtainables": [["item_longshot"], ["item_bean", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3415,6 +3535,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 10,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3424,6 +3548,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 11,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3433,6 +3561,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 12,
+		"required": [{
+									"obtainables": [["item_silvers", "item_longshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3442,6 +3574,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 15,
+		"required": [{
+									"obtainables": [["item_longshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3451,6 +3587,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 22,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3460,6 +3600,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 22,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3469,6 +3613,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 23,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3478,6 +3626,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 23,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3487,6 +3639,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 26,
+		"required": [{
+									"obtainables": [["item_bean"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3496,6 +3652,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 26,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3505,6 +3665,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 17,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3523,6 +3687,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 1,
+		"required": [{
+									"obtainables": [["item_slingshot"], ["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3541,6 +3709,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 1,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3550,6 +3722,10 @@
 		"type" : 3,
 		"state" : [0, 1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3557,8 +3733,12 @@
 		"code" : "check_skull_dodongo_scarecrow",
 		"name" : "Skulltula",
 		"type" : 3,
-		"state" : [0, 1],
+		"state" : [1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["song_scarecrow"], ["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3568,6 +3748,10 @@
 		"type" : 3,
 		"state" : [0, 1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_slingshot"], ["item_boomerang"], ["item_hookshot"], ["item_bow"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3575,8 +3759,12 @@
 		"code" : "check_skull_dodongo_top_staircase",
 		"name" : "Skulltula",
 		"type" : 3,
-		"state" : [0, 1],
+		"state" : [1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_longshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3586,6 +3774,10 @@
 		"type" : 3,
 		"state" : [0, 1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3595,6 +3787,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 13,
+		"required": [{
+									"obtainables": [["item_slingshot"], ["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3604,6 +3800,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 13,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3613,6 +3813,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 13,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3622,6 +3826,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 13,
+		"required": [{
+									"obtainables": [["item_slingshot"], ["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3676,6 +3884,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["song_time"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3685,6 +3897,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3694,6 +3910,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3703,6 +3923,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["song_scarecrow", "item_bow"], ["song_scarecrow", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3712,6 +3936,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 9,
+		"required": [{
+									"obtainables": [["song_scarecrow", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3721,6 +3949,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3730,6 +3962,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3739,6 +3975,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_zelda"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3757,6 +3997,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["song_time"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3766,6 +4010,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 14,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3775,6 +4023,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 14,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3784,6 +4036,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 14,
+		"required": [{
+									"obtainables": [["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3793,6 +4049,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 19,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3802,6 +4062,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 19,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3811,6 +4075,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 19,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3847,6 +4115,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 18,
+		"required": [{
+									"obtainables": [["item_longshot", "song_scarecrow"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3856,6 +4128,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 18,
+		"required": [{
+									"obtainables": [["song_zelda", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3865,6 +4141,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["item_boomerang"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3874,6 +4154,10 @@
 		"type" : 3,
 		"state" : [0, 1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["item_boomerang", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3883,6 +4167,10 @@
 		"type" : 3,
 		"state" : [0, 1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["item_boomerang"], ["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3892,6 +4180,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["song_time"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3901,6 +4193,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 27,
+		"required": [{
+									"obtainables": [["item_hookshot", "song_scarecrow"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3910,6 +4206,10 @@
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4198,6 +4498,19 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 26,
+		"checked" : -1
+	},
+	{
+		"id" : 386,
+		"code" : "check_skull_hylia_lab",
+		"name" : "Skulltula",
+		"type" : 3,
+		"state" : [1],
+		"location" : 15,
+		"required": [{
+									"obtainables": [["item_iron_boots", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	}
 ]
