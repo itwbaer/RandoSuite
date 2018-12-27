@@ -317,29 +317,31 @@ class App extends Component {
     for(let i = 0; i < map.markers.length; i++){
       let data = map.markers[i];
       let check = this.state.checks[this.state.checksMap[data.check]];
-      console.log(data);
-      let marker = L.circle([Math.abs(data.lat-this.mapLat)/1000, data.lon/1000], {
-          color: "black",
-          fillColor: "black",
-          weight: 1.0,
-          fillOpacity: 0,
-          opacity: 0,
-          radius: 5000,
-      });
+      if(this.state.filter.checkType.includes(check.type)){
 
-      marker.bindPopup(check.name);
-      marker.on('mouseover', function (e) {
-          this.openPopup();
-      });
-      marker.on('mouseout', function (e) {
-          this.closePopup();
-      })
-      marker.on('click', () => this.handleClickCheckList(check.id));
 
-      marker.addTo(this.map);
-      this.activeMarkers[data.check] = marker;
-      this.colorMarker(this.state.filter, data.check, this.state.checks, this.state.locations, this.state.obtainables);
+        let marker = L.circle([Math.abs(data.lat-this.mapLat)/1000, data.lon/1000], {
+            color: "black",
+            fillColor: "black",
+            weight: 1.0,
+            fillOpacity: 0,
+            opacity: 0,
+            radius: 5000,
+        });
 
+        marker.bindPopup(check.name);
+        marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        })
+        marker.on('click', () => this.handleClickCheckList(check.id));
+
+        marker.addTo(this.map);
+        this.activeMarkers[data.check] = marker;
+        this.colorMarker(this.state.filter, data.check, this.state.checks, this.state.locations, this.state.obtainables);
+      }
     }
 
   }

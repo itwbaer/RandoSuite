@@ -47,8 +47,10 @@ module.exports = {
 					"lon": marker.lon[i],
 					"lat": marker.lat[i]
 				});
+
 			}
 		});
+		console.log(maps);
 
 	},
 

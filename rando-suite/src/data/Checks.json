@@ -4219,6 +4219,10 @@
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4228,15 +4232,23 @@
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
 		"id" : 358,
-		"code" : "check_scrub_dodongo_check_scrub_dodongo_bomb_bag_side_room_two",
+		"code" : "check_scrub_dodongo_bomb_bag_side_room_two",
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 6,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4291,6 +4303,10 @@
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 2,
+		"required": [{
+									"obtainables": [["item_bombs"], ["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4317,7 +4333,11 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" :3 ,
+		"location" : 3,
+		"required": [{
+									"obtainables": [["song_storm"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4327,6 +4347,10 @@
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 3,
+		"required": [{
+									"obtainables": [["song_storm"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4363,6 +4387,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 7,
+		"required": [{
+									"obtainables": [["song_time"], ["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4372,6 +4400,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 7,
+		"required": [{
+									"obtainables": [["song_time"], ["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4381,6 +4413,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 7,
+		"required": [{
+									"obtainables": [["song_time"], ["item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4390,6 +4426,10 @@
 		"type" : 4,
 		"state" : [0],
 		"location" : 8,
+		"required": [{
+									"obtainables": [["item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4399,6 +4439,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 8,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4408,6 +4452,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 8,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4417,6 +4465,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 8,
+		"required": [{
+									"obtainables": [["item_hammer"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4426,6 +4478,10 @@
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 10,
+		"required": [{
+									"obtainables": [["song_storm"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4435,6 +4491,10 @@
 		"type" : 4,
 		"state" : [0, 1],
 		"location" : 10,
+		"required": [{
+									"obtainables": [["song_storm"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4471,6 +4531,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 22,
+		"required": [{
+									"obtainables": [["song_storm"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4480,6 +4544,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 22,
+		"required": [{
+									"obtainables": [["song_storm"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4489,6 +4557,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 26,
+		"required": [{
+									"obtainables": [["item_silvers"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4498,6 +4570,10 @@
 		"type" : 4,
 		"state" : [1],
 		"location" : 26,
+		"required": [{
+									"obtainables": [["item_silvers"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{

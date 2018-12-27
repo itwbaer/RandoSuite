@@ -1792,5 +1792,936 @@
 		"map" : ["map_dampes_grave"],
 		"lat" : [1407],
 		"lon" : [502]
+	},
+	{
+		"id" : 256,
+		"check" : "check_skull_kokiri_house",
+		"map" : ["map_kokiri_forest"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 257,
+		"check" : "check_skull_market_guard_house",
+		"map" : ["map_market_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 258,
+		"check" : "check_skull_hyrule_castle_tree",
+		"map" : ["map_hyrule_castle"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 259,
+		"check" : "check_skull_hyrule_castle_grotto",
+		"map" : ["map_hyrule_castle"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 260,
+		"check" : "check_skull_ranch_tree",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 261,
+		"check" : "check_skull_ranch_house",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 262,
+		"check" : "check_skull_ranch_inner_fence",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 263,
+		"check" : "check_skull_ranch_outer_fence",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 264,
+		"check" : "check_skull_kakariko_shooting_gallery",
+		"map" : ["map_kakariko_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 265,
+		"check" : "check_skull_kakariko_house_of_skulltula",
+		"map" : ["map_kakariko_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 266,
+		"check" : "check_skull_kakariko_tree",
+		"map" : ["map_kakariko_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 267,
+		"check" : "check_skull_kakariko_bazaar",
+		"map" : ["map_kakariko_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 268,
+		"check" : "check_skull_kakariko_ladder",
+		"map" : ["map_kakariko_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 269,
+		"check" : "check_skull_graveyard_wall",
+		"map" : ["map_graveyard"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 270,
+		"check" : "check_skull_goron_city_maze",
+		"map" : ["map_goron_city"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 271,
+		"check" : "check_skull_death_mountain_crate",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 272,
+		"check" : "check_skull_zora_river_tree",
+		"map" : ["map_zoras_river"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 273,
+		"check" : "check_skull_zora_river_ladder",
+		"map" : ["map_zoras_river"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 274,
+		"check" : "check_skull_zora_fountain_wall",
+		"map" : ["map_fountain_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 275,
+		"check" : "check_skull_zora_fountain_tree",
+		"map" : ["map_fountain_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 276,
+		"check" : "check_skull_hylia_lab_wall",
+		"map" : ["map_hylia_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 277,
+		"check" : "check_skull_hylia_island",
+		"map" : ["map_hylia_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 278,
+		"check" : "check_skull_gerudo_valley_wall",
+		"map" : ["map_gerudo_valley"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 279,
+		"check" : "check_skull_soil_kokiri",
+		"map" : ["map_kokiri_forest"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 280,
+		"check" : "check_skull_soil_lost_woods_bridge",
+		"map" : ["map_lost_woods"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 281,
+		"check" : "check_skull_soil_lost_woods_theater",
+		"map" : ["map_lost_woods"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 282,
+		"check" : "check_skull_soil_graveyard",
+		"map" : ["map_graveyard"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 283,
+		"check" : "check_skull_soil_death_mountain_trail",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 284,
+		"check" : "check_skull_soil_death_mountain_crater",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 285,
+		"check" : "check_skull_soil_lake_hylia",
+		"map" : ["map_hylia_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 286,
+		"check" : "check_skull_soil_gerudo_valley",
+		"map" : ["map_gerudo_valley"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 287,
+		"check" : "check_skull_soil_desert_colossus",
+		"map" : ["map_desert_colossus"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 288,
+		"check" : "check_skull_freestanding_grotto_kakariko",
+		"map" : ["map_hyrule_field"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 289,
+		"check" : "check_skull_freestanding_grotto_gerudo",
+		"map" : ["map_hyrule_field"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 290,
+		"check" : "check_skull_freestanding_death_mountain",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 291,
+		"check" : "check_skull_freestanding_haunted_wasteland",
+		"map" : ["map_haunted_wasteland"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 292,
+		"check" : "check_skull_kokiri_house_twins",
+		"map" : ["map_kokiri_forest"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 293,
+		"check" : "check_skull_lost_woods_bean",
+		"map" : ["map_lost_woods"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 294,
+		"check" : "check_skull_sacred_forest_meadow",
+		"map" : ["map_sacred_forest"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 295,
+		"check" : "check_skull_ganons_castle",
+		"map" : ["map_ganons_castle"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 296,
+		"check" : "check_skull_death_mountain_trail_above_dodongos",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 297,
+		"check" : "check_skull_death_mountain_trail_before_wall",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 298,
+		"check" : "check_skull_goron_city",
+		"map" : ["map_goron_city"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 299,
+		"check" : "check_skull_zoras_river_grottos",
+		"map" : ["map_zoras_river"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 300,
+		"check" : "check_skull_zoras_river_bridge",
+		"map" : ["map_zoras_river"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 301,
+		"check" : "check_skull_zoras_domain_frozen_waterfall",
+		"map" : ["map_zoras_domain_adult"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 302,
+		"check" : "check_skull_zoras_fountain_ledge",
+		"map" : ["map_fountain_adult"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 303,
+		"check" : "check_skull_hylia_tall_tree",
+		"map" : ["map_hylia_adult"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 304,
+		"check" : "check_skull_gerudo_valley_tent",
+		"map" : ["map_gerudo_valley"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 305,
+		"check" : "check_skull_gerudo_valley_pillar",
+		"map" : ["map_gerudo_valley"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 306,
+		"check" : "check_skull_gerudo_fortress_back_wall",
+		"map" : ["map_gerudo_fortress"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 307,
+		"check" : "check_skull_gerudo_fortress_target",
+		"map" : ["map_gerudo_fortress"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 308,
+		"check" : "check_skull_colossus_plateau",
+		"map" : ["map_desert_colossus"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 309,
+		"check" : "check_skull_colossus_tree",
+		"map" : ["map_desert_colossus"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 310,
+		"check" : "check_skull_kakariko_impa",
+		"map" : ["map_kakariko_adult"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 311,
+		"check" : "check_skull_deku_compass",
+		"map" : ["map_deku_tree"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 312,
+		"check" : "check_skull_deku_basement_vines",
+		"map" : ["map_deku_tree"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 313,
+		"check" : "check_skull_deku_basement_water_gate",
+		"map" : ["map_deku_tree"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 314,
+		"check" : "check_skull_deku_basement_back_room",
+		"map" : ["map_deku_tree"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 315,
+		"check" : "check_skull_dodongo_east_side_room",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 316,
+		"check" : "check_skull_dodongo_scarecrow",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 317,
+		"check" : "check_skull_dodongo_staircase_vines",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 318,
+		"check" : "check_skull_dodongo_top_staircase",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 319,
+		"check" : "check_skull_dodongo_near_boss",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 320,
+		"check" : "check_skull_jabu_water_switch_room",
+		"map" : ["map_jabu"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 321,
+		"check" : "check_skull_jabu_near_octo_close_wall",
+		"map" : ["map_jabu"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 322,
+		"check" : "check_skull_jabu_near_octo_far_wall",
+		"map" : ["map_jabu"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 323,
+		"check" : "check_skull_jabu_before_barinade",
+		"map" : ["map_jabu"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 324,
+		"check" : "check_skull_forest_entrance_room",
+		"map" : ["map_forest_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 325,
+		"check" : "check_skull_forest_central_room",
+		"map" : ["map_forest_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 326,
+		"check" : "check_skull_forest_northwest_outside",
+		"map" : ["map_forest_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 327,
+		"check" : "check_skull_forest_northeast_outside",
+		"map" : ["map_forest_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 328,
+		"check" : "check_skull_forest_near_boss",
+		"map" : ["map_forest_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 329,
+		"check" : "check_skull_fire_song_of_time_room",
+		"map" : ["map_fire_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 330,
+		"check" : "check_skull_fire_hammer_statues",
+		"map" : ["map_fire_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 331,
+		"check" : "check_skull_fire_boulder_maze_bomb_wall",
+		"map" : ["map_fire_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 332,
+		"check" : "check_skull_fire_scarecrow_chain_wall",
+		"map" : ["map_fire_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 333,
+		"check" : "check_skull_fire_scarecrow_wall",
+		"map" : ["map_fire_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 334,
+		"check" : "check_skull_water_southern_basement",
+		"map" : ["map_water_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 335,
+		"check" : "check_skull_water_near_boss_chest",
+		"map" : ["map_water_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 336,
+		"check" : "check_skull_water_inside_central_pillar",
+		"map" : ["map_water_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 337,
+		"check" : "check_skull_water_falling_platform_room",
+		"map" : ["map_water_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 338,
+		"check" : "check_skull_water_river",
+		"map" : ["map_water_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 339,
+		"check" : "check_skull_ice_scythe_room",
+		"map" : ["map_ice_cavern"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 340,
+		"check" : "check_skull_ice_frozen_heart_room",
+		"map" : ["map_ice_cavern"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 341,
+		"check" : "check_skull_ice_block_room",
+		"map" : ["map_ice_cavern"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 342,
+		"check" : "check_skull_well_west_inner_room",
+		"map" : ["map_well"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 343,
+		"check" : "check_skull_well_east_inner_room",
+		"map" : ["map_well"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 344,
+		"check" : "check_skull_well_near_like_like",
+		"map" : ["map_well"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 345,
+		"check" : "check_skull_shadow_invisible_scythe_room",
+		"map" : ["map_shadow_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 346,
+		"check" : "check_skull_shadow_crusher_room",
+		"map" : ["map_shadow_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 347,
+		"check" : "check_skull_shadow_single_pot_room",
+		"map" : ["map_shadow_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 348,
+		"check" : "check_skull_shadow_near_boat",
+		"map" : ["map_shadow_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 349,
+		"check" : "check_skull_shadow_triple_pit_room",
+		"map" : ["map_shadow_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 350,
+		"check" : "check_skull_spirit_child_fence",
+		"map" : ["map_spirit_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 351,
+		"check" : "check_skull_spirit_child_sun_switch_room",
+		"map" : ["map_spirit_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 352,
+		"check" : "check_skull_spirit_hallway_iron_knuckle",
+		"map" : ["map_spirit_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 353,
+		"check" : "check_skull_spirit_boulder_room",
+		"map" : ["map_spirit_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 354,
+		"check" : "check_skull_spirit_central_room",
+		"map" : ["map_spirit_temple"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 355,
+		"check" : "check_scrub_dodongo_main_room",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 356,
+		"check" : "check_scrub_dodongo_mini_dodongo_side_room",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 357,
+		"check" : "check_scrub_dodongo_bomb_bag_side_room_one",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 358,
+		"check" : "check_scrub_dodongo_bomb_bag_side_room_two",
+		"map" : ["map_dodongos"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 359,
+		"check" : "check_scrub_jabu",
+		"map" : ["map_jabu"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 360,
+		"check" : "check_scrub_ganons_castle_one",
+		"map" : ["map_ganons_trials"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 361,
+		"check" : "check_scrub_ganons_castle_two",
+		"map" : ["map_ganons_trials"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 362,
+		"check" : "check_scrub_ganons_castle_three",
+		"map" : ["map_ganons_trials"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 363,
+		"check" : "check_scrub_ganons_castle_four",
+		"map" : ["map_ganons_trials"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 363,
+		"check" : "check_scrub_lost_woods_grotto",
+		"map" : ["map_lost_woods"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 364,
+		"check" : "check_scrub_deku_theater_one",
+		"map" : ["map_lost_woods"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 365,
+		"check" : "check_scrub_deku_theater_two",
+		"map" : ["map_lost_woods"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 366,
+		"check" : "check_scrub_forest_meadow_storms_one",
+		"map" : ["map_sacred_forest"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 367,
+		"check" : "check_scrub_forest_meadow_storms_two",
+		"map" : ["map_sacred_forest"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 368,
+		"check" : "check_scrub_ranch_grotto_one",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 369,
+		"check" : "check_scrub_ranch_grotto_two",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 370,
+		"check" : "check_scrub_ranch_grotto_three",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 371,
+		"check" : "check_scrub_goron_city_lava_one",
+		"map" : ["map_goron_city"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 372,
+		"check" : "check_scrub_goron_city_lava_two",
+		"map" : ["map_goron_city"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 373,
+		"check" : "check_scrub_goron_city_lava_three",
+		"map" : ["map_goron_city"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 374,
+		"check" : "check_scrub_death_mountain_crater_ladder",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 375,
+		"check" : "check_scrub_death_mountain_crater_hammer_one",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 376,
+		"check" : "check_scrub_death_mountain_crater_hammer_two",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 377,
+		"check" : "check_scrub_death_mountain_crater_hammer_three",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 378,
+		"check" : "check_scrub_zoras_river_storms_one",
+		"map" : ["map_zoras_river"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 379,
+		"check" : "check_scrub_zoras_river_storms_two",
+		"map" : ["map_zoras_river"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 380,
+		"check" : "check_scrub_hylia_gravestone_one",
+		"map" : ["map_hylia_adult", "map_hylia_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 381,
+		"check" : "check_scrub_hylia_gravestone_two",
+		"map" : ["map_hylia_adult", "map_hylia_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 382,
+		"check" : "check_scrub_hylia_gravestone_three",
+		"map" : ["map_hylia_adult", "map_hylia_child"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 383,
+		"check" : "check_scrub_gerudo_valley_tent_storms_one",
+		"map" : ["map_gerudo_valley"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 384,
+		"check" : "check_scrub_gerudo_valley_tent_storms_two",
+		"map" : ["map_gerudo_valley"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 385,
+		"check" : "check_scrub_colossus_silvers_grotto_one",
+		"map" : ["map_desert_colossus"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 385,
+		"check" : "check_scrub_colossus_silvers_grotto_two",
+		"map" : ["map_desert_colossus"],
+		"lat" : [0],
+		"lon" : [0]
+	},
+	{
+		"id" : 386,
+		"check" : "check_skull_hylia_lab",
+		"map" : ["map_hylia_adult"],
+		"lat" : [0],
+		"lon" : [0]
 	}
 ]
