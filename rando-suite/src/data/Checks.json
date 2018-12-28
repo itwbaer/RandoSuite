@@ -389,7 +389,7 @@
 		"state" : [1],
 		"location" : 4,
 		"required": [{
-									"obtainables": [["item_bow", "item_bracelet"], ["song_time"], ["item_bow"]],
+									"obtainables": [["song_time"], ["item_bow"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -3178,6 +3178,10 @@
 		"type" : 3,
 		"state" : [0],
 		"location" : 8,
+		"required": [{
+									"obtainables": [["item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3328,7 +3332,7 @@
 		"state" : [0],
 		"location" : 8,
 		"required": [{
-									"obtainables": [["item_bottle"]],
+									"obtainables": [["item_bottle", "song_fire"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -3562,7 +3566,7 @@
 		"state" : [1],
 		"location" : 12,
 		"required": [{
-									"obtainables": [["item_silvers", "item_longshot"]],
+									"obtainables": [["item_silvers", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -3710,7 +3714,7 @@
 		"state" : [0],
 		"location" : 1,
 		"required": [{
-									"obtainables": [["item_bombs"], ["item_boomerang"]],
+									"obtainables": [["item_bombs", "item_boomerang", "item_slingshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -3736,7 +3740,7 @@
 		"state" : [1],
 		"location" : 6,
 		"required": [{
-									"obtainables": [["song_scarecrow"], ["item_hookshot"]],
+									"obtainables": [["song_scarecrow", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -3857,6 +3861,11 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["song_time"], ["item_bow"]],
+									"obtainables": [["item_bow", "item_bracelet"], ["song_time", "item_longshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3866,6 +3875,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["item_bow", "item_bracelet"], ["song_time"], ["item_bow"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3875,6 +3888,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 4,
+		"required": [{
+									"obtainables": [["item_bow", "item_bracelet"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -3911,7 +3928,7 @@
 		"state" : [1],
 		"location" : 9,
 		"required": [{
-									"obtainables": [["item_bombs"]],
+									"obtainables": [["item_bombs", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -3924,7 +3941,7 @@
 		"state" : [1],
 		"location" : 9,
 		"required": [{
-									"obtainables": [["song_scarecrow", "item_bow"], ["song_scarecrow", "item_hookshot"]],
+									"obtainables": [["song_scarecrow", "item_bow", "item_bracelet"], ["song_scarecrow", "item_hookshot", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -3937,7 +3954,7 @@
 		"state" : [1],
 		"location" : 9,
 		"required": [{
-									"obtainables": [["song_scarecrow", "item_hookshot"]],
+									"obtainables": [["song_scarecrow", "item_hookshot", "item_bracelet"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -4088,6 +4105,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 18,
+		"required": [{
+									"obtainables": [["item_hover_boots", "item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4097,6 +4118,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 18,
+		"required": [{
+									"obtainables": [["item_hover_boots", "item_bombs"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4106,6 +4131,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 18,
+		"required": [{
+									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
@@ -4116,7 +4145,7 @@
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["item_longshot", "song_scarecrow"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "item_longshot", "song_scarecrow"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -4129,7 +4158,7 @@
 		"state" : [1],
 		"location" : 18,
 		"required": [{
-									"obtainables": [["song_zelda", "item_hookshot"]],
+									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -4297,7 +4326,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 363,
+		"id" : 364,
 		"code" : "check_scrub_lost_woods_grotto",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4310,7 +4339,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 364,
+		"id" : 365,
 		"code" : "check_scrub_deku_theater_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4319,7 +4348,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 365,
+		"id" : 366,
 		"code" : "check_scrub_deku_theater_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4328,7 +4357,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 366,
+		"id" : 367,
 		"code" : "check_scrub_forest_meadow_storms_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4341,7 +4370,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 367,
+		"id" : 368,
 		"code" : "check_scrub_forest_meadow_storms_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4354,7 +4383,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 368,
+		"id" : 369,
 		"code" : "check_scrub_ranch_grotto_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4363,7 +4392,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 369,
+		"id" : 370,
 		"code" : "check_scrub_ranch_grotto_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4372,7 +4401,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 370,
+		"id" : 371,
 		"code" : "check_scrub_ranch_grotto_three",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4381,7 +4410,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 371,
+		"id" : 372,
 		"code" : "check_scrub_goron_city_lava_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4394,7 +4423,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 372,
+		"id" : 373,
 		"code" : "check_scrub_goron_city_lava_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4407,7 +4436,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 373,
+		"id" : 374,
 		"code" : "check_scrub_goron_city_lava_three",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4420,7 +4449,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 374,
+		"id" : 375,
 		"code" : "check_scrub_death_mountain_crater_ladder",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4433,7 +4462,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 375,
+		"id" : 376,
 		"code" : "check_scrub_death_mountain_crater_hammer_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4446,7 +4475,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 376,
+		"id" : 377,
 		"code" : "check_scrub_death_mountain_crater_hammer_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4459,7 +4488,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 377,
+		"id" : 378,
 		"code" : "check_scrub_death_mountain_crater_hammer_three",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4472,7 +4501,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 378,
+		"id" : 379,
 		"code" : "check_scrub_zoras_river_storms_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4485,7 +4514,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 379,
+		"id" : 380,
 		"code" : "check_scrub_zoras_river_storms_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4498,7 +4527,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 380,
+		"id" : 381,
 		"code" : "check_scrub_hylia_gravestone_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4507,7 +4536,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 381,
+		"id" : 382,
 		"code" : "check_scrub_hylia_gravestone_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4516,7 +4545,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 382,
+		"id" : 383,
 		"code" : "check_scrub_hylia_gravestone_three",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4525,7 +4554,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 383,
+		"id" : 384,
 		"code" : "check_scrub_gerudo_valley_tent_storms_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4538,7 +4567,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 384,
+		"id" : 385,
 		"code" : "check_scrub_gerudo_valley_tent_storms_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4551,7 +4580,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 385,
+		"id" : 386,
 		"code" : "check_scrub_colossus_silvers_grotto_one",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4564,7 +4593,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 385,
+		"id" : 387,
 		"code" : "check_scrub_colossus_silvers_grotto_two",
 		"name" : "Scrub",
 		"type" : 4,
@@ -4577,7 +4606,7 @@
 		"checked" : -1
 	},
 	{
-		"id" : 386,
+		"id" : 388,
 		"code" : "check_skull_hylia_lab",
 		"name" : "Skulltula",
 		"type" : 3,

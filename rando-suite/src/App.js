@@ -285,7 +285,6 @@ class App extends Component {
     });
 
 
-
     let imageUrl = this.state.mapImgs[id].src;
     let imageBounds = [[0, 0], [0, 0]];
     let mapImage = L.imageOverlay(imageUrl, imageBounds);
@@ -297,8 +296,10 @@ class App extends Component {
     this.mapImage.setBounds([[0, 0], [(this.mapLat/1000), (this.mapLon/1000)]]);
     this.map.setView([image.height/2/1000, image.width/2/1000], );
 
-    var corner1 = L.latLng(0, 0),
-    corner2 = L.latLng((image.height/1000), (image.width/1000)),
+    //allow 100px in all directions
+    let padding = 100/1000;
+    var corner1 = L.latLng(-padding, -padding),
+    corner2 = L.latLng((image.height/1000 + padding), (image.width/1000 + padding)),
     bounds = L.latLngBounds(corner1, corner2)
 
     this.map.setMaxBounds(bounds);

@@ -97,11 +97,11 @@
 	},
 	{
 		"id": 12,
-		"code": "map_gerudo_valley",
-		"name": "Gerudo Valley",
+		"code": "map_gerudo_valley_child",
+		"name": "Gerudo Valley Child",
 		"extension": "jpg",
 		"location": 22,
-		"state": [0, 1]
+		"state": [0]
 	},
 	{
 		"id": 13,
@@ -325,6 +325,14 @@
 		"name": "Hyrule Market Adult",
 		"extension": "jpg",
 		"location": 30,
+		"state": [1]
+	},
+	{
+		"id": 41,
+		"code": "map_gerudo_valley_adult",
+		"name": "Gerudo Valley Adult",
+		"extension": "jpg",
+		"location": 22,
 		"state": [1]
 	}
 
