@@ -3980,7 +3980,7 @@
 		"state" : [1],
 		"location" : 16,
 		"required": [{
-									"obtainables": [["song_zelda"]],
+									"obtainables": [["song_zelda", "item_longshot", "item_bombs", "item_bracelet"], ["song_zelda", "item_hover_boots"]],
 									"checks" : null
 								}],
 		"checked" : -1
@@ -4005,6 +4005,10 @@
 		"type" : 3,
 		"state" : [1],
 		"location" : 16,
+		"required": [{
+									"obtainables": [["item_longshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{

@@ -136,6 +136,8 @@ class App extends Component {
     let filteredChecks = this.state.util.checks.applyFilter(filter, loadChecks, this.state.locations, loadObtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps, this.state.mapImgs);
 
+    this.handleClickMap(this.state.activeMap, filter);
+
     this.setState({obtainables: loadObtainables,
                     checks: loadChecks,
                     filter: filter,
@@ -237,6 +239,9 @@ class App extends Component {
     const filter = cloneDeep(this.state.filter);
     filter[key] = this.state.util.shared.optionsToFilter(data);
     this.setState({filter: filter});
+    if(key === "checkType"){
+      this.handleClickMap(this.state.activeMap, filter);
+    }
     this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
 
   }
@@ -258,9 +263,10 @@ class App extends Component {
     
   }
 
-  handleClickMap(id){
+  handleClickMap(id, filter){
+    filter = filter || this.state.filter;
     this.setState({activeMap: id});
-    this.setMapImage(id);
+    this.setMapImage(id, filter);
   }
 
   runFilter(filter, checks, locations, obtainables){
@@ -277,14 +283,15 @@ class App extends Component {
 
   }
 
-  setMapImage(id){
+  setMapImage(id, filter){
+    filter = filter || this.state.filter;
     //first clear markers
     this.activeMarkers = {};
     this.map.eachLayer(function(layer){
         layer.remove();
     });
 
-
+    let divisor = this.state.util.maps.divisor;
     let imageUrl = this.state.mapImgs[id].src;
     let imageBounds = [[0, 0], [0, 0]];
     let mapImage = L.imageOverlay(imageUrl, imageBounds);
@@ -293,23 +300,26 @@ class App extends Component {
     let image = this.state.mapImgs[id];
     this.mapLat = image.height;
     this.mapLon = image.width;
-    this.mapImage.setBounds([[0, 0], [(this.mapLat/1000), (this.mapLon/1000)]]);
-    this.map.setView([image.height/2/1000, image.width/2/1000], );
+    this.mapImage.setBounds([[0, 0], [(this.mapLat/divisor), (this.mapLon/divisor)]]);
+    this.map.setView([image.height/2/divisor, image.width/2/divisor], );
 
     //allow 100px in all directions
-    let padding = 100/1000;
+    let padding = this.state.util.maps.padding/divisor;
     var corner1 = L.latLng(-padding, -padding),
-    corner2 = L.latLng((image.height/1000 + padding), (image.width/1000 + padding)),
+    corner2 = L.latLng((image.height/divisor + padding), (image.width/divisor + padding)),
     bounds = L.latLngBounds(corner1, corner2)
 
     this.map.setMaxBounds(bounds);
 
-    this.createMarkers(id);
+    this.createMarkers(id, filter);
   }
 
-  createMarkers(id){
-    let map = this.state.maps[id];
+  createMarkers(id, filter){
 
+    filter = filter || this.state.filter;
+
+    let map = this.state.maps[id];
+    let divisor = this.state.util.maps.divisor;
     this.activeMarkers = {};
     if(map["markers"] === undefined || map["markers"] === null){
       return;
@@ -318,10 +328,10 @@ class App extends Component {
     for(let i = 0; i < map.markers.length; i++){
       let data = map.markers[i];
       let check = this.state.checks[this.state.checksMap[data.check]];
-      if(this.state.filter.checkType.includes(check.type)){
+      if(filter.checkType.includes(check.type)){
 
 
-        let marker = L.circle([Math.abs(data.lat-this.mapLat)/1000, data.lon/1000], {
+        let marker = L.circle([Math.abs(data.lat-this.mapLat)/divisor, data.lon/divisor], {
             color: "black",
             fillColor: "black",
             weight: 1.0,
@@ -341,7 +351,7 @@ class App extends Component {
 
         marker.addTo(this.map);
         this.activeMarkers[data.check] = marker;
-        this.colorMarker(this.state.filter, data.check, this.state.checks, this.state.locations, this.state.obtainables);
+        this.colorMarker(filter, data.check, this.state.checks, this.state.locations, this.state.obtainables);
       }
     }
 
@@ -396,7 +406,7 @@ class App extends Component {
     require('./util/scrollbar.js');
  
     this.initializeMap();
-    this.setMapImage(this.state.activeMap);
+    this.setMapImage(this.state.activeMap, this.state.filter);
   }
 
 

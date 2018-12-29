@@ -2,6 +2,8 @@ const util = {};
 util.checks = require('./checks.js');
 
 module.exports = {
+	padding: 100,
+	divisor: 1000,
 	filterMaps: function(checks, maps, mapImgs){
 		let filteredMaps = [];
 
@@ -23,12 +25,27 @@ module.exports = {
 				pushedMaps.push(current.id);
 			}
 
-
-			
 		}
+
+		function compare(a, b) {
+		  
+		  //if location is -1, always add first
+		  if(a.map.location === -1){
+		  	return 1;
+		  }
+
+		  if (a.map.name.toLowerCase() > b.map.name.toLowerCase()) {
+		    return 1;
+		  }
+		  else if (a.map.name.toLowerCase() < b.map.name.toLowerCase()) {
+		    return -1;
+		  }
+		  return 0;
+		}
+
+		//sort alphabetically
+		return filteredMaps.sort(compare);
 		
-		
-		return filteredMaps;
 	},
 
 	linkMarkers: function(maps, mapsMap, markers){
