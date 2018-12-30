@@ -3,8 +3,8 @@
 		"id" : 0,
 		"key" : "map_market_child",
 		"map" : ["map_hyrule_field"],
-		"lat" : [328],
-		"lon" : [4452],
+		"lat" : [329],
+		"lon" : [4235],
 		"type": "link"
 	},
 	{
@@ -14,5 +14,721 @@
 		"lat" : [1823],
 		"lon" : [1465],
 		"type": "link"
+	},
+	{
+		"id" : 2,
+		"key" : "map_market_adult",
+		"map" : ["map_hyrule_field"],
+		"lat" : [329],
+		"lon" : [4674],
+		"type": "link"
+	},
+	{
+		"id" : 3,
+		"key" : "map_hyrule_field",
+		"map" : ["map_market_adult"],
+		"lat" : [1739],
+		"lon" : [299],
+		"type": "link"
+	},
+	{
+		"id" : 4,
+		"key" : "map_hyrule_castle",
+		"map" : ["map_market_child"],
+		"lat" : [454],
+		"lon" : [1467],
+		"type": "link"
+	},
+	{
+		"id" : 5,
+		"key" : "map_temple_of_time",
+		"map" : ["map_market_child"],
+		"lat" : [394],
+		"lon" : [2361],
+		"type": "link"
+	},
+	{
+		"id" : 6,
+		"key" : "map_market_child",
+		"map" : ["map_hyrule_castle"],
+		"lat" : [3214],
+		"lon" : [946],
+		"type": "link"
+	},
+	{
+		"id" : 7,
+		"key" : "map_temple_of_time",
+		"map" : ["map_market_adult"],
+		"lat" : [363],
+		"lon" : [1144],
+		"type": "link"
+	},
+	{
+		"id" : 8,
+		"key" : "map_ganons_castle",
+		"map" : ["map_market_adult"],
+		"lat" : [490],
+		"lon" : [300],
+		"type": "link"
+	},
+	{
+		"id" : 9,
+		"key" : "map_market_adult",
+		"map" : ["map_ganons_castle"],
+		"lat" : [2850],
+		"lon" : [1268],
+		"type": "link"
+	},
+	{
+		"id" : 10,
+		"key" : "map_ganons_trials",
+		"map" : ["map_ganons_castle"],
+		"lat" : [1087],
+		"lon" : [1125],
+		"type": "link"
+	},
+	{
+		"id" : 11,
+		"key" : "map_ganons_castle",
+		"map" : ["map_ganons_trials"],
+		"lat" : [3059],
+		"lon" : [1761],
+		"type": "link"
+	},
+	{
+		"id" : 12,
+		"key" : "map_market_child",
+		"map" : ["map_temple_of_time"],
+		"lat" : [250],
+		"lon" : [170],
+		"type": "link"
+	},
+	{
+		"id" : 13,
+		"key" : "map_market_adult",
+		"map" : ["map_temple_of_time"],
+		"lat" : [360],
+		"lon" : [170],
+		"type": "link"
+	},
+	{
+		"id" : 14,
+		"key" : "map_lon_lon_ranch",
+		"map" : ["map_hyrule_field"],
+		"lat" : [2821],
+		"lon" : [3712],
+		"type": "link"
+	},
+	{
+		"id" : 15,
+		"key" : "map_hyrule_field",
+		"map" : ["map_lon_lon_ranch"],
+		"lat" : [124],
+		"lon" : [1578],
+		"type": "link"
+	},
+	{
+		"id" : 16,
+		"key" : "map_hylia_child",
+		"map" : ["map_hyrule_field"],
+		"lat" : [6531],
+		"lon" : [1852],
+		"type": "link"
+	},
+	{
+		"id" : 17,
+		"key" : "map_hylia_adult",
+		"map" : ["map_hyrule_field"],
+		"lat" : [6531],
+		"lon" : [2324],
+		"type": "link"
+	},
+	{
+		"id" : 18,
+		"key" : "map_hyrule_field",
+		"map" : ["map_hylia_adult", "map_hylia_child"],
+		"lat" : [397, 397],
+		"lon" : [1160, 1160],
+		"type": "link"
+	},
+	{
+		"id" : 19,
+		"key" : "map_water_temple",
+		"map" : ["map_hylia_adult"],
+		"lat" : [3204],
+		"lon" : [1512],
+		"type": "link"
+	},
+	{
+		"id" : 20,
+		"key" : "map_hylia_adult",
+		"map" : ["map_water_temple"],
+		"lat" : [2299],
+		"lon" : [1614],
+		"type": "link"
+	},
+	{
+		"id" : 21,
+		"key" : "map_zoras_domain_child",
+		"map" : ["map_hylia_child"],
+		"lat" : [2060],
+		"lon" : [1511],
+		"type": "link"
+	},
+	{
+		"id" : 22,
+		"key" : "map_hylia_child",
+		"map" : ["map_zoras_domain_child"],
+		"lat" : [1026],
+		"lon" : [591],
+		"type": "link"
+	},
+	{
+		"id" : 23,
+		"key" : "map_gerudo_valley_child",
+		"map" : ["map_hyrule_field"],
+		"lat" : [3045],
+		"lon" : [453],
+		"type": "link"
+	},
+	{
+		"id" : 24,
+		"key" : "map_gerudo_valley_adult",
+		"map" : ["map_hyrule_field"],
+		"lat" : [3268],
+		"lon" : [453],
+		"type": "link"
+	},
+	{
+		"id" : 25,
+		"key" : "map_kakariko_child",
+		"map" : ["map_hyrule_field"],
+		"lat" : [413],
+		"lon" : [6159],
+		"type": "link"
+	},
+	{
+		"id" : 26,
+		"key" : "map_kakariko_adult",
+		"map" : ["map_hyrule_field"],
+		"lat" : [668],
+		"lon" : [6159],
+		"type": "link"
+	},
+	{
+		"id" : 27,
+		"key" : "map_zoras_river",
+		"map" : ["map_hyrule_field"],
+		"lat" : [1923],
+		"lon" : [6972],
+		"type": "link"
+	},
+	{
+		"id" : 28,
+		"key" : "map_kokiri_forest",
+		"map" : ["map_hyrule_field"],
+		"lat" : [3844],
+		"lon" : [6464],
+		"type": "link"
+	},
+	{
+		"id" : 29,
+		"key" : "map_hyrule_field",
+		"map" : ["map_kokiri_forest"],
+		"lat" : [956],
+		"lon" : [698],
+		"type": "link"
+	},
+	{
+		"id" : 30,
+		"key" : "map_deku_tree",
+		"map" : ["map_kokiri_forest"],
+		"lat" : [623],
+		"lon" : [2973],
+		"type": "link"
+	},
+	{
+		"id" : 31,
+		"key" : "map_lost_woods",
+		"map" : ["map_kokiri_forest"],
+		"lat" : [328],
+		"lon" : [1311],
+		"type": "link"
+	},
+	{
+		"id" : 32,
+		"key" : "map_kokiri_forest",
+		"map" : ["map_deku_tree"],
+		"lat" : [2058],
+		"lon" : [691],
+		"type": "link"
+	},
+	{
+		"id" : 33,
+		"key" : "map_kokiri_forest",
+		"map" : ["map_lost_woods"],
+		"lat" : [1343],
+		"lon" : [769],
+		"type": "link"
+	},
+	{
+		"id" : 34,
+		"key" : "map_goron_city",
+		"map" : ["map_lost_woods"],
+		"lat" : [736],
+		"lon" : [1092],
+		"type": "link"
+	},
+	{
+		"id" : 35,
+		"key" : "map_zoras_river",
+		"map" : ["map_lost_woods"],
+		"lat" : [868],
+		"lon" : [1667],
+		"type": "link"
+	},
+	{
+		"id" : 36,
+		"key" : "map_sacred_forest",
+		"map" : ["map_lost_woods"],
+		"lat" : [111],
+		"lon" : [1088],
+		"type": "link"
+	},
+	{
+		"id" : 37,
+		"key" : "map_lost_woods",
+		"map" : ["map_sacred_forest"],
+		"lat" : [2319],
+		"lon" : [493],
+		"type": "link"
+	},
+	{
+		"id" : 38,
+		"key" : "map_forest_temple",
+		"map" : ["map_sacred_forest"],
+		"lat" : [119],
+		"lon" : [572],
+		"type": "link"
+	},
+	{
+		"id" : 39,
+		"key" : "map_sacred_forest",
+		"map" : ["map_forest_temple"],
+		"lat" : [3264],
+		"lon" : [1360],
+		"type": "link"
+	},
+	{
+		"id" : 40,
+		"key" : "map_hyrule_field",
+		"map" : ["map_zoras_river"],
+		"lat" : [1371],
+		"lon" : [216],
+		"type": "link"
+	},
+	{
+		"id" : 41,
+		"key" : "map_lost_woods",
+		"map" : ["map_zoras_river"],
+		"lat" : [350],
+		"lon" : [2726],
+		"type": "link"
+	},
+	{
+		"id" : 42,
+		"key" : "map_zoras_domain_child",
+		"map" : ["map_zoras_river"],
+		"lat" : [57],
+		"lon" : [2859],
+		"type": "link"
+	},
+	{
+		"id" : 43,
+		"key" : "map_zoras_domain_adult",
+		"map" : ["map_zoras_river"],
+		"lat" : [222],
+		"lon" : [2859],
+		"type": "link"
+	},
+	{
+		"id" : 44,
+		"key" : "map_zoras_river",
+		"map" : ["map_zoras_domain_adult", "map_zoras_domain_child"],
+		"lat" : [1120, 1120],
+		"lon" : [90, 90],
+		"type": "link"
+	},
+	{
+		"id" : 45,
+		"key" : "map_fountain_child",
+		"map" : ["map_zoras_domain_child"],
+		"lat" : [68],
+		"lon" : [667],
+		"type": "link"
+	},
+	{
+		"id" : 46,
+		"key" : "map_fountain_adult",
+		"map" : ["map_zoras_domain_adult"],
+		"lat" : [68],
+		"lon" : [667],
+		"type": "link"
+	},
+	{
+		"id" : 47,
+		"key" : "map_zoras_domain_child",
+		"map" : ["map_fountain_child"],
+		"lat" : [1436],
+		"lon" : [342],
+		"type": "link"
+	},
+	{
+		"id" : 48,
+		"key" : "map_jabu",
+		"map" : ["map_fountain_child"],
+		"lat" : [1148],
+		"lon" : [755],
+		"type": "link"
+	},
+	{
+		"id" : 49,
+		"key" : "map_fountain_child",
+		"map" : ["map_jabu"],
+		"lat" : [2547],
+		"lon" : [795],
+		"type": "link"
+	},
+	{
+		"id" : 50,
+		"key" : "map_zoras_domain_adult",
+		"map" : ["map_fountain_adult"],
+		"lat" : [1436],
+		"lon" : [342],
+		"type": "link"
+	},
+	{
+		"id" : 51,
+		"key" : "map_ice_cavern",
+		"map" : ["map_fountain_adult"],
+		"lat" : [476],
+		"lon" : [1197],
+		"type": "link"
+	},
+	{
+		"id" : 52,
+		"key" : "map_fountain_adult",
+		"map" : ["map_ice_cavern"],
+		"lat" : [2299],
+		"lon" : [823],
+		"type": "link"
+	},
+	{
+		"id" : 53,
+		"key" : "map_hyrule_field",
+		"map" : ["map_kakariko_adult", "map_kakariko_child"],
+		"lat" : [1387, 1387],
+		"lon" : [327, 327],
+		"type": "link"
+	},
+	{
+		"id" : 54,
+		"key" : "map_graveyard",
+		"map" : ["map_kakariko_adult", "map_kakariko_child"],
+		"lat" : [1459, 1459],
+		"lon" : [2811, 2811],
+		"type": "link"
+	},
+	{
+		"id" : 55,
+		"key" : "map_death_mountain_trail",
+		"map" : ["map_kakariko_adult", "map_kakariko_child"],
+		"lat" : [232, 232],
+		"lon" : [1799, 1799],
+		"type": "link"
+	},
+	{
+		"id" : 56,
+		"key" : "map_well",
+		"map" : ["map_kakariko_child"],
+		"lat" : [1179],
+		"lon" : [2145],
+		"type": "link"
+	},
+	{
+		"id" : 57,
+		"key" : "map_kakariko_child",
+		"map" : ["map_well"],
+		"lat" : [1421],
+		"lon" : [1048],
+		"type": "link"
+	},
+	{
+		"id" : 58,
+		"key" : "map_kakariko_child",
+		"map" : ["map_graveyard"],
+		"lat" : [577],
+		"lon" : [138],
+		"type": "link"
+	},
+	{
+		"id" : 59,
+		"key" : "map_kakariko_adult",
+		"map" : ["map_graveyard"],
+		"lat" : [786],
+		"lon" : [138],
+		"type": "link"
+	},
+	{
+		"id" : 60,
+		"key" : "map_dampes_grave",
+		"map" : ["map_graveyard"],
+		"lat" : [419],
+		"lon" : [673],
+		"type": "link"
+	},
+	{
+		"id" : 61,
+		"key" : "map_graveyard",
+		"map" : ["map_dampes_grave"],
+		"lat" : [174],
+		"lon" : [539],
+		"type": "link"
+	},
+	{
+		"id" : 62,
+		"key" : "map_kakariko_adult",
+		"map" : ["map_dampes_grave"],
+		"lat" : [1356],
+		"lon" : [179],
+		"type": "link"
+	},
+	{
+		"id" : 63,
+		"key" : "map_shadow_temple",
+		"map" : ["map_graveyard"],
+		"lat" : [582],
+		"lon" : [1872],
+		"type": "link"
+	},
+	{
+		"id" : 64,
+		"key" : "map_graveyard",
+		"map" : ["map_shadow_temple"],
+		"lat" : [991],
+		"lon" : [2420],
+		"type": "link"
+	},
+	{
+		"id" : 65,
+		"key" : "map_kakariko_child",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [3818],
+		"lon" : [571],
+		"type": "link"
+	},
+	{
+		"id" : 66,
+		"key" : "map_kakariko_adult",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [3818],
+		"lon" : [872],
+		"type": "link"
+	},
+	{
+		"id" : 67,
+		"key" : "map_dodongos",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [2333],
+		"lon" : [450],
+		"type": "link"
+	},
+	{
+		"id" : 68,
+		"key" : "map_goron_city",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [1983],
+		"lon" : [2010],
+		"type": "link"
+	},
+	{
+		"id" : 69,
+		"key" : "map_death_mountain_crater",
+		"map" : ["map_death_mountain_trail"],
+		"lat" : [578],
+		"lon" : [1409],
+		"type": "link"
+	},
+	{
+		"id" : 70,
+		"key" : "map_death_mountain_trail",
+		"map" : ["map_dodongos"],
+		"lat" : [3321],
+		"lon" : [1005],
+		"type": "link"
+	},
+	{
+		"id" : 71,
+		"key" : "map_death_mountain_trail",
+		"map" : ["map_goron_city"],
+		"lat" : [1450],
+		"lon" : [677],
+		"type": "link"
+	},
+	{
+		"id" : 72,
+		"key" : "map_death_mountain_crater",
+		"map" : ["map_goron_city"],
+		"lat" : [95],
+		"lon" : [696],
+		"type": "link"
+	},
+	{
+		"id" : 73,
+		"key" : "map_lost_woods",
+		"map" : ["map_goron_city"],
+		"lat" : [1426],
+		"lon" : [909],
+		"type": "link"
+	},
+	{
+		"id" : 74,
+		"key" : "map_death_mountain_trail",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [1771],
+		"lon" : [520],
+		"type": "link"
+	},
+	{
+		"id" : 75,
+		"key" : "map_goron_city",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [865],
+		"lon" : [346],
+		"type": "link"
+	},
+	{
+		"id" : 76,
+		"key" : "map_fire_temple",
+		"map" : ["map_death_mountain_crater"],
+		"lat" : [107],
+		"lon" : [1169],
+		"type": "link"
+	},
+	{
+		"id" : 77,
+		"key" : "map_death_mountain_crater",
+		"map" : ["map_fire_temple"],
+		"lat" : [3949],
+		"lon" : [1524],
+		"type": "link"
+	},
+	{
+		"id" : 78,
+		"key" : "map_hyrule_field",
+		"map" : ["map_gerudo_valley_adult", "map_gerudo_valley_child"],
+		"lat" : [2451, 2451],
+		"lon" : [3362, 3362],
+		"type": "link"
+	},
+	{
+		"id" : 79,
+		"key" : "map_hylia_adult",
+		"map" : ["map_gerudo_valley_adult"],
+		"lat" : [3591],
+		"lon" : [2626],
+		"type": "link"
+	},
+	{
+		"id" : 79,
+		"key" : "map_hylia_child",
+		"map" : ["map_gerudo_valley_child"],
+		"lat" : [3591],
+		"lon" : [2626],
+		"type": "link"
+	},
+	{
+		"id" : 80,
+		"key" : "map_gerudo_fortress",
+		"map" : ["map_gerudo_valley_adult"],
+		"lat" : [1436],
+		"lon" : [402],
+		"type": "link"
+	},
+	{
+		"id" : 81,
+		"key" : "map_gtg",
+		"map" : ["map_gerudo_fortress"],
+		"lat" : [1531],
+		"lon" : [812],
+		"type": "link"
+	},
+	{
+		"id" : 82,
+		"key" : "map_haunted_wasteland",
+		"map" : ["map_gerudo_fortress"],
+		"lat" : [953],
+		"lon" : [153],
+		"type": "link"
+	},
+	{
+		"id" : 83,
+		"key" : "map_gerudo_valley_adult",
+		"map" : ["map_gerudo_fortress"],
+		"lat" : [1932],
+		"lon" : [746],
+		"type": "link"
+	},
+	{
+		"id" : 84,
+		"key" : "map_gerudo_fortress",
+		"map" : ["map_gtg"],
+		"lat" : [1786],
+		"lon" : [819],
+		"type": "link"
+	},
+	{
+		"id" : 85,
+		"key" : "map_gerudo_fortress",
+		"map" : ["map_haunted_wasteland"],
+		"lat" : [3921],
+		"lon" : [6005],
+		"type": "link"
+	},
+	{
+		"id" : 86,
+		"key" : "map_desert_colossus",
+		"map" : ["map_haunted_wasteland"],
+		"lat" : [2220],
+		"lon" : [467],
+		"type": "link"
+	},
+	{
+		"id" : 87,
+		"key" : "map_haunted_wasteland",
+		"map" : ["map_desert_colossus"],
+		"lat" : [1376],
+		"lon" : [2900],
+		"type": "link"
+	},
+	{
+		"id" : 88,
+		"key" : "map_spirit_temple",
+		"map" : ["map_desert_colossus"],
+		"lat" : [1445],
+		"lon" : [703],
+		"type": "link"
+	},
+	{
+		"id" : 89,
+		"key" : "map_desert_colossus",
+		"map" : ["map_spirit_temple"],
+		"lat" : [2267],
+		"lon" : [810],
+		"type": "link"
 	}
+
+
+
+
 ]
