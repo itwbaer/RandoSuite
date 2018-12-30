@@ -1,2727 +1,3117 @@
 [
 	{
 		"id" : 0,
-		"check" : "check_song_impa",
+		"key" : "check_song_impa",
 		"map" : ["map_hyrule_castle"],
 		"lat" : [217],
-		"lon" : [335]
+		"lon" : [335],
+		"type": "check"
 	},
 	{
 		"id" : 1,
-		"check" : "check_song_malon",
+		"key" : "check_song_malon",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [1407],
-		"lon" : [1043]		
+		"lon" : [1043],
+		"type": "check"		
 	},
 	{
 		"id" : 2,
-		"check" : "check_song_saria",
+		"key" : "check_song_saria",
 		"map" : ["map_sacred_forest"],
 		"lat" : [326],
-		"lon" : [514]
+		"lon" : [514],
+		"type": "check"
 	},
 	{
 		"id" : 3,
-		"check" : "check_song_royal_tomb",
+		"key" : "check_song_royal_tomb",
 		"map" : ["map_graveyard"],
 		"lat" : [147],
-		"lon" : [1834]
+		"lon" : [1834],
+		"type": "check"
 	},
 	{
 		"id" : 4,
-		"check" : "check_song_oot",
+		"key" : "check_song_oot",
 		"map" : ["map_hyrule_field"],
 		"lat" : [785],
-		"lon" : [4649]
+		"lon" : [4649],
+		"type": "check"
 	},
 	{
 		"id" : 5,
-		"check" : "check_song_windmill",
+		"key" : "check_song_windmill",
 		"map" : ["map_kakariko_adult"],
 		"lat" : [1084],
-		"lon" : [2780]
+		"lon" : [2780],
+		"type": "check"
 	},
 	{
 		"id" : 6,
-		"check" : "check_song_forest",
+		"key" : "check_song_forest",
 		"map" : ["map_sacred_forest"],
 		"lat" : [325],
-		"lon" : [640]
+		"lon" : [640],
+		"type": "check"
 	},
 	{
 		"id" : 7,
-		"check" : "check_song_crater",
+		"key" : "check_song_crater",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [690],
-		"lon" : [967]
+		"lon" : [967],
+		"type": "check"
 	},
 	{
 		"id" : 8,
-		"check" : "check_song_ice_cavern",
+		"key" : "check_song_ice_cavern",
 		"map" : ["map_ice_cavern"],
 		"lat" : [1585],
-		"lon" : [423]
+		"lon" : [423],
+		"type": "check"
 	},
 	{
 		"id" : 9,
-		"check" : "check_song_kakariko",
+		"key" : "check_song_kakariko",
 		"map" : ["map_kakariko_adult"],
 		"lat" : [1160],
-		"lon" : [1947]
+		"lon" : [1947],
+		"type": "check"
 	},
 	{
 		"id" : 10,
-		"check" : "check_song_colossus",
+		"key" : "check_song_colossus",
 		"map" : ["map_desert_colossus"],
 		"lat" : [1450],
-		"lon" : [772]
+		"lon" : [772],
+		"type": "check"
 	},
 	{
 		"id" : 11,
-		"check" : "check_song_temple",
+		"key" : "check_song_temple",
 		"map" : ["map_temple_of_time"],
 		"lat" : [294],
-		"lon" : [1013]
+		"lon" : [1013],
+		"type": "check"
 	},
 	{
 		"id" : 12,
-		"check" : "check_item_duku_lobby",
+		"key" : "check_item_duku_lobby",
 		"map" : ["map_deku_tree"],
 		"lat" : [833],
-		"lon" : [827]
+		"lon" : [827],
+		"type": "check"
 	},
 	{
 		"id" : 13,
-		"check" : "check_item_duku_slingshot",
+		"key" : "check_item_duku_slingshot",
 		"map" : ["map_deku_tree"],
 		"lat" : [1288],
-		"lon" : [139]
+		"lon" : [139],
+		"type": "check"
 	},
 	{
 		"id" : 14,
-		"check" : "check_item_duku_slingshot_vines",
+		"key" : "check_item_duku_slingshot_vines",
 		"map" : ["map_deku_tree"],
 		"lat" : [1373],
-		"lon" : [261]
+		"lon" : [261],
+		"type": "check"
 	},
 	{
 		"id" : 15,
-		"check" : "check_item_deku_compass",
+		"key" : "check_item_deku_compass",
 		"map" : ["map_deku_tree"],
 		"lat" : [211],
-		"lon" : [99]
+		"lon" : [99],
+		"type": "check"
 	},
 	{
 		"id" : 16,
-		"check" : "check_item_deku_compass_vines",
+		"key" : "check_item_deku_compass_vines",
 		"map" : ["map_deku_tree"],
 		"lat" : [366],
-		"lon" : [264]
+		"lon" : [264],
+		"type": "check"
 	},
 	{
 		"id" : 17,
-		"check" : "check_item_deku_basement",
+		"key" : "check_item_deku_basement",
 		"map" : ["map_deku_tree"],
 		"lat" : [2444],
-		"lon" : [1180]
+		"lon" : [1180],
+		"type": "check"
 	},
 	{
 		"id" : 18,
-		"check" : "check_item_deku_boss",
+		"key" : "check_item_deku_boss",
 		"map" : ["map_deku_tree"],
 		"lat" : [1992],
-		"lon" : [1491]
+		"lon" : [1491],
+		"type": "check"
 	},
 	{
 		"id" : 19,
-		"check" : "check_item_dodongo_lobby",
+		"key" : "check_item_dodongo_lobby",
 		"map" : ["map_dodongos"],
 		"lat" : [2708],
-		"lon" : [623]
+		"lon" : [623],
+		"type": "check"
 	},
 	{
 		"id" : 20,
-		"check" : "check_item_dodongo_near_huge_stairs",
+		"key" : "check_item_dodongo_near_huge_stairs",
 		"map" : ["map_dodongos"],
 		"lat" : [2962],
-		"lon" : [223]
+		"lon" : [223],
+		"type": "check"
 	},
 	{
 		"id" : 21,
-		"check" : "check_item_dodongo_bomb_flower_platform",
+		"key" : "check_item_dodongo_bomb_flower_platform",
 		"map" : ["map_dodongos"],
 		"lat" : [1098],
-		"lon" : [1724]
+		"lon" : [1724],
+		"type": "check"
 	},
 	{
 		"id" : 22,
-		"check" : "check_item_dodongo_bomb_bag",
+		"key" : "check_item_dodongo_bomb_bag",
 		"map" : ["map_dodongos"],
 		"lat" : [710],
-		"lon" : [1638]
+		"lon" : [1638],
+		"type": "check"
 	},
 	{
 		"id" : 23,
-		"check" : "check_item_dodongo_end_of_bridge",
+		"key" : "check_item_dodongo_end_of_bridge",
 		"map" : ["map_dodongos"],
 		"lat" : [558],
-		"lon" : [670]
+		"lon" : [670],
+		"type": "check"
 
 	},
 	{
 		"id" : 24,
-		"check" : "check_item_dodongo_above_boss",
+		"key" : "check_item_dodongo_above_boss",
 		"map" : ["map_dodongos"],
 		"lat" : [1955],
-		"lon" : [565]
+		"lon" : [565],
+		"type": "check"
 	},
 	{
 		"id" : 25,
-		"check" : "check_item_dodongo_boss",
+		"key" : "check_item_dodongo_boss",
 		"map" : ["map_dodongos"],
 		"lat" : [1536],
-		"lon" : [650]
+		"lon" : [650],
+		"type": "check"
 	},
 	{
 		"id" : 26,
-		"check" : "check_item_jabu_boomerang",
+		"key" : "check_item_jabu_boomerang",
 		"map" : ["map_jabu"],
 		"lat" : [581],
-		"lon" : [1421]
+		"lon" : [1421],
+		"type": "check"
 	},
 	{
 		"id" : 27,
-		"check" : "check_item_jabu_map",
+		"key" : "check_item_jabu_map",
 		"map" : ["map_jabu"],
 		"lat" : [576],
-		"lon" : [89]
+		"lon" : [89],
+		"type": "check"
 	},
 	{
 		"id" : 28,
-		"check" : "check_item_jabu_compass",
+		"key" : "check_item_jabu_compass",
 		"map" : ["map_jabu"],
 		"lat" : [182],
-		"lon" : [536]
+		"lon" : [536],
+		"type": "check"
 	},
 	{
 		"id" : 29,
-		"check" : "check_item_jabu_boss",
+		"key" : "check_item_jabu_boss",
 		"map" : ["map_jabu"],
 		"lat" : [1196],
-		"lon" : [1339]
+		"lon" : [1339],
+		"type": "check"
 	},
 	{
 		"id" : 30,
-		"check" : "check_item_temple_forest_first_room",
+		"key" : "check_item_temple_forest_first_room",
 		"map" : ["map_forest_temple"],
 		"lat" : [3096],
-		"lon" : [1238]
+		"lon" : [1238],
+		"type": "check"
 	},
 	{
 		"id" : 31,
-		"check" : "check_item_temple_forest_behind_lobby",
+		"key" : "check_item_temple_forest_behind_lobby",
 		"map" : ["map_forest_temple"],
 		"lat" : [1529],
-		"lon" : [1350]
+		"lon" : [1350],
+		"type": "check"
 	},
 	{
 		"id" : 32,
-		"check" : "check_item_temple_forest_inside_well",
+		"key" : "check_item_temple_forest_inside_well",
 		"map" : ["map_forest_temple"],
 		"lat" : [2720],
-		"lon" : [1525]
+		"lon" : [1525],
+		"type": "check"
 	},
 	{
 		"id" : 33,
-		"check" : "check_item_temple_forest_map",
+		"key" : "check_item_temple_forest_map",
 		"map" : ["map_forest_temple"],
 		"lat" : [604],
-		"lon" : [1358]
+		"lon" : [1358],
+		"type": "check"
 	},
 	{
 		"id" : 34,
-		"check" : "check_item_temple_forest_outside_hookshot_check",
+		"key" : "check_item_temple_forest_outside_hookshot_check",
 		"map" : ["map_forest_temple"],
 		"lat" : [1821],
-		"lon" : [1979]
+		"lon" : [1979],
+		"type": "check"
 	},
 	{
 		"id" : 35,
-		"check" : "check_item_temple_forest_push_block_wall_target",
+		"key" : "check_item_temple_forest_push_block_wall_target",
 		"map" : ["map_forest_temple"],
 		"lat" : [1168],
-		"lon" : [297]
+		"lon" : [297],
+		"type": "check"
 	},
 	{
 		"id" : 36,
-		"check" : "check_item_temple_forest_boss_key",
+		"key" : "check_item_temple_forest_boss_key",
 		"map" : ["map_forest_temple"],
 		"lat" : [84],
-		"lon" : [658]
+		"lon" : [658],
+		"type": "check"
 	},
 	{
 		"id" : 37,
-		"check" : "check_item_temple_forest_floormaster",
+		"key" : "check_item_temple_forest_floormaster",
 		"map" : ["map_forest_temple"],
 		"lat" : [2080],
-		"lon" : [469]
+		"lon" : [469],
+		"type": "check"
 	},
 	{
 		"id" : 38,
-		"check" : "check_item_temple_forest_bow",
+		"key" : "check_item_temple_forest_bow",
 		"map" : ["map_forest_temple"],
 		"lat" : [390],
-		"lon" : [1350]
+		"lon" : [1350],
+		"type": "check"
 	},
 	{
 		"id" : 39,
-		"check" : "check_item_temple_forest_red_poe",
+		"key" : "check_item_temple_forest_red_poe",
 		"map" : ["map_forest_temple"],
 		"lat" : [313],
-		"lon" : [1137]
+		"lon" : [1137],
+		"type": "check"
 	},
 	{
 		"id" : 40,
-		"check" : "check_item_temple_forest_blue_poe",
+		"key" : "check_item_temple_forest_blue_poe",
 		"map" : ["map_forest_temple"],
 		"lat" : [318],
-		"lon" : [1534]
+		"lon" : [1534],
+		"type": "check"
 	},
 	{
 		"id" : 41,
-		"check" : "check_item_temple_forest_falling_room",
+		"key" : "check_item_temple_forest_falling_room",
 		"map" : ["map_forest_temple"],
 		"lat" : [1990],
-		"lon" : [2118]
+		"lon" : [2118],
+		"type": "check"
 	},
 	{
 		"id" : 42,
-		"check" : "check_item_temple_forest_rotating_room",
+		"key" : "check_item_temple_forest_rotating_room",
 		"map" : ["map_forest_temple"],
 		"lat" : [2356],
-		"lon" : [2423]
+		"lon" : [2423],
+		"type": "check"
 	},
 	{
 		"id" : 43,
-		"check" : "check_item_temple_forest_boss",
+		"key" : "check_item_temple_forest_boss",
 		"map" : ["map_forest_temple"],
 		"lat" : [1397],
-		"lon" : [2633]
+		"lon" : [2633],
+		"type": "check"
 	},
 	{
 		"id" : 44,
-		"check" : "check_item_temple_fire_near_boss",
+		"key" : "check_item_temple_fire_near_boss",
 		"map" : ["map_fire_temple"],
 		"lat" : [3825],
-		"lon" : [1007]
+		"lon" : [1007],
+		"type": "check"
 	},
 	{
 		"id" : 45,
-		"check" : "check_item_temple_fire_boss_key_area_one",
+		"key" : "check_item_temple_fire_boss_key_area_one",
 		"map" : ["map_fire_temple"],
 		"lat" : [2917],
-		"lon" : [1380]
+		"lon" : [1380],
+		"type": "check"
 	},
 	{
 		"id" : 46,
-		"check" : "check_item_temple_fire_boss_key_area_two",
+		"key" : "check_item_temple_fire_boss_key_area_two",
 		"map" : ["map_fire_temple"],
 		"lat" : [3290],
-		"lon" : [1429]
+		"lon" : [1429],
+		"type": "check"
 	},
 	{
 		"id" : 47,
-		"check" : "check_item_temple_fire_north_open_lava_room",
+		"key" : "check_item_temple_fire_north_open_lava_room",
 		"map" : ["map_fire_temple"],
 		"lat" : [2672],
-		"lon" : [2320]
+		"lon" : [2320],
+		"type": "check"
 	},
 	{
 		"id" : 48,
-		"check" : "check_item_temple_fire_south_open_lava_room",
+		"key" : "check_item_temple_fire_south_open_lava_room",
 		"map" : ["map_fire_temple"],
 		"lat" : [4297],
-		"lon" : [2130]
+		"lon" : [2130],
+		"type": "check"
 	},
 	{
 		"id" : 49,
-		"check" : "check_item_temple_fire_boulder_maze",
+		"key" : "check_item_temple_fire_boulder_maze",
 		"map" : ["map_fire_temple"],
 		"lat" : [2542],
-		"lon" : [2637]
+		"lon" : [2637],
+		"type": "check"
 	},
 	{
 		"id" : 50,
-		"check" : "check_item_temple_fire_room_near_boulder_maze",
+		"key" : "check_item_temple_fire_room_near_boulder_maze",
 		"map" : ["map_fire_temple"],
 		"lat" : [1224],
-		"lon" : [1910]
+		"lon" : [1910],
+		"type": "check"
 	},
 	{
 		"id" : 51,
-		"check" : "check_item_temple_fire_above_boulder_maze",
+		"key" : "check_item_temple_fire_above_boulder_maze",
 		"map" : ["map_fire_temple"],
 		"lat" : [2505],
-		"lon" : [2087]
+		"lon" : [2087],
+		"type": "check"
 	},
 	{
 		"id" : 52,
-		"check" : "check_item_temple_fire_boulder_maze_bombable",
+		"key" : "check_item_temple_fire_boulder_maze_bombable",
 		"map" : ["map_fire_temple"],
 		"lat" : [2446],
-		"lon" : [2255]
+		"lon" : [2255],
+		"type": "check"
 	},
 	{
 		"id" : 53,
-		"check" : "check_item_temple_fire_scarecrow_song",
+		"key" : "check_item_temple_fire_scarecrow_song",
 		"map" : ["map_fire_temple"],
 		"lat" : [226],
-		"lon" : [2132]
+		"lon" : [2132],
+		"type": "check"
 	},
 	{
 		"id" : 54,
-		"check" : "check_item_temple_fire_fire_wall",
+		"key" : "check_item_temple_fire_fire_wall",
 		"map" : ["map_fire_temple"],
 		"lat" : [1870],
-		"lon" : [1860]
+		"lon" : [1860],
+		"type": "check"
 	},
 	{
 		"id" : 55,
-		"check" : "check_item_temple_fire_fire_maze_side",
+		"key" : "check_item_temple_fire_fire_maze_side",
 		"map" : ["map_fire_temple"],
 		"lat" : [1445],
-		"lon" : [1091]
+		"lon" : [1091],
+		"type": "check"
 	},
 	{
 		"id" : 56,
-		"check" : "check_item_temple_fire_fire_maze_center",
+		"key" : "check_item_temple_fire_fire_maze_center",
 		"map" : ["map_fire_temple"],
 		"lat" : [1974],
-		"lon" : [720]
+		"lon" : [720],
+		"type": "check"
 	},
 	{
 		"id" : 57,
-		"check" : "check_item_temple_fire_hammer",
+		"key" : "check_item_temple_fire_hammer",
 		"map" : ["map_fire_temple"],
 		"lat" : [539],
-		"lon" : [478]
+		"lon" : [478],
+		"type": "check"
 	},
 	{
 		"id" : 58,
-		"check" : "check_item_temple_fire_boss",
+		"key" : "check_item_temple_fire_boss",
 		"map" : ["map_fire_temple"],
 		"lat" : [3439],
-		"lon" : [456]
+		"lon" : [456],
+		"type": "check"
 	},
 	{
 		"id" : 59,
-		"check" : "check_item_ice_map",
+		"key" : "check_item_ice_map",
 		"map" : ["map_ice_cavern"],
 		"lat" : [91],
-		"lon" : [929]
+		"lon" : [929],
+		"type": "check"
 	},
 	{
 		"id" : 60,
-		"check" : "check_item_ice_compass",
+		"key" : "check_item_ice_compass",
 		"map" : ["map_ice_cavern"],
 		"lat" : [1404],
-		"lon" : [1304]
+		"lon" : [1304],
+		"type": "check"
 	},
 	{
 		"id" : 61,
-		"check" : "check_item_ice_frozen_poh",
+		"key" : "check_item_ice_frozen_poh",
 		"map" : ["map_ice_cavern"],
 		"lat" : [1171],
-		"lon" : [1327]
+		"lon" : [1327],
+		"type": "check"
 	},
 	{
 		"id" : 62,
-		"check" : "check_item_ice_iron_boots",
+		"key" : "check_item_ice_iron_boots",
 		"map" : ["map_ice_cavern"],
 		"lat" : [1530],
-		"lon" : [379]
+		"lon" : [379],
+		"type": "check"
 	},
 	{
 		"id" : 63,
-		"check" : "check_item_temple_water_map",
+		"key" : "check_item_temple_water_map",
 		"map" : ["map_water_temple"],
 		"lat" : [1830],
-		"lon" : [2294]
+		"lon" : [2294],
+		"type": "check"
 	},
 	{
 		"id" : 64,
-		"check" : "check_item_temple_water_compass",
+		"key" : "check_item_temple_water_compass",
 		"map" : ["map_water_temple"],
 		"lat" : [1423],
-		"lon" : [2302]
+		"lon" : [2302],
+		"type": "check"
 	},
 	{
 		"id" : 65,
-		"check" : "check_item_temple_water_early_torches",
+		"key" : "check_item_temple_water_early_torches",
 		"map" : ["map_water_temple"],
 		"lat" : [1831],
-		"lon" : [3672]
+		"lon" : [3672],
+		"type": "check"
 	},
 	{
 		"id" : 66,
-		"check" : "check_item_temple_water_dragon_head",
+		"key" : "check_item_temple_water_dragon_head",
 		"map" : ["map_water_temple"],
 		"lat" : [970],
-		"lon" : [2178]
+		"lon" : [2178],
+		"type": "check"
 	},
 	{
 		"id" : 67,
-		"check" : "check_item_temple_water_central_bow_target",
+		"key" : "check_item_temple_water_central_bow_target",
 		"map" : ["map_water_temple"],
 		"lat" : [3154],
-		"lon" : [1951]
+		"lon" : [1951],
+		"type": "check"
 	},
 	{
 		"id" : 68,
-		"check" : "check_item_temple_water_central_pillar",
+		"key" : "check_item_temple_water_central_pillar",
 		"map" : ["map_water_temple"],
 		"lat" : [2239],
-		"lon" : [3558]
+		"lon" : [3558],
+		"type": "check"
 	},
 	{
 		"id" : 69,
-		"check" : "check_item_temple_water_cracked_wall",
+		"key" : "check_item_temple_water_cracked_wall",
 		"map" : ["map_water_temple"],
 		"lat" : [2872],
-		"lon" : [2243]
+		"lon" : [2243],
+		"type": "check"
 	},
 	{
 		"id" : 70,
-		"check" : "check_item_temple_water_boss_key",
+		"key" : "check_item_temple_water_boss_key",
 		"map" : ["map_water_temple"],
 		"lat" : [590],
-		"lon" : [2546]
+		"lon" : [2546],
+		"type": "check"
 	},
 	{
 		"id" : 71,
-		"check" : "check_item_temple_water_longshot",
+		"key" : "check_item_temple_water_longshot",
 		"map" : ["map_water_temple"],
 		"lat" : [133],
-		"lon" : [428]
+		"lon" : [428],
+		"type": "check"
 	},
 	{
 		"id" : 72,
-		"check" : "check_item_temple_water_river",
+		"key" : "check_item_temple_water_river",
 		"map" : ["map_water_temple"],
 		"lat" : [2703],
-		"lon" : [904]
+		"lon" : [904],
+		"type": "check"
 	},
 	{
 		"id" : 73,
-		"check" : "check_item_temple_water_boss",
+		"key" : "check_item_temple_water_boss",
 		"map" : ["map_water_temple"],
 		"lat" : [645],
-		"lon" : [1614]
+		"lon" : [1614],
+		"type": "check"
 	},
 	{
 		"id" : 74,
-		"check" : "check_item_well_front_left_hidden",
+		"key" : "check_item_well_front_left_hidden",
 		"map" : ["map_well"],
 		"lat" : [623],
-		"lon" : [870]
+		"lon" : [870],
+		"type": "check"
 	},
 	{
 		"id" : 75,
-		"check" : "check_item_well_right_bottom_hidden",
+		"key" : "check_item_well_right_bottom_hidden",
 		"map" : ["map_well"],
 		"lat" : [626],
-		"lon" : [1233]
+		"lon" : [1233],
+		"type": "check"
 	},
 	{
 		"id" : 76,
-		"check" : "check_item_well_front_center_bomb",
+		"key" : "check_item_well_front_center_bomb",
 		"map" : ["map_well"],
 		"lat" : [865],
-		"lon" : [866]
+		"lon" : [866],
+		"type": "check"
 	},
 	{
 		"id" : 77,
-		"check" : "check_item_well_center_large_chest",
+		"key" : "check_item_well_center_large_chest",
 		"map" : ["map_well"],
 		"lat" : [529],
-		"lon" : [923]
+		"lon" : [923],
+		"type": "check"
 	},
 	{
 		"id" : 78,
-		"check" : "check_item_well_center_small_chest",
+		"key" : "check_item_well_center_small_chest",
 		"map" : ["map_well"],
 		"lat" : [532],
-		"lon" : [1183]
+		"lon" : [1183],
+		"type": "check"
 	},
 	{
 		"id" : 79,
-		"check" : "check_item_well_back_left_bomb",
+		"key" : "check_item_well_back_left_bomb",
 		"map" : ["map_well"],
 		"lat" : [102],
-		"lon" : [616]
+		"lon" : [616],
+		"type": "check"
 	},
 	{
 		"id" : 80,
-		"check" : "check_item_well_basement",
+		"key" : "check_item_well_basement",
 		"map" : ["map_well"],
 		"lat" : [1563],
-		"lon" : [1897]
+		"lon" : [1897],
+		"type": "check"
 	},
 	{
 		"id" : 81,
-		"check" : "check_item_well_casket_key",
+		"key" : "check_item_well_casket_key",
 		"map" : ["map_well"],
 		"lat" : [445],
-		"lon" : [109]
+		"lon" : [109],
+		"type": "check"
 	},
 	{
 		"id" : 82,
-		"check" : "check_item_well_left_underwater",
+		"key" : "check_item_well_left_underwater",
 		"map" : ["map_well"],
 		"lat" : [400],
-		"lon" : [511]
+		"lon" : [511],
+		"type": "check"
 	},
 	{
 		"id" : 83,
-		"check" : "check_item_well_front_underwater",
+		"key" : "check_item_well_front_underwater",
 		"map" : ["map_well"],
 		"lat" : [779],
-		"lon" : [1012]
+		"lon" : [1012],
+		"type": "check"
 	},
 	{
 		"id" : 84,
-		"check" : "check_item_well_deadhand",
+		"key" : "check_item_well_deadhand",
 		"map" : ["map_well"],
 		"lat" : [786],
-		"lon" : [1559]
+		"lon" : [1559],
+		"type": "check"
 	},
 	{
 		"id" : 85,
-		"check" : "check_item_well_deadhand_invisible",
+		"key" : "check_item_well_deadhand_invisible",
 		"map" : ["map_well"],
 		"lat" : [780],
-		"lon" : [1680]
+		"lon" : [1680],
+		"type": "check"
 	},
 	{
 		"id" : 86,
-		"check" : "check_item_well_locked_pits",
+		"key" : "check_item_well_locked_pits",
 		"map" : ["map_well"],
 		"lat" : [330],
-		"lon" : [1511]
+		"lon" : [1511],
+		"type": "check"
 	},
 	{
 		"id" : 87,
-		"check" : "check_item_well_beyond_locked_pits",
+		"key" : "check_item_well_beyond_locked_pits",
 		"map" : ["map_well"],
 		"lat" : [397],
-		"lon" : [1481]
+		"lon" : [1481],
+		"type": "check"
 	},
 	{
 		"id" : 88,
-		"check" : "check_item_temple_shadow_map",
+		"key" : "check_item_temple_shadow_map",
 		"map" : ["map_shadow_temple"],
 		"lat" : [261],
-		"lon" : [2200]
+		"lon" : [2200],
+		"type": "check"
 	},
 	{
 		"id" : 89,
-		"check" : "check_item_temple_shadow_hover_boots",
+		"key" : "check_item_temple_shadow_hover_boots",
 		"map" : ["map_shadow_temple"],
 		"lat" : [505],
-		"lon" : [1426]
+		"lon" : [1426],
+		"type": "check"
 	},
 	{
 		"id" : 90,
-		"check" : "check_item_temple_shadow_compass",
+		"key" : "check_item_temple_shadow_compass",
 		"map" : ["map_shadow_temple"],
 		"lat" : [1020],
-		"lon" : [3868]
+		"lon" : [3868],
+		"type": "check"
 	},
 	{
 		"id" : 91,
-		"check" : "check_item_temple_shadow_early_silver_rupees",
+		"key" : "check_item_temple_shadow_early_silver_rupees",
 		"map" : ["map_shadow_temple"],
 		"lat" : [355],
-		"lon" : [4118]
+		"lon" : [4118],
+		"type": "check"
 	},
 	{
 		"id" : 92,
-		"check" : "check_item_temple_shadow_invisible_blades_one",
+		"key" : "check_item_temple_shadow_invisible_blades_one",
 		"map" : ["map_shadow_temple"],
 		"lat" : [3310],
-		"lon" : [4903]
+		"lon" : [4903],
+		"type": "check"
 	},
 	{
 		"id" : 93,
-		"check" : "check_item_temple_shadow_invisible_blades_two",
+		"key" : "check_item_temple_shadow_invisible_blades_two",
 		"map" : ["map_shadow_temple"],
 		"lat" : [3354],
-		"lon" : [4904]
+		"lon" : [4904],
+		"type": "check"
 	},
 	{
 		"id" : 94,
-		"check" : "check_item_temple_shadow_falling_spikes_lower",
+		"key" : "check_item_temple_shadow_falling_spikes_lower",
 		"map" : ["map_shadow_temple"],
 		"lat" : [3941],
-		"lon" : [2726]
+		"lon" : [2726],
+		"type": "check"
 	},
 	{
 		"id" : 95,
-		"check" : "check_item_temple_shadow_falling_spikes_upper_one",
+		"key" : "check_item_temple_shadow_falling_spikes_upper_one",
 		"map" : ["map_shadow_temple"],
 		"lat" : [4112],
-		"lon" : [2611]
+		"lon" : [2611],
+		"type": "check"
 	},
 	{
 		"id" : 96,
-		"check" : "check_item_temple_shadow_falling_spikes_upper_two",
+		"key" : "check_item_temple_shadow_falling_spikes_upper_two",
 		"map" : ["map_shadow_temple"],
 		"lat" : [3941],
-		"lon" : [2977]
+		"lon" : [2977],
+		"type": "check"
 	},
 	{
 		"id" : 97,
-		"check" : "check_item_temple_shadow_invisible_spike_room",
+		"key" : "check_item_temple_shadow_invisible_spike_room",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2906],
-		"lon" : [3516]
+		"lon" : [3516],
+		"type": "check"
 	},
 	{
 		"id" : 98,
-		"check" : "check_item_temple_shadow_skull_pot",
+		"key" : "check_item_temple_shadow_skull_pot",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2913],
-		"lon" : [3121]
+		"lon" : [3121],
+		"type": "check"
 	},
 	{
 		"id" : 99,
-		"check" : "check_item_temple_shadow_wind_room_invisible",
+		"key" : "check_item_temple_shadow_wind_room_invisible",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2469],
-		"lon" : [4556]
+		"lon" : [4556],
+		"type": "check"
 	},
 	{
 		"id" : 100,
-		"check" : "check_item_temple_shadow_after_wind_one",
+		"key" : "check_item_temple_shadow_after_wind_one",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2175],
-		"lon" : [4352]
+		"lon" : [4352],
+		"type": "check"
 	},
 	{
 		"id" : 101,
-		"check" : "check_item_temple_shadow_after_wind_two",
+		"key" : "check_item_temple_shadow_after_wind_two",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2004],
-		"lon" : [4280]
+		"lon" : [4280],
+		"type": "check"
 	},
 	{
 		"id" : 102,
-		"check" : "check_item_temple_shadow_invisible_floormaster",
+		"key" : "check_item_temple_shadow_invisible_floormaster",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2347],
-		"lon" : [801]
+		"lon" : [801],
+		"type": "check"
 	},
 	{
 		"id" : 103,
-		"check" : "check_item_temple_shadow_boss_key_one",
+		"key" : "check_item_temple_shadow_boss_key_one",
 		"map" : ["map_shadow_temple"],
 		"lat" : [1423],
-		"lon" : [930]
+		"lon" : [930],
+		"type": "check"
 	},
 	{
 		"id" : 104,
-		"check" : "check_item_temple_shadow_boss_key_two",
+		"key" : "check_item_temple_shadow_boss_key_two",
 		"map" : ["map_shadow_temple"],
 		"lat" : [1422],
-		"lon" : [667]
+		"lon" : [667],
+		"type": "check"
 	},
 	{
 		"id" : 105,
-		"check" : "check_item_temple_shadow_boss",
+		"key" : "check_item_temple_shadow_boss",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2932],
-		"lon" : [1980]
+		"lon" : [1980],
+		"type": "check"
 	},
 	{
 		"id" : 106,
-		"check" : "check_item_temple_spirit_child_first_chest",
+		"key" : "check_item_temple_spirit_child_first_chest",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1307],
-		"lon" : [138]
+		"lon" : [138],
+		"type": "check"
 	},
 	{
 		"id" : 107,
-		"check" : "check_item_temple_spirit_child_second_chest",
+		"key" : "check_item_temple_spirit_child_second_chest",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1370],
-		"lon" : [672]
+		"lon" : [672],
+		"type": "check"
 	},
 	{
 		"id" : 108,
-		"check" : "check_item_temple_spirit_child_climb_one",
+		"key" : "check_item_temple_spirit_child_climb_one",
 		"map" : ["map_spirit_temple"],
 		"lat" : [282],
-		"lon" : [1208]
+		"lon" : [1208],
+		"type": "check"
 	},
 	{
 		"id" : 109,
-		"check" : "check_item_temple_spirit_child_climb_two",
+		"key" : "check_item_temple_spirit_child_climb_two",
 		"map" : ["map_spirit_temple"],
 		"lat" : [342],
-		"lon" : [1284]
+		"lon" : [1284],
+		"type": "check"
 	},
 	{
 		"id" : 110,
-		"check" : "check_item_temple_spirit_statue_base",
+		"key" : "check_item_temple_spirit_statue_base",
 		"map" : ["map_spirit_temple"],
 		"lat" : [321],
-		"lon" : [1595]
+		"lon" : [1595],
+		"type": "check"
 	},
 	{
 		"id" : 111,
-		"check" : "check_item_temple_spirit_statue_hands",
+		"key" : "check_item_temple_spirit_statue_hands",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1606],
-		"lon" : [2485]
+		"lon" : [2485],
+		"type": "check"
 	},
 	{
 		"id" : 112,
-		"check" : "check_item_temple_spirit_main_lobby_upper_right",
+		"key" : "check_item_temple_spirit_main_lobby_upper_right",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1532],
-		"lon" : [2889]
+		"lon" : [2889],
+		"type": "check"
 	},
 	{
 		"id" : 113,
-		"check" : "check_item_temple_spirit_lullaby_chest",
+		"key" : "check_item_temple_spirit_lullaby_chest",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1310],
-		"lon" : [949]
+		"lon" : [949],
+		"type": "check"
 	},
 	{
 		"id" : 114,
-		"check" : "check_item_temple_spirit_silver_rupees",
+		"key" : "check_item_temple_spirit_silver_rupees",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1122],
-		"lon" : [1440]
+		"lon" : [1440],
+		"type": "check"
 	},
 	{
 		"id" : 115,
-		"check" : "check_item_temple_spirit_suns_on_wall_one",
+		"key" : "check_item_temple_spirit_suns_on_wall_one",
 		"map" : ["map_spirit_temple"],
 		"lat" : [462],
-		"lon" : [2099]
+		"lon" : [2099],
+		"type": "check"
 	},
 	{
 		"id" : 116,
-		"check" : "check_item_temple_spirit_suns_on_wall_two",
+		"key" : "check_item_temple_spirit_suns_on_wall_two",
 		"map" : ["map_spirit_temple"],
 		"lat" : [526],
-		"lon" : [2100]
+		"lon" : [2100],
+		"type": "check"
 	},
 	{
 		"id" : 117,
-		"check" : "check_item_temple_spirit_sun_block_torches",
+		"key" : "check_item_temple_spirit_sun_block_torches",
 		"map" : ["map_spirit_temple"],
 		"lat" : [2284],
-		"lon" : [2100]
+		"lon" : [2100],
+		"type": "check"
 	},
 	{
 		"id" : 118,
-		"check" : "check_item_temple_spirit_silver_gauntlets",
+		"key" : "check_item_temple_spirit_silver_gauntlets",
 		"map" : ["map_spirit_temple"],
 		"lat" : [2707],
-		"lon" : [2404]
+		"lon" : [2404],
+		"type": "check"
 	},
 	{
 		"id" : 119,
-		"check" : "check_item_temple_spirit_mirror_shield",
+		"key" : "check_item_temple_spirit_mirror_shield",
 		"map" : ["map_spirit_temple"],
 		"lat" : [2707],
-		"lon" : [2920]
+		"lon" : [2920],
+		"type": "check"
 	},
 	{
 		"id" : 120,
-		"check" : "check_item_temple_spirit_sun_wall_near_mirror_shield",
+		"key" : "check_item_temple_spirit_sun_wall_near_mirror_shield",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1837],
-		"lon" : [3375]
+		"lon" : [3375],
+		"type": "check"
 	},
 	{
 		"id" : 121,
-		"check" : "check_item_temple_spirit_invisible_mirror_one",
+		"key" : "check_item_temple_spirit_invisible_mirror_one",
 		"map" : ["map_spirit_temple"],
 		"lat" : [2453],
-		"lon" : [3368]
+		"lon" : [3368],
+		"type": "check"
 	},
 	{
 		"id" : 122,
-		"check" : "check_item_temple_spirit_invisible_mirror_two",
+		"key" : "check_item_temple_spirit_invisible_mirror_two",
 		"map" : ["map_spirit_temple"],
 		"lat" : [2453],
-		"lon" : [3434]
+		"lon" : [3434],
+		"type": "check"
 	},
 	{
 		"id" : 123,
-		"check" : "check_item_temple_spirit_boss_key",
+		"key" : "check_item_temple_spirit_boss_key",
 		"map" : ["map_spirit_temple"],
 		"lat" : [95],
-		"lon" : [894]
+		"lon" : [894],
+		"type": "check"
 	},
 	{
 		"id" : 124,
-		"check" : "check_item_temple_spirit_topmost_sun_on_wall",
+		"key" : "check_item_temple_spirit_topmost_sun_on_wall",
 		"map" : ["map_spirit_temple"],
 		"lat" : [365],
-		"lon" : [340]
+		"lon" : [340],
+		"type": "check"
 	},
 	{
 		"id" : 125,
-		"check" : "check_item_temple_spirit_boss",
+		"key" : "check_item_temple_spirit_boss",
 		"map" : ["map_spirit_temple"],
 		"lat" : [422],
-		"lon" : [2636]
+		"lon" : [2636],
+		"type": "check"
 	},
 	{
 		"id" : 126,
-		"check" : "check_item_ganons_water_trial_one",
+		"key" : "check_item_ganons_water_trial_one",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1851],
-		"lon" : [2578]
+		"lon" : [2578],
+		"type": "check"
 	},
 	{
 		"id" : 127,
-		"check" : "check_item_ganons_water_trial_two",
+		"key" : "check_item_ganons_water_trial_two",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1660],
-		"lon" : [2576]
+		"lon" : [2576],
+		"type": "check"
 	},
 	{
 		"id" : 128,
-		"check" : "check_item_ganons_shadow_trial",
+		"key" : "check_item_ganons_shadow_trial",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1085],
-		"lon" : [1977]
+		"lon" : [1977],
+		"type": "check"
 	},
 	{
 		"id" : 129,
-		"check" : "check_item_ganons_gold_gauntlets",
+		"key" : "check_item_ganons_gold_gauntlets",
 		"map" : ["map_ganons_trials"],
 		"lat" : [654],
-		"lon" : [2466]
+		"lon" : [2466],
+		"type": "check"
 	},
 	{
 		"id" : 130,
-		"check" : "check_item_ganons_spirit_trial_switch",
+		"key" : "check_item_ganons_spirit_trial_switch",
 		"map" : ["map_ganons_trials"],
 		"lat" : [2309],
-		"lon" : [1127]
+		"lon" : [1127],
+		"type": "check"
 	},
 	{
 		"id" : 131,
-		"check" : "check_item_ganons_spirit_trial_invisible",
+		"key" : "check_item_ganons_spirit_trial_invisible",
 		"map" : ["map_ganons_trials"],
 		"lat" : [2330],
-		"lon" : [1552]
+		"lon" : [1552],
+		"type": "check"
 	},
 	{
 		"id" : 132,
-		"check" : "check_item_ganons_light_trial_first_room_one",
+		"key" : "check_item_ganons_light_trial_first_room_one",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1755],
-		"lon" : [1113]
+		"lon" : [1113],
+		"type": "check"
 	},
 	{
 		"id" : 133,
-		"check" : "check_item_ganons_light_trial_first_room_two",
+		"key" : "check_item_ganons_light_trial_first_room_two",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1699],
-		"lon" : [1178]
+		"lon" : [1178],
+		"type": "check"
 	},
 	{
 		"id" : 134,
-		"check" : "check_item_ganons_light_trial_first_room_three",
+		"key" : "check_item_ganons_light_trial_first_room_three",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1811],
-		"lon" : [1178]
+		"lon" : [1178],
+		"type": "check"
 	},
 	{
 		"id" : 135,
-		"check" : "check_item_ganons_light_trial_first_room_four",
+		"key" : "check_item_ganons_light_trial_first_room_four",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1671],
-		"lon" : [1110]
+		"lon" : [1110],
+		"type": "check"
 	},
 	{
 		"id" : 136,
-		"check" : "check_item_ganons_light_trial_first_room_five",
+		"key" : "check_item_ganons_light_trial_first_room_five",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1835],
-		"lon" : [1110]
+		"lon" : [1110],
+		"type": "check"
 	},
 	{
 		"id" : 137,
-		"check" : "check_item_ganons_light_trial_first_room_six",
+		"key" : "check_item_ganons_light_trial_first_room_six",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1694],
-		"lon" : [1048]
+		"lon" : [1048],
+		"type": "check"
 	},
 	{
 		"id" : 138,
-		"check" : "check_item_ganons_light_trial_first_room_seven",
+		"key" : "check_item_ganons_light_trial_first_room_seven",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1815],
-		"lon" : [1048]
+		"lon" : [1048],
+		"type": "check"
 	},
 	{
 		"id" : 139,
-		"check" : "check_item_ganons_light_trial_second_room",
+		"key" : "check_item_ganons_light_trial_second_room",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1711],
-		"lon" : [928]
+		"lon" : [928],
+		"type": "check"
 	},
 	{
 		"id" : 140,
-		"check" : "check_item_ganons_boss_key",
+		"key" : "check_item_ganons_boss_key",
 		"map" : ["map_ganons_trials"],
 		"lat" : [1851],
-		"lon" : [3673]
+		"lon" : [3673],
+		"type": "check"
 	},
 	{
 		"id" : 141,
-		"check" : "check_item_overworld_chest_mido_one",
+		"key" : "check_item_overworld_chest_mido_one",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [847],
-		"lon" : [1231]
+		"lon" : [1231],
+		"type": "check"
 	},
 	{
 		"id" : 142,
-		"check" : "check_item_overworld_chest_mido_two",
+		"key" : "check_item_overworld_chest_mido_two",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [795],
-		"lon" : [1228]
+		"lon" : [1228],
+		"type": "check"
 	},
 	{
 		"id" : 143,
-		"check" : "check_item_overworld_chest_mido_three",
+		"key" : "check_item_overworld_chest_mido_three",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [839],
-		"lon" : [1298]
+		"lon" : [1298],
+		"type": "check"
 	},
 	{
 		"id" : 144,
-		"check" : "check_item_overworld_chest_mido_four",
+		"key" : "check_item_overworld_chest_mido_four",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [788],
-		"lon" : [1293]	
+		"lon" : [1293],
+		"type": "check"	
 	},
 	{
 		"id" : 145,
-		"check" : "check_item_overworld_chest_kokiri_sword",
+		"key" : "check_item_overworld_chest_kokiri_sword",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [1985],
-		"lon" : [1351]
+		"lon" : [1351],
+		"type": "check"
 	},
 	{
 		"id" : 146,
-		"check" : "check_item_overworld_chest_shield_grave",
+		"key" : "check_item_overworld_chest_shield_grave",
 		"map" : ["map_graveyard"],
 		"lat" : [625],
-		"lon" : [715]
+		"lon" : [715],
+		"type": "check"
 	},
 	{
 		"id" : 147,
-		"check" : "check_item_overworld_chest_grave_with_redead",
+		"key" : "check_item_overworld_chest_grave_with_redead",
 		"map" : ["map_graveyard"],
 		"lat" : [693],
-		"lon" : [919]
+		"lon" : [919],
+		"type": "check"
 	},
 	{
 		"id" : 148,
-		"check" : "check_item_overworld_chest_royal_tomb_torches",
+		"key" : "check_item_overworld_chest_royal_tomb_torches",
 		"map" : ["map_graveyard"],
 		"lat" : [151],
-		"lon" : [788]
+		"lon" : [788],
+		"type": "check"
 	},
 	{
 		"id" : 149,
-		"check" : "check_item_overworld_chest_death_mountain_trail_bomb_wall",
+		"key" : "check_item_overworld_chest_death_mountain_trail_bomb_wall",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [2671],
-		"lon" : [1027]
+		"lon" : [1027],
+		"type": "check"
 	},
 	{
 		"id" : 150,
-		"check" : "check_item_overworld_chest_goron_city_maze_bomb_one",
+		"key" : "check_item_overworld_chest_goron_city_maze_bomb_one",
 		"map" : ["map_goron_city"],
 		"lat" : [302],
-		"lon" : [129]
+		"lon" : [129],
+		"type": "check"
 	},
 	{
 		"id" : 151,
-		"check" : "check_item_overworld_chest_goron_city_maze_bomb_two",
+		"key" : "check_item_overworld_chest_goron_city_maze_bomb_two",
 		"map" : ["map_goron_city"],
 		"lat" : [300],
-		"lon" : [175]
+		"lon" : [175],
+		"type": "check"
 	},
 	{
 		"id" : 152,
-		"check" : "check_item_overworld_chest_goron_city_maze_hammer",
+		"key" : "check_item_overworld_chest_goron_city_maze_hammer",
 		"map" : ["map_goron_city"],
 		"lat" : [298],
-		"lon" : [52]
+		"lon" : [52],
+		"type": "check"
 	},
 	{
 		"id" : 153,
-		"check" : "check_item_overworld_chest_zora_torches",
+		"key" : "check_item_overworld_chest_zora_torches",
 		"map" : ["map_zoras_domain_child"],
 		"lat" : [778],
-		"lon" : [594]		
+		"lon" : [594],
+		"type": "check"		
 	},
 	{
 		"id" : 154,
-		"check" : "check_item_overworld_chest_hammer_rocks",
+		"key" : "check_item_overworld_chest_hammer_rocks",
 		"map" : ["map_gerudo_valley_adult"],
 		"lat" : [2322],
-		"lon" : [1561]
+		"lon" : [1561],
+		"type": "check"
 	},
 	{
 		"id" : 155,
-		"check" : "check_item_overworld_chest_gerudo_roof",
+		"key" : "check_item_overworld_chest_gerudo_roof",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [1145],
-		"lon" : [1027]
+		"lon" : [1027],
+		"type": "check"
 	},
 	{
 		"id" : 156,
-		"check" : "check_item_overworld_chest_haunted_wastedland_building",
+		"key" : "check_item_overworld_chest_haunted_wastedland_building",
 		"map" : ["map_haunted_wasteland"],
 		"lat" : [1855],
-		"lon" : [2589]
+		"lon" : [2589],
+		"type": "check"
 	},
 	{
 		"id" : 157,
-		"check" : "check_item_gtg_lobby_one",
+		"key" : "check_item_gtg_lobby_one",
 		"map" : ["map_gtg"],
 		"lat" : [1550],
-		"lon" : [740]
+		"lon" : [740],
+		"type": "check"
 	},
 	{
 		"id" : 158,
-		"check" : "check_item_gtg_lobby_two",
+		"key" : "check_item_gtg_lobby_two",
 		"map" : ["map_gtg"],
 		"lat" : [1545],
-		"lon" : [900]
+		"lon" : [900],
+		"type": "check"
 	},
 	{
 		"id" : 159,
-		"check" : "check_item_gtg_stalfos",
+		"key" : "check_item_gtg_stalfos",
 		"map" : ["map_gtg"],
 		"lat" : [1497],
-		"lon" : [167]
+		"lon" : [167],
+		"type": "check"
 	},
 	{
 		"id" : 160,
-		"check" : "check_item_gtg_beamos",
+		"key" : "check_item_gtg_beamos",
 		"map" : ["map_gtg"],
 		"lat" : [1626],
-		"lon" : [1442]
+		"lon" : [1442],
+		"type": "check"
 	},
 	{
 		"id" : 161,
-		"check" : "check_item_gtg_hidden_ceiling",
+		"key" : "check_item_gtg_hidden_ceiling",
 		"map" : ["map_gtg"],
 		"lat" : [1471],
-		"lon" : [1180]
+		"lon" : [1180],
+		"type": "check"
 	},
 	{
 		"id" : 162,
-		"check" : "check_item_gtg_maze_first",
+		"key" : "check_item_gtg_maze_first",
 		"map" : ["map_gtg"],
 		"lat" : [1075],
-		"lon" : [583]		
+		"lon" : [583],
+		"type": "check"		
 	},
 	{
 		"id" : 163,
-		"check" : "check_item_gtg_maze_second",
+		"key" : "check_item_gtg_maze_second",
 		"map" : ["map_gtg"],
 		"lat" : [881],
-		"lon" : [665]
+		"lon" : [665],
+		"type": "check"
 	},
 	{
 		"id" : 164,
-		"check" : "check_item_gtg_maze_third",
+		"key" : "check_item_gtg_maze_third",
 		"map" : ["map_gtg"],
 		"lat" : [888],
-		"lon" : [721]
+		"lon" : [721],
+		"type": "check"
 	},
 	{
 		"id" : 165,
-		"check" : "check_item_gtg_maze_final",
+		"key" : "check_item_gtg_maze_final",
 		"map" : ["map_gtg"],
 		"lat" : [1051],
-		"lon" : [819]
+		"lon" : [819],
+		"type": "check"
 	},
 	{
 		"id" : 166,
-		"check" : "check_item_gtg_maze_ledge_one",
+		"key" : "check_item_gtg_maze_ledge_one",
 		"map" : ["map_gtg"],
 		"lat" : [1082],
-		"lon" : [916]
+		"lon" : [916],
+		"type": "check"
 	},
 	{
 		"id" : 167,
-		"check" : "check_item_gtg_maze_ledge_two",
+		"key" : "check_item_gtg_maze_ledge_two",
 		"map" : ["map_gtg"],
 		"lat" : [1018],
-		"lon" : [978]
+		"lon" : [978],
+		"type": "check"
 	},
 	{
 		"id" : 168,
-		"check" : "check_item_gtg_ledge_freestanding",
+		"key" : "check_item_gtg_ledge_freestanding",
 		"map" : ["map_gtg"],
 		"lat" : [1082],
-		"lon" : [1268]
+		"lon" : [1268],
+		"type": "check"
 	},
 	{
 		"id" : 169,
-		"check" : "check_item_gtg_toilet_bowl",
+		"key" : "check_item_gtg_toilet_bowl",
 		"map" : ["map_gtg"],
 		"lat" : [1057],
-		"lon" : [1723]
+		"lon" : [1723],
+		"type": "check"
 	},
 	{
 		"id" : 170,
-		"check" : "check_item_gtg_hammer_switch",
+		"key" : "check_item_gtg_hammer_switch",
 		"map" : ["map_gtg"],
 		"lat" : [587],
-		"lon" : [1427]
+		"lon" : [1427],
+		"type": "check"
 	},
 	{
 		"id" : 171,
-		"check" : "check_item_gtg_hammer_enemies",
+		"key" : "check_item_gtg_hammer_enemies",
 		"map" : ["map_gtg"],
 		"lat" : [473],
-		"lon" : [1427]
+		"lon" : [1427],
+		"type": "check"
 	},
 	{
 		"id" : 172,
-		"check" : "check_item_gtg_eye_statue",
+		"key" : "check_item_gtg_eye_statue",
 		"map" : ["map_gtg"],
 		"lat" : [567],
-		"lon" : [870]
+		"lon" : [870],
+		"type": "check"
 	},
 	{
 		"id" : 173,
-		"check" : "check_item_gtg_near_scarecrow",
+		"key" : "check_item_gtg_near_scarecrow",
 		"map" : ["map_gtg"],
 		"lat" : [1326],
-		"lon" : [1165]
+		"lon" : [1165],
+		"type": "check"
 	},
 	{
 		"id" : 174,
-		"check" : "check_item_gtg_near_heavy_block",
+		"key" : "check_item_gtg_near_heavy_block",
 		"map" : ["map_gtg"],
 		"lat" : [535],
-		"lon" : [288]
+		"lon" : [288],
+		"type": "check"
 	},
 	{
 		"id" : 175,
-		"check" : "check_item_gtg_behind_heavy_block_one",
+		"key" : "check_item_gtg_behind_heavy_block_one",
 		"map" : ["map_gtg"],
 		"lat" : [205],
-		"lon" : [244]
+		"lon" : [244],
+		"type": "check"
 	},
 	{
 		"id" : 176,
-		"check" : "check_item_gtg_behind_heavy_block_two",
+		"key" : "check_item_gtg_behind_heavy_block_two",
 		"map" : ["map_gtg"],
 		"lat" : [148],
-		"lon" : [166]
+		"lon" : [166],
+		"type": "check"
 	},
 	{
 		"id" : 177,
-		"check" : "check_item_gtg_behind_heavy_block_three",
+		"key" : "check_item_gtg_behind_heavy_block_three",
 		"map" : ["map_gtg"],
 		"lat" : [101],
-		"lon" : [253]
+		"lon" : [253],
+		"type": "check"
 	},
 	{
 		"id" : 178,
-		"check" : "check_item_gtg_behind_heavy_block_four",
+		"key" : "check_item_gtg_behind_heavy_block_four",
 		"map" : ["map_gtg"],
 		"lat" : [69],
-		"lon" : [167]
+		"lon" : [167],
+		"type": "check"
 	},
 	{
 		"id" : 179,
-		"check" : "check_item_gifts_richard",
+		"key" : "check_item_gifts_richard",
 		"map" : ["map_market_child"],
 		"lat" : [1161],
-		"lon" : [777]
+		"lon" : [777],
+		"type": "check"
 	},
 	{
 		"id" : 180,
-		"check" : "check_item_gifts_rooftop",
+		"key" : "check_item_gifts_rooftop",
 		"map" : ["map_kakariko_adult"],
 		"lat" : [1007],
-		"lon" : [1986]
+		"lon" : [1986],
+		"type": "check"
 	},
 	{
 		"id" : 181,
-		"check" : "check_item_gifts_chickens",
+		"key" : "check_item_gifts_chickens",
 		"map" : ["map_kakariko_child"],
 		"lat" : [1543],
-		"lon" : [2032]
+		"lon" : [2032],
+		"type": "check"
 	},
 	{
 		"id" : 182,
-		"check" : "check_item_gifts_anju",
+		"key" : "check_item_gifts_anju",
 		"map" : ["map_kakariko_adult"],
 		"lat" : [1542],
-		"lon" : [2033]
+		"lon" : [2033],
+		"type": "check"
 	},
 	{
 		"id" : 183,
-		"check" : "check_item_gifts_slingshot_target",
+		"key" : "check_item_gifts_slingshot_target",
 		"map" : ["map_lost_woods"],
 		"lat" : [1201],
-		"lon" : [1312]
+		"lon" : [1312],
+		"type": "check"
 	},
 	{
 		"id" : 184,
-		"check" : "check_item_gifts_skull_kid_saria",
+		"key" : "check_item_gifts_skull_kid_saria",
 		"map" : ["map_lost_woods"],
 		"lat" : [1234],
-		"lon" : [384]
+		"lon" : [384],
+		"type": "check"
 	},
 	{
 		"id" : 185,
-		"check" : "check_item_gifts_skull_mask",
+		"key" : "check_item_gifts_skull_mask",
 		"map" : ["map_lost_woods"],
 		"lat" : [689],
-		"lon" : [501]
+		"lon" : [501],
+		"type": "check"
 	},
 	{
 		"id" : 186,
-		"check" : "check_item_gifts_mask_of_truth",
+		"key" : "check_item_gifts_mask_of_truth",
 		"map" : ["map_lost_woods"],
 		"lat" : [682],
-		"lon" : [590]
+		"lon" : [590],
+		"type": "check"
 	},
 	{
 		"id" : 187,
-		"check" : "check_item_gifts_diving_lab",
+		"key" : "check_item_gifts_diving_lab",
 		"map" : ["map_hylia_adult"],
 		"lat" : [2116],
-		"lon" : [787]
+		"lon" : [787],
+		"type": "check"
 	},
 	{
 		"id" : 188,
-		"check" : "check_item_gifts_small_goron_bomb",
+		"key" : "check_item_gifts_small_goron_bomb",
 		"map" : ["map_goron_city"],
 		"lat" : [1067],
-		"lon" : [541]
+		"lon" : [541],
+		"type": "check"
 	},
 	{
 		"id" : 189,
-		"check" : "check_item_gifts_large_goron_bomb",
+		"key" : "check_item_gifts_large_goron_bomb",
 		"map" : ["map_goron_city"],
 		"lat" : [528],
-		"lon" : [532]
+		"lon" : [532],
+		"type": "check"
 	},
 	{
 		"id" : 190,
-		"check" : "check_item_gifts_darunia",
+		"key" : "check_item_gifts_darunia",
 		"map" : ["map_goron_city"],
 		"lat" : [233],
-		"lon" : [695]
+		"lon" : [695],
+		"type": "check"
 	},
 	{
 		"id" : 191,
-		"check" : "check_item_gifts_king_zora",
+		"key" : "check_item_gifts_king_zora",
 		"map" : ["map_zoras_domain_adult"],
 		"lat" : [430],
-		"lon" : [886]
+		"lon" : [886],
+		"type": "check"
 	},
 	{
 		"id" : 192,
-		"check" : "check_item_gifts_frogs_sos",
+		"key" : "check_item_gifts_frogs_sos",
 		"map" : ["map_zoras_river"],
 		"lat" : [208],
-		"lon" : [1440]
+		"lon" : [1440],
+		"type": "check"
 	},
 	{
 		"id" : 193,
-		"check" : "check_item_gifts_ten_skulltula",
+		"key" : "check_item_gifts_ten_skulltula",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [1693, 1637],
-		"lon" : [1107, 1074]
+		"lon" : [1107, 1074],
+		"type": "check"
 	},
 	{
 		"id" : 194,
-		"check" : "check_item_gifts_twenty_skulltula",
+		"key" : "check_item_gifts_twenty_skulltula",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [1886, 1828],
-		"lon" : [1108, 1073]
+		"lon" : [1108, 1073],
+		"type": "check"
 	},
 	{
 		"id" : 195,
-		"check" : "check_item_gifts_thirty_skulltula",
+		"key" : "check_item_gifts_thirty_skulltula",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [1694, 1637],
-		"lon" : [994, 962]
+		"lon" : [994, 962],
+		"type": "check"
 	},
 	{
 		"id" : 196,
-		"check" : "check_item_gifts_fourty_skulltula",
+		"key" : "check_item_gifts_fourty_skulltula",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [1886, 1830],
-		"lon" : [996, 961]
+		"lon" : [996, 961],
+		"type": "check"
 	},
 	{
 		"id" : 197,
-		"check" : "check_item_gifts_fifty_skulltula",
+		"key" : "check_item_gifts_fifty_skulltula",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [1789, 1733],
-		"lon" : [943, 909]
+		"lon" : [943, 909],
+		"type": "check"
 	},
 	{
 		"id" : 198,
-		"check" : "check_item_gifts_big_poes",
+		"key" : "check_item_gifts_big_poes",
 		"map" : ["map_market_adult"],
 		"lat" : [1604],
-		"lon" : [599]
+		"lon" : [599],
+		"type": "check"
 	},
 	{
 		"id" : 199,
-		"check" : "check_item_gifts_biggoron",
+		"key" : "check_item_gifts_biggoron",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [1006],
-		"lon" : [1434]
+		"lon" : [1434],
+		"type": "check"
 	},
 	{
 		"id" : 200,
-		"check" : "check_item_gifts_light_arrows",
+		"key" : "check_item_gifts_light_arrows",
 		"map" : ["map_temple_of_time"],
 		"lat" : [299],
-		"lon" : [399]
+		"lon" : [399],
+		"type": "check"
 	},
 	{
 		"id" : 201,
-		"check" : "check_item_misc_lost_woods_salesman",
+		"key" : "check_item_misc_lost_woods_salesman",
 		"map" : ["map_lost_woods"],
 		"lat" : [2093],
-		"lon" : [309]
+		"lon" : [309],
+		"type": "check"
 	},
 	{
 		"id" : 202,
-		"check" : "check_item_misc_underwater_bottle",
+		"key" : "check_item_misc_underwater_bottle",
 		"map" : ["map_hylia_child"],
 		"lat" : [2399],
-		"lon" : [1514]
+		"lon" : [1514],
+		"type": "check"
 	},
 	{
 		"id" : 203,
-		"check" : "check_item_misc_shoot_sun",
+		"key" : "check_item_misc_shoot_sun",
 		"map" : ["map_hylia_adult"],
 		"lat" : [3580],
-		"lon" : [2160]
+		"lon" : [2160],
+		"type": "check"
 	},
 	{
 		"id" : 204,
-		"check" : "check_item_fairy_hyrule_castle",
+		"key" : "check_item_fairy_hyrule_castle",
 		"map" : ["map_hyrule_castle"],
 		"lat" : [2173],
-		"lon" : [2165]
+		"lon" : [2165],
+		"type": "check"
 	},
 	{
 		"id" : 205,
-		"check" : "check_item_fairy_zoras",
+		"key" : "check_item_fairy_zoras",
 		"map" : ["map_fountain_adult", "map_fountain_child"],
 		"lat" : [2238, 2238],
-		"lon" : [1378, 1378]
+		"lon" : [1378, 1378],
+		"type": "check"
 	},
 	{
 		"id" : 206,
-		"check" : "check_item_fairy_desert",
+		"key" : "check_item_fairy_desert",
 		"map" : ["map_desert_colossus"],
 		"lat" : [830],
-		"lon" : [2188]
+		"lon" : [2188],
+		"type": "check"
 	},
 	{
 		"id" : 207,
-		"check" : "check_item_fairy_mountain_summit",
+		"key" : "check_item_fairy_mountain_summit",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [909],
-		"lon" : [1154]
+		"lon" : [1154],
+		"type": "check"
 	},
 	{
 		"id" : 208,
-		"check" : "check_item_fairy_mountain_crater",
+		"key" : "check_item_fairy_mountain_crater",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [1224],
-		"lon" : [604]
+		"lon" : [604],
+		"type": "check"
 	},
 	{
 		"id" : 209,
-		"check" : "check_item_fairy_ganons_castle",
+		"key" : "check_item_fairy_ganons_castle",
 		"map" : ["map_ganons_castle"],
 		"lat" : [1112],
-		"lon" : [2488]
+		"lon" : [2488],
+		"type": "check"
 	},
 	{
 		"id" : 210,
-		"check" : "check_item_grottos_kakariko_front_bomb",
+		"key" : "check_item_grottos_kakariko_front_bomb",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [1132, 1132],
-		"lon" : [1679, 1679]
+		"lon" : [1679, 1679],
+		"type": "check"
 	},
 	{
 		"id" : 211,
-		"check" : "check_item_grottos_kakariko_rear",
+		"key" : "check_item_grottos_kakariko_rear",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [860, 860],
-		"lon" : [2182, 2182]
+		"lon" : [2182, 2182],
+		"type": "check"
 	},
 	{
 		"id" : 212,
-		"check" : "check_item_grottos_kokiri_sos",
+		"key" : "check_item_grottos_kokiri_sos",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [581],
-		"lon" : [1237]
+		"lon" : [1237],
+		"type": "check"
 	},
 	{
 		"id" : 213,
-		"check" : "check_item_grottos_lost_woods_goron",
+		"key" : "check_item_grottos_lost_woods_goron",
 		"map" : ["map_lost_woods"],
 		"lat" : [839],
-		"lon" : [1138]
+		"lon" : [1138],
+		"type": "check"
 	},
 	{
 		"id" : 214,
-		"check" : "check_item_grottos_deku_salesman",
+		"key" : "check_item_grottos_deku_salesman",
 		"map" : ["map_lost_woods"],
 		"lat" : [149],
-		"lon" : [812]
+		"lon" : [812],
+		"type": "check"
 	},
 	{
 		"id" : 215,
-		"check" : "check_item_grottos_forest_meadow_bomb",
+		"key" : "check_item_grottos_forest_meadow_bomb",
 		"map" : ["map_sacred_forest"],
 		"lat" : [2136],
-		"lon" : [498]
+		"lon" : [498],
+		"type": "check"
 	},
 	{
 		"id" : 216,
-		"check" : "check_item_grottos_death_mountain_sos",
+		"key" : "check_item_grottos_death_mountain_sos",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [2432],
-		"lon" : [2023]
+		"lon" : [2023],
+		"type": "check"
 	},
 	{
 		"id" : 217,
-		"check" : "check_item_grottos_crater",
+		"key" : "check_item_grottos_crater",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [1537],
-		"lon" : [1181]
+		"lon" : [1181],
+		"type": "check"
 	},
 	{
 		"id" : 218,
-		"check" : "check_item_grottos_zoras_river",
+		"key" : "check_item_grottos_zoras_river",
 		"map" : ["map_zoras_river"],
 		"lat" : [755],
-		"lon" : [1217]
+		"lon" : [1217],
+		"type": "check"
 	},
 	{
 		"id" : 219,
-		"check" : "check_item_grottos_field_near_lake",
+		"key" : "check_item_grottos_field_near_lake",
 		"map" : ["map_hyrule_field"],
 		"lat" : [5417],
-		"lon" : [4346]
+		"lon" : [4346],
+		"type": "check"
 	},
 	{
 		"id" : 220,
-		"check" : "check_item_grottos_field_near_lake_bomb",
+		"key" : "check_item_grottos_field_near_lake_bomb",
 		"map" : ["map_hyrule_field"],
 		"lat" : [6001],
-		"lon" : [2448]
+		"lon" : [2448],
+		"type": "check"
 	},
 	{
 		"id" : 221,
-		"check" : "check_item_grottos_field_south_west",
+		"key" : "check_item_grottos_field_south_west",
 		"map" : ["map_hyrule_field"],
 		"lat" : [6026],
-		"lon" : [2828]
+		"lon" : [2828],
+		"type": "check"
 	},
 	{
 		"id" : 222,
-		"check" : "check_item_grottos_ssjboulda",
+		"key" : "check_item_grottos_ssjboulda",
 		"map" : ["map_hyrule_field"],
 		"lat" : [756],
-		"lon" : [3881]
+		"lon" : [3881],
+		"type": "check"
 	},
 	{
 		"id" : 223,
-		"check" : "check_item_grottos_field_tree_iron_boots",
+		"key" : "check_item_grottos_field_tree_iron_boots",
 		"map" : ["map_hyrule_field"],
 		"lat" : [1562],
-		"lon" : [2448]
+		"lon" : [2448],
+		"type": "check"
 	},
 	{
 		"id" : 224,
-		"check" : "check_item_hearts_ranch",
+		"key" : "check_item_hearts_ranch",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [2511],
-		"lon" : [117]
+		"lon" : [117],
+		"type": "check"
 	},
 	{
 		"id" : 225,
-		"check" : "check_item_hearts_impas_house",
+		"key" : "check_item_hearts_impas_house",
 		"map" : ["map_kakariko_adult", "map_kakariko_child"],
 		"lat" : [1648, 1648],
-		"lon" : [1919, 1919]
+		"lon" : [1919, 1919],
+		"type": "check"
 	},
 	{
 		"id" : 226,
-		"check" : "check_item_hearts_windmill",
+		"key" : "check_item_hearts_windmill",
 		"map" : ["map_kakariko_adult"],
 		"lat" : [857],
-		"lon" : [2784]
+		"lon" : [2784],
+		"type": "check"
 	},
 	{
 		"id" : 227,
-		"check" : "check_item_hearts_graveyard_bean",
+		"key" : "check_item_hearts_graveyard_bean",
 		"map" : ["map_graveyard"],
 		"lat" : [412],
-		"lon" : [433]
+		"lon" : [433],
+		"type": "check"
 	},
 	{
 		"id" : 228,
-		"check" : "check_item_hearts_dodongos",
+		"key" : "check_item_hearts_dodongos",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [2260],
-		"lon" : [635]
+		"lon" : [635],
+		"type": "check"
 	},
 	{
 		"id" : 229,
-		"check" : "check_item_hearts_goron_pot",
+		"key" : "check_item_hearts_goron_pot",
 		"map" : ["map_goron_city"],
 		"lat" : [821],
-		"lon" : [659]
+		"lon" : [659],
+		"type": "check"
 
 	},
 	{
 		"id" : 230,
-		"check" : "check_item_hearts_crater_wall",
+		"key" : "check_item_hearts_crater_wall",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [1270],
-		"lon" : [1176]
+		"lon" : [1176],
+		"type": "check"
 	},
 	{
 		"id" : 231,
-		"check" : "check_item_hearts_crater_bean",
+		"key" : "check_item_hearts_crater_bean",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [881],
-		"lon" : [869]
+		"lon" : [869],
+		"type": "check"
 	},
 	{
 		"id" : 232,
-		"check" : "check_item_hearts_zora_lower",
+		"key" : "check_item_hearts_zora_lower",
 		"map" : ["map_zoras_river"],
 		"lat" : [202],
-		"lon" : [1223]
+		"lon" : [1223],
+		"type": "check"
 	},
 	{
 		"id" : 233,
-		"check" : "check_item_hearts_zora_upper",
+		"key" : "check_item_hearts_zora_upper",
 		"map" : ["map_zoras_river"],
 		"lat" : [28],
-		"lon" : [2522]
+		"lon" : [2522],
+		"type": "check"
 	},
 	{
 		"id" : 234,
-		"check" : "check_item_hearts_hylia_roof",
+		"key" : "check_item_hearts_hylia_roof",
 		"map" : ["map_hylia_adult"],
 		"lat" : [2274],
-		"lon" : [869]
+		"lon" : [869],
+		"type": "check"
 	},
 	{
 		"id" : 235,
-		"check" : "check_item_hearts_zora_iceberg",
+		"key" : "check_item_hearts_zora_iceberg",
 		"map" : ["map_fountain_adult"],
 		"lat" : [1202],
-		"lon" : [1681]
+		"lon" : [1681],
+		"type": "check"
 	},
 	{
 		"id" : 236,
-		"check" : "check_item_hearts_zora_bottom",
+		"key" : "check_item_hearts_zora_bottom",
 		"map" : ["map_fountain_adult"],
 		"lat" : [1169],
-		"lon" : [1273]
+		"lon" : [1273],
+		"type": "check"
 	},
 	{
 		"id" : 237,
-		"check" : "check_item_hearts_gerudo_waterfall",
+		"key" : "check_item_hearts_gerudo_waterfall",
 		"map" : ["map_gerudo_valley_child"],
 		"lat" : [1000],
-		"lon" : [2124]
+		"lon" : [2124],
+		"type": "check"
 	},
 	{
 		"id" : 238,
-		"check" : "check_item_hearts_gerudo_chicken",
+		"key" : "check_item_hearts_gerudo_chicken",
 		"map" : ["map_gerudo_valley_child"],
 		"lat" : [2578],
-		"lon" : [1958]
+		"lon" : [1958],
+		"type": "check"
 	},
 	{
 		"id" : 239,
-		"check" : "check_item_desert_bean",
+		"key" : "check_item_desert_bean",
 		"map" : ["map_desert_colossus"],
 		"lat" : [1444],
-		"lon" : [1055]
+		"lon" : [1055],
+		"type": "check"
 	},
 	{
 		"id" : 240,
-		"check" : "check_item_minigame_chest_game",
+		"key" : "check_item_minigame_chest_game",
 		"map" : ["map_market_child"],
 		"lat" : [1166],
-		"lon" : [1274]
+		"lon" : [1274],
+		"type": "check"
 	},
 	{
 		"id" : 241,
-		"check" : "check_item_minigame_shooting_slingshot",
+		"key" : "check_item_minigame_shooting_slingshot",
 		"map" : ["map_market_child"],
 		"lat" : [661],
-		"lon" : [1369]
+		"lon" : [1369],
+		"type": "check"
 	},
 	{
 		"id" : 242,
-		"check" : "check_item_minigame_shooting_bow",
+		"key" : "check_item_minigame_shooting_bow",
 		"map" : ["map_kakariko_adult"],
 		"lat" : [1302],
-		"lon" : [1935]
+		"lon" : [1935],
+		"type": "check"
 	},
 	{
 		"id" : 243,
-		"check" : "check_item_minigame_bombchu_one",
+		"key" : "check_item_minigame_bombchu_one",
 		"map" : ["map_market_child"],
 		"lat" : [878],
-		"lon" : [1158]
+		"lon" : [1158],
+		"type": "check"
 	},
 	{
 		"id" : 244,
-		"check" : "check_item_minigame_bombchu_two",
+		"key" : "check_item_minigame_bombchu_two",
 		"map" : ["map_market_child"],
 		"lat" : [950],
-		"lon" : [1156]
+		"lon" : [1156],
+		"type": "check"
 	},
 	{
 		"id" : 245,
-		"check" : "check_item_minigame_ranch_chickens",
+		"key" : "check_item_minigame_ranch_chickens",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [416],
-		"lon" : [1715]
+		"lon" : [1715],
+		"type": "check"
 	},
 	{
 		"id" : 246,
-		"check" : "check_item_minigame_ocarina_memory_game",
+		"key" : "check_item_minigame_ocarina_memory_game",
 		"map" : ["map_lost_woods"],
 		"lat" : [1350],
-		"lon" : [1221]
+		"lon" : [1221],
+		"type": "check"
 	},
 	{
 		"id" : 247,
-		"check" : "check_item_minigame_diving",
+		"key" : "check_item_minigame_diving",
 		"map" : ["map_zoras_domain_child"],
 		"lat" : [695],
-		"lon" : [595]
+		"lon" : [595],
+		"type": "check"
 	},
 	{
 		"id" : 248,
-		"check" : "check_item_minigame_child_fishing",
+		"key" : "check_item_minigame_child_fishing",
 		"map" : ["map_hylia_child"],
 		"lat" : [2262],
-		"lon" : [2615]
+		"lon" : [2615],
+		"type": "check"
 	},
 	{
 		"id" : 249,
-		"check" : "check_item_minigame_adult_fishing",
+		"key" : "check_item_minigame_adult_fishing",
 		"map" : ["map_hylia_adult"],
 		"lat" : [2262],
-		"lon" : [2615]
+		"lon" : [2615],
+		"type": "check"
 	},
 	{
 		"id" : 250,
-		"check" : "check_item_minigame_horseback_archery_one",
+		"key" : "check_item_minigame_horseback_archery_one",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [1605],
-		"lon" : [1717]
+		"lon" : [1717],
+		"type": "check"
 	},
 	{
 		"id" : 251,
-		"check" : "check_item_minigame_horseback_archery_two",
+		"key" : "check_item_minigame_horseback_archery_two",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [1670],
-		"lon" : [1717]
+		"lon" : [1717],
+		"type": "check"
 	},
 	{
 		"id" : 252,
-		"check" : "check_item_minigame_frogs",
+		"key" : "check_item_minigame_frogs",
 		"map" : ["map_zoras_river"],
 		"lat" : [209],
-		"lon" : [1505]
+		"lon" : [1505],
+		"type": "check"
 	},
 	{
 		"id" : 253,
-		"check" : "check_item_minigame_gravedigging",
+		"key" : "check_item_minigame_gravedigging",
 		"map" : ["map_graveyard"],
 		"lat" : [634],
-		"lon" : [667]
+		"lon" : [667],
+		"type": "check"
 	},
 	{
 		"id" : 254,
-		"check" : "check_item_minigame_dampe_race_one",
+		"key" : "check_item_minigame_dampe_race_one",
 		"map" : ["map_dampes_grave"],
 		"lat" : [1355],
-		"lon" : [503]
+		"lon" : [503],
+		"type": "check"
 	},
 	{
 		"id" : 255,
-		"check" : "check_item_minigame_dampe_race_two",
+		"key" : "check_item_minigame_dampe_race_two",
 		"map" : ["map_dampes_grave"],
 		"lat" : [1407],
-		"lon" : [502]
+		"lon" : [502],
+		"type": "check"
 	},
 	{
 		"id" : 256,
-		"check" : "check_skull_kokiri_house",
+		"key" : "check_skull_kokiri_house",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [1240],
-		"lon" : [919]
+		"lon" : [919],
+		"type": "check"
 	},
 	{
 		"id" : 257,
-		"check" : "check_skull_market_guard_house",
+		"key" : "check_skull_market_guard_house",
 		"map" : ["map_market_child"],
 		"lat" : [1698],
-		"lon" : [1792]
+		"lon" : [1792],
+		"type": "check"
 	},
 	{
 		"id" : 258,
-		"check" : "check_skull_hyrule_castle_tree",
+		"key" : "check_skull_hyrule_castle_tree",
 		"map" : ["map_hyrule_castle"],
 		"lat" : [2345],
-		"lon" : [1004]
+		"lon" : [1004],
+		"type": "check"
 	},
 	{
 		"id" : 259,
-		"check" : "check_skull_hyrule_castle_grotto",
+		"key" : "check_skull_hyrule_castle_grotto",
 		"map" : ["map_hyrule_castle"],
 		"lat" : [1224],
-		"lon" : [1816]
+		"lon" : [1816],
+		"type": "check"
 	},
 	{
 		"id" : 260,
-		"check" : "check_skull_ranch_tree",
+		"key" : "check_skull_ranch_tree",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [732],
-		"lon" : [1542]
+		"lon" : [1542],
+		"type": "check"
 	},
 	{
 		"id" : 261,
-		"check" : "check_skull_ranch_house",
+		"key" : "check_skull_ranch_house",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [550],
-		"lon" : [1417]
+		"lon" : [1417],
+		"type": "check"
 	},
 	{
 		"id" : 262,
-		"check" : "check_skull_ranch_inner_fence",
+		"key" : "check_skull_ranch_inner_fence",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [1762],
-		"lon" : [1352]
+		"lon" : [1352],
+		"type": "check"
 	},
 	{
 		"id" : 263,
-		"check" : "check_skull_ranch_outer_fence",
+		"key" : "check_skull_ranch_outer_fence",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [1946],
-		"lon" : [106]
+		"lon" : [106],
+		"type": "check"
 	},
 	{
 		"id" : 264,
-		"check" : "check_skull_kakariko_shooting_gallery",
+		"key" : "check_skull_kakariko_shooting_gallery",
 		"map" : ["map_kakariko_child"],
 		"lat" : [1330],
-		"lon" : [1965]
+		"lon" : [1965],
+		"type": "check"
 	},
 	{
 		"id" : 265,
-		"check" : "check_skull_kakariko_house_of_skulltula",
+		"key" : "check_skull_kakariko_house_of_skulltula",
 		"map" : ["map_kakariko_child"],
 		"lat" : [1420],
-		"lon" : [1604]
+		"lon" : [1604],
+		"type": "check"
 	},
 	{
 		"id" : 266,
-		"check" : "check_skull_kakariko_tree",
+		"key" : "check_skull_kakariko_tree",
 		"map" : ["map_kakariko_child"],
 		"lat" : [1179],
-		"lon" : [1488]
+		"lon" : [1488],
+		"type": "check"
 	},
 	{
 		"id" : 267,
-		"check" : "check_skull_kakariko_bazaar",
+		"key" : "check_skull_kakariko_bazaar",
 		"map" : ["map_kakariko_child"],
 		"lat" : [622],
-		"lon" : [1657]
+		"lon" : [1657],
+		"type": "check"
 	},
 	{
 		"id" : 268,
-		"check" : "check_skull_kakariko_ladder",
+		"key" : "check_skull_kakariko_ladder",
 		"map" : ["map_kakariko_child"],
 		"lat" : [901],
-		"lon" : [1837]
+		"lon" : [1837],
+		"type": "check"
 	},
 	{
 		"id" : 269,
-		"check" : "check_skull_graveyard_wall",
+		"key" : "check_skull_graveyard_wall",
 		"map" : ["map_graveyard"],
 		"lat" : [874],
-		"lon" : [917]
+		"lon" : [917],
+		"type": "check"
 	},
 	{
 		"id" : 270,
-		"check" : "check_skull_goron_city_maze",
+		"key" : "check_skull_goron_city_maze",
 		"map" : ["map_goron_city"],
 		"lat" : [272],
-		"lon" : [205]
+		"lon" : [205],
+		"type": "check"
 	},
 	{
 		"id" : 271,
-		"check" : "check_skull_death_mountain_crate",
+		"key" : "check_skull_death_mountain_crate",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [1579],
-		"lon" : [810]
+		"lon" : [810],
+		"type": "check"
 	},
 	{
 		"id" : 272,
-		"check" : "check_skull_zora_river_tree",
+		"key" : "check_skull_zora_river_tree",
 		"map" : ["map_zoras_river"],
 		"lat" : [928],
-		"lon" : [386]
+		"lon" : [386],
+		"type": "check"
 	},
 	{
 		"id" : 273,
-		"check" : "check_skull_zora_river_ladder",
+		"key" : "check_skull_zora_river_ladder",
 		"map" : ["map_zoras_river"],
 		"lat" : [51],
-		"lon" : [2579]
+		"lon" : [2579],
+		"type": "check"
 	},
 	{
 		"id" : 274,
-		"check" : "check_skull_zora_fountain_wall",
+		"key" : "check_skull_zora_fountain_wall",
 		"map" : ["map_fountain_child"],
 		"lat" : [1963],
-		"lon" : [528]
+		"lon" : [528],
+		"type": "check"
 	},
 	{
 		"id" : 275,
-		"check" : "check_skull_zora_fountain_tree",
+		"key" : "check_skull_zora_fountain_tree",
 		"map" : ["map_fountain_child"],
 		"lat" : [2063],
-		"lon" : [1362]
+		"lon" : [1362],
+		"type": "check"
 	},
 	{
 		"id" : 276,
-		"check" : "check_skull_hylia_lab_wall",
+		"key" : "check_skull_hylia_lab_wall",
 		"map" : ["map_hylia_child"],
 		"lat" : [2291],
-		"lon" : [721]
+		"lon" : [721],
+		"type": "check"
 	},
 	{
 		"id" : 277,
-		"check" : "check_skull_hylia_island",
+		"key" : "check_skull_hylia_island",
 		"map" : ["map_hylia_child"],
 		"lat" : [3550],
-		"lon" : [2208]
+		"lon" : [2208],
+		"type": "check"
 	},
 	{
 		"id" : 278,
-		"check" : "check_skull_gerudo_valley_wall",
+		"key" : "check_skull_gerudo_valley_wall",
 		"map" : ["map_gerudo_valley_child"],
 		"lat" : [1879],
-		"lon" : [2792]
+		"lon" : [2792],
+		"type": "check"
 	},
 	{
 		"id" : 279,
-		"check" : "check_skull_soil_kokiri",
+		"key" : "check_skull_soil_kokiri",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [882],
-		"lon" : [1928]
+		"lon" : [1928],
+		"type": "check"
 	},
 	{
 		"id" : 280,
-		"check" : "check_skull_soil_lost_woods_bridge",
+		"key" : "check_skull_soil_lost_woods_bridge",
 		"map" : ["map_lost_woods"],
 		"lat" : [1590],
-		"lon" : [275]
+		"lon" : [275],
+		"type": "check"
 	},
 	{
 		"id" : 281,
-		"check" : "check_skull_soil_lost_woods_theater",
+		"key" : "check_skull_soil_lost_woods_theater",
 		"map" : ["map_lost_woods"],
 		"lat" : [494],
-		"lon" : [1010]
+		"lon" : [1010],
+		"type": "check"
 	},
 	{
 		"id" : 282,
-		"check" : "check_skull_soil_graveyard",
+		"key" : "check_skull_soil_graveyard",
 		"map" : ["map_graveyard"],
 		"lat" : [419],
-		"lon" : [568]
+		"lon" : [568],
+		"type": "check"
 	},
 	{
 		"id" : 283,
-		"check" : "check_skull_soil_death_mountain_trail",
+		"key" : "check_skull_soil_death_mountain_trail",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [2407],
-		"lon" : [603]
+		"lon" : [603],
+		"type": "check"
 	},
 	{
 		"id" : 284,
-		"check" : "check_skull_soil_death_mountain_crater",
+		"key" : "check_skull_soil_death_mountain_crater",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [772],
-		"lon" : [1117]
+		"lon" : [1117],
+		"type": "check"
 	},
 	{
 		"id" : 285,
-		"check" : "check_skull_soil_lake_hylia",
+		"key" : "check_skull_soil_lake_hylia",
 		"map" : ["map_hylia_child"],
 		"lat" : [2124],
-		"lon" : [837]
+		"lon" : [837],
+		"type": "check"
 	},
 	{
 		"id" : 286,
-		"check" : "check_skull_soil_gerudo_valley",
+		"key" : "check_skull_soil_gerudo_valley",
 		"map" : ["map_gerudo_valley_child"],
 		"lat" : [1759],
-		"lon" : [1972]
+		"lon" : [1972],
+		"type": "check"
 	},
 	{
 		"id" : 287,
-		"check" : "check_skull_soil_desert_colossus",
+		"key" : "check_skull_soil_desert_colossus",
 		"map" : ["map_desert_colossus"],
 		"lat" : [1558],
-		"lon" : [750]
+		"lon" : [750],
+		"type": "check"
 	},
 	{
 		"id" : 288,
-		"check" : "check_skull_freestanding_grotto_kakariko",
+		"key" : "check_skull_freestanding_grotto_kakariko",
 		"map" : ["map_hyrule_field"],
 		"lat" : [98],
-		"lon" : [4908]
+		"lon" : [4908],
+		"type": "check"
 	},
 	{
 		"id" : 289,
-		"check" : "check_skull_freestanding_grotto_gerudo",
+		"key" : "check_skull_freestanding_grotto_gerudo",
 		"map" : ["map_hyrule_field"],
 		"lat" : [2724],
-		"lon" : [1341]
+		"lon" : [1341],
+		"type": "check"
 	},
 	{
 		"id" : 290,
-		"check" : "check_skull_freestanding_death_mountain",
+		"key" : "check_skull_freestanding_death_mountain",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [3187],
-		"lon" : [515]
+		"lon" : [515],
+		"type": "check"
 	},
 	{
 		"id" : 291,
-		"check" : "check_skull_freestanding_haunted_wasteland",
+		"key" : "check_skull_freestanding_haunted_wasteland",
 		"map" : ["map_haunted_wasteland"],
 		"lat" : [1702],
-		"lon" : [2591]
+		"lon" : [2591],
+		"type": "check"
 	},
 	{
 		"id" : 292,
-		"check" : "check_skull_kokiri_house_twins",
+		"key" : "check_skull_kokiri_house_twins",
 		"map" : ["map_kokiri_forest"],
 		"lat" : [1327],
-		"lon" : [1909]
+		"lon" : [1909],
+		"type": "check"
 	},
 	{
 		"id" : 293,
-		"check" : "check_skull_lost_woods_bean",
+		"key" : "check_skull_lost_woods_bean",
 		"map" : ["map_lost_woods"],
 		"lat" : [667],
-		"lon" : [806]
+		"lon" : [806],
+		"type": "check"
 	},
 	{
 		"id" : 294,
-		"check" : "check_skull_sacred_forest_meadow",
+		"key" : "check_skull_sacred_forest_meadow",
 		"map" : ["map_sacred_forest"],
 		"lat" : [1487],
-		"lon" : [782]
+		"lon" : [782],
+		"type": "check"
 	},
 	{
 		"id" : 295,
-		"check" : "check_skull_ganons_castle",
+		"key" : "check_skull_ganons_castle",
 		"map" : ["map_ganons_castle"],
 		"lat" : [1208],
-		"lon" : [1708]
+		"lon" : [1708],
+		"type": "check"
 	},
 	{
 		"id" : 296,
-		"check" : "check_skull_death_mountain_trail_above_dodongos",
+		"key" : "check_skull_death_mountain_trail_above_dodongos",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [2371],
-		"lon" : [749]
+		"lon" : [749],
+		"type": "check"
 	},
 	{
 		"id" : 297,
-		"check" : "check_skull_death_mountain_trail_before_wall",
+		"key" : "check_skull_death_mountain_trail_before_wall",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [1418],
-		"lon" : [1234]
+		"lon" : [1234],
+		"type": "check"
 	},
 	{
 		"id" : 298,
-		"check" : "check_skull_goron_city",
+		"key" : "check_skull_goron_city",
 		"map" : ["map_goron_city"],
 		"lat" : [883],
-		"lon" : [656]
+		"lon" : [656],
+		"type": "check"
 	},
 	{
 		"id" : 299,
-		"check" : "check_skull_zoras_river_grottos",
+		"key" : "check_skull_zoras_river_grottos",
 		"map" : ["map_zoras_river"],
 		"lat" : [804],
-		"lon" : [1108]
+		"lon" : [1108],
+		"type": "check"
 	},
 	{
 		"id" : 300,
-		"check" : "check_skull_zoras_river_bridge",
+		"key" : "check_skull_zoras_river_bridge",
 		"map" : ["map_zoras_river"],
 		"lat" : [106],
-		"lon" : [2212]
+		"lon" : [2212],
+		"type": "check"
 	},
 	{
 		"id" : 301,
-		"check" : "check_skull_zoras_domain_frozen_waterfall",
+		"key" : "check_skull_zoras_domain_frozen_waterfall",
 		"map" : ["map_zoras_domain_adult"],
 		"lat" : [752],
-		"lon" : [672]
+		"lon" : [672],
+		"type": "check"
 	},
 	{
 		"id" : 302,
-		"check" : "check_skull_zoras_fountain_ledge",
+		"key" : "check_skull_zoras_fountain_ledge",
 		"map" : ["map_fountain_adult"],
 		"lat" : [1917],
-		"lon" : [1722]
+		"lon" : [1722],
+		"type": "check"
 	},
 	{
 		"id" : 303,
-		"check" : "check_skull_hylia_tall_tree",
+		"key" : "check_skull_hylia_tall_tree",
 		"map" : ["map_hylia_adult"],
 		"lat" : [3657],
-		"lon" : [1588]
+		"lon" : [1588],
+		"type": "check"
 	},
 	{
 		"id" : 304,
-		"check" : "check_skull_gerudo_valley_tent",
+		"key" : "check_skull_gerudo_valley_tent",
 		"map" : ["map_gerudo_valley_adult"],
 		"lat" : [1492],
-		"lon" : [1613]
+		"lon" : [1613],
+		"type": "check"
 	},
 	{
 		"id" : 305,
-		"check" : "check_skull_gerudo_valley_pillar",
+		"key" : "check_skull_gerudo_valley_pillar",
 		"map" : ["map_gerudo_valley_adult"],
 		"lat" : [2116],
-		"lon" : [1557]
+		"lon" : [1557],
+		"type": "check"
 	},
 	{
 		"id" : 306,
-		"check" : "check_skull_gerudo_fortress_back_wall",
+		"key" : "check_skull_gerudo_fortress_back_wall",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [1270],
-		"lon" : [1194]
+		"lon" : [1194],
+		"type": "check"
 	},
 	{
 		"id" : 307,
-		"check" : "check_skull_gerudo_fortress_target",
+		"key" : "check_skull_gerudo_fortress_target",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [536],
-		"lon" : [1633]
+		"lon" : [1633],
+		"type": "check"
 	},
 	{
 		"id" : 308,
-		"check" : "check_skull_colossus_plateau",
+		"key" : "check_skull_colossus_plateau",
 		"map" : ["map_desert_colossus"],
 		"lat" : [1238],
-		"lon" : [1843]
+		"lon" : [1843],
+		"type": "check"
 	},
 	{
 		"id" : 309,
-		"check" : "check_skull_colossus_tree",
+		"key" : "check_skull_colossus_tree",
 		"map" : ["map_desert_colossus"],
 		"lat" : [2389],
-		"lon" : [1470]
+		"lon" : [1470],
+		"type": "check"
 	},
 	{
 		"id" : 310,
-		"check" : "check_skull_kakariko_impa",
+		"key" : "check_skull_kakariko_impa",
 		"map" : ["map_kakariko_adult"],
 		"lat" : [1615],
-		"lon" : [1815]
+		"lon" : [1815],
+		"type": "check"
 	},
 	{
 		"id" : 311,
-		"check" : "check_skull_deku_compass",
+		"key" : "check_skull_deku_compass",
 		"map" : ["map_deku_tree"],
 		"lat" : [416],
-		"lon" : [263]
+		"lon" : [263],
+		"type": "check"
 	},
 	{
 		"id" : 312,
-		"check" : "check_skull_deku_basement_vines",
+		"key" : "check_skull_deku_basement_vines",
 		"map" : ["map_deku_tree"],
 		"lat" : [2538],
-		"lon" : [1191]
+		"lon" : [1191],
+		"type": "check"
 	},
 	{
 		"id" : 313,
-		"check" : "check_skull_deku_basement_water_gate",
+		"key" : "check_skull_deku_basement_water_gate",
 		"map" : ["map_deku_tree"],
 		"lat" : [2382],
-		"lon" : [1045]
+		"lon" : [1045],
+		"type": "check"
 	},
 	{
 		"id" : 314,
-		"check" : "check_skull_deku_basement_back_room",
+		"key" : "check_skull_deku_basement_back_room",
 		"map" : ["map_deku_tree"],
 		"lat" : [2394],
-		"lon" : [130]
+		"lon" : [130],
+		"type": "check"
 	},
 	{
 		"id" : 315,
-		"check" : "check_skull_dodongo_east_side_room",
+		"key" : "check_skull_dodongo_east_side_room",
 		"map" : ["map_dodongos"],
 		"lat" : [2787],
-		"lon" : [1865]
+		"lon" : [1865],
+		"type": "check"
 	},
 	{
 		"id" : 316,
-		"check" : "check_skull_dodongo_scarecrow",
+		"key" : "check_skull_dodongo_scarecrow",
 		"map" : ["map_dodongos"],
 		"lat" : [3327],
-		"lon" : [2035]
+		"lon" : [2035],
+		"type": "check"
 	},
 	{
 		"id" : 317,
-		"check" : "check_skull_dodongo_staircase_vines",
+		"key" : "check_skull_dodongo_staircase_vines",
 		"map" : ["map_dodongos"],
 		"lat" : [676],
-		"lon" : [206]
+		"lon" : [206],
+		"type": "check"
 	},
 	{
 		"id" : 318,
-		"check" : "check_skull_dodongo_top_staircase",
+		"key" : "check_skull_dodongo_top_staircase",
 		"map" : ["map_dodongos"],
 		"lat" : [355],
-		"lon" : [220]
+		"lon" : [220],
+		"type": "check"
 	},
 	{
 		"id" : 319,
-		"check" : "check_skull_dodongo_near_boss",
+		"key" : "check_skull_dodongo_near_boss",
 		"map" : ["map_dodongos"],
 		"lat" : [1168],
-		"lon" : [1600]
+		"lon" : [1600],
+		"type": "check"
 	},
 	{
 		"id" : 320,
-		"check" : "check_skull_jabu_water_switch_room",
+		"key" : "check_skull_jabu_water_switch_room",
 		"map" : ["map_jabu"],
 		"lat" : [1506],
-		"lon" : [2680]
+		"lon" : [2680],
+		"type": "check"
 	},
 	{
 		"id" : 321,
-		"check" : "check_skull_jabu_near_octo_close_wall",
+		"key" : "check_skull_jabu_near_octo_close_wall",
 		"map" : ["map_jabu"],
 		"lat" : [1057],
-		"lon" : [2223]
+		"lon" : [2223],
+		"type": "check"
 	},
 	{
 		"id" : 322,
-		"check" : "check_skull_jabu_near_octo_far_wall",
+		"key" : "check_skull_jabu_near_octo_far_wall",
 		"map" : ["map_jabu"],
 		"lat" : [998],
-		"lon" : [2323]
+		"lon" : [2323],
+		"type": "check"
 	},
 	{
 		"id" : 323,
-		"check" : "check_skull_jabu_before_barinade",
+		"key" : "check_skull_jabu_before_barinade",
 		"map" : ["map_jabu"],
 		"lat" : [1852],
-		"lon" : [1452]
+		"lon" : [1452],
+		"type": "check"
 	},
 	{
 		"id" : 324,
-		"check" : "check_skull_forest_entrance_room",
+		"key" : "check_skull_forest_entrance_room",
 		"map" : ["map_forest_temple"],
 		"lat" : [3123],
-		"lon" : [1490]
+		"lon" : [1490],
+		"type": "check"
 	},
 	{
 		"id" : 325,
-		"check" : "check_skull_forest_central_room",
+		"key" : "check_skull_forest_central_room",
 		"map" : ["map_forest_temple"],
 		"lat" : [1892],
-		"lon" : [1488]
+		"lon" : [1488],
+		"type": "check"
 	},
 	{
 		"id" : 326,
-		"check" : "check_skull_forest_northwest_outside",
+		"key" : "check_skull_forest_northwest_outside",
 		"map" : ["map_forest_temple"],
 		"lat" : [1645],
-		"lon" : [857]
+		"lon" : [857],
+		"type": "check"
 	},
 	{
 		"id" : 327,
-		"check" : "check_skull_forest_northeast_outside",
+		"key" : "check_skull_forest_northeast_outside",
 		"map" : ["map_forest_temple"],
 		"lat" : [1747],
-		"lon" : [1922]
+		"lon" : [1922],
+		"type": "check"
 	},
 	{
 		"id" : 328,
-		"check" : "check_skull_forest_near_boss",
+		"key" : "check_skull_forest_near_boss",
 		"map" : ["map_forest_temple"],
 		"lat" : [2295],
-		"lon" : [2422]
+		"lon" : [2422],
+		"type": "check"
 	},
 	{
 		"id" : 329,
-		"check" : "check_skull_fire_song_of_time_room",
+		"key" : "check_skull_fire_song_of_time_room",
 		"map" : ["map_fire_temple"],
 		"lat" : [2734],
-		"lon" : [1854]
+		"lon" : [1854],
+		"type": "check"
 	},
 	{
 		"id" : 330,
-		"check" : "check_skull_fire_hammer_statues",
+		"key" : "check_skull_fire_hammer_statues",
 		"map" : ["map_fire_temple"],
 		"lat" : [2805],
-		"lon" : [1662]
+		"lon" : [1662],
+		"type": "check"
 	},
 	{
 		"id" : 331,
-		"check" : "check_skull_fire_boulder_maze_bomb_wall",
+		"key" : "check_skull_fire_boulder_maze_bomb_wall",
 		"map" : ["map_fire_temple"],
 		"lat" : [1487],
-		"lon" : [2246]
+		"lon" : [2246],
+		"type": "check"
 	},
 	{
 		"id" : 332,
-		"check" : "check_skull_fire_scarecrow_chain_wall",
+		"key" : "check_skull_fire_scarecrow_chain_wall",
 		"map" : ["map_fire_temple"],
 		"lat" : [977],
-		"lon" : [2022]
+		"lon" : [2022],
+		"type": "check"
 	},
 	{
 		"id" : 333,
-		"check" : "check_skull_fire_scarecrow_wall",
+		"key" : "check_skull_fire_scarecrow_wall",
 		"map" : ["map_fire_temple"],
 		"lat" : [294],
-		"lon" : [2047]
+		"lon" : [2047],
+		"type": "check"
 	},
 	{
 		"id" : 334,
-		"check" : "check_skull_water_southern_basement",
+		"key" : "check_skull_water_southern_basement",
 		"map" : ["map_water_temple"],
 		"lat" : [2102],
-		"lon" : [2129]
+		"lon" : [2129],
+		"type": "check"
 	},
 	{
 		"id" : 335,
-		"check" : "check_skull_water_near_boss_chest",
+		"key" : "check_skull_water_near_boss_chest",
 		"map" : ["map_water_temple"],
 		"lat" : [852],
-		"lon" : [2590]
+		"lon" : [2590],
+		"type": "check"
 	},
 	{
 		"id" : 336,
-		"check" : "check_skull_water_inside_central_pillar",
+		"key" : "check_skull_water_inside_central_pillar",
 		"map" : ["map_water_temple"],
 		"lat" : [1614],
-		"lon" : [1575]
+		"lon" : [1575],
+		"type": "check"
 	},
 	{
 		"id" : 337,
-		"check" : "check_skull_water_falling_platform_room",
+		"key" : "check_skull_water_falling_platform_room",
 		"map" : ["map_water_temple"],
 		"lat" : [1573],
-		"lon" : [983]
+		"lon" : [983],
+		"type": "check"
 	},
 	{
 		"id" : 338,
-		"check" : "check_skull_water_river",
+		"key" : "check_skull_water_river",
 		"map" : ["map_water_temple"],
 		"lat" : [2375],
-		"lon" : [615]
+		"lon" : [615],
+		"type": "check"
 	},
 	{
 		"id" : 339,
-		"check" : "check_skull_ice_scythe_room",
+		"key" : "check_skull_ice_scythe_room",
 		"map" : ["map_ice_cavern"],
 		"lat" : [1078],
-		"lon" : [810]
+		"lon" : [810],
+		"type": "check"
 	},
 	{
 		"id" : 340,
-		"check" : "check_skull_ice_frozen_heart_room",
+		"key" : "check_skull_ice_frozen_heart_room",
 		"map" : ["map_ice_cavern"],
 		"lat" : [1208],
-		"lon" : [1365]
+		"lon" : [1365],
+		"type": "check"
 	},
 	{
 		"id" : 341,
-		"check" : "check_skull_ice_block_room",
+		"key" : "check_skull_ice_block_room",
 		"map" : ["map_ice_cavern"],
 		"lat" : [932],
-		"lon" : [514]
+		"lon" : [514],
+		"type": "check"
 	},
 	{
 		"id" : 342,
-		"check" : "check_skull_well_west_inner_room",
+		"key" : "check_skull_well_west_inner_room",
 		"map" : ["map_well"],
 		"lat" : [184],
-		"lon" : [919]
+		"lon" : [919],
+		"type": "check"
 	},
 	{
 		"id" : 343,
-		"check" : "check_skull_well_east_inner_room",
+		"key" : "check_skull_well_east_inner_room",
 		"map" : ["map_well"],
 		"lat" : [208],
-		"lon" : [1093]
+		"lon" : [1093],
+		"type": "check"
 	},
 	{
 		"id" : 344,
-		"check" : "check_skull_well_near_like_like",
+		"key" : "check_skull_well_near_like_like",
 		"map" : ["map_well"],
 		"lat" : [396],
-		"lon" : [1498]
+		"lon" : [1498],
+		"type": "check"
 	},
 	{
 		"id" : 345,
-		"check" : "check_skull_shadow_invisible_scythe_room",
+		"key" : "check_skull_shadow_invisible_scythe_room",
 		"map" : ["map_shadow_temple"],
 		"lat" : [3330],
-		"lon" : [4923]
+		"lon" : [4923],
+		"type": "check"
 	},
 	{
 		"id" : 346,
-		"check" : "check_skull_shadow_crusher_room",
+		"key" : "check_skull_shadow_crusher_room",
 		"map" : ["map_shadow_temple"],
 		"lat" : [4112],
-		"lon" : [2831]
+		"lon" : [2831],
+		"type": "check"
 	},
 	{
 		"id" : 347,
-		"check" : "check_skull_shadow_single_pot_room",
+		"key" : "check_skull_shadow_single_pot_room",
 		"map" : ["map_shadow_temple"],
 		"lat" : [2910],
-		"lon" : [3046]
+		"lon" : [3046],
+		"type": "check"
 	},
 	{
 		"id" : 348,
-		"check" : "check_skull_shadow_near_boat",
+		"key" : "check_skull_shadow_near_boat",
 		"map" : ["map_shadow_temple"],
 		"lat" : [1876],
-		"lon" : [4078]
+		"lon" : [4078],
+		"type": "check"
 	},
 	{
 		"id" : 349,
-		"check" : "check_skull_shadow_triple_pit_room",
+		"key" : "check_skull_shadow_triple_pit_room",
 		"map" : ["map_shadow_temple"],
 		"lat" : [1839],
-		"lon" : [167]
+		"lon" : [167],
+		"type": "check"
 	},
 	{
 		"id" : 350,
-		"check" : "check_skull_spirit_child_fence",
+		"key" : "check_skull_spirit_child_fence",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1456],
-		"lon" : [667]
+		"lon" : [667],
+		"type": "check"
 	},
 	{
 		"id" : 351,
-		"check" : "check_skull_spirit_child_sun_switch_room",
+		"key" : "check_skull_spirit_child_sun_switch_room",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1367],
-		"lon" : [361]
+		"lon" : [361],
+		"type": "check"
 	},
 	{
 		"id" : 352,
-		"check" : "check_skull_spirit_hallway_iron_knuckle",
+		"key" : "check_skull_spirit_hallway_iron_knuckle",
 		"map" : ["map_spirit_temple"],
 		"lat" : [2313],
-		"lon" : [1931]
+		"lon" : [1931],
+		"type": "check"
 	},
 	{
 		"id" : 353,
-		"check" : "check_skull_spirit_boulder_room",
+		"key" : "check_skull_spirit_boulder_room",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1437],
-		"lon" : [1321]
+		"lon" : [1321],
+		"type": "check"
 	},
 	{
 		"id" : 354,
-		"check" : "check_skull_spirit_central_room",
+		"key" : "check_skull_spirit_central_room",
 		"map" : ["map_spirit_temple"],
 		"lat" : [1487],
-		"lon" : [2357]
+		"lon" : [2357],
+		"type": "check"
 	},
 	{
 		"id" : 355,
-		"check" : "check_scrub_dodongo_main_room",
+		"key" : "check_scrub_dodongo_main_room",
 		"map" : ["map_dodongos"],
 		"lat" : [2947],
-		"lon" : [622]
+		"lon" : [622],
+		"type": "check"
 	},
 	{
 		"id" : 356,
-		"check" : "check_scrub_dodongo_mini_dodongo_side_room",
+		"key" : "check_scrub_dodongo_mini_dodongo_side_room",
 		"map" : ["map_dodongos"],
 		"lat" : [1799],
-		"lon" : [1987]
+		"lon" : [1987],
+		"type": "check"
 	},
 	{
 		"id" : 357,
-		"check" : "check_scrub_dodongo_bomb_bag_side_room_one",
+		"key" : "check_scrub_dodongo_bomb_bag_side_room_one",
 		"map" : ["map_dodongos"],
 		"lat" : [391],
-		"lon" : [1665]
+		"lon" : [1665],
+		"type": "check"
 	},
 	{
 		"id" : 358,
-		"check" : "check_scrub_dodongo_bomb_bag_side_room_two",
+		"key" : "check_scrub_dodongo_bomb_bag_side_room_two",
 		"map" : ["map_dodongos"],
 		"lat" : [389],
-		"lon" : [1830]
+		"lon" : [1830],
+		"type": "check"
 	},
 	{
 		"id" : 359,
-		"check" : "check_scrub_jabu",
+		"key" : "check_scrub_jabu",
 		"map" : ["map_jabu"],
 		"lat" : [1779],
-		"lon" : [2061]
+		"lon" : [2061],
+		"type": "check"
 	},
 	{
 		"id" : 360,
-		"check" : "check_scrub_ganons_castle_one",
+		"key" : "check_scrub_ganons_castle_one",
 		"map" : ["map_ganons_trials"],
 		"lat" : [2730],
-		"lon" : [1877]
+		"lon" : [1877],
+		"type": "check"
 	},
 	{
 		"id" : 361,
-		"check" : "check_scrub_ganons_castle_two",
+		"key" : "check_scrub_ganons_castle_two",
 		"map" : ["map_ganons_trials"],
 		"lat" : [2774],
-		"lon" : [1919]
+		"lon" : [1919],
+		"type": "check"
 	},
 	{
 		"id" : 362,
-		"check" : "check_scrub_ganons_castle_three",
+		"key" : "check_scrub_ganons_castle_three",
 		"map" : ["map_ganons_trials"],
 		"lat" : [2773],
-		"lon" : [1990]
+		"lon" : [1990],
+		"type": "check"
 	},
 	{
 		"id" : 363,
-		"check" : "check_scrub_ganons_castle_four",
+		"key" : "check_scrub_ganons_castle_four",
 		"map" : ["map_ganons_trials"],
 		"lat" : [2732],
-		"lon" : [2037]
+		"lon" : [2037],
+		"type": "check"
 	},
 	{
 		"id" : 364,
-		"check" : "check_scrub_lost_woods_grotto",
+		"key" : "check_scrub_lost_woods_grotto",
 		"map" : ["map_lost_woods"],
 		"lat" : [98],
-		"lon" : [858]
+		"lon" : [858],
+		"type": "check"
 	},
 	{
 		"id" : 365,
-		"check" : "check_scrub_deku_theater_one",
+		"key" : "check_scrub_deku_theater_one",
 		"map" : ["map_lost_woods"],
 		"lat" : [518],
-		"lon" : [1034]
+		"lon" : [1034],
+		"type": "check"
 	},
 	{
 		"id" : 366,
-		"check" : "check_scrub_deku_theater_two",
+		"key" : "check_scrub_deku_theater_two",
 		"map" : ["map_lost_woods"],
 		"lat" : [663],
-		"lon" : [947]
+		"lon" : [947],
+		"type": "check"
 	},
 	{
 		"id" : 367,
-		"check" : "check_scrub_forest_meadow_storms_one",
+		"key" : "check_scrub_forest_meadow_storms_one",
 		"map" : ["map_sacred_forest"],
 		"lat" : [615],
-		"lon" : [675]
+		"lon" : [675],
+		"type": "check"
 	},
 	{
 		"id" : 368,
-		"check" : "check_scrub_forest_meadow_storms_two",
+		"key" : "check_scrub_forest_meadow_storms_two",
 		"map" : ["map_sacred_forest"],
 		"lat" : [564],
-		"lon" : [721]
+		"lon" : [721],
+		"type": "check"
 	},
 	{
 		"id" : 369,
-		"check" : "check_scrub_ranch_grotto_one",
+		"key" : "check_scrub_ranch_grotto_one",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [2364],
-		"lon" : [1849]
+		"lon" : [1849],
+		"type": "check"
 	},
 	{
 		"id" : 370,
-		"check" : "check_scrub_ranch_grotto_two",
+		"key" : "check_scrub_ranch_grotto_two",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [2245],
-		"lon" : [1964]
+		"lon" : [1964],
+		"type": "check"
 	},
 	{
 		"id" : 371,
-		"check" : "check_scrub_ranch_grotto_three",
+		"key" : "check_scrub_ranch_grotto_three",
 		"map" : ["map_lon_lon_ranch"],
 		"lat" : [2361],
-		"lon" : [2090]
+		"lon" : [2090],
+		"type": "check"
 	},
 	{
 		"id" : 372,
-		"check" : "check_scrub_goron_city_lava_one",
+		"key" : "check_scrub_goron_city_lava_one",
 		"map" : ["map_goron_city"],
 		"lat" : [156],
-		"lon" : [1100]
+		"lon" : [1100],
+		"type": "check"
 	},
 	{
 		"id" : 373,
-		"check" : "check_scrub_goron_city_lava_two",
+		"key" : "check_scrub_goron_city_lava_two",
 		"map" : ["map_goron_city"],
 		"lat" : [34],
-		"lon" : [1217]
+		"lon" : [1217],
+		"type": "check"
 	},
 	{
 		"id" : 374,
-		"check" : "check_scrub_goron_city_lava_three",
+		"key" : "check_scrub_goron_city_lava_three",
 		"map" : ["map_goron_city"],
 		"lat" : [150],
-		"lon" : [1345]
+		"lon" : [1345],
+		"type": "check"
 	},
 	{
 		"id" : 375,
-		"check" : "check_scrub_death_mountain_crater_ladder",
+		"key" : "check_scrub_death_mountain_crater_ladder",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [1311],
-		"lon" : [831]
+		"lon" : [831],
+		"type": "check"
 	},
 	{
 		"id" : 376,
-		"check" : "check_scrub_death_mountain_crater_hammer_one",
+		"key" : "check_scrub_death_mountain_crater_hammer_one",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [315],
-		"lon" : [90]
+		"lon" : [90],
+		"type": "check"
 	},
 	{
 		"id" : 377,
-		"check" : "check_scrub_death_mountain_crater_hammer_two",
+		"key" : "check_scrub_death_mountain_crater_hammer_two",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [195],
-		"lon" : [203]
+		"lon" : [203],
+		"type": "check"
 	},
 	{
 		"id" : 378,
-		"check" : "check_scrub_death_mountain_crater_hammer_three",
+		"key" : "check_scrub_death_mountain_crater_hammer_three",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [313],
-		"lon" : [330]
+		"lon" : [330],
+		"type": "check"
 	},
 	{
 		"id" : 379,
-		"check" : "check_scrub_zoras_river_storms_one",
+		"key" : "check_scrub_zoras_river_storms_one",
 		"map" : ["map_zoras_river"],
 		"lat" : [580],
-		"lon" : [189]
+		"lon" : [189],
+		"type": "check"
 	},
 	{
 		"id" : 380,
-		"check" : "check_scrub_zoras_river_storms_two",
+		"key" : "check_scrub_zoras_river_storms_two",
 		"map" : ["map_zoras_river"],
 		"lat" : [531],
-		"lon" : [234]
+		"lon" : [234],
+		"type": "check"
 	},
 	{
 		"id" : 381,
-		"check" : "check_scrub_hylia_gravestone_one",
+		"key" : "check_scrub_hylia_gravestone_one",
 		"map" : ["map_hylia_adult", "map_hylia_child"],
 		"lat" : [3876, 3876],
-		"lon" : [55, 55]
+		"lon" : [55, 55],
+		"type": "check"
 	},
 	{
 		"id" : 382,
-		"check" : "check_scrub_hylia_gravestone_two",
+		"key" : "check_scrub_hylia_gravestone_two",
 		"map" : ["map_hylia_adult", "map_hylia_child"],
 		"lat" : [3755, 3755],
-		"lon" : [173, 173]
+		"lon" : [173, 173],
+		"type": "check"
 	},
 	{
 		"id" : 383,
-		"check" : "check_scrub_hylia_gravestone_three",
+		"key" : "check_scrub_hylia_gravestone_three",
 		"map" : ["map_hylia_adult", "map_hylia_child"],
 		"lat" : [3872, 3872],
-		"lon" : [298, 298]
+		"lon" : [298, 298],
+		"type": "check"
 	},
 	{
 		"id" : 384,
-		"check" : "check_scrub_gerudo_valley_tent_storms_one",
+		"key" : "check_scrub_gerudo_valley_tent_storms_one",
 		"map" : ["map_gerudo_valley_adult"],
 		"lat" : [1040],
-		"lon" : [1702]
+		"lon" : [1702],
+		"type": "check"
 	},
 	{
 		"id" : 385,
-		"check" : "check_scrub_gerudo_valley_tent_storms_two",
+		"key" : "check_scrub_gerudo_valley_tent_storms_two",
 		"map" : ["map_gerudo_valley_adult"],
 		"lat" : [983],
-		"lon" : [1662]
+		"lon" : [1662],
+		"type": "check"
 	},
 	{
 		"id" : 386,
-		"check" : "check_scrub_colossus_silvers_grotto_one",
+		"key" : "check_scrub_colossus_silvers_grotto_one",
 		"map" : ["map_desert_colossus"],
 		"lat" : [203],
-		"lon" : [1718]
+		"lon" : [1718],
+		"type": "check"
 	},
 	{
 		"id" : 387,
-		"check" : "check_scrub_colossus_silvers_grotto_two",
+		"key" : "check_scrub_colossus_silvers_grotto_two",
 		"map" : ["map_desert_colossus"],
 		"lat" : [154],
-		"lon" : [1760]
+		"lon" : [1760],
+		"type": "check"
 	},
 	{
 		"id" : 388,
-		"check" : "check_skull_hylia_lab",
+		"key" : "check_skull_hylia_lab",
 		"map" : ["map_hylia_adult"],
 		"lat" : [1484],
-		"lon" : [434]
+		"lon" : [434],
+		"type": "check"
 	}
+
 ]

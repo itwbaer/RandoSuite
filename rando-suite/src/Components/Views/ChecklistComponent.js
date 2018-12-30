@@ -19,7 +19,7 @@ export class ChecklistComponent extends Component{
       //heading
       for(let j = 0; j < this.props.filteredChecks.length; j++){
         if(this.props.filteredChecks[j].location === currentIndex){
-          checklist.push(<br />);
+          checklist.push(<br key={"break-" + this.props.locations[currentIndex].name}/>);
           checklist.push(<h5 key={"heading-" + this.props.locations[currentIndex].name}>{this.props.locations[currentIndex].name}</h5>);
           break;
         }

@@ -60,14 +60,15 @@ module.exports = {
 					map["markers"] = [];
 				}
 				map["markers"].push({
-					"check" : marker.check,
+					"key" : marker.key,
 					"lon": marker.lon[i],
-					"lat": marker.lat[i]
+					"lat": marker.lat[i],
+					"type": marker.type
 				});
 
 			}
 		});
-		console.log(maps);
+		
 
 	},
 

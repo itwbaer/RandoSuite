@@ -1,0 +1,18 @@
+[
+	{
+		"id" : 0,
+		"key" : "map_market_child",
+		"map" : ["map_hyrule_field"],
+		"lat" : [328],
+		"lon" : [4452],
+		"type": "link"
+	},
+	{
+		"id" : 1,
+		"key" : "map_hyrule_field",
+		"map" : ["map_market_child"],
+		"lat" : [1823],
+		"lon" : [1465],
+		"type": "link"
+	}
+]

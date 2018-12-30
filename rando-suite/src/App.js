@@ -65,8 +65,10 @@ class App extends Component {
     let maps = require("./data/Maps.json");
     let mapsMap = util.shared.mapCodeToID(maps);
     let markers = require("./data/Markers.json");
+    let links = require("./data/Links.json");
 
     util.maps.linkMarkers(maps, mapsMap, markers);
+    util.maps.linkMarkers(maps, mapsMap, links);
 
     let mapImgs = util.maps.loadMapImgs(maps);
 
@@ -111,6 +113,7 @@ class App extends Component {
                   mapsMap: mapsMap,
                   mapImgs: mapImgs,
                   markers: markers,
+                  links: links,
 
                   filteredMaps: filteredMaps,
                   checkHistory: [],
@@ -246,7 +249,7 @@ class App extends Component {
 
   }
 
-  handleClickCheckList(id, data){
+  handleClickChecklist(id, data){
 
 
       const checks = cloneDeep(this.state.checks);
@@ -301,17 +304,18 @@ class App extends Component {
     this.mapLat = image.height;
     this.mapLon = image.width;
     this.mapImage.setBounds([[0, 0], [(this.mapLat/divisor), (this.mapLon/divisor)]]);
-    this.map.setView([image.height/2/divisor, image.width/2/divisor], );
+    let center = [image.height/2/divisor, image.width/2/divisor];
+    this.map.setView(center, );
 
-    //allow 100px in all directions
+
     let padding = this.state.util.maps.padding/divisor;
     var corner1 = L.latLng(-padding, -padding),
     corner2 = L.latLng((image.height/divisor + padding), (image.width/divisor + padding)),
     bounds = L.latLngBounds(corner1, corner2)
 
     this.map.setMaxBounds(bounds);
-
     this.createMarkers(id, filter);
+    this.map.panTo(center);
   }
 
   createMarkers(id, filter){
@@ -327,68 +331,111 @@ class App extends Component {
 
     for(let i = 0; i < map.markers.length; i++){
       let data = map.markers[i];
-      let check = this.state.checks[this.state.checksMap[data.check]];
-      if(filter.checkType.includes(check.type)){
 
+      switch(data.type){
 
-        let marker = L.circle([Math.abs(data.lat-this.mapLat)/divisor, data.lon/divisor], {
-            color: "black",
-            fillColor: "black",
-            weight: 1.0,
-            fillOpacity: 0,
-            opacity: 0,
-            radius: 5000,
-        });
+        case "check":
+          let check = this.state.checks[this.state.checksMap[data.key]];
+          if(filter.checkType.includes(check.type)){
 
-        marker.bindPopup(check.name);
-        marker.on('mouseover', function (e) {
-            this.openPopup();
-        });
-        marker.on('mouseout', function (e) {
-            this.closePopup();
-        })
-        marker.on('click', () => this.handleClickCheckList(check.id));
+            let marker = L.circle([Math.abs(data.lat-this.mapLat)/divisor, data.lon/divisor], {
+                color: "black",
+                fillColor: "black",
+                weight: 1.0,
+                fillOpacity: 0,
+                opacity: 0,
+                radius: 5000,
+                type: data.type
+            });
 
-        marker.addTo(this.map);
-        this.activeMarkers[data.check] = marker;
-        this.colorMarker(filter, data.check, this.state.checks, this.state.locations, this.state.obtainables);
+            marker.bindPopup(check.name);
+            marker.on('mouseover', function (e) {
+                this.openPopup();
+            });
+            marker.on('mouseout', function (e) {
+                this.closePopup();
+            })
+            marker.on('click', () => this.handleClickChecklist(check.id));
+
+            marker.addTo(this.map);
+            this.activeMarkers[data.key] = marker;
+            this.colorMarker(filter, data.key, this.state.checks, this.state.locations, this.state.obtainables);
+          }
+          break;
+
+        case "link":
+          let centerLat = Math.abs(data.lat-this.mapLat)/divisor;
+          let centerLon = data.lon/divisor;
+          let height = 100/divisor;
+          let width = 200/divisor;
+          let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
+          let marker = L.rectangle(bounds, {
+            color: "blue",
+            weight: 1,
+            fillOpacity: .75,
+            opacity: 1
+          });
+          let linkedMap = this.state.maps[this.state.mapsMap[data.key]];
+
+          marker.bindPopup("To " + linkedMap.name);
+          marker.on('mouseover', function (e) {
+              this.openPopup();
+          });
+          marker.on('mouseout', function (e) {
+              this.closePopup();
+          })
+          marker.on('click', () => this.handleClickMap(linkedMap.id, filter));
+
+          marker.addTo(this.map);
+          this.activeMarkers[data.key] = marker;
+          break;
       }
+        
     }
 
   }
 
-  colorMarker(filter, checkCode, checks, locations, obtainables){
+  colorMarker(filter, key, checks, locations, obtainables){
+
     if(this.activeMarkers === undefined || this.activeMarkers === null){
       return;
     }
 
-    let marker = this.activeMarkers[checkCode];
+    let marker = this.activeMarkers[key];
+    let data = this.state.markers
+    switch(marker.options.type){
+      case "check":
+        let color = "red";
+        let check = checks[this.state.checksMap[key]];
 
-    let color = "red";
-    let check = checks[this.state.checksMap[checkCode]];
+        if(check.checked > 0){
+          color = "green";
+        }
+        else{
+          let canCheck = [];
+          for(let i = 0; i < filter.state.length; i++){
+            let state = filter.state[i]
+            canCheck.push(
+              this.state.util.checks.canCheck(
+                state, check, locations, obtainables, checks, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap
+              )
+            );
+          }
+          if(canCheck.includes(true)){color = "yellow";}
+        }
 
-    if(check.checked > 0){
-      color = "green";
+        marker.setStyle({
+          opacity: 1.0,
+          fillOpacity: 0.5,
+          color: color,
+          fillColor: color
+        })
+        break;
+
+        case "link":
+          break;
     }
-    else{
-      let canCheck = [];
-      for(let i = 0; i < filter.state.length; i++){
-        let state = filter.state[i]
-        canCheck.push(
-          this.state.util.checks.canCheck(
-            state, check, locations, obtainables, checks, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap
-          )
-        );
-      }
-      if(canCheck.includes(true)){color = "yellow";}
-    }
-
-    marker.setStyle({
-      opacity: 1.0,
-      fillOpacity: 0.5,
-      color: color,
-      fillColor: color
-    })
+    
 
   }
 
@@ -445,7 +492,7 @@ class App extends Component {
                   obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
                   loadOnClick={(data) => this.loadFile(data)}
-                  checklistOnClick={(id, data) => this.handleClickCheckList(id, data)}
+                  checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
                   filterOnChange={(key, data) => this.handleFilterChange(key, data)}
                   undoOnClick={() => this.undoLastCheck()}
                 />
