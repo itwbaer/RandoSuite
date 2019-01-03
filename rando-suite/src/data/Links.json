@@ -339,7 +339,7 @@
 		"id" : 42,
 		"key" : "map_zoras_domain_child",
 		"map" : ["map_zoras_river"],
-		"lat" : [57],
+		"lat" : [25],
 		"lon" : [2859],
 		"type": "link"
 	},
@@ -716,7 +716,7 @@
 		"key" : "map_spirit_temple",
 		"map" : ["map_desert_colossus"],
 		"lat" : [1445],
-		"lon" : [703],
+		"lon" : [600],
 		"type": "link"
 	},
 	{

@@ -367,7 +367,7 @@ class App extends Component {
           let centerLat = Math.abs(data.lat-this.mapLat)/divisor;
           let centerLon = data.lon/divisor;
           let height = 100/divisor;
-          let width = 200/divisor;
+          let width = 100/divisor;
           let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
           let marker = L.rectangle(bounds, {
             color: "blue",
