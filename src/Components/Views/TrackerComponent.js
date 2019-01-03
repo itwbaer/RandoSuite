@@ -64,6 +64,7 @@ export class TrackerComponent extends Component{
     return(
       <div className="container-fluid tracker-container">
         {this.generateTracker()}
+        <br /><p>This app is still in development. Your feedback is important! Please send comments and suggestions to randosuite@gmail.com</p>
       </div>
         
     );

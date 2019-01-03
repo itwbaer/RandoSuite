@@ -1,11 +1,3 @@
-/*TODO
-Interactive Map
-More filter options
-finish naming checks
-name maps
-*/
-
-
 import React, { Component } from 'react';
 import {cloneDeep} from 'lodash';
 
