@@ -47,10 +47,10 @@ module.exports = {
 		  return 0;
 		}
 
-		function compareString(a, b) {
+		function compareName(a, b) {
 		  
 		  //if location is -1, always add first
-		  if(a.map.location === -1){
+		  if(b.map.location === -1){
 		  	return 1;
 		  }
 
@@ -92,7 +92,7 @@ module.exports = {
 		}
 
 		//sort alphabetically
-		return filteredMaps.sort(compareCount);
+		return filteredMaps.sort(filter.mapsByCount ? compareCount : compareName);
 		
 	},
 

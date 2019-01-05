@@ -232,7 +232,7 @@ class App extends Component {
     
   }
 
-  handleFilterChange(key, data){
+  handleFilterSelectChange(key, data){
 
     const filter = cloneDeep(this.state.filter);
     filter[key] = this.state.util.shared.optionsToFilter(data);
@@ -240,6 +240,15 @@ class App extends Component {
     if(key === "checkType"){
       this.handleClickMap(this.state.activeMap, filter);
     }
+    this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
+
+  }
+
+  handleFilterToggleChange(key, data){
+
+    const filter = cloneDeep(this.state.filter);
+    filter[key] = data
+    this.setState({filter: filter});
     this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
 
   }
@@ -491,7 +500,8 @@ class App extends Component {
                   progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
                   loadOnClick={(data) => this.loadFile(data)}
                   checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
-                  filterOnChange={(key, data) => this.handleFilterChange(key, data)}
+                  filterSelectOnChange={(key, data) => this.handleFilterSelectChange(key, data)}
+                  filterToggleOnChange={(key, data) => this.handleFilterToggleChange(key, data)}
                   undoOnClick={() => this.undoLastCheck()}
                 />
               </div>

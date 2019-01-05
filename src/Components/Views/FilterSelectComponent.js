@@ -5,7 +5,6 @@ import makeAnimated from 'react-select/lib/animated';
 export class FilterSelectComponent extends Component{
 
   handleChange = (event) => {
-    console.log(event);
     this.props.onChange(event);
       
   }

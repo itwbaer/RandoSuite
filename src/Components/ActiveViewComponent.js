@@ -45,7 +45,8 @@ export class ActiveViewComponent extends Component{
   displayFilter(){
     return(
       <FilterComponent 
-          filterOnChange={(key, data) => this.props.filterOnChange(key, data)}
+          filterSelectOnChange={(key, data) => this.props.filterSelectOnChange(key, data)}
+          filterToggleOnChange={(key, data) => this.props.filterToggleOnChange(key, data)}
           filter={this.props.filter}
           filterOptions={this.props.filterOptions}
           states={this.props.states}
