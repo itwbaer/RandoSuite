@@ -16,7 +16,7 @@ export class MiniMapComponent extends Component{
           src={this.props.mapImg.src}
           alt=""
           onClick={this.handleClick}
-        /><br /><span className="noselect">{this.props.map.name}</span></div>
+        /><br /><span className="noselect">{this.props.map.name}{"count" in this.props.map ? `(${this.props.map.count})` : ""}</span></div>
     );
   }
 }

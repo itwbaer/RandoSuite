@@ -66,7 +66,7 @@ class App extends Component {
 
 
     let filteredChecks = util.checks.applyFilter(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap);
-    let filteredMaps = util.maps.filterMaps(filteredChecks, maps, mapImgs);
+    let filteredMaps = util.maps.filterMaps(filter, filteredChecks, maps, mapImgs, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap);
 
     let filterOptions = util.shared.getAllFilterOptions(locations, states, checkTypes);
 
@@ -129,7 +129,10 @@ class App extends Component {
 
     let filter = data.filter;
     let filteredChecks = this.state.util.checks.applyFilter(filter, loadChecks, this.state.locations, loadObtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps, this.state.mapImgs);
+    let filteredMaps = this.state.util.maps.filterMaps(
+      filter, filteredChecks, this.state.maps, this.state.mapImgs, this.state.locations, loadObtainables, loadChecks, 
+      this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap
+      );
 
     this.handleClickMap(this.state.activeMap, filter);
 
@@ -266,7 +269,10 @@ class App extends Component {
 
   runFilter(filter, checks, locations, obtainables){
     let filteredChecks = this.state.util.checks.applyFilter(filter, checks, locations, obtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.maps, this.state.mapImgs);
+    let filteredMaps = this.state.util.maps.filterMaps(
+      filter, filteredChecks, this.state.maps, this.state.mapImgs, locations, obtainables, checks, 
+      this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap
+      );
 
     let markerKeys = Object.keys(this.activeMarkers)
     for(let i = 0; i < markerKeys.length; i++){
@@ -506,8 +512,14 @@ class App extends Component {
                 <MapNavComponent
                   onClick={(id) => this.handleClickMap(id)} 
                   maps={this.state.filteredMaps}
-                  mapImgs={this.state.mapImgs}
                   util={this.state.util}
+                  filter={this.state.filter}
+                  obtainables={this.state.obtainables}
+                  obtainablesMap={this.state.obtainablesMap}
+                  checks={this.state.checks}
+                  checksMap={this.state.checksMap}
+                  locations={this.state.locations}
+                  locationsMap={this.state.locationsMap}
                 />
 
             </div>

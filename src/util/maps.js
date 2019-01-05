@@ -4,17 +4,21 @@ util.checks = require('./checks.js');
 module.exports = {
 	padding: 100,
 	divisor: 1000,
-	filterMaps: function(checks, maps, mapImgs){
+
+	filterMaps: function(filter, filteredChecks, maps, mapImgs, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap){
+
 		let filteredMaps = [];
 
-		let locations = util.checks.getLocations(checks);
+		let checkLocations = util.checks.getLocations(filteredChecks);
 
 		let pushedMaps = [];
 
 		for(let i = 0; i < maps.length; i++){
 			let current = maps[i];
-			if(locations.includes(current.location) && !pushedMaps.includes(current.id)){
+			let count = checksRemaining(current, filter, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap);
+			if(checkLocations.includes(current.location) && !pushedMaps.includes(current.id)){
 				let pair = {"map": current, "image": mapImgs[i]};
+				pair["map"]["count"] = count;
 				filteredMaps.push(pair);
 				pushedMaps.push(current.id);
 			}
@@ -27,7 +31,23 @@ module.exports = {
 
 		}
 
-		function compare(a, b) {
+		function compareCount(a, b) {
+		  
+		  //if location is -1, always add first
+		  if(a.map.location === -1){
+		  	return 1;
+		  }
+
+		  if (a.map.count > b.map.count) {
+		    return -1;
+		  }
+		  else if (a.map.count < b.map.count) {
+		    return 1;
+		  }
+		  return 0;
+		}
+
+		function compareString(a, b) {
 		  
 		  //if location is -1, always add first
 		  if(a.map.location === -1){
@@ -43,8 +63,36 @@ module.exports = {
 		  return 0;
 		}
 
+		function checksRemaining(map, filter, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap){
+			let count = 0;
+			if(!("markers" in map)){ return count;}
+			for(let i = 0; i < map.markers.length; i++){
+				let marker = map.markers[i];
+
+				if(marker.type === "check"){
+					//if we can check it, add to total
+					let check = checks[checksMap[marker.key]];
+					if(filter.checkType.includes(check.type)){
+						let canCheck = [];
+						for(let j = 0; j < filter.state.length; j++){
+							let state = filter.state[j];
+							canCheck.push(util.checks.canCheck(state, check, locations, obtainables, 
+																checks, locationsMap, obtainablesMap, checksMap) && check.checked < 0);
+							
+						}
+
+						if(canCheck.includes(true)){
+							count++;
+						}
+					}
+				}
+			}
+
+			return count;
+		}
+
 		//sort alphabetically
-		return filteredMaps.sort(compare);
+		return filteredMaps.sort(compareCount);
 		
 	},
 

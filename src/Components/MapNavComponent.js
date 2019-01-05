@@ -6,7 +6,6 @@ export class MapNavComponent extends Component{
 		let maps = [];
     for(let i = 0; i < this.props.maps.length; i++){
       let currentMap = this.props.maps[i];
-
       maps.push(
         <MiniMapComponent
         	key={"minimap-" + currentMap.map.id}

@@ -2944,6 +2944,10 @@
 		"type" : 1,
 		"state" : [1],
 		"location" : 15,
+		"required": [{
+									"obtainables": [["item_bean"], ["song_scarecrow", "item_hookshot"]],
+									"checks" : null
+								}],
 		"checked" : -1
 	},
 	{
