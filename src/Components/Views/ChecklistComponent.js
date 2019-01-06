@@ -25,6 +25,16 @@ export class ChecklistComponent extends Component{
       let checkLocation = this.props.locations[currentCheck.location].name;
       let checkType = this.props.checkTypes[currentCheck.type].name;
       let checkState = "";
+      let canCheck = [];
+      for(let i = 0; i < this.props.filter.state.length; i++){
+        let state = this.props.filter.state[i];
+        canCheck.push(this.props.util.checks.canCheck(
+          state, currentCheck, this.props.locations, this.props.obtainables, this.props.checks, 
+          this.props.locationsMap, this.props.obtainablesMap, this.props.checksMap
+        ));
+      }
+
+      let checkClass = currentCheck.checked > 0 ? "checked" : (canCheck.includes(true) ? "canCheck" : "cantCheck")
       for(let j = 0; j < currentCheck.state.length; j++){
         let currentState = currentCheck.state[j];
         if(j === 0){checkState = checkState + this.props.states[currentState].name}
@@ -39,6 +49,7 @@ export class ChecklistComponent extends Component{
           state={checkState}
           type={checkType}
           checked={currentCheck.checked}
+          checkClass={checkClass}
           onClick={(data) => this.props.checklistOnClick(currentCheck.id, data)}
         />
       );

@@ -162,6 +162,18 @@ html,body{
   color: black;
 }
 
+.canCheck{
+  color: yellow;
+}
+
+.checked{
+  color: green;
+}
+
+.cantCheck{
+  color: red;
+}
+
 
 html {
   scrollbar-face-color: #646464;

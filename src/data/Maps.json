@@ -1,7 +1,7 @@
 [
 	{
 		"id": 0,
-		"code": "map_full",
+		"code": "map_world",
 		"name": "Map of Hyrule",
 		"extension": "jpg",
 		"location": -1,

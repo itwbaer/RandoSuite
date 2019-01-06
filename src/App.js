@@ -59,9 +59,10 @@ class App extends Component {
     let mapsMap = util.shared.mapCodeToID(maps);
     let markers = require("./data/Markers.json");
     let links = require("./data/Links.json");
-
+    let activeLocations = require("./data/ActiveLocations.json");
     util.maps.linkMarkers(maps, mapsMap, markers);
     util.maps.linkMarkers(maps, mapsMap, links);
+    util.maps.linkMarkers(maps, mapsMap, activeLocations);
 
     let mapImgs = util.maps.loadMapImgs(maps);
 
@@ -102,12 +103,13 @@ class App extends Component {
                   filterOptions: filterOptions,
 
                   activeMap: 0,
-                  activeLocation: -1,
+                  activeLocation: 0,
                   maps: maps,
                   mapsMap: mapsMap,
                   mapImgs: mapImgs,
                   markers: markers,
                   links: links,
+                  activeLocations: activeLocations,
 
                   notes: "",
 
@@ -225,6 +227,10 @@ class App extends Component {
     this.setState({notes: data});
   }
 
+  handleChangeActiveLocation(id){
+    this.setState({activeLocation: id});
+  }
+
   undoLastCheck(){
 
     const checks = cloneDeep(this.state.checks);
@@ -323,7 +329,7 @@ class App extends Component {
     this.mapLon = image.width;
     this.mapImage.setBounds([[0, 0], [(this.mapLat/divisor), (this.mapLon/divisor)]]);
     let center = [image.height/2/divisor, image.width/2/divisor];
-    this.map.setView(center, );
+    this.map.setView(center, 8);
 
 
     let padding = this.state.util.maps.padding/divisor;
@@ -333,7 +339,7 @@ class App extends Component {
 
     this.map.setMaxBounds(bounds);
     this.createMarkers(id, filter);
-    this.map.panTo(center);
+    //this.map.panTo(center);
   }
 
   createMarkers(id, filter){
@@ -407,6 +413,36 @@ class App extends Component {
           marker.addTo(this.map);
           this.activeMarkers[data.key] = marker;
           break;
+
+        case "location":
+          if(true){
+            console.log(data);
+          let centerLat = Math.abs(data.lat-this.mapLat)/divisor;
+          let centerLon = data.lon/divisor;
+          let height = 10/divisor;
+          let width = 10/divisor;
+          let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
+          let marker = L.rectangle(bounds, {
+            color: "blue",
+            weight: 1,
+            fillOpacity: .75,
+            opacity: 1
+          });
+          let location = this.state.locations[this.state.locationsMap[data.key]];
+
+          marker.bindPopup(location.name);
+          marker.on('mouseover', function (e) {
+              this.openPopup();
+          });
+          marker.on('mouseout', function (e) {
+              this.closePopup();
+          })
+          marker.on('click', () => this.handleChangeActiveLocation(location.id));
+
+          marker.addTo(this.map);
+          this.activeMarkers[data.key] = marker;
+        }
+          break;
       }
         
     }
@@ -451,6 +487,8 @@ class App extends Component {
         break;
 
         case "link":
+          break;
+        case "location":
           break;
     }
     
@@ -533,9 +571,11 @@ class App extends Component {
                 <div className="col-5" id="Checklist">
                   <ChecklistComponent 
                     checks={this.state.checks}
+                    checksMap={this.state.checksMap}
                     obtainables={this.state.obtainables}
                     locations={this.state.locations}
                     locationsMap={this.state.locationsMap}
+                    obtainablesMap={this.state.obtainablesMap}
                     states={this.state.states}
                     checkTypes={this.state.checkTypes}
                     checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}

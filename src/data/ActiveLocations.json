@@ -1,0 +1,326 @@
+[
+	{
+		"id" : 0,
+		"key" : "location_kokiri_forest",
+		"name" : "Kokiri Forest",
+		"map": ["map_world"],
+		"lat" : [486],
+		"lon" : [588],
+		"type": "location"
+	},
+	{
+		"id" : 1,
+		"key" : "location_deku_tree",
+		"name" : "Deku Tree",
+		"map": ["map_world"],
+		"lat" : [457],
+		"lon" : [672],
+		"type": "location"
+	},
+	{
+		"id" : 2,
+		"key" : "location_lost_woods",
+		"name" : "Lost Woods",
+		"map": ["map_world"],
+		"lat" : [433],
+		"lon" : [604],
+		"type": "location"
+	},
+	{
+		"id" : 3,
+		"key" : "location_sacred_meadow",
+		"name" : "Sacred Forest Meadow",
+		"map": ["map_world"],
+		"lat" : [381],
+		"lon" : [603],
+		"type": "location"
+	},
+	{
+		"id" : 4,
+		"key" : "location_forest_temple",
+		"name" : "Forest Temple",
+		"map": ["map_world"],
+		"lat" : [330],
+		"lon" : [601],
+		"type": "location"
+	},
+	{
+		"id" : 5,
+		"key" : "location_death_mountain_trail",
+		"name" : "Death Mountain Trail",
+		"map": ["map_world"],
+		"lat" : [148],
+		"lon" : [580],
+		"type": "location"
+	},
+	{
+		"id" : 6,
+		"key" : "location_dodongos",
+		"name" : "Dodogos Cavern",
+		"map": ["map_world"],
+		"lat" : [132],
+		"lon" : [559],
+		"type": "location"
+	},
+	{
+		"id" : 7,
+		"key" : "location_goron_city",
+		"name" : "Goron City",
+		"map": ["map_world"],
+		"lat" : [122],
+		"lon" : [623],
+		"type": "location"
+	},
+	{
+		"id" : 8,
+		"key" : "location_death_mountain_crater",
+		"name" : "Death Mountain Crater",
+		"map": ["map_world"],
+		"lat" : [58],
+		"lon" : [622],
+		"type": "location"
+	},
+	{
+		"id" : 9,
+		"key" : "location_fire_temple",
+		"name" : "Fire Temple",
+		"map": ["map_world"],
+		"lat" : [17],
+		"lon" : [598],
+		"type": "location"
+	},
+	{
+		"id" : 10,
+		"key" : "location_zoras_river",
+		"name" : "Zoras River",
+		"map": ["map_world"],
+		"lat" : [264],
+		"lon" : [592],
+		"type": "location"
+	},
+	{
+		"id" : 11,
+		"key" : "location_zoras_domain",
+		"name" : "Zoras Domain",
+		"map": ["map_world"],
+		"lat" : [254],
+		"lon" : [680],
+		"type": "location"
+	},
+	{
+		"id" : 12,
+		"key" : "location_zoras_fountain",
+		"name" : "Zoras Fountain",
+		"map": ["map_world"],
+		"lat" : [205],
+		"lon" : [717],
+		"type": "location"
+	},
+	{
+		"id" : 13,
+		"key" : "location_jabu",
+		"name" : "Jabu Jabu",
+		"map": ["map_world"],
+		"lat" : [193],
+		"lon" : [694],
+		"type": "location"
+	},
+	{
+		"id" : 14,
+		"key" : "location_ice_cavern",
+		"name" : "Ice Cavern",
+		"map": ["map_world"],
+		"lat" : [492],
+		"lon" : [65],
+		"type": "location"
+	},
+	{
+		"id" : 15,
+		"key" : "location_lake_hylia",
+		"name" : "Lake Hylia",
+		"map": ["map_world"],
+		"lat" : [555],
+		"lon" : [399],
+		"type": "location"
+	},
+	{
+		"id" : 16,
+		"key" : "location_water_temple",
+		"name" : "Water Temple",
+		"map": ["map_world"],
+		"lat" : [578],
+		"lon" : [215],
+		"type": "location"
+	},
+	{
+		"id" : 17,
+		"key" : "location_kakariko_village",
+		"name" : "Kakariko Village",
+		"map": ["map_world"],
+		"lat" : [222],
+		"lon" : [565],
+		"type": "location"
+	},
+	{
+		"id" : 18,
+		"key" : "location_shadow_temple",
+		"name" : "Shadow Temple",
+		"map": ["map_world"],
+		"lat" : [217],
+		"lon" : [657],
+		"type": "location"
+	},
+	{
+		"id" : 19,
+		"key" : "location_well",
+		"name" : "Bottom of the Well",
+		"map": ["map_world"],
+		"lat" : [221],
+		"lon" : [595],
+		"type": "location"
+	},
+	{
+		"id" : 20,
+		"key" : "location_graveyard",
+		"name" : "Graveyard",
+		"map": ["map_world"],
+		"lat" : [237],
+		"lon" : [622],
+		"type": "location"
+	},
+	{
+		"id" : 21,
+		"key" : "location_dampes_grave",
+		"name" : "Dampes Grave",
+		"map": ["map_world"],
+		"lat" : [220],
+		"lon" : [624],
+		"type": "location"
+	},
+	{
+		"id" : 22,
+		"key" : "location_gerudo_valley",
+		"name" : "Gerudo Valley",
+		"map": ["map_world"],
+		"lat" : [315],
+		"lon" : [281],
+		"type": "location"
+	},
+	{
+		"id" : 23,
+		"key" : "location_gerudo_fortress",
+		"name" : "Gerudo Fortress",
+		"map": ["map_world"],
+		"lat" : [279],
+		"lon" : [212],
+		"type": "location"
+	},
+	{
+		"id" : 24,
+		"key" : "location_gerudo_training_grounds",
+		"name" : "Gerudo Training Grounds",
+		"map": ["map_world"],
+		"lat" : [278],
+		"lon" : [237],
+		"type": "location"
+	},
+	{
+		"id" : 25,
+		"key" : "location_haunted_wasteland",
+		"name" : "Haunted Wasteland",
+		"map": ["map_world"],
+		"lat" : [242],
+		"lon" : [143],
+		"type": "location"
+	},
+	{
+		"id" : 26,
+		"key" : "location_desert_colossus",
+		"name" : "Desert Colossus",
+		"map": ["map_world"],
+		"lat" : [231],
+		"lon" : [40],
+		"type": "location"
+	},
+	{
+		"id" : 27,
+		"key" : "location_spirit_temple",
+		"name" : "Spirit Temple",
+		"map": ["map_world"],
+		"lat" : [230],
+		"lon" : [13],
+		"type": "location"
+	},
+	{
+		"id" : 28,
+		"key" : "location_hyrule_field",
+		"name" : "Hyrule Field",
+		"map": ["map_world"],
+		"lat" : [291],
+		"lon" : [478],
+		"type": "location"
+	},
+	{
+		"id" : 29,
+		"key" : "location_lon_lon_ranch",
+		"name" : "Lon Lon Ranch",
+		"map": ["map_world"],
+		"lat" : [335],
+		"lon" : [425],
+		"type": "location"
+	},
+	{
+		"id" : 30,
+		"key" : "location_hyrule_market",
+		"name" : "Hyrule Market",
+		"map": ["map_world"],
+		"lat" : [198],
+		"lon" : [468],
+		"type": "location"
+	},
+	{
+		"id" : 31,
+		"key" : "location_hyrule_castle",
+		"name" : "Hyrule Castle",
+		"map": ["map_world"],
+		"lat" : [123],
+		"lon" : [485],
+		"type": "location"
+	},
+	{
+		"id" : 32,
+		"key" : "location_zeldas_garden",
+		"name" : "Zeldas Garden",
+		"map": ["map_world"],
+		"lat" : [-99999],
+		"lon" : [-99999],
+		"type": "location"
+	},
+	{
+		"id" : 33,
+		"key" : "location_ganons_castle",
+		"name" : "Ganons Castle",
+		"map": ["map_world"],
+		"lat" : [134],
+		"lon" : [347],
+		"type": "location"
+	},
+	{
+		"id" : 34,
+		"key" : "location_inside_ganons_castle",
+		"name" : "Inside Ganons Castle",
+		"map": ["map_world"],
+		"lat" : [101],
+		"lon" : [339],
+		"type": "location"
+	},
+	{
+		"id" : 35,
+		"key" : "location_temple_of_time",
+		"name" : "Temple of Time",
+		"map": ["map_world"],
+		"lat" : [177],
+		"lon" : [504],
+		"type": "location"
+	}
+]
