@@ -6,54 +6,45 @@ export class ChecklistComponent extends Component{
   createChecklist(){
     let checklist = [];
 
+    if(this.props.activeLocation === -1){ return checklist; }
     //first group the checks
-    let groupedChecks = this.props.util.checks.groupByLocation(this.props.filteredChecks, this.props.locations);
+    let filteredChecks = this.props.util.checks.applyFilterType(
+      this.props.filter, this.props.checks, this.props.locations, this.props.obtainables, 
+      this.props.locationsMap, this.props.obtainablesMap, this.props.checksMap
+    );
+    let groupedChecks = this.props.util.checks.groupByLocation(filteredChecks, this.props.locations);
 
-    //get sorted locations
-    let sortedLocations = this.props.util.locations.sortLocations(this.props.locations, this.props.locationsMap);
+    let location = this.props.locations[this.props.activeLocation];
+    checklist.push(<h5 key={"heading-" + location.name}>{location.name}</h5>);
 
-    //for every locations
-    for(let i = 0; i < sortedLocations.length; i++){
-      let currentIndex = sortedLocations[i].id;
+    let locationChecks = groupedChecks[location.id];
+    for(let j = 0; j < locationChecks.length; j++){
+      let currentCheck = locationChecks[j];
 
-      //heading
-      for(let j = 0; j < this.props.filteredChecks.length; j++){
-        if(this.props.filteredChecks[j].location === currentIndex){
-          checklist.push(<br key={"break-" + this.props.locations[currentIndex].name}/>);
-          checklist.push(<h5 key={"heading-" + this.props.locations[currentIndex].name}>{this.props.locations[currentIndex].name}</h5>);
-          break;
-        }
+      let checkName = currentCheck.name;
+      let checkLocation = this.props.locations[currentCheck.location].name;
+      let checkType = this.props.checkTypes[currentCheck.type].name;
+      let checkState = "";
+      for(let j = 0; j < currentCheck.state.length; j++){
+        let currentState = currentCheck.state[j];
+        if(j === 0){checkState = checkState + this.props.states[currentState].name}
+        else{checkState = checkState + "/" + this.props.states[currentState].name}
       }
 
-      //push all checks
-      let locationChecks = groupedChecks[currentIndex];
-      for(let j = 0; j < locationChecks.length; j++){
-        let currentCheck = locationChecks[j];
-
-        let checkName = currentCheck.name;
-        let checkLocation = this.props.locations[currentCheck.location].name;
-        let checkType = this.props.checkTypes[currentCheck.type].name;
-        let checkState = "";
-        for(let j = 0; j < currentCheck.state.length; j++){
-          let currentState = currentCheck.state[j];
-          if(j === 0){checkState = checkState + this.props.states[currentState].name}
-          else{checkState = checkState + "/" + this.props.states[currentState].name}
-        }
-
-        checklist.push(
-          <CheckDisplayComponent
-            key={"check-" + currentCheck.id} 
-            name={checkName}
-            location={checkLocation}
-            state={checkState}
-            type={checkType}
-            checked={currentCheck.checked}
-            onClick={(data) => this.props.checklistOnClick(currentCheck.id, data)}
-          />
-       );
-
-      }
+      checklist.push(
+        <CheckDisplayComponent
+          key={"check-" + currentCheck.id} 
+          name={checkName}
+          location={checkLocation}
+          state={checkState}
+          type={checkType}
+          checked={currentCheck.checked}
+          onClick={(data) => this.props.checklistOnClick(currentCheck.id, data)}
+        />
+      );
+     
     }
+      
 
     return checklist;
 
@@ -63,10 +54,7 @@ export class ChecklistComponent extends Component{
 	render() {
     return(
       <div>
-        <div className="container-fluid" id="ChecklistOptions">       
-          <button type="button" className="btn btn-danger" onClick={this.props.undoOnClick}>Undo</button>
-        </div>
-        <div className="container-fluid" id="Checklist">       
+        <div className="container-fluid">       
         	{this.createChecklist()}
         </div>
       </div>

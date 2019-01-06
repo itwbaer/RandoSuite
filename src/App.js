@@ -10,6 +10,7 @@ import {MapComponent} from './Components/MapComponent.js';
 import {MapNavComponent} from './Components/MapNavComponent.js';
 import {OptionsComponent} from './Components/OptionsComponent.js';
 import {ActiveViewComponent} from './Components/ActiveViewComponent.js';
+import {ChecklistComponent} from './Components/Views/ChecklistComponent.js';
 
 
 class App extends Component {
@@ -101,6 +102,7 @@ class App extends Component {
                   filterOptions: filterOptions,
 
                   activeMap: 0,
+                  activeLocation: -1,
                   maps: maps,
                   mapsMap: mapsMap,
                   mapImgs: mapImgs,
@@ -273,6 +275,8 @@ class App extends Component {
   handleClickMap(id, filter){
     filter = filter || this.state.filter;
     this.setState({activeMap: id});
+    let map = this.state.maps[id];
+    this.setState({activeLocation: map.location});
     this.setMapImage(id, filter);
   }
 
@@ -447,7 +451,7 @@ class App extends Component {
   }
 
   initializeMap(){
-    let map = L.map('map-container', {attributionControl: false})
+    let map = L.map('map-container', {attributionControl: false, zoomControl:false})
     map.setView([0, 0], 8);
     map.setMinZoom(8);
     map.setMaxZoom(10);
@@ -483,6 +487,7 @@ class App extends Component {
                   tracker={this.state.tracker}
                   views={this.state.views}
                   activeView={this.state.activeView}
+                  activeLocation={this.state.activeLocation}
                   states={this.state.states}
                   checks={this.state.checks}
                   checkTypes={this.state.checkTypes}
@@ -509,14 +514,31 @@ class App extends Component {
 
           </div>
           <div className="grid-half col-8">
-            <div className="row" id="MapRow">
+              <div className="row" id="MapRow">
+                <div className="col-7">
+                  <MapComponent 
+                    map={this.state.maps[this.state.activeMap]}
+                    util={this.state.util}
+                  />
+                </div>
+                <div className="col-5" id="Checklist">
+                  <ChecklistComponent 
+                    checks={this.state.checks}
+                    obtainables={this.state.obtainables}
+                    locations={this.state.locations}
+                    locationsMap={this.state.locationsMap}
+                    states={this.state.states}
+                    checkTypes={this.state.checkTypes}
+                    checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
+                    undoOnClick={this.undoOnClick}
+                    util={this.state.util}
+                    filter={this.state.filter}
+                    progressives={this.state.progressives}
+                    activeLocation={this.state.activeLocation}
+                  />
+                </div>
+              </div>
 
-                <MapComponent 
-                  map={this.state.maps[this.state.activeMap]}
-                  util={this.state.util}
-                />
-
-            </div>
             <div className="row" id="MapNavRow">
  
                 <MapNavComponent

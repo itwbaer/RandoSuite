@@ -22,6 +22,23 @@ module.exports = {
 		return groupedChecks;
 	},
 
+	applyFilterType:function(filter, checks){
+		let filteredChecks = [];
+
+		//for every check
+		for(let i = 0; i < checks.length; i++){
+			//for every state in the filter
+			let check = checks[i];
+
+			let isType = filter.checkType.includes(check.type);
+
+
+			if(isType){filteredChecks.push(check);}
+		}
+
+		return filteredChecks;
+	},
+
 	//filters a given set of checks based on certain critera
 	applyFilter: function(filter, checks, locations, obtainables, locationsMap, obtainablesMap, checksMap){
 		let filteredChecks = [];

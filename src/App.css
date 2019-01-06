@@ -44,6 +44,12 @@ html,body{
   overflow-x:hidden;
 }
 
+#Checklist{
+  height: 100%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
 #ChecklistRow{
   height: 33%;
   overflow-y:auto;

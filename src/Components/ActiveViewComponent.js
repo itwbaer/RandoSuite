@@ -24,6 +24,7 @@ export class ActiveViewComponent extends Component{
           util={this.props.util}
           filter={this.props.filter}
           progressives={this.props.progressives}
+          activeLocation={this.props.activeLocation}
         />
     );
   }

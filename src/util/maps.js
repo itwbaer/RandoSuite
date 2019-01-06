@@ -2,7 +2,7 @@ const util = {};
 util.checks = require('./checks.js');
 
 module.exports = {
-	padding: 100,
+	padding: 500,
 	divisor: 1000,
 
 	filterMaps: function(filter, filteredChecks, maps, mapImgs, locations, obtainables, checks, locationsMap, obtainablesMap, checksMap){
