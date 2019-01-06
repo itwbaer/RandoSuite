@@ -43,13 +43,13 @@ module.exports = {
 		return original;
 	},
 
-	saveFile: function(obtainables, checks, filter, progressives){
+	saveFile: function(obtainables, checks, filter, progressives, notes){
 		let data = {};
 		data.obtainables = obtainables;
 		data.checks = checks;
 		data.filter = filter;
 		data.progressives = progressives;
-
+		data.notes = notes;
 		return JSON.stringify(data);
 	},
 

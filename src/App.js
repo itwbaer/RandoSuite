@@ -33,7 +33,7 @@ class App extends Component {
 
     util.locations.linkAccess(locations, access);
 
-    const views = {"tracker": 0, "checks": 1, "filter": 2, "save": 3, "load" : 4}
+    const views = {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4}
     const centeredViews = [views.tracker, views.save, views.load];
     let checks = require("./data/Checks.json");
     let checksMap = util.shared.mapCodeToID(checks);
@@ -109,6 +109,8 @@ class App extends Component {
                   markers: markers,
                   links: links,
 
+                  notes: "",
+
                   filteredMaps: filteredMaps,
                   checkHistory: [],
 
@@ -128,7 +130,7 @@ class App extends Component {
     let loadObtainables = this.state.util.shared.copyKeys(["obtained", "secondary"], obtainables, data.obtainables);
     let loadChecks = this.state.util.shared.copyKeys(["checked"], checks, data.checks);
     let loadProgressives = this.state.util.shared.copyKeys(["index"], progressives, data.progressives);
-
+    let notes = data.notes;
     let filter = data.filter;
     let filteredChecks = this.state.util.checks.applyFilter(filter, loadChecks, this.state.locations, loadObtainables, this.state.locationsMap, this.state.obtainablesMap, this.state.checksMap);
     let filteredMaps = this.state.util.maps.filterMaps(
@@ -141,6 +143,7 @@ class App extends Component {
     this.setState({obtainables: loadObtainables,
                     checks: loadChecks,
                     filter: filter,
+                    notes: notes,
                     progressives: loadProgressives,
                     filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps
@@ -216,6 +219,10 @@ class App extends Component {
     /*if(id === this.state.views.checks){
       this.runFilter(this.state.filter, this.state.checks, this.state.locations, this.state.obtainables);
     }*/
+  }
+
+  handleChangeNotes(data){
+    this.setState({notes: data});
   }
 
   undoLastCheck(){
@@ -464,7 +471,7 @@ class App extends Component {
     require('./util/scrollbar.js');
  
     this.initializeMap();
-    this.setMapImage(this.state.activeMap, this.state.filter);
+    this.setMapImage(0, this.state.filter);
   }
 
 
@@ -508,6 +515,8 @@ class App extends Component {
                   filterSelectOnChange={(key, data) => this.handleFilterSelectChange(key, data)}
                   filterToggleOnChange={(key, data) => this.handleFilterToggleChange(key, data)}
                   undoOnClick={() => this.undoLastCheck()}
+                  notes={this.state.notes}
+                  changeNotes={(data) => this.handleChangeNotes(data)}
                 />
               </div>
             </div>

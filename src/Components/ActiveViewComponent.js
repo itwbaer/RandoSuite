@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {TrackerComponent} from './Views/TrackerComponent';
-import {ChecklistComponent} from './Views/ChecklistComponent';
+import {NotesComponent} from './Views/NotesComponent';
 import {FilterComponent} from './Views/FilterComponent';
 import {LoadComponent} from './Views/LoadComponent';
 import {SaveComponent} from './Views/SaveComponent';
@@ -9,22 +9,11 @@ import {PopupWindow} from './PopupWindow';
 
 export class ActiveViewComponent extends Component{
 
-  displayChecklist(){
+  displayNotes(){
     return(
-      <ChecklistComponent 
-          checks={this.props.checks}
-          obtainables={this.props.obtainables}
-          locations={this.props.locations}
-          locationsMap={this.props.locationsMap}
-          states={this.props.states}
-          checkTypes={this.props.checkTypes}
-          filteredChecks={this.props.filteredChecks}
-          checklistOnClick={(id, data) => this.props.checklistOnClick(id, data)}
-          undoOnClick={this.props.undoOnClick}
-          util={this.props.util}
-          filter={this.props.filter}
-          progressives={this.props.progressives}
-          activeLocation={this.props.activeLocation}
+      <NotesComponent
+          changeNotes={(data) => this.props.changeNotes(data)}
+          notes={this.props.notes}
         />
     );
   }
@@ -66,6 +55,7 @@ export class ActiveViewComponent extends Component{
         checks={this.props.checks}
         filter={this.props.filter}
         progressives={this.props.progressives}
+        notes={this.props.notes}
       />
     );
   }
@@ -81,8 +71,8 @@ export class ActiveViewComponent extends Component{
 
   getDisplay(){
     switch(this.props.activeView) {
-              case this.props.views.checks:
-                return this.displayChecklist();
+              case this.props.views.notes:
+                return this.displayNotes();
               case this.props.views.filter:
                 return this.displayFilter();
               case this.props.views.tracker:
