@@ -9,9 +9,7 @@ export class ChecklistComponent extends Component{
     if(this.props.activeLocation === -1){ return checklist; }
     //first group the checks
     let filteredChecks = this.props.util.checks.applyFilterType(
-      this.props.filter, this.props.checks, this.props.locations, this.props.obtainables, 
-      this.props.locationsMap, this.props.obtainablesMap, this.props.checksMap
-    );
+      this.props.filter, this.props.checks, this.props.locations, this.props.obtainables);
     let groupedChecks = this.props.util.checks.groupByLocation(filteredChecks, this.props.locations);
 
     let location = this.props.locations[this.props.activeLocation];
@@ -29,9 +27,8 @@ export class ChecklistComponent extends Component{
       for(let i = 0; i < this.props.filter.state.length; i++){
         let state = this.props.filter.state[i];
         canCheck.push(this.props.util.checks.canCheck(
-          state, currentCheck, this.props.locations, this.props.obtainables, this.props.checks, 
-          this.props.locationsMap, this.props.obtainablesMap, this.props.checksMap
-        ));
+          state, currentCheck, this.props.locations, this.props.obtainables, this.props.checks, this.props.objectMaps)
+        );
       }
 
       let checkClass = currentCheck.checked > 0 ? "checked" : (canCheck.includes(true) ? "canCheck" : "cantCheck")

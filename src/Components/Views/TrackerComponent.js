@@ -25,8 +25,8 @@ export class TrackerComponent extends Component{
               <TrackerItemComponent
                 key={item.code}
                 trackerID={item.code}
-                obtainable={this.props.obtainables[this.props.obtainablesMap[item.code]]}
-                onClick={(ctrl) => this.props.obtainablesOnClick(this.props.obtainablesMap[item.code], ctrl)}
+                obtainable={this.props.obtainables[this.props.objectMaps.obtainables[item.code]]}
+                onClick={(ctrl) => this.props.obtainablesOnClick(this.props.objectMaps.obtainables[item.code], ctrl)}
               />
             );
             break;
@@ -36,9 +36,10 @@ export class TrackerComponent extends Component{
                 key={item.code}
                 trackerID={item.code}
                 obtainables={this.props.obtainables}
-                obtainablesMap={this.props.obtainablesMap}
-                progressive={this.props.progressives[this.props.progressivesMap[item.code]]}
-                onClick={(ctrl) => this.props.progressivesOnClick(this.props.progressivesMap[item.code], ctrl)}
+                progressive={this.props.progressives[this.props.objectMaps.progressives[item.code]]}
+                onClick={(ctrl) => this.props.progressivesOnClick(this.props.objectMaps.progressives[item.code], ctrl)}
+                data={this.props.data}
+                objectMaps={this.props.objectMaps}
               />
             );
             break;

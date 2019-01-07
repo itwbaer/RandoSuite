@@ -14,6 +14,7 @@ export class ActiveViewComponent extends Component{
       <NotesComponent
           changeNotes={(data) => this.props.changeNotes(data)}
           notes={this.props.notes}
+          data={this.props.data}
         />
     );
   }
@@ -24,10 +25,10 @@ export class ActiveViewComponent extends Component{
           tracker={this.props.tracker}
           obtainablesOnClick={(id, ctrl) => this.props.obtainablesOnClick(id, ctrl)}
           obtainables={this.props.obtainables}
-          obtainablesMap={this.props.obtainablesMap}
           progressives={this.props.progressives}
-          progressivesMap={this.props.progressivesMap}
           progressivesOnClick={(id, ctrl) => this.props.progressivesOnClick(id, ctrl)}
+          data={this.props.data}
+          objectMaps={this.props.objectMaps}
         />
     );
   }
@@ -43,6 +44,7 @@ export class ActiveViewComponent extends Component{
           locations={this.props.locations}
           checkTypes={this.props.checkTypes}
           util={this.props.util}
+          data={this.props.data}
       />
     );
   }
@@ -56,6 +58,7 @@ export class ActiveViewComponent extends Component{
         filter={this.props.filter}
         progressives={this.props.progressives}
         notes={this.props.notes}
+        data={this.props.data}
       />
     );
   }

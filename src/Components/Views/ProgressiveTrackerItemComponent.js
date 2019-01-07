@@ -31,10 +31,10 @@ export class ProgressiveTrackerItemComponent extends Component{
   			//otherwise display index
   			let obtainable = {};
   			if(progressive.index < 0){
-  				obtainable = this.props.obtainables[this.props.obtainablesMap[progressive.options[0]]];
+  				obtainable = this.props.obtainables[this.props.objectMaps.obtainables[progressive.options[0]]];
   			}
   			else{
-  				obtainable = this.props.obtainables[this.props.obtainablesMap[progressive.options[progressive.index]]];
+  				obtainable = this.props.obtainables[this.props.objectMaps.obtainables[progressive.options[progressive.index]]];
   			}
   			
   			return(
