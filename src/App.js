@@ -127,7 +127,7 @@ class App extends Component {
       );
 
     this.handleClickMap(this.state.activeMap, loadData.filter);
-    this.runFilter(loadData.filter, loadData.checks, loadData.locations, loadData.obtainables);
+    this.runFilter(loadData);
     loadData = assignIn(data, loadData);
     this.setState({ data: loadData,
                   obtainables: loadData.obtainables,
@@ -153,7 +153,7 @@ class App extends Component {
     }
     update = assignIn(this.state.data, update);
     this.setState({data: update, obtainables: update.obtainables});
-    this.runFilter(this.state.filter, this.state.checks, this.state.locations, update.obtainables);
+    this.runFilter(update);
   }
 
   handleClickProgressive(id, ctrl){
@@ -190,9 +190,9 @@ class App extends Component {
       }
 
       update.obtainables = this.state.util.obtainables.progressiveObtain(progressive, update.obtainables, this.state.objectMaps);
-      this.runFilter(this.state.filter, this.state.checks, this.state.locations, update.obtainables);
     }
     update = assignIn(this.state.data, update);
+    this.runFilter(update);
     this.setState({data: update, progressives: update.progressives, obtainables: update.obtainables});    
   }
 
@@ -243,8 +243,8 @@ class App extends Component {
     if(key === "checkType"){
       this.handleClickMap(this.state.activeMap, update.filter);
     }
-    this.runFilter(update.filter, this.state.checks, this.state.locations, this.state.obtainables);
     update = assignIn(this.state.data, update);
+    this.runFilter(update);
     this.setState({data: update, filter: update.filter});
   }
 
@@ -254,7 +254,7 @@ class App extends Component {
     update.filter[key] = data;
     update = assignIn(this.state.data, update);
     this.setState({data: update, filter: update.filter});
-    this.runFilter(update.filter, this.state.checks, this.state.locations, this.state.obtainables);
+    this.runFilter(update);
 
   }
 
@@ -271,7 +271,7 @@ class App extends Component {
                     checkHistory: checkHistory
                   });
 
-    this.runFilter(this.state.filter, update.checks, this.state.locations, this.state.obtainables);
+    this.runFilter(update);
 
     
     
@@ -285,19 +285,18 @@ class App extends Component {
     this.setMapImage(id, filter);
   }
 
-  runFilter(filter, checks, locations, obtainables){
+  runFilter(data){
 
-
-    let filteredChecks = this.state.util.checks.applyFilter(filter, checks, locations, obtainables, this.state.objectMaps);
+    let filteredChecks = this.state.util.checks.applyFilter(data.filter, data.checks, data.locations, data.obtainables, this.state.objectMaps);
     let filteredMaps = this.state.util.maps.filterMaps(
-      filter, filteredChecks, this.state.maps, this.state.mapImgs, locations, obtainables, checks, 
+      data.filter, filteredChecks, this.state.maps, this.state.mapImgs, data.locations, data.obtainables, data.checks, 
       this.state.objectMaps
       );
 
     let markerKeys = Object.keys(this.activeMarkers)
     for(let i = 0; i < markerKeys.length; i++){
       let key = markerKeys[i];
-      this.colorMarker(filter, key, checks, locations, obtainables);
+      this.colorMarker(data.filter, key, data.checks, data.locations, data.obtainables);
     }
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
