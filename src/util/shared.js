@@ -1,8 +1,8 @@
-function getAllFilterOptions(locations, states, checkTypes){
+function getAllFilterOptions(data){
 	let options = {};
-	options["location"] = this.objectToOptions(locations);
-	options["state"] = this.objectToOptions(states);
-	options["checkType"] = this.objectToOptions(checkTypes);
+	options["location"] = this.objectToOptions(data.locations);
+	options["state"] = this.objectToOptions(data.states);
+	options["checkType"] = this.objectToOptions(data.checkTypes);
 	options["accessible"] = [
 								{ value: true, label: 'Accessible' },
   								{ value: false, label: 'Not Accessible' }
@@ -39,14 +39,14 @@ function copyKeys(keys, original, load){
 	return original;
 }
 
-function saveFile(obtainables, checks, filter, progressives, notes){
-	let data = {};
-	data.obtainables = obtainables;
-	data.checks = checks;
-	data.filter = filter;
-	data.progressives = progressives;
-	data.notes = notes;
-	return JSON.stringify(data);
+function saveFile(data){
+	let saveData = {};
+	saveData.obtainables = data.obtainables;
+	saveData.checks = data.checks;
+	saveData.filter = data.filter;
+	saveData.progressives = data.progressives;
+	saveData.notes = data.notes;
+	return JSON.stringify(saveData);
 }
 
 function optionsToFilter(options){

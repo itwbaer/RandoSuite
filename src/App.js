@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {cloneDeep} from 'lodash';
+import {cloneDeep, assignIn} from 'lodash';
 
 import "../node_modules/leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -67,8 +67,8 @@ class App extends Component {
     let filteredMaps = util.maps.filterMaps(data.filter, filteredChecks, data.maps, mapImgs, data.locations, data.obtainables, data.checks, 
       objectMaps);
 
-    let filterOptions = util.shared.getAllFilterOptions(data.locations, data.states, data.checkTypes);
-
+    let filterOptions = util.shared.getAllFilterOptions(data);
+    data["notes"] = "";
     this.map = null;
     this.mapImage = null;
     this.activeMarkers = {};
@@ -101,69 +101,66 @@ class App extends Component {
                   links: data.links,
                   activeLocations: data.activeLocations,
 
-                  notes: "",
-
                   filteredMaps: filteredMaps,
                   checkHistory: [],
 
                   };
   }
 
-  loadFile(data){
-    if(data === undefined || data === null || data === ""){
+  loadFile(loadData){
+    if(loadData === undefined || loadData === null || loadData === ""){
       return;
     }
+    const data = cloneDeep(this.state.data);
+    loadData = JSON.parse(loadData);
 
-    data = JSON.parse(data);
     //only extracting clicked/obtained/index
-    const obtainables = cloneDeep(this.state.obtainables);
-    const checks = cloneDeep(this.state.checks);
-    const progressives = cloneDeep(this.state.progressives);
-    let loadObtainables = this.state.util.shared.copyKeys(["obtained", "secondary"], obtainables, data.obtainables);
-    let loadChecks = this.state.util.shared.copyKeys(["checked"], checks, data.checks);
-    let loadProgressives = this.state.util.shared.copyKeys(["index"], progressives, data.progressives);
-    let notes = data.notes;
-    let filter = data.filter;
-    let filteredChecks = this.state.util.checks.applyFilter(filter, loadChecks, this.state.locations, loadObtainables, this.state.objectMaps);
+    loadData.obtainables = this.state.util.shared.copyKeys(["obtained", "secondary"], data.obtainables, loadData.obtainables);
+    loadData.checks = this.state.util.shared.copyKeys(["checked"], data.checks, loadData.checks);
+    loadData.progressives = this.state.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
+    loadData.locations = cloneDeep(this.state.data.locations);
+    let filteredChecks = this.state.util.checks.applyFilter(loadData.filter, loadData.checks, loadData.locations, 
+      loadData.obtainables, this.state.objectMaps);
     let filteredMaps = this.state.util.maps.filterMaps(
-      filter, filteredChecks, this.state.maps, this.state.mapImgs, this.state.locations, loadObtainables, loadChecks, 
+      loadData.filter, filteredChecks, this.state.maps, this.state.mapImgs, loadData.locations, loadData.obtainables, loadData.checks, 
       this.state.objectMaps
       );
 
-    this.handleClickMap(this.state.activeMap, filter);
-
-    this.setState({obtainables: loadObtainables,
-                    checks: loadChecks,
-                    filter: filter,
-                    notes: notes,
-                    progressives: loadProgressives,
-                    filteredChecks: filteredChecks,
-                    filteredMaps: filteredMaps
-                  });
-
-    this.runFilter(filter, checks, this.state.locations, obtainables);
+    this.handleClickMap(this.state.activeMap, loadData.filter);
+    this.runFilter(loadData.filter, loadData.checks, loadData.locations, loadData.obtainables);
+    loadData = assignIn(data, loadData);
+    this.setState({ data: loadData,
+                  obtainables: loadData.obtainables,
+                  checks: loadData.checks,
+                  filter: loadData.filter,
+                  progressives: loadData.progressives,
+                  filteredChecks: filteredChecks,
+                  filteredMaps: filteredMaps
+                });
   }
 
   handleClickObtainable(id, ctrl){
-    const obtainables = cloneDeep(this.state.obtainables);
+    let update = {};
+    update.obtainables = cloneDeep(this.state.obtainables);
     if(!ctrl){
       
-      obtainables[id].obtained = -obtainables[id].obtained;
+      update.obtainables[id].obtained = -update.obtainables[id].obtained;
 
-      this.setState({obtainables: obtainables});
     }
     else{
-      obtainables[id].secondary = -obtainables[id].secondary;
+      update.obtainables[id].secondary = -update.obtainables[id].secondary;
 
-      this.setState({obtainables: obtainables});
     }
-
-    this.runFilter(this.state.filter, this.state.checks, this.state.locations, obtainables);
+    update = assignIn(this.state.data, update);
+    this.setState({data: update, obtainables: update.obtainables});
+    this.runFilter(this.state.filter, this.state.checks, this.state.locations, update.obtainables);
   }
 
   handleClickProgressive(id, ctrl){
-    const progressives = cloneDeep(this.state.progressives);
-    let progressive = progressives[id];
+    let update = {};
+    update.progressives = cloneDeep(this.state.progressives);
+    update.obtainables = cloneDeep(this.state.obtainables);
+    let progressive = update.progressives[id];
     let adj = 1 * ctrl;
 
     let nextI = progressive.index + adj;
@@ -192,13 +189,11 @@ class App extends Component {
         progressive.index = progressive.options.length - 1;
       }
 
-      let obtainables = cloneDeep(this.state.obtainables);
-      obtainables = this.state.util.obtainables.progressiveObtain(progressive, obtainables, this.state.objectMaps);
-      this.runFilter(this.state.filter, this.state.checks, this.state.locations, obtainables);
-      this.setState({obtainables: obtainables});
+      update.obtainables = this.state.util.obtainables.progressiveObtain(progressive, update.obtainables, this.state.objectMaps);
+      this.runFilter(this.state.filter, this.state.checks, this.state.locations, update.obtainables);
     }
-
-    this.setState({progressives: progressives});    
+    update = assignIn(this.state.data, update);
+    this.setState({data: update, progressives: update.progressives, obtainables: update.obtainables});    
   }
 
 
@@ -206,7 +201,7 @@ class App extends Component {
 
     //change display
     this.setState({activeView: id});
-
+    console.log(this.state.data);
     //run the filter?
     /*if(id === this.state.views.checks){
       this.runFilter(this.state.filter, this.state.checks, this.state.locations, this.state.obtainables);
@@ -214,15 +209,18 @@ class App extends Component {
   }
 
   handleChangeNotes(data){
-    this.setState({notes: data});
+    let update = {};
+    update.notes = data;
+    update = assignIn(this.state.data, update)
+    this.setState({data: update});
   }
 
   handleChangeActiveLocation(id){
     this.setState({activeLocation: id});
   }
 
-  undoLastCheck(){
-
+  /*undoLastCheck(){
+    let update = {}
     const checks = cloneDeep(this.state.checks);
     const checkHistory = cloneDeep(this.state.checkHistory);
     if(checkHistory.length > 0){
@@ -235,41 +233,45 @@ class App extends Component {
       this.runFilter(this.state.filter, checks, this.state.locations, this.state.obtainables);
     }
     
-  }
+  }*/
 
   handleFilterSelectChange(key, data){
-
-    const filter = cloneDeep(this.state.filter);
-    filter[key] = this.state.util.shared.optionsToFilter(data);
-    this.setState({filter: filter});
+    let update = {};
+    update.filter = cloneDeep(this.state.filter);
+    update.filter[key] = this.state.util.shared.optionsToFilter(data);
+    
     if(key === "checkType"){
-      this.handleClickMap(this.state.activeMap, filter);
+      this.handleClickMap(this.state.activeMap, update.filter);
     }
-    this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
-
+    this.runFilter(update.filter, this.state.checks, this.state.locations, this.state.obtainables);
+    update = assignIn(this.state.data, update);
+    this.setState({data: update, filter: update.filter});
   }
 
   handleFilterToggleChange(key, data){
-
-    const filter = cloneDeep(this.state.filter);
-    filter[key] = data
-    this.setState({filter: filter});
-    this.runFilter(filter, this.state.checks, this.state.locations, this.state.obtainables);
+    let update = {};
+    update.filter = cloneDeep(this.state.filter);
+    update.filter[key] = data;
+    update = assignIn(this.state.data, update);
+    this.setState({data: update, filter: update.filter});
+    this.runFilter(update.filter, this.state.checks, this.state.locations, this.state.obtainables);
 
   }
 
   handleClickChecklist(id, data){
 
+    let update = {};
+    update.checks = cloneDeep(this.state.checks);
+    const checkHistory = cloneDeep(this.state.checkHistory);
+    update.checks[id].checked = -update.checks[id].checked;
+    checkHistory.push({"id": id, "check": update.checks[id].checked});
+    update = assignIn(this.state.data, update);
+    this.setState({ data: update,
+                    checks: update.checks,
+                    checkHistory: checkHistory
+                  });
 
-      const checks = cloneDeep(this.state.checks);
-      const checkHistory = cloneDeep(this.state.checkHistory);
-      checks[id].checked = -checks[id].checked;
-      checkHistory.push({"id": id, "check": checks[id].checked});
-      this.setState({checks: checks,
-                      checkHistory: checkHistory
-                    });
-
-      this.runFilter(this.state.filter, checks, this.state.locations, this.state.obtainables);
+    this.runFilter(this.state.filter, update.checks, this.state.locations, this.state.obtainables);
 
     
     
@@ -408,7 +410,6 @@ class App extends Component {
 
         case "location":
           if(true){
-            console.log(data);
           let centerLat = Math.abs(data.lat-this.mapLat)/divisor;
           let centerLon = data.lon/divisor;
           let height = 10/divisor;
@@ -501,7 +502,7 @@ class App extends Component {
     require('./util/scrollbar.js');
  
     this.initializeMap();
-    this.setMapImage(0, this.state.filter);
+    this.setMapImage(this.state.activeMap, this.state.filter);
   }
 
 
@@ -542,7 +543,6 @@ class App extends Component {
                   filterSelectOnChange={(key, data) => this.handleFilterSelectChange(key, data)}
                   filterToggleOnChange={(key, data) => this.handleFilterToggleChange(key, data)}
                   undoOnClick={() => this.undoLastCheck()}
-                  notes={this.state.notes}
                   changeNotes={(data) => this.handleChangeNotes(data)}
                   objectMaps={this.state.objectMaps}
                   data={this.state.data}

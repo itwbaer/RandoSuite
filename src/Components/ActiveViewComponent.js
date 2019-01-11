@@ -13,8 +13,7 @@ export class ActiveViewComponent extends Component{
     return(
       <NotesComponent
           changeNotes={(data) => this.props.changeNotes(data)}
-          notes={this.props.notes}
-          data={this.props.data}
+          notes={this.props.data.notes}
         />
     );
   }
@@ -57,7 +56,6 @@ export class ActiveViewComponent extends Component{
         checks={this.props.checks}
         filter={this.props.filter}
         progressives={this.props.progressives}
-        notes={this.props.notes}
         data={this.props.data}
       />
     );

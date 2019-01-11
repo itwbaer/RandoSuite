@@ -116,8 +116,6 @@ function canAccess(state, location, locations, obtainables, objectMaps){
 	}
 
 
-	return canAccess(state, location, locations, obtainables, objectMaps);
-
 }
 
 module.exports = {sortLocations,
