@@ -75,31 +75,18 @@ class App extends Component {
 
     this.state = {util: util,
                   data: data,
-                  tracker: data.tracker,
 
                   views: views,
                   activeView: 0,
                   centeredViews: centeredViews,
                   objectMaps: objectMaps,
-                  checks: data.checks,
-                  checkTypes: data.checkTypes,
-                  locations: data.locations,
-                  obtainables: data.obtainables,
-                  obtainableTypes: data.obtainableTypes,
-                  progressives: data.progressives,
-                  states: data.states,
 
-                  filter: data.filter,
                   filteredChecks: filteredChecks,
                   filterOptions: filterOptions,
 
                   activeMap: 0,
                   activeLocation: 0,
-                  maps: data.maps,
                   mapImgs: mapImgs,
-                  markers: data.markers,
-                  links: data.links,
-                  activeLocations: data.activeLocations,
 
                   filteredMaps: filteredMaps,
                   checkHistory: [],
@@ -122,7 +109,7 @@ class App extends Component {
     let filteredChecks = this.state.util.checks.applyFilter(loadData.filter, loadData.checks, loadData.locations, 
       loadData.obtainables, this.state.objectMaps);
     let filteredMaps = this.state.util.maps.filterMaps(
-      loadData.filter, filteredChecks, this.state.maps, this.state.mapImgs, loadData.locations, loadData.obtainables, loadData.checks, 
+      loadData.filter, filteredChecks, this.state.data.maps, this.state.mapImgs, loadData.locations, loadData.obtainables, loadData.checks, 
       this.state.objectMaps
       );
 
@@ -130,10 +117,6 @@ class App extends Component {
     this.runFilter(loadData);
     loadData = assignIn(data, loadData);
     this.setState({ data: loadData,
-                  obtainables: loadData.obtainables,
-                  checks: loadData.checks,
-                  filter: loadData.filter,
-                  progressives: loadData.progressives,
                   filteredChecks: filteredChecks,
                   filteredMaps: filteredMaps
                 });
@@ -141,7 +124,7 @@ class App extends Component {
 
   handleClickObtainable(id, ctrl){
     let update = {};
-    update.obtainables = cloneDeep(this.state.obtainables);
+    update.obtainables = cloneDeep(this.state.data.obtainables);
     if(!ctrl){
       
       update.obtainables[id].obtained = -update.obtainables[id].obtained;
@@ -152,14 +135,14 @@ class App extends Component {
 
     }
     update = assignIn(this.state.data, update);
-    this.setState({data: update, obtainables: update.obtainables});
+    this.setState({data: update});
     this.runFilter(update);
   }
 
   handleClickProgressive(id, ctrl){
     let update = {};
-    update.progressives = cloneDeep(this.state.progressives);
-    update.obtainables = cloneDeep(this.state.obtainables);
+    update.progressives = cloneDeep(this.state.data.progressives);
+    update.obtainables = cloneDeep(this.state.data.obtainables);
     let progressive = update.progressives[id];
     let adj = 1 * ctrl;
 
@@ -193,7 +176,7 @@ class App extends Component {
     }
     update = assignIn(this.state.data, update);
     this.runFilter(update);
-    this.setState({data: update, progressives: update.progressives, obtainables: update.obtainables});    
+    this.setState({data: update});    
   }
 
 
@@ -203,9 +186,6 @@ class App extends Component {
     this.setState({activeView: id});
     console.log(this.state.data);
     //run the filter?
-    /*if(id === this.state.views.checks){
-      this.runFilter(this.state.filter, this.state.checks, this.state.locations, this.state.obtainables);
-    }*/
   }
 
   handleChangeNotes(data){
@@ -237,7 +217,7 @@ class App extends Component {
 
   handleFilterSelectChange(key, data){
     let update = {};
-    update.filter = cloneDeep(this.state.filter);
+    update.filter = cloneDeep(this.state.data.filter);
     update.filter[key] = this.state.util.shared.optionsToFilter(data);
     
     if(key === "checkType"){
@@ -245,15 +225,15 @@ class App extends Component {
     }
     update = assignIn(this.state.data, update);
     this.runFilter(update);
-    this.setState({data: update, filter: update.filter});
+    this.setState({data: update});
   }
 
   handleFilterToggleChange(key, data){
     let update = {};
-    update.filter = cloneDeep(this.state.filter);
+    update.filter = cloneDeep(this.state.data.filter);
     update.filter[key] = data;
     update = assignIn(this.state.data, update);
-    this.setState({data: update, filter: update.filter});
+    this.setState({data: update});
     this.runFilter(update);
 
   }
@@ -261,13 +241,12 @@ class App extends Component {
   handleClickChecklist(id, data){
 
     let update = {};
-    update.checks = cloneDeep(this.state.checks);
+    update.checks = cloneDeep(this.state.data.checks);
     const checkHistory = cloneDeep(this.state.checkHistory);
     update.checks[id].checked = -update.checks[id].checked;
     checkHistory.push({"id": id, "check": update.checks[id].checked});
     update = assignIn(this.state.data, update);
     this.setState({ data: update,
-                    checks: update.checks,
                     checkHistory: checkHistory
                   });
 
@@ -278,9 +257,9 @@ class App extends Component {
   }
 
   handleClickMap(id, filter){
-    filter = filter || this.state.filter;
+    filter = filter || this.state.data.filter;
     this.setState({activeMap: id});
-    let map = this.state.maps[id];
+    let map = this.state.data.maps[id];
     this.setState({activeLocation: map.location});
     this.setMapImage(id, filter);
   }
@@ -289,14 +268,14 @@ class App extends Component {
 
     let filteredChecks = this.state.util.checks.applyFilter(data.filter, data.checks, data.locations, data.obtainables, this.state.objectMaps);
     let filteredMaps = this.state.util.maps.filterMaps(
-      data.filter, filteredChecks, this.state.maps, this.state.mapImgs, data.locations, data.obtainables, data.checks, 
+      data.filter, filteredChecks, this.state.data.maps, this.state.mapImgs, data.locations, data.obtainables, data.checks, 
       this.state.objectMaps
       );
 
     let markerKeys = Object.keys(this.activeMarkers)
     for(let i = 0; i < markerKeys.length; i++){
       let key = markerKeys[i];
-      this.colorMarker(data.filter, key, data.checks, data.locations, data.obtainables);
+      this.colorMarker(key, data);
     }
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
@@ -304,7 +283,7 @@ class App extends Component {
   }
 
   setMapImage(id, filter){
-    filter = filter || this.state.filter;
+    filter = filter || this.state.data.filter;
     //first clear markers
     this.activeMarkers = {};
     this.map.eachLayer(function(layer){
@@ -337,9 +316,9 @@ class App extends Component {
 
   createMarkers(id, filter){
 
-    filter = filter || this.state.filter;
+    filter = filter || this.state.data.filter;
 
-    let map = this.state.maps[id];
+    let map = this.state.data.maps[id];
     let divisor = this.state.util.maps.divisor;
     this.activeMarkers = {};
     if(map["markers"] === undefined || map["markers"] === null){
@@ -352,7 +331,7 @@ class App extends Component {
       switch(data.type){
 
         case "check":
-          let check = this.state.checks[this.state.objectMaps.checks[data.key]];
+          let check = this.state.data.checks[this.state.objectMaps.checks[data.key]];
           if(filter.checkType.includes(check.type)){
 
             let marker = L.circle([Math.abs(data.lat-this.mapLat)/divisor, data.lon/divisor], {
@@ -376,7 +355,7 @@ class App extends Component {
 
             marker.addTo(this.map);
             this.activeMarkers[data.key] = marker;
-            this.colorMarker(filter, data.key, this.state.checks, this.state.locations, this.state.obtainables);
+            this.colorMarker(data.key, this.state.data);
           }
           break;
 
@@ -392,7 +371,7 @@ class App extends Component {
             fillOpacity: .75,
             opacity: 1
           });
-          let linkedMap = this.state.maps[this.state.objectMaps.maps[data.key]];
+          let linkedMap = this.state.data.maps[this.state.objectMaps.maps[data.key]];
 
           marker.bindPopup("To " + linkedMap.name);
           marker.on('mouseover', function (e) {
@@ -420,7 +399,7 @@ class App extends Component {
             fillOpacity: .75,
             opacity: 1
           });
-          let location = this.state.locations[this.state.objectMaps.locations[data.key]];
+          let location = this.state.data.locations[this.state.objectMaps.locations[data.key]];
 
           marker.bindPopup(location.name);
           marker.on('mouseover', function (e) {
@@ -441,29 +420,29 @@ class App extends Component {
 
   }
 
-  colorMarker(filter, key, checks, locations, obtainables){
+  colorMarker(key, data){
 
     if(this.activeMarkers === undefined || this.activeMarkers === null){
       return;
     }
 
     let marker = this.activeMarkers[key];
-    let data = this.state.markers
+    //let data = this.state.data.markers;
     switch(marker.options.type){
       case "check":
         let color = "red";
-        let check = checks[this.state.objectMaps.checks[key]];
+        let check = data.checks[this.state.objectMaps.checks[key]];
 
         if(check.checked > 0){
           color = "green";
         }
         else{
           let canCheck = [];
-          for(let i = 0; i < filter.state.length; i++){
-            let state = filter.state[i]
+          for(let i = 0; i < data.filter.state.length; i++){
+            let state = data.filter.state[i]
             canCheck.push(
               this.state.util.checks.canCheck(
-                state, check, locations, obtainables, checks, this.state.objectMaps
+                state, check, data.locations, data.obtainables, data.checks, this.state.objectMaps
               )
             );
           }
@@ -501,7 +480,7 @@ class App extends Component {
     require('./util/scrollbar.js');
  
     this.initializeMap();
-    this.setMapImage(this.state.activeMap, this.state.filter);
+    this.setMapImage(this.state.activeMap, this.state.data.filter);
   }
 
 
@@ -521,20 +500,20 @@ class App extends Component {
             <div className="row" id="ViewRow">
               <div className={"col" + (this.state.centeredViews.includes(this.state.activeView) ? " align-self-center" : "")}>
                 <ActiveViewComponent
-                  tracker={this.state.tracker}
+                  tracker={this.state.data.tracker}
                   views={this.state.views}
                   activeView={this.state.activeView}
                   activeLocation={this.state.activeLocation}
-                  states={this.state.states}
-                  checks={this.state.checks}
-                  checkTypes={this.state.checkTypes}
-                  locations={this.state.locations}
+                  states={this.state.data.states}
+                  checks={this.state.data.checks}
+                  checkTypes={this.state.data.checkTypes}
+                  locations={this.state.data.locations}
                   filteredChecks={this.state.filteredChecks}
                   util={this.state.util}
-                  filter={this.state.filter}
+                  filter={this.state.data.filter}
                   filterOptions={this.state.filterOptions}
-                  obtainables={this.state.obtainables}
-                  progressives={this.state.progressives}
+                  obtainables={this.state.data.obtainables}
+                  progressives={this.state.data.progressives}
                   obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
                   loadOnClick={(data) => this.loadFile(data)}
@@ -558,16 +537,16 @@ class App extends Component {
                 </div>
                 <div className="col-5" id="Checklist">
                   <ChecklistComponent 
-                    checks={this.state.checks}
-                    obtainables={this.state.obtainables}
-                    locations={this.state.locations}
-                    states={this.state.states}
-                    checkTypes={this.state.checkTypes}
+                    checks={this.state.data.checks}
+                    obtainables={this.state.data.obtainables}
+                    locations={this.state.data.locations}
+                    states={this.state.data.states}
+                    checkTypes={this.state.data.checkTypes}
                     checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
                     undoOnClick={this.undoOnClick}
                     util={this.state.util}
-                    filter={this.state.filter}
-                    progressives={this.state.progressives}
+                    filter={this.state.data.filter}
+                    progressives={this.state.data.progressives}
                     activeLocation={this.state.activeLocation}
                     data={this.state.data}
                     objectMaps={this.state.objectMaps}
@@ -581,10 +560,10 @@ class App extends Component {
                   onClick={(id) => this.handleClickMap(id)} 
                   maps={this.state.filteredMaps}
                   util={this.state.util}
-                  filter={this.state.filter}
-                  obtainables={this.state.obtainables}
-                  checks={this.state.checks}
-                  locations={this.state.locations}
+                  filter={this.state.data.filter}
+                  obtainables={this.state.data.obtainables}
+                  checks={this.state.data.checks}
+                  locations={this.state.data.locations}
                   data={this.state.data}
                   objectMaps={this.state.objectMaps}
                 />
