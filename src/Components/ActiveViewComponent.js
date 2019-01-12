@@ -38,7 +38,6 @@ export class ActiveViewComponent extends Component{
           filterSelectOnChange={(key, data) => this.props.filterSelectOnChange(key, data)}
           filterToggleOnChange={(key, data) => this.props.filterToggleOnChange(key, data)}
           filter={this.props.data.filter}
-          filterOptions={this.props.filterOptions}
           states={this.props.data.states}
           locations={this.props.data.locations}
           checkTypes={this.props.data.checkTypes}
@@ -71,16 +70,16 @@ export class ActiveViewComponent extends Component{
   }
 
   getDisplay(){
-    switch(this.props.activeView) {
-              case this.props.views.notes:
+    switch(this.props.data.activeView) {
+              case this.props.data.views.notes:
                 return this.displayNotes();
-              case this.props.views.filter:
+              case this.props.data.views.filter:
                 return this.displayFilter();
-              case this.props.views.tracker:
+              case this.props.data.views.tracker:
                 return this.displayTracker();
-              case this.props.views.save:
+              case this.props.data.views.save:
                 return this.displaySave();
-              case this.props.views.load:
+              case this.props.data.views.load:
                 return this.displayLoad();
               default:
                 return this.displayTracker();

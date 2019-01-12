@@ -6,12 +6,12 @@ export class ChecklistComponent extends Component{
   createChecklist(){
     let checklist = [];
 
-    if(this.props.activeLocation === -1){ return checklist; }
+    if(this.props.data.activeLocation === -1){ return checklist; }
     //first group the checks
     let filteredChecks = this.props.util.checks.applyFilterType(this.props.data);
     let groupedChecks = this.props.util.checks.groupByLocation(filteredChecks, this.props.data.locations);
 
-    let location = this.props.data.locations[this.props.activeLocation];
+    let location = this.props.data.locations[this.props.data.activeLocation];
     checklist.push(<h5 key={"heading-" + location.name}>{location.name}</h5>);
 
     let locationChecks = groupedChecks[location.id];

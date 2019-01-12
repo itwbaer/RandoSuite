@@ -25,33 +25,36 @@ class App extends Component {
     util.shared = require('./util/shared.js');
 
     let data = {};
-    data["access"] = require("./data/Access.json");
-    data["locations"] = require("./data/Locations.json");
-    data["checks"] = require("./data/Checks.json");
-    data["checkTypes"] = require("./data/CheckTypes.json");
-    data["obtainables"] = require("./data/Obtainables.json");
-    data["tracker"] = require("./data/Tracker.json");
-    data["obtainableTypes"] = require("./data/ObtainableTypes.json");   
-    data["progressives"] = require("./data/Progressives.json");
-    data["states"] = require("./data/States.json");
-    data["filter"] = require("./data/Filter.json");
-    data["maps"] = require("./data/Maps.json");
-    data["markers"] = require("./data/Markers.json");
-    data["links"] = require("./data/Links.json");
-    data["activeLocations"] = require("./data/ActiveLocations.json");
+    data.access = require("./data/Access.json");
+    data.locations= require("./data/Locations.json");
+    data.checks = require("./data/Checks.json");
+    data.checkTypes = require("./data/CheckTypes.json");
+    data.obtainables = require("./data/Obtainables.json");
+    data.tracker = require("./data/Tracker.json");
+    data.obtainableTypes = require("./data/ObtainableTypes.json");   
+    data.progressives = require("./data/Progressives.json");
+    data.states = require("./data/States.json");
+    data.filter = require("./data/Filter.json");
+    data.maps = require("./data/Maps.json");
+    data.markers = require("./data/Markers.json");
+    data.links = require("./data/Links.json");
+    data.activeLocations = require("./data/ActiveLocations.json");
+    data.activeMap = 0;
+    data.activeLocation = 0;
+    data.activeView = 0;
+    data.filterOptions = util.shared.getAllFilterOptions(data);
+    data.views = {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4};
+    data.centeredViews = [data.views.tracker, data.views.save, data.views.load];
 
     let objectMaps = {};
-    objectMaps["locations"] = util.shared.mapCodeToID(data.locations);
-    objectMaps["checks"] = util.shared.mapCodeToID(data.checks);
-    objectMaps["checkTypes"] = util.shared.mapCodeToID(data.checkTypes);
-    objectMaps["obtainables"] = util.shared.mapCodeToID(data.obtainables);
-    objectMaps["obtainableTypes"] = util.shared.mapCodeToID(data.obtainableTypes);
-    objectMaps["progressives"] = util.shared.mapCodeToID(data.progressives);
-    objectMaps["states"] = util.shared.mapCodeToID(data.states);
-    objectMaps["maps"] = util.shared.mapCodeToID(data.maps);
-
-    const views = {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4}
-    const centeredViews = [views.tracker, views.save, views.load];
+    objectMaps.locations = util.shared.mapCodeToID(data.locations);
+    objectMaps.checks = util.shared.mapCodeToID(data.checks);
+    objectMaps.checkTypes = util.shared.mapCodeToID(data.checkTypes);
+    objectMaps.obtainables= util.shared.mapCodeToID(data.obtainables);
+    objectMaps.obtainableTypes = util.shared.mapCodeToID(data.obtainableTypes);
+    objectMaps.progressives = util.shared.mapCodeToID(data.progressives);
+    objectMaps.states = util.shared.mapCodeToID(data.states);
+    objectMaps.maps = util.shared.mapCodeToID(data.maps);
 
 
     util.locations.linkAccess(data.locations, data.access);
@@ -66,7 +69,6 @@ class App extends Component {
     let filteredChecks = util.checks.applyFilter(data, objectMaps);
     let filteredMaps = util.maps.filterMaps(filteredChecks, mapImgs, data, objectMaps);
 
-    let filterOptions = util.shared.getAllFilterOptions(data);
     data["notes"] = "";
     this.map = null;
     this.mapImage = null;
@@ -75,18 +77,11 @@ class App extends Component {
     this.state = {util: util,
                   data: data,
 
-                  views: views,
-                  activeView: 0,
-                  centeredViews: centeredViews,
                   objectMaps: objectMaps,
 
-                  filteredChecks: filteredChecks,
-                  filterOptions: filterOptions,
-
-                  activeMap: 0,
-                  activeLocation: 0,
                   mapImgs: mapImgs,
 
+                  filteredChecks: filteredChecks,
                   filteredMaps: filteredMaps,
 
                   };
@@ -108,7 +103,7 @@ class App extends Component {
 
     let filteredChecks = this.state.util.checks.applyFilter(loadData, this.state.objectMaps);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.mapImgs, loadData, this.state.objectMaps);
-    this.handleClickMap(this.state.activeMap, loadData.filter);
+    this.handleClickMap(this.state.data.activeMap, loadData.filter);
     this.runFilter(loadData);
     this.setState({ data: loadData,
                   filteredChecks: filteredChecks,
@@ -177,7 +172,10 @@ class App extends Component {
   handleClickOptions(id, data){
 
     //change display
-    this.setState({activeView: id});
+    let update = {};
+    update.activeView = id;
+    update = assignIn(this.state.data, update);
+    this.setState({data: update});
     console.log(this.state.data);
     //run the filter?
   }
@@ -190,7 +188,10 @@ class App extends Component {
   }
 
   handleChangeActiveLocation(id){
-    this.setState({activeLocation: id});
+    let update = {};
+    update.activeLocation = id;
+    update = assignIn(this.state.data, update)
+    this.setState({data: update});
   }
 
   handleFilterSelectChange(key, data){
@@ -199,7 +200,7 @@ class App extends Component {
     update.filter[key] = this.state.util.shared.optionsToFilter(data);
     
     if(key === "checkType"){
-      this.handleClickMap(this.state.activeMap, update.filter);
+      this.handleClickMap(this.state.data.activeMap, update.filter);
     }
     update = assignIn(this.state.data, update);
     this.runFilter(update);
@@ -231,11 +232,14 @@ class App extends Component {
   }
 
   handleClickMap(id, filter){
-    filter = filter || this.state.data.filter;
-    this.setState({activeMap: id});
-    let map = this.state.data.maps[id];
-    this.setState({activeLocation: map.location});
-    this.setMapImage(id, filter);
+    let update = {};
+    update.filter = filter || cloneDeep(this.state.data.filter);
+    update.activeMap = id;
+    //update.activeLocation = id > 0 ? this.state.data.maps[id].location : this.state.data.activeLocation;
+    update.activeLocation = this.state.data.maps[id].location;
+    update = assignIn(this.state.data, update);
+    this.setState({data: update});
+    this.setMapImage(id, update.filter);
   }
 
   runFilter(data){
@@ -451,7 +455,7 @@ class App extends Component {
     require('./util/scrollbar.js');
  
     this.initializeMap();
-    this.setMapImage(this.state.activeMap, this.state.data.filter);
+    this.setMapImage(this.state.data.activeMap, this.state.data.filter);
   }
 
 
@@ -464,19 +468,15 @@ class App extends Component {
               <div className="col align-self-center">
                 <OptionsComponent
                   onClick={(id, data) => this.handleClickOptions(id, data)}
-                  views={this.state.views}
+                  views={this.state.data.views}
                 />
               </div>
             </div>
             <div className="row" id="ViewRow">
-              <div className={"col" + (this.state.centeredViews.includes(this.state.activeView) ? " align-self-center" : "")}>
+              <div className={"col" + (this.state.data.centeredViews.includes(this.state.data.activeView) ? " align-self-center" : "")}>
                 <ActiveViewComponent
-                  views={this.state.views}
-                  activeView={this.state.activeView}
-                  activeLocation={this.state.activeLocation}
                   filteredChecks={this.state.filteredChecks}
                   util={this.state.util}
-                  filterOptions={this.state.filterOptions}
                   obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
                   loadOnClick={(data) => this.loadFile(data)}
@@ -501,7 +501,6 @@ class App extends Component {
                   <ChecklistComponent 
                     checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
                     util={this.state.util}
-                    activeLocation={this.state.activeLocation}
                     data={this.state.data}
                     objectMaps={this.state.objectMaps}
                   />

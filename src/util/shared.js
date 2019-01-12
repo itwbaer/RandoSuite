@@ -46,6 +46,8 @@ function saveFile(data){
 	saveData.filter = data.filter;
 	saveData.progressives = data.progressives;
 	saveData.notes = data.notes;
+	saveData.activeMap = data.activeMap;
+	saveData.activeLocation = data.activeLocation;
 	return JSON.stringify(saveData);
 }
 
