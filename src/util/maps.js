@@ -4,7 +4,7 @@ util.checks = require('./checks.js');
 const padding = 500;
 const divisor = 1000;
 
-function filterMaps(filteredChecks, mapImgs, data, objectMaps){
+function filterMaps(filteredChecks, data, objectMaps){
 
 	let filteredMaps = [];
 	let filter = data.filter;
@@ -18,17 +18,13 @@ function filterMaps(filteredChecks, mapImgs, data, objectMaps){
 
 	for(let i = 0; i < maps.length; i++){
 		let current = maps[i];
-		let count = checksRemaining(current, filter, locations, obtainables, checks, objectMaps);
 		if(checkLocations.includes(current.location) && !pushedMaps.includes(current.id)){
-			let pair = {"map": current, "image": mapImgs[i]};
-			pair["map"]["count"] = count;
-			filteredMaps.push(pair);
+			current.count = checksRemaining(current, filter, locations, obtainables, checks, objectMaps);
+			filteredMaps.push(current);
 			pushedMaps.push(current.id);
 		}
 		else if(current.location === -1 && !pushedMaps.includes(current.id)){
-			//always add -1
-			let pair = {"map": current, "image": mapImgs[i]};
-			filteredMaps.push(pair);
+			filteredMaps.push(current);
 			pushedMaps.push(current.id);
 		}
 
@@ -70,14 +66,14 @@ function checksRemaining(map, filter, locations, obtainables, checks, objectMaps
 function compareCount(a, b) {
   
   //if location is -1, always add first
-  if(a.map.location === -1){
+  if(a.location === -1){
   	return 1;
   }
 
-  if (a.map.count > b.map.count) {
+  if (a.count > b.count) {
     return -1;
   }
-  else if (a.map.count < b.map.count) {
+  else if (a.count < b.count) {
     return 1;
   }
   return 0;
@@ -86,14 +82,14 @@ function compareCount(a, b) {
 function compareName(a, b) {
   
   //if location is -1, always add first
-  if(b.map.location === -1){
+  if(b.location === -1){
   	return 1;
   }
 
-  if (a.map.name.toLowerCase() > b.map.name.toLowerCase()) {
+  if (a.name.toLowerCase() > b.name.toLowerCase()) {
     return 1;
   }
-  else if (a.map.name.toLowerCase() < b.map.name.toLowerCase()) {
+  else if (a.name.toLowerCase() < b.name.toLowerCase()) {
     return -1;
   }
   return 0;
@@ -123,20 +119,17 @@ function linkMarkers(maps, markers, objectMaps){
 
 }
 
-function loadMapImgs(maps){
-	let mapImgs = [];
+
+function generateMaps(maps){
 
 	for(let i = 0; i < maps.length; i++){
 		let map = maps[i];
 		let image = new Image();
 		image.src = require("../maps/" + map.code + "." + map.extension);
-		mapImgs.push(image);
-
-		
+		map.image = image
 	}
-	
-	
-	return mapImgs;
+
+	return maps;
 }
 
 module.exports = {padding,
@@ -144,4 +137,4 @@ divisor,
 filterMaps,
 checksRemaining,
 linkMarkers,
-loadMapImgs}
+generateMaps}

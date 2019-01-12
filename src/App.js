@@ -35,10 +35,7 @@ class App extends Component {
     data.progressives = require("./data/Progressives.json");
     data.states = require("./data/States.json");
     data.filter = require("./data/Filter.json");
-    data.maps = require("./data/Maps.json");
-    data.markers = require("./data/Markers.json");
-    data.links = require("./data/Links.json");
-    data.activeLocations = require("./data/ActiveLocations.json");
+    data.maps = util.maps.generateMaps(require("./data/Maps.json"));
     data.activeMap = 0;
     data.activeLocation = 0;
     data.activeView = 0;
@@ -59,15 +56,12 @@ class App extends Component {
 
     util.locations.linkAccess(data.locations, data.access);
     
-    util.maps.linkMarkers(data.maps, data.markers, objectMaps);
-    util.maps.linkMarkers(data.maps, data.links, objectMaps);
-    util.maps.linkMarkers(data.maps, data.activeLocations, objectMaps);
-
-    let mapImgs = util.maps.loadMapImgs(data.maps);
-
+    util.maps.linkMarkers(data.maps, require("./data/Markers.json"), objectMaps);
+    util.maps.linkMarkers(data.maps, require("./data/Links.json"), objectMaps);
+    util.maps.linkMarkers(data.maps, require("./data/ActiveLocations.json"), objectMaps);
 
     let filteredChecks = util.checks.applyFilter(data, objectMaps);
-    let filteredMaps = util.maps.filterMaps(filteredChecks, mapImgs, data, objectMaps);
+    let filteredMaps = util.maps.filterMaps(filteredChecks, data, objectMaps);
 
     data["notes"] = "";
     this.map = null;
@@ -78,8 +72,6 @@ class App extends Component {
                   data: data,
 
                   objectMaps: objectMaps,
-
-                  mapImgs: mapImgs,
 
                   filteredChecks: filteredChecks,
                   filteredMaps: filteredMaps,
@@ -102,7 +94,7 @@ class App extends Component {
     loadData = assignIn(data, loadData);
 
     let filteredChecks = this.state.util.checks.applyFilter(loadData, this.state.objectMaps);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.mapImgs, loadData, this.state.objectMaps);
+    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, loadData, this.state.objectMaps);
     this.handleClickMap(this.state.data.activeMap, loadData.filter);
     this.runFilter(loadData);
     this.setState({ data: loadData,
@@ -176,7 +168,6 @@ class App extends Component {
     update.activeView = id;
     update = assignIn(this.state.data, update);
     this.setState({data: update});
-    console.log(this.state.data);
     //run the filter?
   }
 
@@ -245,7 +236,7 @@ class App extends Component {
   runFilter(data){
 
     let filteredChecks = this.state.util.checks.applyFilter(data, this.state.objectMaps);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.mapImgs, data, this.state.objectMaps);
+    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, data, this.state.objectMaps);
 
     let markerKeys = Object.keys(this.activeMarkers)
     for(let i = 0; i < markerKeys.length; i++){
@@ -266,12 +257,12 @@ class App extends Component {
     });
 
     let divisor = this.state.util.maps.divisor;
-    let imageUrl = this.state.mapImgs[id].src;
+    let imageUrl = this.state.data.maps[id].image.src;
     let imageBounds = [[0, 0], [0, 0]];
     let mapImage = L.imageOverlay(imageUrl, imageBounds);
     mapImage.addTo(this.map);
     this.mapImage = mapImage;
-    let image = this.state.mapImgs[id];
+    let image = this.state.data.maps[id].image;
     this.mapLat = image.height;
     this.mapLon = image.width;
     this.mapImage.setBounds([[0, 0], [(this.mapLat/divisor), (this.mapLon/divisor)]]);
