@@ -4,9 +4,7 @@ export class NotesComponent extends Component{
 
 
   handleChange = (event) => {
-  		console.log(event.target.value);
 		this.props.changeNotes(event.target.value);
-
   }
 
 	render() {

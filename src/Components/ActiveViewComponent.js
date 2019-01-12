@@ -13,8 +13,7 @@ export class ActiveViewComponent extends Component{
     return(
       <NotesComponent
           changeNotes={(data) => this.props.changeNotes(data)}
-          notes={this.props.notes}
-          data={this.props.data}
+          notes={this.props.data.notes}
         />
     );
   }
@@ -22,10 +21,10 @@ export class ActiveViewComponent extends Component{
   displayTracker(){
     return(
         <TrackerComponent
-          tracker={this.props.tracker}
+          tracker={this.props.data.tracker}
           obtainablesOnClick={(id, ctrl) => this.props.obtainablesOnClick(id, ctrl)}
-          obtainables={this.props.obtainables}
-          progressives={this.props.progressives}
+          obtainables={this.props.data.obtainables}
+          progressives={this.props.data.progressives}
           progressivesOnClick={(id, ctrl) => this.props.progressivesOnClick(id, ctrl)}
           data={this.props.data}
           objectMaps={this.props.objectMaps}
@@ -38,11 +37,10 @@ export class ActiveViewComponent extends Component{
       <FilterComponent 
           filterSelectOnChange={(key, data) => this.props.filterSelectOnChange(key, data)}
           filterToggleOnChange={(key, data) => this.props.filterToggleOnChange(key, data)}
-          filter={this.props.filter}
-          filterOptions={this.props.filterOptions}
-          states={this.props.states}
-          locations={this.props.locations}
-          checkTypes={this.props.checkTypes}
+          filter={this.props.data.filter}
+          states={this.props.data.states}
+          locations={this.props.data.locations}
+          checkTypes={this.props.data.checkTypes}
           util={this.props.util}
           data={this.props.data}
       />
@@ -53,11 +51,10 @@ export class ActiveViewComponent extends Component{
     return(
       <SaveComponent
         util={this.props.util}
-        obtainables={this.props.obtainables}
-        checks={this.props.checks}
-        filter={this.props.filter}
-        progressives={this.props.progressives}
-        notes={this.props.notes}
+        obtainables={this.props.data.obtainables}
+        checks={this.props.data.checks}
+        filter={this.props.data.filter}
+        progressives={this.props.data.progressives}
         data={this.props.data}
       />
     );
@@ -73,16 +70,16 @@ export class ActiveViewComponent extends Component{
   }
 
   getDisplay(){
-    switch(this.props.activeView) {
-              case this.props.views.notes:
+    switch(this.props.data.activeView) {
+              case this.props.data.views.notes:
                 return this.displayNotes();
-              case this.props.views.filter:
+              case this.props.data.views.filter:
                 return this.displayFilter();
-              case this.props.views.tracker:
+              case this.props.data.views.tracker:
                 return this.displayTracker();
-              case this.props.views.save:
+              case this.props.data.views.save:
                 return this.displaySave();
-              case this.props.views.load:
+              case this.props.data.views.load:
                 return this.displayLoad();
               default:
                 return this.displayTracker();

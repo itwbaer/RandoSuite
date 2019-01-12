@@ -6,13 +6,12 @@ export class ChecklistComponent extends Component{
   createChecklist(){
     let checklist = [];
 
-    if(this.props.activeLocation === -1){ return checklist; }
+    if(this.props.data.activeLocation === -1){ return checklist; }
     //first group the checks
-    let filteredChecks = this.props.util.checks.applyFilterType(
-      this.props.filter, this.props.checks, this.props.locations, this.props.obtainables);
-    let groupedChecks = this.props.util.checks.groupByLocation(filteredChecks, this.props.locations);
+    let filteredChecks = this.props.util.checks.applyFilterType(this.props.data);
+    let groupedChecks = this.props.util.checks.groupByLocation(filteredChecks, this.props.data.locations);
 
-    let location = this.props.locations[this.props.activeLocation];
+    let location = this.props.data.locations[this.props.data.activeLocation];
     checklist.push(<h5 key={"heading-" + location.name}>{location.name}</h5>);
 
     let locationChecks = groupedChecks[location.id];
@@ -20,22 +19,22 @@ export class ChecklistComponent extends Component{
       let currentCheck = locationChecks[j];
 
       let checkName = currentCheck.name;
-      let checkLocation = this.props.locations[currentCheck.location].name;
-      let checkType = this.props.checkTypes[currentCheck.type].name;
+      let checkLocation = this.props.data.locations[currentCheck.location].name;
+      let checkType = this.props.data.checkTypes[currentCheck.type].name;
       let checkState = "";
       let canCheck = [];
-      for(let i = 0; i < this.props.filter.state.length; i++){
-        let state = this.props.filter.state[i];
+      for(let i = 0; i < this.props.data.filter.state.length; i++){
+        let state = this.props.data.filter.state[i];
         canCheck.push(this.props.util.checks.canCheck(
-          state, currentCheck, this.props.locations, this.props.obtainables, this.props.checks, this.props.objectMaps)
+          state, currentCheck, this.props.data.locations, this.props.data.obtainables, this.props.data.checks, this.props.objectMaps)
         );
       }
 
       let checkClass = currentCheck.checked > 0 ? "checked" : (canCheck.includes(true) ? "canCheck" : "cantCheck")
       for(let j = 0; j < currentCheck.state.length; j++){
         let currentState = currentCheck.state[j];
-        if(j === 0){checkState = checkState + this.props.states[currentState].name}
-        else{checkState = checkState + "/" + this.props.states[currentState].name}
+        if(j === 0){checkState = checkState + this.props.data.states[currentState].name}
+        else{checkState = checkState + "/" + this.props.data.states[currentState].name}
       }
 
       checklist.push(

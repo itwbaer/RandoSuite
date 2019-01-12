@@ -17,9 +17,6 @@ function canUse(state, obtainable, obtainables){
 		return usable && obtainable.obtained > 0;
 	}
 
-	
-
-	return canUse(state, obtainable, obtainables);
 }
 
 function progressiveObtain(progressive, obtainables, objectMaps){

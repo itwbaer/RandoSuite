@@ -4,10 +4,14 @@ util.checks = require('./checks.js');
 const padding = 500;
 const divisor = 1000;
 
-function filterMaps(filter, filteredChecks, maps, mapImgs, locations, obtainables, checks, objectMaps){
+function filterMaps(filteredChecks, mapImgs, data, objectMaps){
 
 	let filteredMaps = [];
-
+	let filter = data.filter;
+	let maps = data.maps;
+	let locations = data.locations;
+	let obtainables = data.obtainables;
+	let checks = data.checks;
 	let checkLocations = util.checks.getLocations(filteredChecks);
 
 	let pushedMaps = [];

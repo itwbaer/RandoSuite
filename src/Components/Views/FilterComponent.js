@@ -19,7 +19,7 @@ export class FilterComponent extends Component{
 
 	filterState(){
     let key = "state";
-    let options = this.props.filterOptions[key];
+    let options = this.props.data.filterOptions[key];
     let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "State"
     return(
@@ -36,7 +36,7 @@ export class FilterComponent extends Component{
 
   filterAccessible(){
     let key = "accessible";
-    let options = this.props.filterOptions[key];
+    let options = this.props.data.filterOptions[key];
     let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "Accessible?"
     return(
@@ -53,7 +53,7 @@ export class FilterComponent extends Component{
 
   filterType(){
     let key = "checkType";
-    let options = this.props.filterOptions[key];
+    let options = this.props.data.filterOptions[key];
     let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "Type?"
     return(
@@ -70,7 +70,7 @@ export class FilterComponent extends Component{
 
   filterChecked(){
     let key = "checked";
-    let options = this.props.filterOptions[key];
+    let options = this.props.data.filterOptions[key];
     let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "Checked?"
     return(
@@ -88,7 +88,7 @@ export class FilterComponent extends Component{
 
   filterLocations(){
     let key = "location";
-    let options = this.props.filterOptions[key];
+    let options = this.props.data.filterOptions[key];
     let selected = this.props.util.shared.getDefaultOptions(options, this.props.filter[key]);
     let placeholder = "Locations"
     return(
