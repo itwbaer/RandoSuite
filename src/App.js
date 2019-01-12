@@ -63,9 +63,8 @@ class App extends Component {
     let mapImgs = util.maps.loadMapImgs(data.maps);
 
 
-    let filteredChecks = util.checks.applyFilter(data.filter, data.checks, data.locations, data.obtainables, objectMaps);
-    let filteredMaps = util.maps.filterMaps(data.filter, filteredChecks, data.maps, mapImgs, data.locations, data.obtainables, data.checks, 
-      objectMaps);
+    let filteredChecks = util.checks.applyFilter(data, objectMaps);
+    let filteredMaps = util.maps.filterMaps(filteredChecks, mapImgs, data, objectMaps);
 
     let filterOptions = util.shared.getAllFilterOptions(data);
     data["notes"] = "";
@@ -89,7 +88,6 @@ class App extends Component {
                   mapImgs: mapImgs,
 
                   filteredMaps: filteredMaps,
-                  checkHistory: [],
 
                   };
   }
@@ -106,12 +104,8 @@ class App extends Component {
     loadData.checks = this.state.util.shared.copyKeys(["checked"], data.checks, loadData.checks);
     loadData.progressives = this.state.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
     loadData.locations = cloneDeep(this.state.data.locations);
-    let filteredChecks = this.state.util.checks.applyFilter(loadData.filter, loadData.checks, loadData.locations, 
-      loadData.obtainables, this.state.objectMaps);
-    let filteredMaps = this.state.util.maps.filterMaps(
-      loadData.filter, filteredChecks, this.state.data.maps, this.state.mapImgs, loadData.locations, loadData.obtainables, loadData.checks, 
-      this.state.objectMaps
-      );
+    let filteredChecks = this.state.util.checks.applyFilter(loadData, this.state.objectMaps);
+    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.mapImgs, loadData, this.state.objectMaps);
 
     this.handleClickMap(this.state.activeMap, loadData.filter);
     this.runFilter(loadData);
@@ -199,22 +193,6 @@ class App extends Component {
     this.setState({activeLocation: id});
   }
 
-  /*undoLastCheck(){
-    let update = {}
-    const checks = cloneDeep(this.state.checks);
-    const checkHistory = cloneDeep(this.state.checkHistory);
-    if(checkHistory.length > 0){
-      let click = checkHistory.pop();
-      checks[click.id].checked = -click.check;
-
-      this.setState({checks: checks,
-                      checkHistory: checkHistory
-                    });
-      this.runFilter(this.state.filter, checks, this.state.locations, this.state.obtainables);
-    }
-    
-  }*/
-
   handleFilterSelectChange(key, data){
     let update = {};
     update.filter = cloneDeep(this.state.data.filter);
@@ -242,13 +220,9 @@ class App extends Component {
 
     let update = {};
     update.checks = cloneDeep(this.state.data.checks);
-    const checkHistory = cloneDeep(this.state.checkHistory);
     update.checks[id].checked = -update.checks[id].checked;
-    checkHistory.push({"id": id, "check": update.checks[id].checked});
     update = assignIn(this.state.data, update);
-    this.setState({ data: update,
-                    checkHistory: checkHistory
-                  });
+    this.setState({ data: update });
 
     this.runFilter(update);
 
@@ -266,11 +240,8 @@ class App extends Component {
 
   runFilter(data){
 
-    let filteredChecks = this.state.util.checks.applyFilter(data.filter, data.checks, data.locations, data.obtainables, this.state.objectMaps);
-    let filteredMaps = this.state.util.maps.filterMaps(
-      data.filter, filteredChecks, this.state.data.maps, this.state.mapImgs, data.locations, data.obtainables, data.checks, 
-      this.state.objectMaps
-      );
+    let filteredChecks = this.state.util.checks.applyFilter(data, this.state.objectMaps);
+    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.mapImgs, data, this.state.objectMaps);
 
     let markerKeys = Object.keys(this.activeMarkers)
     for(let i = 0; i < markerKeys.length; i++){
@@ -520,7 +491,6 @@ class App extends Component {
                   checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
                   filterSelectOnChange={(key, data) => this.handleFilterSelectChange(key, data)}
                   filterToggleOnChange={(key, data) => this.handleFilterToggleChange(key, data)}
-                  undoOnClick={() => this.undoLastCheck()}
                   changeNotes={(data) => this.handleChangeNotes(data)}
                   objectMaps={this.state.objectMaps}
                   data={this.state.data}
@@ -543,7 +513,6 @@ class App extends Component {
                     states={this.state.data.states}
                     checkTypes={this.state.data.checkTypes}
                     checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
-                    undoOnClick={this.undoOnClick}
                     util={this.state.util}
                     filter={this.state.data.filter}
                     progressives={this.state.data.progressives}
@@ -559,13 +528,6 @@ class App extends Component {
                 <MapNavComponent
                   onClick={(id) => this.handleClickMap(id)} 
                   maps={this.state.filteredMaps}
-                  util={this.state.util}
-                  filter={this.state.data.filter}
-                  obtainables={this.state.data.obtainables}
-                  checks={this.state.data.checks}
-                  locations={this.state.data.locations}
-                  data={this.state.data}
-                  objectMaps={this.state.objectMaps}
                 />
 
             </div>

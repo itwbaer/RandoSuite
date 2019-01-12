@@ -38,9 +38,12 @@ function applyFilterType(filter, checks){
 }
 
 //filters a given set of checks based on certain critera
-function applyFilter(filter, checks, locations, obtainables, objectMaps){
+function applyFilter(data, objectMaps){
 	let filteredChecks = [];
-
+	let filter = data.filter;
+	let checks = data.checks;
+	let locations = data.locations;
+	let obtainables = data.obtainables;
 	//for every check
 	for(let i = 0; i < checks.length; i++){
 		//for every state in the filter
