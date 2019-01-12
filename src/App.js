@@ -104,12 +104,12 @@ class App extends Component {
     loadData.checks = this.state.util.shared.copyKeys(["checked"], data.checks, loadData.checks);
     loadData.progressives = this.state.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
     loadData.locations = cloneDeep(this.state.data.locations);
+    loadData = assignIn(data, loadData);
+
     let filteredChecks = this.state.util.checks.applyFilter(loadData, this.state.objectMaps);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, this.state.mapImgs, loadData, this.state.objectMaps);
-
     this.handleClickMap(this.state.activeMap, loadData.filter);
     this.runFilter(loadData);
-    loadData = assignIn(data, loadData);
     this.setState({ data: loadData,
                   filteredChecks: filteredChecks,
                   filteredMaps: filteredMaps
@@ -471,20 +471,12 @@ class App extends Component {
             <div className="row" id="ViewRow">
               <div className={"col" + (this.state.centeredViews.includes(this.state.activeView) ? " align-self-center" : "")}>
                 <ActiveViewComponent
-                  tracker={this.state.data.tracker}
                   views={this.state.views}
                   activeView={this.state.activeView}
                   activeLocation={this.state.activeLocation}
-                  states={this.state.data.states}
-                  checks={this.state.data.checks}
-                  checkTypes={this.state.data.checkTypes}
-                  locations={this.state.data.locations}
                   filteredChecks={this.state.filteredChecks}
                   util={this.state.util}
-                  filter={this.state.data.filter}
                   filterOptions={this.state.filterOptions}
-                  obtainables={this.state.data.obtainables}
-                  progressives={this.state.data.progressives}
                   obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
                   loadOnClick={(data) => this.loadFile(data)}

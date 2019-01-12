@@ -21,10 +21,10 @@ export class ActiveViewComponent extends Component{
   displayTracker(){
     return(
         <TrackerComponent
-          tracker={this.props.tracker}
+          tracker={this.props.data.tracker}
           obtainablesOnClick={(id, ctrl) => this.props.obtainablesOnClick(id, ctrl)}
-          obtainables={this.props.obtainables}
-          progressives={this.props.progressives}
+          obtainables={this.props.data.obtainables}
+          progressives={this.props.data.progressives}
           progressivesOnClick={(id, ctrl) => this.props.progressivesOnClick(id, ctrl)}
           data={this.props.data}
           objectMaps={this.props.objectMaps}
@@ -37,11 +37,11 @@ export class ActiveViewComponent extends Component{
       <FilterComponent 
           filterSelectOnChange={(key, data) => this.props.filterSelectOnChange(key, data)}
           filterToggleOnChange={(key, data) => this.props.filterToggleOnChange(key, data)}
-          filter={this.props.filter}
+          filter={this.props.data.filter}
           filterOptions={this.props.filterOptions}
-          states={this.props.states}
-          locations={this.props.locations}
-          checkTypes={this.props.checkTypes}
+          states={this.props.data.states}
+          locations={this.props.data.locations}
+          checkTypes={this.props.data.checkTypes}
           util={this.props.util}
           data={this.props.data}
       />
@@ -52,10 +52,10 @@ export class ActiveViewComponent extends Component{
     return(
       <SaveComponent
         util={this.props.util}
-        obtainables={this.props.obtainables}
-        checks={this.props.checks}
-        filter={this.props.filter}
-        progressives={this.props.progressives}
+        obtainables={this.props.data.obtainables}
+        checks={this.props.data.checks}
+        filter={this.props.data.filter}
+        progressives={this.props.data.progressives}
         data={this.props.data}
       />
     );
