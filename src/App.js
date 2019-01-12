@@ -507,15 +507,8 @@ class App extends Component {
                 </div>
                 <div className="col-5" id="Checklist">
                   <ChecklistComponent 
-                    checks={this.state.data.checks}
-                    obtainables={this.state.data.obtainables}
-                    locations={this.state.data.locations}
-                    states={this.state.data.states}
-                    checkTypes={this.state.data.checkTypes}
                     checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
                     util={this.state.util}
-                    filter={this.state.data.filter}
-                    progressives={this.state.data.progressives}
                     activeLocation={this.state.activeLocation}
                     data={this.state.data}
                     objectMaps={this.state.objectMaps}

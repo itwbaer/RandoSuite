@@ -20,9 +20,10 @@ function groupByLocation(checks, locations){
 	return groupedChecks;
 }
 
-function applyFilterType(filter, checks){
+function applyFilterType(data){
 	let filteredChecks = [];
-
+	let filter = data.filter;
+	let checks = data.checks;
 	//for every check
 	for(let i = 0; i < checks.length; i++){
 		//for every state in the filter
