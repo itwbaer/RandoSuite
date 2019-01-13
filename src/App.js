@@ -64,9 +64,10 @@ class App extends Component {
     let filteredMaps = util.maps.filterMaps(filteredChecks, data, objectMaps);
 
     data["notes"] = "";
-    this.map = null;
-    this.mapImage = null;
-    this.activeMarkers = {};
+
+    this.mapDisplay = {};
+    this.mapDisplay.container = null;
+    this.mapDisplay.activeMarkers = {};
 
     this.state = {util: util,
                   data: data,
@@ -75,7 +76,6 @@ class App extends Component {
 
                   filteredChecks: filteredChecks,
                   filteredMaps: filteredMaps,
-
                   };
   }
 
@@ -230,7 +230,7 @@ class App extends Component {
     update.activeLocation = this.state.data.maps[id].location;
     update = assignIn(this.state.data, update);
     this.setState({data: update});
-    this.setMapImage(id, update.filter);
+    this.setMapImage(update);
   }
 
   runFilter(data){
@@ -238,36 +238,35 @@ class App extends Component {
     let filteredChecks = this.state.util.checks.applyFilter(data, this.state.objectMaps);
     let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, data, this.state.objectMaps);
 
-    let markerKeys = Object.keys(this.activeMarkers)
+    let markerKeys = Object.keys(this.mapDisplay.activeMarkers)
     for(let i = 0; i < markerKeys.length; i++){
       let key = markerKeys[i];
-      this.colorMarker(key, data);
+      this.state.util.maps.colorMarker(key, this.mapDisplay, data, this.state.objectMaps);
     }
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
 
   }
 
-  setMapImage(id, filter){
-    filter = filter || this.state.data.filter;
+  setMapImage(data){
     //first clear markers
-    this.activeMarkers = {};
-    this.map.eachLayer(function(layer){
+    this.mapDisplay.activeMarkers = {};
+    this.mapDisplay.container.eachLayer(function(layer){
         layer.remove();
     });
 
     let divisor = this.state.util.maps.divisor;
-    let imageUrl = this.state.data.maps[id].image.src;
-    let imageBounds = [[0, 0], [0, 0]];
-    let mapImage = L.imageOverlay(imageUrl, imageBounds);
-    mapImage.addTo(this.map);
-    this.mapImage = mapImage;
-    let image = this.state.data.maps[id].image;
-    this.mapLat = image.height;
-    this.mapLon = image.width;
-    this.mapImage.setBounds([[0, 0], [(this.mapLat/divisor), (this.mapLon/divisor)]]);
-    let center = [image.height/2/divisor, image.width/2/divisor];
-    this.map.setView(center, 8);
+    let image = data.maps[data.activeMap].image;
+
+    this.mapDisplay.height = image.height;
+    this.mapDisplay.width = image.width;
+    this.mapDisplay.center = [image.height/2/divisor, image.width/2/divisor];
+
+    this.mapDisplay.image = L.imageOverlay(image.src, [[0, 0], [(image.height/divisor), (image.width/divisor)]]);
+
+    this.mapDisplay.image.addTo(this.mapDisplay.container);
+
+    this.mapDisplay.container.setView(this.mapDisplay.center, 8);
 
 
     let padding = this.state.util.maps.padding/divisor;
@@ -275,39 +274,37 @@ class App extends Component {
     corner2 = L.latLng((image.height/divisor + padding), (image.width/divisor + padding)),
     bounds = L.latLngBounds(corner1, corner2)
 
-    this.map.setMaxBounds(bounds);
-    this.createMarkers(id, filter);
-    //this.map.panTo(center);
+    this.mapDisplay.container.setMaxBounds(bounds);
+    this.createMarkers(data);
+    //this.mapDisplay.container.panTo(center);
   }
 
-  createMarkers(id, filter){
+  createMarkers(data){
 
-    filter = filter || this.state.data.filter;
-
-    let map = this.state.data.maps[id];
+    let map = data.maps[data.activeMap];
     let divisor = this.state.util.maps.divisor;
-    this.activeMarkers = {};
+    this.mapDisplay.activeMarkers = {};
     if(map["markers"] === undefined || map["markers"] === null){
       return;
     }
 
     for(let i = 0; i < map.markers.length; i++){
-      let data = map.markers[i];
+      let markerData = map.markers[i];
 
-      switch(data.type){
+      switch(markerData.type){
 
-        case "check":
-          let check = this.state.data.checks[this.state.objectMaps.checks[data.key]];
-          if(filter.checkType.includes(check.type)){
+        case "check":{
+          let check = data.checks[this.state.objectMaps.checks[markerData.key]];
+          if(data.filter.checkType.includes(check.type)){
 
-            let marker = L.circle([Math.abs(data.lat-this.mapLat)/divisor, data.lon/divisor], {
+            let marker = L.circle([Math.abs(markerData.lat-this.mapDisplay.height)/divisor, markerData.lon/divisor], {
                 color: "black",
                 fillColor: "black",
                 weight: 1.0,
                 fillOpacity: 0,
                 opacity: 0,
                 radius: 5000,
-                type: data.type
+                type: markerData.type
             });
 
             marker.bindPopup(check.name);
@@ -319,15 +316,16 @@ class App extends Component {
             })
             marker.on('click', () => this.handleClickChecklist(check.id));
 
-            marker.addTo(this.map);
-            this.activeMarkers[data.key] = marker;
-            this.colorMarker(data.key, this.state.data);
+            marker.addTo(this.mapDisplay.container);
+            this.mapDisplay.activeMarkers[markerData.key] = marker;
+            this.state.util.maps.colorMarker(markerData.key, this.mapDisplay, data, this.state.objectMaps);
           }
           break;
+        }
 
-        case "link":
-          let centerLat = Math.abs(data.lat-this.mapLat)/divisor;
-          let centerLon = data.lon/divisor;
+        case "link":{
+          let centerLat = Math.abs(markerData.lat-this.mapDisplay.height)/divisor;
+          let centerLon = markerData.lon/divisor;
           let height = 50/divisor;
           let width = 50/divisor;
           let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
@@ -337,7 +335,7 @@ class App extends Component {
             fillOpacity: .75,
             opacity: 1
           });
-          let linkedMap = this.state.data.maps[this.state.objectMaps.maps[data.key]];
+          let linkedMap = data.maps[this.state.objectMaps.maps[markerData.key]];
 
           marker.bindPopup("To " + linkedMap.name);
           marker.on('mouseover', function (e) {
@@ -346,16 +344,17 @@ class App extends Component {
           marker.on('mouseout', function (e) {
               this.closePopup();
           })
-          marker.on('click', () => this.handleClickMap(linkedMap.id, filter));
+          marker.on('click', () => this.handleClickMap(linkedMap.id, data.filter));
 
-          marker.addTo(this.map);
-          this.activeMarkers[data.key] = marker;
+          marker.addTo(this.mapDisplay.container);
+          this.mapDisplay.activeMarkers[markerData.key] = marker;
           break;
+        }
 
-        case "location":
-          if(true){
-          let centerLat = Math.abs(data.lat-this.mapLat)/divisor;
-          let centerLon = data.lon/divisor;
+        case "location":{
+
+          let centerLat = Math.abs(markerData.lat-this.mapDisplay.height)/divisor;
+          let centerLon = markerData.lon/divisor;
           let height = 10/divisor;
           let width = 10/divisor;
           let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
@@ -365,7 +364,7 @@ class App extends Component {
             fillOpacity: .75,
             opacity: 1
           });
-          let location = this.state.data.locations[this.state.objectMaps.locations[data.key]];
+          let location = data.locations[this.state.objectMaps.locations[markerData.key]];
 
           marker.bindPopup(location.name);
           marker.on('mouseover', function (e) {
@@ -376,68 +375,24 @@ class App extends Component {
           })
           marker.on('click', () => this.handleChangeActiveLocation(location.id));
 
-          marker.addTo(this.map);
-          this.activeMarkers[data.key] = marker;
-        }
+          marker.addTo(this.mapDisplay.container);
+          this.mapDisplay.activeMarkers[markerData.key] = marker;
+        
           break;
+        }
       }
         
     }
 
   }
 
-  colorMarker(key, data){
-
-    if(this.activeMarkers === undefined || this.activeMarkers === null){
-      return;
-    }
-
-    let marker = this.activeMarkers[key];
-    //let data = this.state.data.markers;
-    switch(marker.options.type){
-      case "check":
-        let color = "red";
-        let check = data.checks[this.state.objectMaps.checks[key]];
-
-        if(check.checked > 0){
-          color = "green";
-        }
-        else{
-          let canCheck = [];
-          for(let i = 0; i < data.filter.state.length; i++){
-            let state = data.filter.state[i]
-            canCheck.push(
-              this.state.util.checks.canCheck(
-                state, check, data.locations, data.obtainables, data.checks, this.state.objectMaps
-              )
-            );
-          }
-          if(canCheck.includes(true)){color = "yellow";}
-        }
-
-        marker.setStyle({
-          opacity: 1.0,
-          fillOpacity: 0.5,
-          color: color,
-          fillColor: color
-        })
-        break;
-
-        case "link":
-          break;
-        case "location":
-          break;
-    }
-    
-
-  }
 
   initializeMap(){
-    let map = L.map('map-container', {attributionControl: false, zoomControl:false})
-    map.setView([0, 0], 8);
-    map.setMinZoom(8);
-    map.setMaxZoom(10);
-    this.map = map;
+    let container = L.map('map-container', {attributionControl: false, zoomControl:false})
+    container.setView([0, 0], 8);
+    container.setMinZoom(8);
+    container.setMaxZoom(10);
+    this.mapDisplay.container = container;
   }
 
 
@@ -446,7 +401,7 @@ class App extends Component {
     require('./util/scrollbar.js');
  
     this.initializeMap();
-    this.setMapImage(this.state.data.activeMap, this.state.data.filter);
+    this.setMapImage(this.state.data);
   }
 
 

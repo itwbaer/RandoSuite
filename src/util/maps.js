@@ -132,9 +132,63 @@ function generateMaps(maps){
 	return maps;
 }
 
-module.exports = {padding,
-divisor,
-filterMaps,
-checksRemaining,
-linkMarkers,
-generateMaps}
+function colorMarker(key, mapDisplay, data, objectMaps){
+
+	if(mapDisplay.activeMarkers === undefined || mapDisplay.activeMarkers === null){
+	  return;
+	}
+
+	let marker = mapDisplay.activeMarkers[key];
+	switch(marker.options.type){
+		
+	  case "check":{
+
+		  let color = "red";
+			let check = data.checks[objectMaps.checks[key]];
+
+			if(check.checked > 0){
+			  color = "green";
+			}
+			else{
+			  let canCheck = [];
+			  for(let i = 0; i < data.filter.state.length; i++){
+			    let state = data.filter.state[i]
+			    canCheck.push(
+			      util.checks.canCheck(
+			        state, check, data.locations, data.obtainables, data.checks, objectMaps
+			      )
+			    );
+			  }
+			  if(canCheck.includes(true)){color = "yellow"}
+			}
+
+			marker.setStyle({
+			  opacity: 1.0,
+			  fillOpacity: 0.5,
+			  color: color,
+			  fillColor: color
+			});
+		  break;
+		}
+
+	  case "link":{
+	    break;
+	  }
+
+	  case "location":{
+	    break;
+		}
+
+	}   
+
+}
+
+module.exports = {
+	padding,
+	divisor,
+	filterMaps,
+	checksRemaining,
+	linkMarkers,
+	generateMaps,
+	colorMarker
+}
