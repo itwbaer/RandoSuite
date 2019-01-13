@@ -1,10 +1,12 @@
+const L = require("leaflet");
+
 const util = {};
 util.checks = require('./checks.js');
 
 const padding = 500;
 const divisor = 1000;
 
-function filterMaps(filteredChecks, mapImgs, data, objectMaps){
+function filterMaps(filteredChecks, data, objectMaps){
 
 	let filteredMaps = [];
 	let filter = data.filter;
@@ -18,17 +20,13 @@ function filterMaps(filteredChecks, mapImgs, data, objectMaps){
 
 	for(let i = 0; i < maps.length; i++){
 		let current = maps[i];
-		let count = checksRemaining(current, filter, locations, obtainables, checks, objectMaps);
 		if(checkLocations.includes(current.location) && !pushedMaps.includes(current.id)){
-			let pair = {"map": current, "image": mapImgs[i]};
-			pair["map"]["count"] = count;
-			filteredMaps.push(pair);
+			current.count = checksRemaining(current, filter, locations, obtainables, checks, objectMaps);
+			filteredMaps.push(current);
 			pushedMaps.push(current.id);
 		}
 		else if(current.location === -1 && !pushedMaps.includes(current.id)){
-			//always add -1
-			let pair = {"map": current, "image": mapImgs[i]};
-			filteredMaps.push(pair);
+			filteredMaps.push(current);
 			pushedMaps.push(current.id);
 		}
 
@@ -70,14 +68,14 @@ function checksRemaining(map, filter, locations, obtainables, checks, objectMaps
 function compareCount(a, b) {
   
   //if location is -1, always add first
-  if(a.map.location === -1){
+  if(a.location === -1){
   	return 1;
   }
 
-  if (a.map.count > b.map.count) {
+  if (a.count > b.count) {
     return -1;
   }
-  else if (a.map.count < b.map.count) {
+  else if (a.count < b.count) {
     return 1;
   }
   return 0;
@@ -86,14 +84,14 @@ function compareCount(a, b) {
 function compareName(a, b) {
   
   //if location is -1, always add first
-  if(b.map.location === -1){
+  if(b.location === -1){
   	return 1;
   }
 
-  if (a.map.name.toLowerCase() > b.map.name.toLowerCase()) {
+  if (a.name.toLowerCase() > b.name.toLowerCase()) {
     return 1;
   }
-  else if (a.map.name.toLowerCase() < b.map.name.toLowerCase()) {
+  else if (a.name.toLowerCase() < b.name.toLowerCase()) {
     return -1;
   }
   return 0;
@@ -123,25 +121,215 @@ function linkMarkers(maps, markers, objectMaps){
 
 }
 
-function loadMapImgs(maps){
-	let mapImgs = [];
+
+function generateMaps(maps){
 
 	for(let i = 0; i < maps.length; i++){
 		let map = maps[i];
 		let image = new Image();
 		image.src = require("../maps/" + map.code + "." + map.extension);
-		mapImgs.push(image);
-
-		
+		map.image = image
 	}
-	
-	
-	return mapImgs;
+
+	return maps;
 }
 
-module.exports = {padding,
-divisor,
-filterMaps,
-checksRemaining,
-linkMarkers,
-loadMapImgs}
+function setMapImage(mapDisplay, data, objectMaps){
+  //first clear markers
+  mapDisplay.activeMarkers = {};
+  mapDisplay.container.eachLayer(function(layer){
+      layer.remove();
+  });
+
+  let image = data.maps[data.activeMap].image;
+
+  mapDisplay.height = image.height;
+  mapDisplay.width = image.width;
+  mapDisplay.center = [image.height/2/divisor, image.width/2/divisor];
+
+  mapDisplay.image = L.imageOverlay(image.src, [[0, 0], [(image.height/divisor), (image.width/divisor)]]);
+
+  mapDisplay.image.addTo(mapDisplay.container);
+
+  mapDisplay.container.setView(mapDisplay.center, 8);
+
+
+  let padding = this.padding/this.divisor;
+  let corner1 = L.latLng(-padding, -padding);
+  let corner2 = L.latLng((image.height/this.divisor + padding), (image.width/this.divisor + padding)),
+  bounds = L.latLngBounds(corner1, corner2)
+
+  mapDisplay.container.setMaxBounds(bounds);
+  //this.createMarkers(data);
+  //this.mapDisplay.container.panTo(center);
+}
+
+function createMarkers(mapDisplay, data, objectMaps){
+
+  let map = data.maps[data.activeMap];
+
+  mapDisplay.activeMarkers = {};
+  if(map["markers"] === undefined || map["markers"] === null){
+    return;
+  }
+
+  for(let i = 0; i < map.markers.length; i++){
+    let markerData = map.markers[i];
+
+    switch(markerData.type){
+
+      case "check":{
+        let check = data.checks[objectMaps.checks[markerData.key]];
+        if(data.filter.checkType.includes(check.type)){
+
+          let marker = L.circle([Math.abs(markerData.lat-mapDisplay.height)/divisor, markerData.lon/divisor], {
+              color: "black",
+              fillColor: "black",
+              weight: 1.0,
+              fillOpacity: 0,
+              opacity: 0,
+              radius: 5000,
+              type: markerData.type
+          });
+
+          marker.bindPopup(check.name);
+          marker.on('mouseover', function (e) {
+              this.openPopup();
+          });
+          marker.on('mouseout', function (e) {
+              this.closePopup();
+          })
+          marker.on('click', () => mapDisplay.clickFunctions.check(check.id));
+
+          marker.addTo(mapDisplay.container);
+          mapDisplay.activeMarkers[markerData.key] = marker;
+          colorMarker(markerData.key, mapDisplay, data, objectMaps);
+        }
+        break;
+      }
+
+      case "link":{
+        let centerLat = Math.abs(markerData.lat-mapDisplay.height)/divisor;
+        let centerLon = markerData.lon/divisor;
+        let height = 50/divisor;
+        let width = 50/divisor;
+        let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
+        let marker = L.rectangle(bounds, {
+          color: "blue",
+          weight: 1,
+          fillOpacity: .75,
+          opacity: 1
+        });
+        let linkedMap = data.maps[objectMaps.maps[markerData.key]];
+
+        marker.bindPopup("To " + linkedMap.name);
+        marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        })
+        marker.on('click', () => mapDisplay.clickFunctions.link(linkedMap.id));
+
+        marker.addTo(mapDisplay.container);
+        mapDisplay.activeMarkers[markerData.key] = marker;
+        break;
+      }
+
+      case "location":{
+
+        let centerLat = Math.abs(markerData.lat-mapDisplay.height)/divisor;
+        let centerLon = markerData.lon/divisor;
+        let height = 10/divisor;
+        let width = 10/divisor;
+        let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
+        let marker = L.rectangle(bounds, {
+          color: "blue",
+          weight: 1,
+          fillOpacity: .75,
+          opacity: 1
+        });
+        let location = data.locations[objectMaps.locations[markerData.key]];
+
+        marker.bindPopup(location.name);
+        marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        })
+        marker.on('click', () => mapDisplay.clickFunctions.location(location.id));
+
+        marker.addTo(mapDisplay.container);
+        mapDisplay.activeMarkers[markerData.key] = marker;
+      
+        break;
+      }
+    }
+      
+  }
+
+}
+
+function colorMarker(key, mapDisplay, data, objectMaps){
+
+	if(mapDisplay.activeMarkers === undefined || mapDisplay.activeMarkers === null){
+	  return;
+	}
+
+	let marker = mapDisplay.activeMarkers[key];
+	switch(marker.options.type){
+
+	  case "check":{
+
+		  let color = "red";
+			let check = data.checks[objectMaps.checks[key]];
+
+			if(check.checked > 0){
+			  color = "green";
+			}
+			else{
+			  let canCheck = [];
+			  for(let i = 0; i < data.filter.state.length; i++){
+			    let state = data.filter.state[i]
+			    canCheck.push(
+			      util.checks.canCheck(
+			        state, check, data.locations, data.obtainables, data.checks, objectMaps
+			      )
+			    );
+			  }
+			  if(canCheck.includes(true)){color = "yellow"}
+			}
+
+			marker.setStyle({
+			  opacity: 1.0,
+			  fillOpacity: 0.5,
+			  color: color,
+			  fillColor: color
+			});
+		  break;
+		}
+
+	  case "link":{
+	    break;
+	  }
+
+	  case "location":{
+	    break;
+		}
+
+	}   
+
+}
+
+module.exports = {
+	padding,
+	divisor,
+	filterMaps,
+	checksRemaining,
+	linkMarkers,
+	generateMaps,
+	setMapImage,
+	createMarkers,
+	colorMarker
+}

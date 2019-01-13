@@ -8,10 +8,9 @@ export class MapNavComponent extends Component{
       let currentMap = this.props.maps[i];
       maps.push(
         <MiniMapComponent
-        	key={"minimap-" + currentMap.map.id}
-        	map={currentMap.map}
-        	mapImg={currentMap.image}
-        	onClick={() => this.props.onClick(currentMap.map.id)}
+        	key={"minimap-" + currentMap.id}
+        	map={currentMap}
+        	onClick={() => this.props.onClick(currentMap.id)}
         />
       );
     }

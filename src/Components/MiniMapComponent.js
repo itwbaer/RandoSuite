@@ -13,7 +13,7 @@ export class MiniMapComponent extends Component{
     return(
       <div className="container-fluid noselect"><img
           className="img-fluid noselect"        
-          src={this.props.mapImg.src}
+          src={this.props.map.image.src}
           alt=""
           onClick={this.handleClick}
         /><br /><span className="noselect">{this.props.map.name}{"count" in this.props.map ? `(${this.props.map.count})` : ""}</span></div>
