@@ -46,7 +46,7 @@ export class ChecklistComponent extends Component{
           type={checkType}
           checked={currentCheck.checked}
           checkClass={checkClass}
-          onClick={(data) => this.props.checklistOnClick(currentCheck.id, data)}
+          onClick={() => this.props.checklistOnClick(currentCheck.id)}
         />
       );
      

@@ -12,17 +12,16 @@ import {OptionsComponent} from './Components/OptionsComponent.js';
 import {ActiveViewComponent} from './Components/ActiveViewComponent.js';
 import {ChecklistComponent} from './Components/Views/ChecklistComponent.js';
 
-
 class App extends Component {
   constructor(props) {
     super(props);
 
-    const util =  {};
-    util.checks = require('./util/checks.js');
-    util.locations = require('./util/locations.js');
-    util.obtainables = require('./util/obtainables.js');
-    util.maps = require('./util/maps.js');
-    util.shared = require('./util/shared.js');
+    this.util =  {};
+    this.util.checks = require('./util/checks.js');
+    this.util.locations = require('./util/locations.js');
+    this.util.obtainables = require('./util/obtainables.js');
+    this.util.maps = require('./util/maps.js');
+    this.util.shared = require('./util/shared.js');
 
     let data = {};
     data.access = require("./data/Access.json");
@@ -35,48 +34,48 @@ class App extends Component {
     data.progressives = require("./data/Progressives.json");
     data.states = require("./data/States.json");
     data.filter = require("./data/Filter.json");
-    data.maps = util.maps.generateMaps(require("./data/Maps.json"));
+    data.maps = this.util.maps.generateMaps(require("./data/Maps.json"));
     data.activeMap = 0;
     data.activeLocation = 0;
     data.activeView = 0;
-    data.filterOptions = util.shared.getAllFilterOptions(data);
+    data.filterOptions = this.util.shared.getAllFilterOptions(data);
     data.views = {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4};
     data.centeredViews = [data.views.tracker, data.views.save, data.views.load];
 
-    let objectMaps = {};
-    objectMaps.locations = util.shared.mapCodeToID(data.locations);
-    objectMaps.checks = util.shared.mapCodeToID(data.checks);
-    objectMaps.checkTypes = util.shared.mapCodeToID(data.checkTypes);
-    objectMaps.obtainables= util.shared.mapCodeToID(data.obtainables);
-    objectMaps.obtainableTypes = util.shared.mapCodeToID(data.obtainableTypes);
-    objectMaps.progressives = util.shared.mapCodeToID(data.progressives);
-    objectMaps.states = util.shared.mapCodeToID(data.states);
-    objectMaps.maps = util.shared.mapCodeToID(data.maps);
+    this.objectMaps = {};
+    this.objectMaps.locations = this.util.shared.mapCodeToID(data.locations);
+    this.objectMaps.checks = this.util.shared.mapCodeToID(data.checks);
+    this.objectMaps.checkTypes = this.util.shared.mapCodeToID(data.checkTypes);
+    this.objectMaps.obtainables= this.util.shared.mapCodeToID(data.obtainables);
+    this.objectMaps.obtainableTypes = this.util.shared.mapCodeToID(data.obtainableTypes);
+    this.objectMaps.progressives = this.util.shared.mapCodeToID(data.progressives);
+    this.objectMaps.states = this.util.shared.mapCodeToID(data.states);
+    this.objectMaps.maps = this.util.shared.mapCodeToID(data.maps);
 
 
-    util.locations.linkAccess(data.locations, data.access);
+    this.util.locations.linkAccess(data.locations, data.access);
     
-    util.maps.linkMarkers(data.maps, require("./data/Markers.json"), objectMaps);
-    util.maps.linkMarkers(data.maps, require("./data/Links.json"), objectMaps);
-    util.maps.linkMarkers(data.maps, require("./data/ActiveLocations.json"), objectMaps);
+    this.util.maps.linkMarkers(data.maps, require("./data/Markers.json"), this.objectMaps);
+    this.util.maps.linkMarkers(data.maps, require("./data/Links.json"), this.objectMaps);
+    this.util.maps.linkMarkers(data.maps, require("./data/ActiveLocations.json"), this.objectMaps);
 
-    let filteredChecks = util.checks.applyFilter(data, objectMaps);
-    let filteredMaps = util.maps.filterMaps(filteredChecks, data, objectMaps);
+    let filteredChecks = this.util.checks.applyFilter(data, this.objectMaps);
+    let filteredMaps = this.util.maps.filterMaps(filteredChecks, data, this.objectMaps);
 
     data["notes"] = "";
 
     this.mapDisplay = {};
     this.mapDisplay.container = null;
     this.mapDisplay.activeMarkers = {};
-
-    this.state = {util: util,
+    this.mapDisplay.clickFunctions = {"check": (id) => this.handleClickChecklist(id),
+                                      "link": (id, filter) => this.handleClickMap(id, filter),
+                                      "location": (id) => this.handleChangeActiveLocation(id),
+                                      }
+    this.state = {
                   data: data,
-
-                  objectMaps: objectMaps,
-
                   filteredChecks: filteredChecks,
-                  filteredMaps: filteredMaps,
-                  };
+                  filteredMaps: filteredMaps,             
+                };
   }
 
   loadFile(loadData){
@@ -87,14 +86,14 @@ class App extends Component {
     loadData = JSON.parse(loadData);
 
     //only extracting clicked/obtained/index
-    loadData.obtainables = this.state.util.shared.copyKeys(["obtained", "secondary"], data.obtainables, loadData.obtainables);
-    loadData.checks = this.state.util.shared.copyKeys(["checked"], data.checks, loadData.checks);
-    loadData.progressives = this.state.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
+    loadData.obtainables = this.util.shared.copyKeys(["obtained", "secondary"], data.obtainables, loadData.obtainables);
+    loadData.checks = this.util.shared.copyKeys(["checked"], data.checks, loadData.checks);
+    loadData.progressives = this.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
     loadData.locations = cloneDeep(this.state.data.locations);
     loadData = assignIn(data, loadData);
 
-    let filteredChecks = this.state.util.checks.applyFilter(loadData, this.state.objectMaps);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, loadData, this.state.objectMaps);
+    let filteredChecks = this.util.checks.applyFilter(loadData, this.objectMaps);
+    let filteredMaps = this.util.maps.filterMaps(filteredChecks, loadData, this.objectMaps);
     this.handleClickMap(this.state.data.activeMap, loadData.filter);
     this.runFilter(loadData);
     this.setState({ data: loadData,
@@ -153,7 +152,7 @@ class App extends Component {
         progressive.index = progressive.options.length - 1;
       }
 
-      update.obtainables = this.state.util.obtainables.progressiveObtain(progressive, update.obtainables, this.state.objectMaps);
+      update.obtainables = this.util.obtainables.progressiveObtain(progressive, update.obtainables, this.objectMaps);
     }
     update = assignIn(this.state.data, update);
     this.runFilter(update);
@@ -188,7 +187,7 @@ class App extends Component {
   handleFilterSelectChange(key, data){
     let update = {};
     update.filter = cloneDeep(this.state.data.filter);
-    update.filter[key] = this.state.util.shared.optionsToFilter(data);
+    update.filter[key] = this.util.shared.optionsToFilter(data);
     
     if(key === "checkType"){
       this.handleClickMap(this.state.data.activeMap, update.filter);
@@ -208,7 +207,7 @@ class App extends Component {
 
   }
 
-  handleClickChecklist(id, data){
+  handleClickChecklist(id){
 
     let update = {};
     update.checks = cloneDeep(this.state.data.checks);
@@ -230,159 +229,22 @@ class App extends Component {
     update.activeLocation = this.state.data.maps[id].location;
     update = assignIn(this.state.data, update);
     this.setState({data: update});
-    this.setMapImage(update);
+    this.util.maps.setMapImage(this.mapDisplay, update);
+    this.util.maps.createMarkers(this.mapDisplay, update, this.objectMaps);
   }
 
   runFilter(data){
 
-    let filteredChecks = this.state.util.checks.applyFilter(data, this.state.objectMaps);
-    let filteredMaps = this.state.util.maps.filterMaps(filteredChecks, data, this.state.objectMaps);
+    let filteredChecks = this.util.checks.applyFilter(data, this.objectMaps);
+    let filteredMaps = this.util.maps.filterMaps(filteredChecks, data, this.objectMaps);
 
     let markerKeys = Object.keys(this.mapDisplay.activeMarkers)
     for(let i = 0; i < markerKeys.length; i++){
       let key = markerKeys[i];
-      this.state.util.maps.colorMarker(key, this.mapDisplay, data, this.state.objectMaps);
+      this.util.maps.colorMarker(key, this.mapDisplay, data, this.objectMaps);
     }
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
-
-  }
-
-  setMapImage(data){
-    //first clear markers
-    this.mapDisplay.activeMarkers = {};
-    this.mapDisplay.container.eachLayer(function(layer){
-        layer.remove();
-    });
-
-    let divisor = this.state.util.maps.divisor;
-    let image = data.maps[data.activeMap].image;
-
-    this.mapDisplay.height = image.height;
-    this.mapDisplay.width = image.width;
-    this.mapDisplay.center = [image.height/2/divisor, image.width/2/divisor];
-
-    this.mapDisplay.image = L.imageOverlay(image.src, [[0, 0], [(image.height/divisor), (image.width/divisor)]]);
-
-    this.mapDisplay.image.addTo(this.mapDisplay.container);
-
-    this.mapDisplay.container.setView(this.mapDisplay.center, 8);
-
-
-    let padding = this.state.util.maps.padding/divisor;
-    var corner1 = L.latLng(-padding, -padding),
-    corner2 = L.latLng((image.height/divisor + padding), (image.width/divisor + padding)),
-    bounds = L.latLngBounds(corner1, corner2)
-
-    this.mapDisplay.container.setMaxBounds(bounds);
-    this.createMarkers(data);
-    //this.mapDisplay.container.panTo(center);
-  }
-
-  createMarkers(data){
-
-    let map = data.maps[data.activeMap];
-    let divisor = this.state.util.maps.divisor;
-    this.mapDisplay.activeMarkers = {};
-    if(map["markers"] === undefined || map["markers"] === null){
-      return;
-    }
-
-    for(let i = 0; i < map.markers.length; i++){
-      let markerData = map.markers[i];
-
-      switch(markerData.type){
-
-        case "check":{
-          let check = data.checks[this.state.objectMaps.checks[markerData.key]];
-          if(data.filter.checkType.includes(check.type)){
-
-            let marker = L.circle([Math.abs(markerData.lat-this.mapDisplay.height)/divisor, markerData.lon/divisor], {
-                color: "black",
-                fillColor: "black",
-                weight: 1.0,
-                fillOpacity: 0,
-                opacity: 0,
-                radius: 5000,
-                type: markerData.type
-            });
-
-            marker.bindPopup(check.name);
-            marker.on('mouseover', function (e) {
-                this.openPopup();
-            });
-            marker.on('mouseout', function (e) {
-                this.closePopup();
-            })
-            marker.on('click', () => this.handleClickChecklist(check.id));
-
-            marker.addTo(this.mapDisplay.container);
-            this.mapDisplay.activeMarkers[markerData.key] = marker;
-            this.state.util.maps.colorMarker(markerData.key, this.mapDisplay, data, this.state.objectMaps);
-          }
-          break;
-        }
-
-        case "link":{
-          let centerLat = Math.abs(markerData.lat-this.mapDisplay.height)/divisor;
-          let centerLon = markerData.lon/divisor;
-          let height = 50/divisor;
-          let width = 50/divisor;
-          let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
-          let marker = L.rectangle(bounds, {
-            color: "blue",
-            weight: 1,
-            fillOpacity: .75,
-            opacity: 1
-          });
-          let linkedMap = data.maps[this.state.objectMaps.maps[markerData.key]];
-
-          marker.bindPopup("To " + linkedMap.name);
-          marker.on('mouseover', function (e) {
-              this.openPopup();
-          });
-          marker.on('mouseout', function (e) {
-              this.closePopup();
-          })
-          marker.on('click', () => this.handleClickMap(linkedMap.id, data.filter));
-
-          marker.addTo(this.mapDisplay.container);
-          this.mapDisplay.activeMarkers[markerData.key] = marker;
-          break;
-        }
-
-        case "location":{
-
-          let centerLat = Math.abs(markerData.lat-this.mapDisplay.height)/divisor;
-          let centerLon = markerData.lon/divisor;
-          let height = 10/divisor;
-          let width = 10/divisor;
-          let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
-          let marker = L.rectangle(bounds, {
-            color: "blue",
-            weight: 1,
-            fillOpacity: .75,
-            opacity: 1
-          });
-          let location = data.locations[this.state.objectMaps.locations[markerData.key]];
-
-          marker.bindPopup(location.name);
-          marker.on('mouseover', function (e) {
-              this.openPopup();
-          });
-          marker.on('mouseout', function (e) {
-              this.closePopup();
-          })
-          marker.on('click', () => this.handleChangeActiveLocation(location.id));
-
-          marker.addTo(this.mapDisplay.container);
-          this.mapDisplay.activeMarkers[markerData.key] = marker;
-        
-          break;
-        }
-      }
-        
-    }
 
   }
 
@@ -401,7 +263,8 @@ class App extends Component {
     require('./util/scrollbar.js');
  
     this.initializeMap();
-    this.setMapImage(this.state.data);
+    this.util.maps.setMapImage(this.mapDisplay, this.state.data);
+    this.util.maps.createMarkers(this.mapDisplay, this.state.data, this.objectMaps);
   }
 
 
@@ -422,7 +285,7 @@ class App extends Component {
               <div className={"col" + (this.state.data.centeredViews.includes(this.state.data.activeView) ? " align-self-center" : "")}>
                 <ActiveViewComponent
                   filteredChecks={this.state.filteredChecks}
-                  util={this.state.util}
+                  util={this.util}
                   obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
                   loadOnClick={(data) => this.loadFile(data)}
@@ -430,7 +293,7 @@ class App extends Component {
                   filterSelectOnChange={(key, data) => this.handleFilterSelectChange(key, data)}
                   filterToggleOnChange={(key, data) => this.handleFilterToggleChange(key, data)}
                   changeNotes={(data) => this.handleChangeNotes(data)}
-                  objectMaps={this.state.objectMaps}
+                  objectMaps={this.objectMaps}
                   data={this.state.data}
                 />
               </div>
@@ -445,10 +308,10 @@ class App extends Component {
                 </div>
                 <div className="col-5" id="Checklist">
                   <ChecklistComponent 
-                    checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
-                    util={this.state.util}
+                    checklistOnClick={(id) => this.handleClickChecklist(id)}
+                    util={this.util}
                     data={this.state.data}
-                    objectMaps={this.state.objectMaps}
+                    objectMaps={this.objectMaps}
                   />
                 </div>
               </div>
