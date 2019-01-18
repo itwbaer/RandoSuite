@@ -177,8 +177,42 @@ function canCheck(state, check, locations, obtainables, checks, objectMaps){
 	
 }
 
+function checksRemaining(location, data, objectMaps){
+	let cantCheck = 0;
+	let canCheck = 0;
+	let hasChecked = 0;
+	for(let i = 0; i < data.checks.length; i++){
+		let check = data.checks[i];
+		if(data.filter.checkType.includes(check.type) && check.location == location.id){
+			if(check.checked > 0){
+				hasChecked++;
+			}
+			else{
+				let canCheckArr = [];
+				for(let j = 0; j < data.filter.state.length; j++){
+					let state = data.filter.state[j];
+					canCheckArr.push(this.canCheck(state, check, data.locations, data.obtainables, data.checks, objectMaps));
+					
+				}
+
+				if(canCheckArr.includes(true)){
+					canCheck++;
+				}
+				else{
+					cantCheck++;
+				}
+			}
+			
+		}
+		
+	}
+
+	location.checkCount = {"cantCheck": cantCheck, "canCheck": canCheck, "hasChecked": hasChecked};
+}
+
 module.exports = {groupByLocation, 
 applyFilterType, 
 applyFilter, 
 getLocations, 
-canCheck}
+canCheck,
+checksRemaining}

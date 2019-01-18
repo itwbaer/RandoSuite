@@ -169,10 +169,15 @@ function createMarkers(mapDisplay, data, objectMaps){
   let map = data.maps[data.activeMap];
 
   mapDisplay.activeMarkers = {};
+  if(mapDisplay.markerLayer){
+  	mapDisplay.container.removeLayer(mapDisplay.markerLayer)
+  }
+
   if(map["markers"] === undefined || map["markers"] === null){
     return;
   }
 
+  let markers= [];
   for(let i = 0; i < map.markers.length; i++){
     let markerData = map.markers[i];
 
@@ -201,7 +206,7 @@ function createMarkers(mapDisplay, data, objectMaps){
           })
           marker.on('click', () => mapDisplay.clickFunctions.check(check.id));
 
-          marker.addTo(mapDisplay.container);
+          markers.push(marker);
           mapDisplay.activeMarkers[markerData.key] = marker;
           colorMarker(markerData.key, mapDisplay, data, objectMaps);
         }
@@ -218,7 +223,8 @@ function createMarkers(mapDisplay, data, objectMaps){
           color: "blue",
           weight: 1,
           fillOpacity: .75,
-          opacity: 1
+          opacity: 1,
+          type: markerData.type
         });
         let linkedMap = data.maps[objectMaps.maps[markerData.key]];
 
@@ -231,43 +237,49 @@ function createMarkers(mapDisplay, data, objectMaps){
         })
         marker.on('click', () => mapDisplay.clickFunctions.link(linkedMap.id));
 
-        marker.addTo(mapDisplay.container);
+        markers.push(marker);
         mapDisplay.activeMarkers[markerData.key] = marker;
         break;
       }
 
       case "location":{
+      	let location = data.locations[objectMaps.locations[markerData.key]];
+      	let finished = location.checkCount.cantCheck === 0 && location.checkCount.canCheck === 0 &&  location.checkCount.hasChecked > 0; 
+      	let noChecks = location.checkCount.canCheck === 0;
+      	if(!(data.filter.worldNone && noChecks) && !(data.filter.worldDone && finished)){
+      		let centerLat = Math.abs(markerData.lat-mapDisplay.height)/divisor;
+	        let centerLon = markerData.lon/divisor;
+	        let height = 10/divisor;
+	        let width = 10/divisor;
+	        let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
+	        let marker = L.rectangle(bounds, {
+	          color: "blue",
+	          weight: 1,
+	          fillOpacity: .75,
+	          opacity: 1,
+	          type: markerData.type
+	        });
 
-        let centerLat = Math.abs(markerData.lat-mapDisplay.height)/divisor;
-        let centerLon = markerData.lon/divisor;
-        let height = 10/divisor;
-        let width = 10/divisor;
-        let bounds = [[centerLat + height, centerLon + width], [centerLat - height, centerLon - width]];
-        let marker = L.rectangle(bounds, {
-          color: "blue",
-          weight: 1,
-          fillOpacity: .75,
-          opacity: 1
-        });
-        let location = data.locations[objectMaps.locations[markerData.key]];
+	        marker.bindPopup(location.name);
+	        marker.on('mouseover', function (e) {
+	            this.openPopup();
+	        });
+	        marker.on('mouseout', function (e) {
+	            this.closePopup();
+	        })
+	        marker.on('click', () => mapDisplay.clickFunctions.location(location.id));
 
-        marker.bindPopup(location.name);
-        marker.on('mouseover', function (e) {
-            this.openPopup();
-        });
-        marker.on('mouseout', function (e) {
-            this.closePopup();
-        })
-        marker.on('click', () => mapDisplay.clickFunctions.location(location.id));
-
-        marker.addTo(mapDisplay.container);
-        mapDisplay.activeMarkers[markerData.key] = marker;
-      
+	        markers.push(marker);
+	        mapDisplay.activeMarkers[markerData.key] = marker;
+	      	colorMarker(markerData.key, mapDisplay, data, objectMaps);
+      	}
         break;
       }
     }
       
   }
+  mapDisplay.markerLayer = L.layerGroup(markers);
+  mapDisplay.markerLayer.addTo(mapDisplay.container);
 
 }
 
@@ -315,6 +327,25 @@ function colorMarker(key, mapDisplay, data, objectMaps){
 	  }
 
 	  case "location":{
+	  	let color
+			let location = data.locations[objectMaps.locations[key]];
+
+			if(location.checkCount.cantCheck === 0 && location.checkCount.canCheck === 0 && location.checkCount.hasChecked > 0){
+			  color = "green";
+			}
+			else if(location.checkCount.canCheck > 0) {
+				color = "yellow";
+			}
+			else{
+				color = "red";
+			}
+
+			marker.setStyle({
+			  fillOpacity: .75,
+        opacity: 1,
+			  color: color,
+			  fillColor: color
+			});
 	    break;
 		}
 

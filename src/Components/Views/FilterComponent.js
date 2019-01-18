@@ -17,6 +17,32 @@ export class FilterComponent extends Component{
     );
   }
 
+  filterWorldDone(){
+    let key = "worldDone";
+    let placeholder = "Hide World Done?"
+    return(
+      <FilterToggleComponent
+        key={key}
+        placeholder={placeholder}
+        checked={this.props.filter[key]}
+        onChange={(data) => this.props.filterToggleOnChange(key, data)}
+      />
+    );
+  }
+
+  filterWorldNone(){
+    let key = "worldNone";
+    let placeholder = "Hide World None?"
+    return(
+      <FilterToggleComponent
+        key={key}
+        placeholder={placeholder}
+        checked={this.props.filter[key]}
+        onChange={(data) => this.props.filterToggleOnChange(key, data)}
+      />
+    );
+  }
+
 	filterState(){
     let key = "state";
     let options = this.props.data.filterOptions[key];
@@ -110,6 +136,8 @@ export class FilterComponent extends Component{
     filter.push(this.filterAccessible());
     filter.push(this.filterType());
     filter.push(this.filterChecked());
+    filter.push(this.filterWorldNone());
+    filter.push(this.filterWorldDone());
     filter.push(this.filterMapSort());
     filter.push(this.filterLocations());
     return filter;

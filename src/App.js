@@ -41,6 +41,7 @@ class App extends Component {
     data.filterOptions = this.util.shared.getAllFilterOptions(data);
     data.views = {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4};
     data.centeredViews = [data.views.tracker, data.views.save, data.views.load];
+    data.notes = "";
 
     this.objectMaps = {};
     this.objectMaps.locations = this.util.shared.mapCodeToID(data.locations);
@@ -62,15 +63,14 @@ class App extends Component {
     let filteredChecks = this.util.checks.applyFilter(data, this.objectMaps);
     let filteredMaps = this.util.maps.filterMaps(filteredChecks, data, this.objectMaps);
 
-    data["notes"] = "";
-
     this.mapDisplay = {};
     this.mapDisplay.container = null;
     this.mapDisplay.activeMarkers = {};
+    this.mapDisplay.markerLayer = null;
     this.mapDisplay.clickFunctions = {"check": (id) => this.handleClickChecklist(id),
                                       "link": (id, filter) => this.handleClickMap(id, filter),
                                       "location": (id) => this.handleChangeActiveLocation(id),
-                                      }
+                                      };
     this.state = {
                   data: data,
                   filteredChecks: filteredChecks,
@@ -189,7 +189,7 @@ class App extends Component {
     update.filter = cloneDeep(this.state.data.filter);
     update.filter[key] = this.util.shared.optionsToFilter(data);
     
-    if(key === "checkType"){
+    if(key === "checkType" || "worldDone" || "worldNone"){
       this.handleClickMap(this.state.data.activeMap, update.filter);
     }
     update = assignIn(this.state.data, update);
@@ -238,10 +238,22 @@ class App extends Component {
     let filteredChecks = this.util.checks.applyFilter(data, this.objectMaps);
     let filteredMaps = this.util.maps.filterMaps(filteredChecks, data, this.objectMaps);
 
-    let markerKeys = Object.keys(this.mapDisplay.activeMarkers)
-    for(let i = 0; i < markerKeys.length; i++){
-      let key = markerKeys[i];
-      this.util.maps.colorMarker(key, this.mapDisplay, data, this.objectMaps);
+    for(let i = 0; i < data.locations.length; i++){
+      let location = data.locations[i];
+      this.util.checks.checksRemaining(location, data, this.objectMaps);
+    }
+
+    if(data.activeMap == 0){
+      this.util.maps.createMarkers(this.mapDisplay, data, this.objectMaps);
+    }
+    else{
+      let markerKeys = Object.keys(this.mapDisplay.activeMarkers)
+      for(let i = 0; i < markerKeys.length; i++){
+        let key = markerKeys[i];
+
+        this.util.maps.colorMarker(key, this.mapDisplay, data, this.objectMaps);
+        
+      }
     }
     this.setState({filteredChecks: filteredChecks,
                     filteredMaps: filteredMaps});
@@ -261,9 +273,10 @@ class App extends Component {
   componentDidMount(){
 
     require('./util/scrollbar.js');
- 
     this.initializeMap();
     this.util.maps.setMapImage(this.mapDisplay, this.state.data);
+    
+    this.runFilter(this.state.data);
     this.util.maps.createMarkers(this.mapDisplay, this.state.data, this.objectMaps);
   }
 
