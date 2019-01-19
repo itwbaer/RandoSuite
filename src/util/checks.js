@@ -105,6 +105,7 @@ function canCheck(state, check, locations, obtainables, checks, objectMaps){
 		//could have multiple sets
 		let doneChecks = [];
 		let haveObtainables = [];
+		let haveCount = [];
 		for(let i = 0; i < check.required.length; i++){
 			let checkOption = check.required[i];
 			//check if we have all obtainables
@@ -119,7 +120,6 @@ function canCheck(state, check, locations, obtainables, checks, objectMaps){
 			else{
 				//could have multiple combinations
 				let haveSet = [];
-				let countSet = [];
 				for(let j = 0; j < checkOption.obtainables.length; j++){
 					let currentSet = checkOption.obtainables[j];
 					let setValid = true;
@@ -133,6 +133,35 @@ function canCheck(state, check, locations, obtainables, checks, objectMaps){
 				}
 
 				haveObtainables.push(haveSet);
+			}
+
+			//check if have full count
+			if(checkOption.count === undefined || checkOption.count === null){
+				//only 1 set, which is true;
+
+				haveCount.push([true]);
+			}
+
+			//and if we have all counts
+			else{
+				//could have multiple combinations
+				let countSet = [];
+				for(let j = 0; j < checkOption.obtainables.length; j++){
+					let currentSet = checkOption.obtainables[j];
+					let currentCount = checkOption.count[j];
+					let setValid = true;
+					for(let k = 0; k < currentSet.length; k++){
+						let obtainable = obtainables[objectMaps.obtainables[currentSet[k]]];
+						let count = currentCount[k];
+						if(obtainable.count){
+							setValid = setValid && obtainable.count >= count;
+						}
+					}
+					
+					countSet.push(setValid);
+				}
+
+				haveCount.push(countSet);
 			}
 
 
@@ -168,7 +197,7 @@ function canCheck(state, check, locations, obtainables, checks, objectMaps){
 		//for every set, check if both have both obtainables and checks
 		for(let i = 0; i < check.required.length; i++){
 			
-			if(doneChecks[i].includes(true) && haveObtainables[i].includes(true)){return true;}
+			if(doneChecks[i].includes(true) && haveObtainables[i].includes(true) && haveCount[i].includes(true)){return true;}
 
 		}
 

@@ -24,8 +24,8 @@ export class TrackerComponent extends Component{
           case "obtainable":
             row.push(
               <TrackerItemComponent
-                key={item.code}
-                trackerID={item.code}
+                key={i.toString() + j.toString()}
+                trackerID={item.code + "_" + i.toString() + j.toString()}
                 obtainable={this.props.obtainables[this.props.objectMaps.obtainables[item.code]]}
                 onClick={(ctrl) => this.props.obtainablesOnClick(this.props.objectMaps.obtainables[item.code], ctrl)}
               />
@@ -34,8 +34,8 @@ export class TrackerComponent extends Component{
           case "progressive":
             row.push(
               <ProgressiveTrackerItemComponent
-                key={item.code}
-                trackerID={item.code}
+                key={i.toString() + j.toString()}
+                trackerID={item.code + "_" + i.toString() + j.toString()}
                 obtainables={this.props.obtainables}
                 progressive={this.props.progressives[this.props.objectMaps.progressives[item.code]]}
                 onClick={(ctrl) => this.props.progressivesOnClick(this.props.objectMaps.progressives[item.code], ctrl)}
@@ -47,8 +47,8 @@ export class TrackerComponent extends Component{
           case "cycle":
             row.push(
               <CycleTrackerItemComponent
-                key={item.code}
-                trackerID={item.code}
+                key={i.toString() + j.toString()}
+                trackerID={item.code + "_" + i.toString() + j.toString()}
                 obtainables={this.props.obtainables}
                 cycle={this.props.cycles[this.props.objectMaps.cycles[item.code]]}
                 onClick={(ctrl, alt) => this.props.cyclesOnClick(this.props.objectMaps.cycles[item.code], ctrl, alt)}
@@ -58,7 +58,7 @@ export class TrackerComponent extends Component{
             );
             break;
           case "text":
-            row.push(<span className="noselect col-sm-2">{item.code}</span>);
+            row.push(<span key={i.toString() + j.toString()} className="noselect col-sm-2">{item.code}</span>);
           break;
           case "blank1":
             row.push(<div key={i.toString() + j.toString()} className="col-sm-1"></div>);

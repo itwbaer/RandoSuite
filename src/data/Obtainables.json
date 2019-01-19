@@ -78,6 +78,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -87,6 +88,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -96,6 +98,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -105,6 +108,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -114,6 +118,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -123,6 +128,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -132,6 +138,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -141,6 +148,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -150,6 +158,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -159,6 +168,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -168,6 +178,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -177,6 +188,7 @@
 		"type" : 2,
 		"obtained" : -1,
         "secondary" : -1,
+        "required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -185,6 +197,7 @@
 		"name" : "Scarecrows Song",
 		"type" : 2,
 		"obtained" : -1,
+		"required_obtainables" : [64],
         "state" : [0, 1]
 	},
 	{
@@ -384,14 +397,6 @@
 	},
 	{
 		"id" : 46,
-		"code" : "item_skulltula_ten",
-		"name" : "10 Skulltula",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [0, 1]
-	},
-	{
-		"id" : 47,
 		"code" : "item_tunic_goron",
 		"name" : "Gorons Tunic",
 		"type" : 3,
@@ -399,7 +404,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 48,
+		"id" : 47,
 		"code" : "item_tunic_zora",
 		"name" : "Zoras Tunic",
 		"type" : 3,
@@ -407,7 +412,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 49,
+		"id" : 48,
 		"code" : "item_bombchus",
 		"name" : "Bombchus",
 		"type" : 3,
@@ -415,23 +420,7 @@
         "state" : [0, 1]
 	},
 	{
-		"id" : 50,
-		"code" : "item_sticks",
-		"name" : "Sticks",
-		"type" : 3,
-		"obtained" : -1,
-		"state" : [0]
-	},
-	{
-		"id" : 51,
-		"code" : "item_nuts",
-		"name" : "Deku Nuts",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [0, 1]
-	},
-	{
-		"id" : 52,
+		"id" : 49,
 		"code" : "item_farores",
 		"name" : "Farores Window",
 		"type" : 3,
@@ -440,7 +429,7 @@
         "state" : [0, 1]
 	},
 	{
-		"id" : 53,
+		"id" : 50,
 		"code" : "item_gerudo_card",
 		"name" : "Gerudo Membership Card",
 		"type" : 3,
@@ -448,7 +437,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 54,
+		"id" : 51,
 		"code" : "item_lens",
 		"name" : "Lens of Truth",
 		"type" : 3,
@@ -457,7 +446,7 @@
         "state" : [0, 1]
 	},
 	{
-		"id" : 55,
+		"id" : 52,
 		"code" : "item_adult_wallet",
 		"name" : "Adult Wallet",
 		"type" : 3,
@@ -465,7 +454,7 @@
         "state" : [0, 1]
 	},
 	{
-		"id" : 56,
+		"id" : 53,
 		"code" : "item_giants_wallet",
 		"name" : "Giants Wallet",
 		"type" : 3,
@@ -473,7 +462,7 @@
         "state" : [0, 1]
 	},
     {
-        "id" : 57,
+        "id" : 54,
         "code" : "item_keaton_mask",
         "name" : "Keaton Mask",
         "type" : 3,
@@ -481,7 +470,7 @@
         "state" : [0]
     },
     {
-        "id" : 58,
+        "id" : 55,
         "code" : "item_claim",
         "name" : "Goron Sword Claim",
         "type" : 3,
@@ -489,7 +478,7 @@
         "state" : [1]
     },
     {
-        "id" : 59,
+        "id" : 56,
         "code" : "item_skull_mask",
         "name" : "Skull Mask",
         "type" : 3,
@@ -497,47 +486,15 @@
         "state" : [0]
     },
     {
-        "id" : 60,
+        "id" : 57,
         "code" : "item_mask_truth",
         "name" : "Mask of Truth",
         "type" : 3,
         "obtained" : -1,
         "state" : [0]
     },
-    {
-		"id" : 61,
-		"code" : "item_skulltula_twenty",
-		"name" : "10 Skulltula",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [0, 1]
-	},
 	{
-		"id" : 62,
-		"code" : "item_skulltula_thirty",
-		"name" : "10 Skulltula",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [0, 1]
-	},
-	{
-		"id" : 63,
-		"code" : "item_skulltula_fourty",
-		"name" : "10 Skulltula",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [0, 1]
-	},
-	{
-		"id" : 64,
-		"code" : "item_skulltula_fifty",
-		"name" : "10 Skulltula",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [0, 1]
-	},
-	{
-		"id" : 65,
+		"id" : 58,
 		"code" : "item_bean",
 		"name" : "Magic Beans",
 		"type" : 4,
@@ -547,7 +504,7 @@
         "limit": 10
 	},
 	{
-		"id" : 66,
+		"id" : 59,
 		"code" : "item_deku_shield",
 		"name" : "Deku Shield",
 		"type" : 3,
@@ -555,7 +512,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 67,
+		"id" : 60,
 		"code" : "item_deku_stick",
 		"name" : "Deku Stick",
 		"type" : 3,
@@ -563,7 +520,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 68,
+		"id" : 61,
 		"code" : "item_nuts",
 		"name" : "Deku Nuts",
 		"type" : 3,
@@ -571,7 +528,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 69,
+		"id" : 62,
 		"code" : "item_master_sword",
 		"name" : "Master Sword",
 		"type" : 3,
@@ -579,7 +536,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 70,
+		"id" : 63,
 		"code" : "item_hylian_shield",
 		"name" : "Hylian Shield",
 		"type" : 3,
@@ -587,7 +544,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 71,
+		"id" : 64,
 		"code" : "item_fairy_ocarina",
 		"name" : "Fairy Ocarina",
 		"type" : 3,
@@ -595,7 +552,7 @@
         "state" : [0, 1]
 	},
 	{
-		"id" : 72,
+		"id" : 65,
 		"code" : "item_ocarina_time",
 		"name" : "Ocarina of Time",
 		"type" : 3,
@@ -603,23 +560,7 @@
         "state" : [0, 1]
 	},
 	{
-		"id" : 73,
-		"code" : "item_boss_key",
-		"name" : "Boss Key",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [1]
-	},
-	{
-		"id" : 74,
-		"code" : "item_small_key",
-		"name" : "Small Key",
-		"type" : 3,
-		"obtained" : -1,
-        "state" : [1]
-	},
-	{
-		"id" : 75,
+		"id" : 66,
 		"code" : "item_child_egg",
 		"name" : "Child Egg",
 		"type" : 3,
@@ -627,7 +568,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 76,
+		"id" : 67,
 		"code" : "item_child_cucco",
 		"name" : "Child Cucco",
 		"type" : 3,
@@ -635,7 +576,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 77,
+		"id" : 68,
 		"code" : "item_zelda_letter",
 		"name" : "Zeldas Letter",
 		"type" : 3,
@@ -643,7 +584,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 78,
+		"id" : 69,
 		"code" : "item_spooky_mask",
 		"name" : "Spooky Mask",
 		"type" : 3,
@@ -651,7 +592,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 79,
+		"id" : 70,
 		"code" : "item_bunny_mask",
 		"name" : "Bunny Mask",
 		"type" : 3,
@@ -659,7 +600,7 @@
         "state" : [0]
 	},
 	{
-		"id" : 80,
+		"id" : 71,
 		"code" : "item_adult_egg",
 		"name" : "Adult Egg",
 		"type" : 3,
@@ -667,7 +608,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 81,
+		"id" : 72,
 		"code" : "item_adult_cucco",
 		"name" : "Adult Cucco",
 		"type" : 3,
@@ -675,7 +616,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 82,
+		"id" : 73,
 		"code" : "item_cojiro",
 		"name" : "Cojiro",
 		"type" : 3,
@@ -683,7 +624,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 83,
+		"id" : 74,
 		"code" : "item_mushroom",
 		"name" : "Mushroom",
 		"type" : 3,
@@ -691,7 +632,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 84,
+		"id" : 75,
 		"code" : "item_medicine",
 		"name" : "Mushroom",
 		"type" : 3,
@@ -699,7 +640,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 85,
+		"id" : 76,
 		"code" : "item_saw",
 		"name" : "Mushroom",
 		"type" : 3,
@@ -707,7 +648,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 86,
+		"id" : 77,
 		"code" : "item_broken_sword",
 		"name" : "Broken Sword",
 		"type" : 3,
@@ -715,7 +656,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 87,
+		"id" : 78,
 		"code" : "item_perscription",
 		"name" : "Perscription",
 		"type" : 3,
@@ -723,7 +664,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 88,
+		"id" : 79,
 		"code" : "item_frog",
 		"name" : "Frog",
 		"type" : 3,
@@ -731,7 +672,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 89,
+		"id" : 80,
 		"code" : "item_eyedrops",
 		"name" : "Eyedrops",
 		"type" : 3,
@@ -739,7 +680,7 @@
         "state" : [1]
 	},
 	{
-		"id" : 90,
+		"id" : 81,
 		"code" : "item_skulltulas",
 		"name" : "Skulltulas",
 		"type" : 4,
@@ -749,37 +690,37 @@
         "limit": 100
 	},
 	{
-		"id" : 91,
+		"id" : 82,
 		"code" : "item_small_key_forest",
 		"name" : "Small Key Forest",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [1],
         "count": 0,
         "limit": 20
 	},
 	{
-		"id" : 92,
+		"id" : 83,
 		"code" : "item_small_key_fire",
 		"name" : "Small Key Fire",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [1],
         "count": 0,
         "limit": 20
 	},
 	{
-		"id" : 93,
+		"id" : 84,
 		"code" : "item_small_key_water",
 		"name" : "Small Key Water",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [1],
         "count": 0,
         "limit": 20
 	},
 	{
-		"id" : 94,
+		"id" : 85,
 		"code" : "item_small_key_spirit",
 		"name" : "Small Key Spirit",
 		"type" : 4,
@@ -789,101 +730,101 @@
         "limit": 20
 	},
 	{
-		"id" : 95,
+		"id" : 86,
 		"code" : "item_small_key_shadow",
 		"name" : "Small Key Shadow",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [1],
         "count": 0,
         "limit": 20
 	},
 	{
-		"id" : 96,
+		"id" : 87,
 		"code" : "item_small_key_ganon",
 		"name" : "Small Key Ganon",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [1],
         "count": 0,
         "limit": 20
 	},
 	{
-		"id" : 97,
+		"id" : 88,
 		"code" : "item_small_key_well",
 		"name" : "Small Key Well",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [0],
         "count": 0,
         "limit": 20
 	},
 	{
-		"id" : 98,
+		"id" : 89,
 		"code" : "item_small_key_gf",
 		"name" : "Small Key Well",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [1],
         "count": 0,
         "limit": 4
 	},
 	{
-		"id" : 99,
+		"id" : 90,
 		"code" : "item_small_key_gtg",
 		"name" : "Small Key Well",
 		"type" : 4,
 		"obtained" : -1,
-        "state" : [0, 1],
+        "state" : [1],
         "count": 0,
         "limit": 20
 	},
 	{
-		"id" : 100,
+		"id" : 91,
 		"code" : "item_boss_key_forest",
 		"name" : "Boss Key Forest",
 		"type" : 3,
 		"obtained" : -1,
-        "state" : [0, 1]
+        "state" : [1]
 	},
 	{
-		"id" : 101,
+		"id" : 92,
 		"code" : "item_boss_key_fire",
 		"name" : "Boss Key Fire",
 		"type" : 3,
 		"obtained" : -1,
-        "state" : [0, 1]
+        "state" : [1]
 	},
 	{
-		"id" : 102,
+		"id" : 93,
 		"code" : "item_boss_key_water",
 		"name" : "Boss Key Water",
 		"type" : 3,
 		"obtained" : -1,
-        "state" : [0, 1]
+        "state" : [1]
 	},
 	{
-		"id" : 103,
+		"id" : 94,
 		"code" : "item_boss_key_spirit",
 		"name" : "Boss Key Spirit",
 		"type" : 3,
 		"obtained" : -1,
-        "state" : [0, 1]
+        "state" : [1]
 	},
 	{
-		"id" : 104,
+		"id" : 95,
 		"code" : "item_boss_key_shadow",
 		"name" : "Boss Key Shadow",
 		"type" : 3,
 		"obtained" : -1,
-        "state" : [0, 1]
+        "state" : [1]
 	},
 	{
-		"id" : 105,
+		"id" : 96,
 		"code" : "item_boss_key_ganon",
 		"name" : "Boss Key Ganon",
 		"type" : 3,
 		"obtained" : -1,
-        "state" : [0, 1]
+        "state" : [1]
 	}
 ]

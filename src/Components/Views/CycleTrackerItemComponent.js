@@ -10,7 +10,6 @@ export class CycleTrackerItemComponent extends Component{
 
 
 	render() {
-    console.log(this.props);
     let obtainable = {};
     if(this.props.cycle.index > -1){
       obtainable = this.props.obtainables[this.props.objectMaps.obtainables[this.props.cycle.options[this.props.cycle.index]]];
