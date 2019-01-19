@@ -18,6 +18,7 @@ export class TrackerItemComponent extends Component{
 	    		onClick={this.handleClick}
 	    		alt=""
 	    	/>
+	    	<div className="count noselect" onClick={this.handleClick}>{this.props.obtainable.count}</div>
 	    </div>
 	   );
   }

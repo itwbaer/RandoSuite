@@ -18,5 +18,10 @@
 		"id" : 3,
 		"code" : "type_item",
 		"name" : "Item"
+	},
+	{
+		"id" : 4,
+		"code" : "type_multiple",
+		"name" : "Multiple"
 	}
 ]

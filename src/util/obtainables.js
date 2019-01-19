@@ -20,7 +20,6 @@ function canUse(state, obtainable, obtainables){
 }
 
 function progressiveObtain(progressive, obtainables, objectMaps){
-
 	//first assume all unobtained
 	for(let i = 0; i < progressive.options.length; i++){
 		let option = progressive.options[i];
@@ -36,4 +35,24 @@ function progressiveObtain(progressive, obtainables, objectMaps){
 	return obtainables;
 }
 
-module.exports = {canUse, progressiveObtain}
+function cycleObtain(update, objectMaps){
+	//first unobtain everything
+	for(let i = 0; i < update.cycles.length; i++){
+		let cycle = update.cycles[i];
+		for(let j = 0; j < cycle.options.length; j++){
+			let obtainable = update.obtainables[objectMaps.obtainables[cycle.options[j]]];
+			obtainable.obtained = -1;
+		}
+	}
+	for(let i = 0; i < update.cycles.length; i++){
+		let cycle = update.cycles[i];
+		if(cycle.index > -1){
+
+			let obtainable = update.obtainables[objectMaps.obtainables[cycle.options[cycle.index]]];
+			if(cycle.obtained > 0){obtainable.obtained = 1}
+
+		}
+	}
+}
+
+module.exports = {canUse, progressiveObtain, cycleObtain}

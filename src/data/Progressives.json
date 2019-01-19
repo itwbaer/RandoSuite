@@ -1,78 +1,6 @@
 [
 	{
 		"id" : 0,
-		"code" : "progressive_dungeon_forest",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 1,
-		"code" : "progressive_dungeon_fire",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 2,
-		"code" : "progressive_dungeon_water",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 3,
-		"code" : "progressive_dungeon_spirit",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 4,
-		"code" : "progressive_dungeon_shadow",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 5,
-		"code" : "progressive_dungeon_light",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 6,
-		"code" : "progressive_dungeon_deku",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 7,
-		"code" : "progressive_dungeon_dodongo",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 8,
-		"code" : "progressive_dungeon_jabu",
-		"name" : "Dungeon Tracker",
-		"index" : 0,
-		"type" : "text",
-		"options": ["???", "FREE", "DEKU", "DCVN", "JABU", "FRST", "FIRE", "WATR", "SPRT", "SHDW"]
-	},
-	{
-		"id" : 9,
 		"code" : "progressive_item_strength",
 		"name" : "Strength Upgrade",
 		"index" : -1,
@@ -80,7 +8,7 @@
 		"options": ["item_bracelet", "item_silvers", "item_golds"]
 	},
 	{
-		"id" : 10,
+		"id" : 1,
 		"code" : "progressive_item_scale",
 		"name" : "Scales",
 		"index" : -1,
@@ -88,7 +16,7 @@
 		"options": ["item_silver_scale", "item_gold_scale"]
 	},
 	{
-		"id" : 11,
+		"id" : 2,
 		"code" : "progressive_item_hook",
 		"name" : "Hookshot Upgrade",
 		"index" : -1,
@@ -96,15 +24,7 @@
 		"options": ["item_hookshot", "item_longshot"]
 	},
 	{
-		"id" : 12,
-		"code" : "progressive_item_mask",
-		"name" : "Masks",
-		"index" : -1,
-		"type" : "obtainable",
-		"options": ["item_keaton_mask", "item_skull_mask", "item_mask_truth"]
-	},
-	{
-		"id" : 13,
+		"id" : 3,
 		"code" : "progressive_item_wallet",
 		"name" : "Wallet Upgrade",
 		"index" : -1,
@@ -112,20 +32,36 @@
 		"options": ["item_adult_wallet", "item_giants_wallet"]
 	},
 	{
-		"id" : 14,
-		"code" : "progressive_item_skulltua",
-		"name" : "Skulltulas",
-		"index" : -1,
-		"type" : "obtainable",
-		"options": ["item_skulltula_ten", "item_skulltula_twenty", "item_skulltula_thirty", "item_skulltula_fourty", "item_skulltula_fifty"]
-	},
-	{
-		"id" : 15,
+		"id" : 4,
 		"code" : "progressive_item_bottle",
 		"name" : "Bottles",
 		"index" : -1,
 		"type" : "obtainable",
 		"options": ["item_bottle", "item_letter"]
+	},
+	{
+		"id" : 5,
+		"code" : "progressive_item_ocarina",
+		"name" : "Ocarinas",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_fairy_ocarina", "item_ocarina_time"]
+	},
+	{
+		"id" : 6,
+		"code" : "progressive_item_child_trade",
+		"name" : "Child Trade",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_child_egg", "item_child_cucco", "item_zelda_letter", "item_keaton_mask", "item_skull_mask", "item_spooky_mask", "item_bunny_mask", "item_mask_truth"]
+	},
+	{
+		"id" : 7,
+		"code" : "progressive_item_adult_trade",
+		"name" : "Adult Trade",
+		"index" : -1,
+		"type" : "obtainable",
+		"options": ["item_adult_egg", "item_adult_cucco", "item_cojiro", "item_mushroom", "item_medicine", "item_saw", "item_broken_sword", "item_perscription", "item_frog", "item_eyedrops", "item_claim"]
 	}
 
 

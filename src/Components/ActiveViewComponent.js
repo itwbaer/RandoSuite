@@ -26,6 +26,8 @@ export class ActiveViewComponent extends Component{
           obtainables={this.props.data.obtainables}
           progressives={this.props.data.progressives}
           progressivesOnClick={(id, ctrl) => this.props.progressivesOnClick(id, ctrl)}
+          cycles={this.props.data.cycles}
+          cyclesOnClick={(id, ctrl, alt) => this.props.cyclesOnClick(id, ctrl, alt)}
           data={this.props.data}
           objectMaps={this.props.objectMaps}
         />

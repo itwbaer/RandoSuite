@@ -1,43 +1,39 @@
 [
 	[
 		{
-			"code" : "item_slingshot",
+			"code" : "item_kokiri_sword",
 			"type" : "obtainable"
 		},
 		{
-			"code" : "progressive_item_strength",
+			"code" : "item_master_sword",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_goron_sword",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_tunic_goron",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_tunic_zora",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_ocarina",
 			"type" : "progressive"
-		},
-		{
-			"code" : "item_bombs",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "item_bombchus",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "progressive_item_scale",
-			"type" : "progressive"
-		},
-		{
-			"code" : "item_boomerang",
-			"type" : "obtainable"
 		}
 
 	],
 	[
 		{
-			"code" : "item_bow",
+			"code" : "item_deku_shield",
 			"type" : "obtainable"
 		},
 		{
-			"code" : "item_hammer",
+			"code" : "item_hylian_shield",
 			"type" : "obtainable"
-		},
-		{
-			"code" : "progressive_item_hook",
-			"type" : "progressive"
 		},
 		{
 			"code" : "item_mirror_shield",
@@ -50,28 +46,32 @@
 		{
 			"code" : "item_hover_boots",
 			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_scale",
+			"type" : "progressive"
 		}
 
 	],
 	[
 		{
-			"code" : "item_dins",
+			"code" : "item_slingshot",
 			"type" : "obtainable"
 		},
 		{
-			"code" : "item_farores",
+			"code" : "item_boomerang",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_strength",
+			"type" : "progressive"
+		},
+		{
+			"code" : "item_bombs",
 			"type" : "obtainable"
 		},
 		{
 			"code" : "item_magic",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "item_fire_arrows",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "item_light_arrows",
 			"type" : "obtainable"
 		},
 		{
@@ -82,15 +82,42 @@
 	],
 	[
 		{
+			"code" : "item_bow",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "progressive_item_hook",
+			"type" : "progressive"
+		},
+		{
+			"code" : "item_hammer",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_bombchus",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_fire_arrows",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_light_arrows",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "item_deku_stick",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_nuts",
+			"type" : "obtainable"
+		},
+		{
 			"code" : "item_bean",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "item_tunic_goron",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "item_tunic_zora",
 			"type" : "obtainable"
 		},
 		{
@@ -98,35 +125,35 @@
 			"type" : "progressive"
 		},
 		{
-			"code" : "item_kokiri_sword",
+			"code" : "item_dins",
 			"type" : "obtainable"
 		},
 		{
-			"code" : "item_goron_sword",
+			"code" : "item_farores",
 			"type" : "obtainable"
 		}
 
 	],
 	[
 		{
-			"code" : "item_claim",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "item_stone",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "progressive_item_mask",
+			"code" : "progressive_item_child_trade",
 			"type" : "progressive"
+		},
+		{
+			"code" : "progressive_item_adult_trade",
+			"type" : "progressive"
+		},
+		{
+			"code" : "item_skulltulas",
+			"type" : "obtainable"
 		},
 		{
 			"code" : "progressive_item_wallet",
 			"type" : "progressive"
 		},
 		{
-			"code" : "progressive_item_skulltua",
-			"type" : "progressive"
+			"code" : "item_stone",
+			"type" : "obtainable"
 		},
 		{
 			"code" : "song_scarecrow",
@@ -190,82 +217,24 @@
 	],
 	[
 		{
-			"code" : "medallion_forest",
-			"type" : "obtainable"
+			"code" : "FRST",
+			"type" : "text"
 		},
 		{
-			"code" : "medallion_fire",
-			"type" : "obtainable"
+			"code" : "FIRE",
+			"type" : "text"
 		},
 		{
-			"code" : "medallion_water",
-			"type" : "obtainable"
+			"code" : "WATR",
+			"type" : "text"
 		},
 		{
-			"code" : "medallion_spirit",
-			"type" : "obtainable"
+			"code" : "SPRT",
+			"type" : "text"
 		},
 		{
-			"code" : "medallion_shadow",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "medallion_light",
-			"type" : "obtainable"
-		}
-
-	],
-	[
-		{
-			"code" : "progressive_dungeon_forest",
-			"type" : "progressive"
-		},
-		{
-			"code" : "progressive_dungeon_fire",
-			"type" : "progressive"
-		},
-		{
-			"code" : "progressive_dungeon_water",
-			"type" : "progressive"
-		},
-		{
-			"code" : "progressive_dungeon_spirit",
-			"type" : "progressive"
-		},
-		{
-			"code" : "progressive_dungeon_shadow",
-			"type" : "progressive"
-		},
-		{
-			"code" : "progressive_dungeon_light",
-			"type" : "progressive"
-		}
-
-	],
-	[
-		{
-			"code" : "blank2",
-			"type" : "blank2"
-		},
-		{
-			"code" : "stone_emerald",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "blank1",
-			"type" : "blank1"
-		},
-		{
-			"code" : "stone_ruby",
-			"type" : "obtainable"
-		},
-		{
-			"code" : "blank1",
-			"type" : "blank1"
-		},
-		{
-			"code" : "stone_sapphire",
-			"type" : "obtainable"
+			"code" : "SHDW",
+			"type" : "text"
 		},
 		{
 			"code" : "blank2",
@@ -275,32 +244,191 @@
 	],
 	[
 		{
+			"code" : "cycle_medallion_forest",
+			"type" : "cycle"
+		},
+		{
+			"code" : "cycle_medallion_fire",
+			"type" : "cycle"
+		},
+		{
+			"code" : "cycle_medallion_water",
+			"type" : "cycle"
+		},
+		{
+			"code" : "cycle_medallion_spirit",
+			"type" : "cycle"
+		},
+		{
+			"code" : "cycle_medallion_shadow",
+			"type" : "cycle"
+		},
+		{
+			"code" : "GC",
+			"type" : "text"
+		}
+
+	],
+	[
+		{
+			"code" : "item_small_key_forest",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_small_key_fire",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_small_key_water",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_small_key_spirit",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_small_key_shadow",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_small_key_ganon",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "item_boss_key_forest",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_boss_key_fire",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_boss_key_water",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_boss_key_spirit",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_boss_key_shadow",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_boss_key_ganon",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
+			"code" : "DEKU",
+			"type" : "text"
+		},
+		{
+			"code" : "DCVN",
+			"type" : "text"
+		},
+		{
+			"code" : "JABU",
+			"type" : "text"
+		},
+		{
+			"code" : "FREE",
+			"type" : "text"
+		},
+		{
+			"code" : "BOTW",
+			"type" : "text"
+		},
+		{
+			"code" : "GF",
+			"type" : "text"
+		}
+
+	],
+	[
+		{
+			"code" : "cycle_medallion_deku",
+			"type" : "cycle"
+		},
+		{
+			"code" : "cycle_medallion_dodongo",
+			"type" : "cycle"
+		},
+		{
+			"code" : "cycle_medallion_jabu",
+			"type" : "cycle"
+		},
+		{
+			"code" : "cycle_medallion_free",
+			"type" : "cycle"
+		},
+		{
+			"code" : "item_small_key_well",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_small_key_gf",
+			"type" : "obtainable"
+		}
+
+	],
+	[
+		{
 			"code" : "blank2",
 			"type" : "blank2"
 		},
 		{
-			"code" : "progressive_dungeon_deku",
-			"type" : "progressive"
-		},
-		{
-			"code" : "blank1",
-			"type" : "blank1"
-		},
-		{
-			"code" : "progressive_dungeon_dodongo",
-			"type" : "progressive"
-		},
-		{
-			"code" : "blank1",
-			"type" : "blank1"
-		},
-		{
-			"code" : "progressive_dungeon_jabu",
-			"type" : "progressive"
+			"code" : "blank2",
+			"type" : "blank2"
 		},
 		{
 			"code" : "blank2",
 			"type" : "blank2"
+		},
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		},
+		{
+			"code" : "GTG",
+			"type" : "text"
+		},
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		}
+
+
+	],
+	[
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		},
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		},
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		},
+		{
+			"code" : "blank2",
+			"type" : "blank2"
+		},
+		{
+			"code" : "item_small_key_gtg",
+			"type" : "obtainable"
+		},
+		{
+			"code" : "item_gerudo_card",
+			"type" : "obtainable"
 		}
 
 	]

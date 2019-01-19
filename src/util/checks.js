@@ -119,6 +119,7 @@ function canCheck(state, check, locations, obtainables, checks, objectMaps){
 			else{
 				//could have multiple combinations
 				let haveSet = [];
+				let countSet = [];
 				for(let j = 0; j < checkOption.obtainables.length; j++){
 					let currentSet = checkOption.obtainables[j];
 					let setValid = true;
@@ -183,7 +184,7 @@ function checksRemaining(location, data, objectMaps){
 	let hasChecked = 0;
 	for(let i = 0; i < data.checks.length; i++){
 		let check = data.checks[i];
-		if(data.filter.checkType.includes(check.type) && check.location == location.id){
+		if(data.filter.checkType.includes(check.type) && check.location === location.id){
 			if(check.checked > 0){
 				hasChecked++;
 			}

@@ -540,6 +540,348 @@
 		"id" : 65,
 		"code" : "item_bean",
 		"name" : "Magic Beans",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 10
+	},
+	{
+		"id" : 66,
+		"code" : "item_deku_shield",
+		"name" : "Deku Shield",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 67,
+		"code" : "item_deku_stick",
+		"name" : "Deku Stick",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 68,
+		"code" : "item_nuts",
+		"name" : "Deku Nuts",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 69,
+		"code" : "item_master_sword",
+		"name" : "Master Sword",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 70,
+		"code" : "item_hylian_shield",
+		"name" : "Hylian Shield",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 71,
+		"code" : "item_fairy_ocarina",
+		"name" : "Fairy Ocarina",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 72,
+		"code" : "item_ocarina_time",
+		"name" : "Ocarina of Time",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 73,
+		"code" : "item_boss_key",
+		"name" : "Boss Key",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 74,
+		"code" : "item_small_key",
+		"name" : "Small Key",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 75,
+		"code" : "item_child_egg",
+		"name" : "Child Egg",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 76,
+		"code" : "item_child_cucco",
+		"name" : "Child Cucco",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 77,
+		"code" : "item_zelda_letter",
+		"name" : "Zeldas Letter",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 78,
+		"code" : "item_spooky_mask",
+		"name" : "Spooky Mask",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 79,
+		"code" : "item_bunny_mask",
+		"name" : "Bunny Mask",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0]
+	},
+	{
+		"id" : 80,
+		"code" : "item_adult_egg",
+		"name" : "Adult Egg",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 81,
+		"code" : "item_adult_cucco",
+		"name" : "Adult Cucco",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 82,
+		"code" : "item_cojiro",
+		"name" : "Cojiro",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 83,
+		"code" : "item_mushroom",
+		"name" : "Mushroom",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 84,
+		"code" : "item_medicine",
+		"name" : "Mushroom",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 85,
+		"code" : "item_saw",
+		"name" : "Mushroom",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 86,
+		"code" : "item_broken_sword",
+		"name" : "Broken Sword",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 87,
+		"code" : "item_perscription",
+		"name" : "Perscription",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 88,
+		"code" : "item_frog",
+		"name" : "Frog",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 89,
+		"code" : "item_eyedrops",
+		"name" : "Eyedrops",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [1]
+	},
+	{
+		"id" : 90,
+		"code" : "item_skulltulas",
+		"name" : "Skulltulas",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 100
+	},
+	{
+		"id" : 91,
+		"code" : "item_small_key_forest",
+		"name" : "Small Key Forest",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 92,
+		"code" : "item_small_key_fire",
+		"name" : "Small Key Fire",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 93,
+		"code" : "item_small_key_water",
+		"name" : "Small Key Water",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 94,
+		"code" : "item_small_key_spirit",
+		"name" : "Small Key Spirit",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 95,
+		"code" : "item_small_key_shadow",
+		"name" : "Small Key Shadow",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 96,
+		"code" : "item_small_key_ganon",
+		"name" : "Small Key Ganon",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 97,
+		"code" : "item_small_key_well",
+		"name" : "Small Key Well",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 98,
+		"code" : "item_small_key_gf",
+		"name" : "Small Key Well",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 4
+	},
+	{
+		"id" : 99,
+		"code" : "item_small_key_gtg",
+		"name" : "Small Key Well",
+		"type" : 4,
+		"obtained" : -1,
+        "state" : [0, 1],
+        "count": 0,
+        "limit": 20
+	},
+	{
+		"id" : 100,
+		"code" : "item_boss_key_forest",
+		"name" : "Boss Key Forest",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 101,
+		"code" : "item_boss_key_fire",
+		"name" : "Boss Key Fire",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 102,
+		"code" : "item_boss_key_water",
+		"name" : "Boss Key Water",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 103,
+		"code" : "item_boss_key_spirit",
+		"name" : "Boss Key Spirit",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 104,
+		"code" : "item_boss_key_shadow",
+		"name" : "Boss Key Shadow",
+		"type" : 3,
+		"obtained" : -1,
+        "state" : [0, 1]
+	},
+	{
+		"id" : 105,
+		"code" : "item_boss_key_ganon",
+		"name" : "Boss Key Ganon",
 		"type" : 3,
 		"obtained" : -1,
         "state" : [0, 1]

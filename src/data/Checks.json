@@ -2272,8 +2272,9 @@
 		"state" : [0, 1],
 		"location" : 17,
 		"required": [{
-									"obtainables": [["item_skulltula_ten"]],
-									"checks" : null
+									"obtainables": [["item_skulltulas"]],
+									"checks" : null,
+									"count": [10]
 								}],
 		"checked" : -1
 	},
@@ -2285,8 +2286,9 @@
 		"state" : [0, 1],
 		"location" : 17,
 		"required": [{
-									"obtainables": [["item_skulltula_twenty"]],
-									"checks" : null
+									"obtainables": [["item_skulltulas"]],
+									"checks" : null,
+									"count": [20]
 								}],
 		"checked" : -1
 	},
@@ -2298,8 +2300,9 @@
 		"state" : [0, 1],
 		"location" : 17,
 		"required": [{
-									"obtainables": [["item_skulltula_thirty"]],
-									"checks" : null
+									"obtainables": [["item_skulltulas"]],
+									"checks" : null,
+									"count": [30]
 								}],
 		"checked" : -1
 	},
@@ -2311,8 +2314,9 @@
 		"state" : [0, 1],
 		"location" : 17,
 		"required": [{
-									"obtainables": [["item_skulltula_fourty"]],
-									"checks" : null
+									"obtainables": [["item_skulltulas"]],
+									"checks" : null,
+									"count": [40]
 								}],
 		"checked" : -1
 	},
@@ -2324,8 +2328,9 @@
 		"state" : [0, 1],
 		"location" : 17,
 		"required": [{
-									"obtainables": [["item_skulltula_fifty"]],
-									"checks" : null
+									"obtainables": [["item_skulltulas"]],
+									"checks" : null,
+									"count": [50]
 								}],
 		"checked" : -1
 	},

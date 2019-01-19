@@ -32,7 +32,7 @@ function copyKeys(keys, original, load){
 	for(let i = 0; i < load.length; i++){
 		for(let j = 0; j < keys.length; j++){
 			let key = keys[j];
-			original[i][key] = load[i][key];
+			if(key in original[i]){original[i][key] = load[i][key];}
 		}
 	}
 

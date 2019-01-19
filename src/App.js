@@ -32,6 +32,7 @@ class App extends Component {
     data.tracker = require("./data/Tracker.json");
     data.obtainableTypes = require("./data/ObtainableTypes.json");   
     data.progressives = require("./data/Progressives.json");
+    data.cycles = require("./data/Cycles.json");
     data.states = require("./data/States.json");
     data.filter = require("./data/Filter.json");
     data.maps = this.util.maps.generateMaps(require("./data/Maps.json"));
@@ -40,7 +41,7 @@ class App extends Component {
     data.activeView = 0;
     data.filterOptions = this.util.shared.getAllFilterOptions(data);
     data.views = {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4};
-    data.centeredViews = [data.views.tracker, data.views.save, data.views.load];
+    data.centeredViews = [data.views.save, data.views.load];
     data.notes = "";
 
     this.objectMaps = {};
@@ -50,6 +51,7 @@ class App extends Component {
     this.objectMaps.obtainables= this.util.shared.mapCodeToID(data.obtainables);
     this.objectMaps.obtainableTypes = this.util.shared.mapCodeToID(data.obtainableTypes);
     this.objectMaps.progressives = this.util.shared.mapCodeToID(data.progressives);
+    this.objectMaps.cycles = this.util.shared.mapCodeToID(data.cycles);
     this.objectMaps.states = this.util.shared.mapCodeToID(data.states);
     this.objectMaps.maps = this.util.shared.mapCodeToID(data.maps);
 
@@ -86,7 +88,7 @@ class App extends Component {
     loadData = JSON.parse(loadData);
 
     //only extracting clicked/obtained/index
-    loadData.obtainables = this.util.shared.copyKeys(["obtained", "secondary"], data.obtainables, loadData.obtainables);
+    loadData.obtainables = this.util.shared.copyKeys(["obtained", "secondary", "count"], data.obtainables, loadData.obtainables);
     loadData.checks = this.util.shared.copyKeys(["checked"], data.checks, loadData.checks);
     loadData.progressives = this.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
     loadData.locations = cloneDeep(this.state.data.locations);
@@ -105,15 +107,35 @@ class App extends Component {
   handleClickObtainable(id, ctrl){
     let update = {};
     update.obtainables = cloneDeep(this.state.data.obtainables);
-    if(!ctrl){
+    let obtainable = update.obtainables[id];
+    switch (obtainable.type){
+      case 4:
+        if(!ctrl){
       
-      update.obtainables[id].obtained = -update.obtainables[id].obtained;
+          obtainable.count++;
+
+        }
+        else{
+          obtainable.count--;
+
+        }
+        obtainable.obtained = obtainable.count > 0 ? 1 : -1;
+        break;
+      break;
+      default:
+        if(!ctrl){
+      
+          obtainable.obtained = -obtainable.obtained;
+
+        }
+        else{
+          obtainable.secondary = -obtainable.secondary;
+
+        }
+        break;
 
     }
-    else{
-      update.obtainables[id].secondary = -update.obtainables[id].secondary;
-
-    }
+ 
     update = assignIn(this.state.data, update);
     this.setState({data: update});
     this.runFilter(update);
@@ -154,6 +176,39 @@ class App extends Component {
 
       update.obtainables = this.util.obtainables.progressiveObtain(progressive, update.obtainables, this.objectMaps);
     }
+    update = assignIn(this.state.data, update);
+    this.runFilter(update);
+    this.setState({data: update});    
+  }
+
+  handleClickCycle(id, ctrl, alt){
+    let update = {};
+    update.cycles = cloneDeep(this.state.data.cycles);
+    update.obtainables = cloneDeep(this.state.data.obtainables);
+    let cycle = update.cycles[id];
+    if(!ctrl && !alt){
+      if(cycle.index > -1){
+        cycle.obtained = -cycle.obtained;
+      }
+
+    }
+    else{
+      let nextI = cycle.index + (ctrl ? 1 : 0);
+      nextI = nextI + (alt ? -1 : 0);
+      if(nextI <= cycle.options.length - 1 && nextI >= -1){
+        cycle.index = nextI;
+      }
+      else if(nextI > cycle.options.length - 1){
+        cycle.index = -1;
+      }
+      else if(nextI < -1){
+        cycle.index = cycle.options.length - 1;
+      }
+      //unobtain everything
+    }
+
+    this.util.obtainables.cycleObtain(update, this.objectMaps);
+
     update = assignIn(this.state.data, update);
     this.runFilter(update);
     this.setState({data: update});    
@@ -225,8 +280,8 @@ class App extends Component {
     let update = {};
     update.filter = filter || cloneDeep(this.state.data.filter);
     update.activeMap = id;
-    //update.activeLocation = id > 0 ? this.state.data.maps[id].location : this.state.data.activeLocation;
-    update.activeLocation = this.state.data.maps[id].location;
+    update.activeLocation = id > 0 ? this.state.data.maps[id].location : this.state.data.activeLocation;
+    //update.activeLocation = this.state.data.maps[id].location;
     update = assignIn(this.state.data, update);
     this.setState({data: update});
     this.util.maps.setMapImage(this.mapDisplay, update);
@@ -243,7 +298,7 @@ class App extends Component {
       this.util.checks.checksRemaining(location, data, this.objectMaps);
     }
 
-    if(data.activeMap == 0){
+    if(data.activeMap === 0){
       this.util.maps.createMarkers(this.mapDisplay, data, this.objectMaps);
     }
     else{
@@ -301,6 +356,7 @@ class App extends Component {
                   util={this.util}
                   obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
                   progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
+                  cyclesOnClick={(id, ctrl, alt) => this.handleClickCycle(id, ctrl, alt)}
                   loadOnClick={(data) => this.loadFile(data)}
                   checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
                   filterSelectOnChange={(key, data) => this.handleFilterSelectChange(key, data)}

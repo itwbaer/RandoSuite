@@ -1,0 +1,92 @@
+[
+	{
+		"id" : 0,
+		"code" : "cycle_medallion_forest",
+		"name" : "Forest Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 1,
+		"code" : "cycle_medallion_fire",
+		"name" : "Fire Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 2,
+		"code" : "cycle_medallion_water",
+		"name" : "Water Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 3,
+		"code" : "cycle_medallion_spirit",
+		"name" : "Spirit Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 4,
+		"code" : "cycle_medallion_shadow",
+		"name" : "Shadow Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 5,
+		"code" : "cycle_medallion_deku",
+		"name" : "Deku Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 6,
+		"code" : "cycle_medallion_dodongo",
+		"name" : "Dodongo Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 7,
+		"code" : "cycle_medallion_jabu",
+		"name" : "Jabu Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	},
+	{
+		"id" : 8,
+		"code" : "cycle_medallion_free",
+		"name" : "Free Medallion",
+		"index" : -1,
+		"obtained": -1,
+		"type" : "medallion",
+		"default": "question_mark.png",
+		"options": ["stone_emerald", "stone_ruby", "stone_sapphire", "medallion_light", "medallion_forest", "medallion_fire", "medallion_water", "medallion_spirit", "medallion_shadow"]
+	}
+]
