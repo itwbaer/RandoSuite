@@ -91,12 +91,14 @@ class App extends Component {
     loadData.obtainables = this.util.shared.copyKeys(["obtained", "secondary", "count"], data.obtainables, loadData.obtainables);
     loadData.checks = this.util.shared.copyKeys(["checked"], data.checks, loadData.checks);
     loadData.progressives = this.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
+    loadData.cycles = this.util.shared.copyKeys(["index", "obtained"], data.cycles, loadData.cycles);
     loadData.locations = cloneDeep(this.state.data.locations);
+    loadData.activeView = 0;
     loadData = assignIn(data, loadData);
 
     let filteredChecks = this.util.checks.applyFilter(loadData, this.objectMaps);
     let filteredMaps = this.util.maps.filterMaps(filteredChecks, loadData, this.objectMaps);
-    this.handleClickMap(this.state.data.activeMap, loadData.filter);
+    this.handleClickMap(loadData.activeMap, loadData.filter);
     this.runFilter(loadData);
     this.setState({ data: loadData,
                   filteredChecks: filteredChecks,
@@ -243,11 +245,11 @@ class App extends Component {
     let update = {};
     update.filter = cloneDeep(this.state.data.filter);
     update.filter[key] = this.util.shared.optionsToFilter(data);
-    
-    if(key === "checkType" || "worldDone" || "worldNone"){
+    /*if(key === "checkType" || "worldDone" || "worldNone" || "state"){
       this.handleClickMap(this.state.data.activeMap, update.filter);
-    }
+    }*/
     update = assignIn(this.state.data, update);
+    this.util.maps.createMarkers(this.mapDisplay, update, this.objectMaps);
     this.runFilter(update);
     this.setState({data: update});
   }

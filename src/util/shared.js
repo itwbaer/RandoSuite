@@ -45,6 +45,7 @@ function saveFile(data){
 	saveData.checks = data.checks;
 	saveData.filter = data.filter;
 	saveData.progressives = data.progressives;
+	saveData.cycles = data.cycles;
 	saveData.notes = data.notes;
 	saveData.activeMap = data.activeMap;
 	saveData.activeLocation = data.activeLocation;

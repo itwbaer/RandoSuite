@@ -180,7 +180,7 @@
 		"location" : 24,
 		"required" : [{
 			          		"location": "location_gerudo_fortress",
-					  				"obtainables": null
+					  				"obtainables": [["item_gerudo_card"]]
 					 			 }],
 		"state" : 1
 	},
@@ -202,7 +202,7 @@
 		"location" : 25,
 		"required" : [{
 			          		"location": null,
-					  				"obtainables": [["item_longshot"]]
+					  				"obtainables": [["item_longshot", "item_gerudo_card"]]
 					 			  },
 					 			  {
 			          		"location": "location_desert_colossus",
@@ -231,7 +231,7 @@
 					 			 	},
 					 			 	{
 					 			 		"location": null,
-					  				"obtainables": [["item_longshot"]]
+					  				"obtainables": [["item_longshot", "item_gerudo_card"]]
 					 			 	}
 					 			],
 		"state" : 1
