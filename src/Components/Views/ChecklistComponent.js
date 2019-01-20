@@ -60,11 +60,11 @@ export class ChecklistComponent extends Component{
 
 	render() {
     return(
-      <div>
+
         <div className="container-fluid">       
         	{this.createChecklist()}
         </div>
-      </div>
+
     );
   }
 }

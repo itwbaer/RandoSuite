@@ -10,50 +10,59 @@ import {MapComponent} from './Components/MapComponent.js';
 import {MapNavComponent} from './Components/MapNavComponent.js';
 import {OptionsComponent} from './Components/OptionsComponent.js';
 import {ActiveViewComponent} from './Components/ActiveViewComponent.js';
+import {RightViewComponent} from './Components/RightViewComponent.js';
 import {ChecklistComponent} from './Components/Views/ChecklistComponent.js';
+import {SettingsNavComponent} from './Components/SettingsNavComponent.js';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.util =  {};
-    this.util.checks = require('./util/checks.js');
-    this.util.locations = require('./util/locations.js');
-    this.util.obtainables = require('./util/obtainables.js');
-    this.util.maps = require('./util/maps.js');
-    this.util.shared = require('./util/shared.js');
+    this.util =  {
+                  checks: require('./util/checks.js'),
+                  locations: require('./util/locations.js'),
+                  obtainables: require('./util/obtainables.js'),
+                  maps: require('./util/maps.js'),
+                  shared: require('./util/shared.js'),
+                };
 
-    let data = {};
-    data.access = require("./data/Access.json");
-    data.locations= require("./data/Locations.json");
-    data.checks = require("./data/Checks.json");
-    data.checkTypes = require("./data/CheckTypes.json");
-    data.obtainables = require("./data/Obtainables.json");
-    data.tracker = require("./data/Tracker.json");
-    data.obtainableTypes = require("./data/ObtainableTypes.json");   
-    data.progressives = require("./data/Progressives.json");
-    data.cycles = require("./data/Cycles.json");
-    data.states = require("./data/States.json");
-    data.filter = require("./data/Filter.json");
-    data.maps = this.util.maps.generateMaps(require("./data/Maps.json"));
-    data.activeMap = 0;
-    data.activeLocation = 0;
-    data.activeView = 0;
-    data.filterOptions = this.util.shared.getAllFilterOptions(data);
-    data.views = {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4};
+
+    let data = {
+                access: require("./data/Access.json"),
+                locations: require("./data/Locations.json"),
+                checks: require("./data/Checks.json"),
+                checkTypes: require("./data/CheckTypes.json"),
+                obtainables: require("./data/Obtainables.json"),
+                tracker: require("./data/Tracker.json"),
+                obtainableTypes: require("./data/ObtainableTypes.json"),
+                progressives: require("./data/Progressives.json"),
+                cycles: require("./data/Cycles.json"),
+                states: require("./data/States.json"),
+                filter: require("./data/Filter.json"),
+                maps: this.util.maps.generateMaps(require("./data/Maps.json")),
+                activeMap: 0,
+                activeLocation: 0,
+                activeView: 0,
+                rightView: 5,
+                views: {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4, "checklist": 5, "settings": 6, "about": 7},
+                notes: ""
+              };
+
     data.centeredViews = [data.views.save, data.views.load];
-    data.notes = "";
+    data.filterOptions = this.util.shared.getAllFilterOptions(data);
 
-    this.objectMaps = {};
-    this.objectMaps.locations = this.util.shared.mapCodeToID(data.locations);
-    this.objectMaps.checks = this.util.shared.mapCodeToID(data.checks);
-    this.objectMaps.checkTypes = this.util.shared.mapCodeToID(data.checkTypes);
-    this.objectMaps.obtainables= this.util.shared.mapCodeToID(data.obtainables);
-    this.objectMaps.obtainableTypes = this.util.shared.mapCodeToID(data.obtainableTypes);
-    this.objectMaps.progressives = this.util.shared.mapCodeToID(data.progressives);
-    this.objectMaps.cycles = this.util.shared.mapCodeToID(data.cycles);
-    this.objectMaps.states = this.util.shared.mapCodeToID(data.states);
-    this.objectMaps.maps = this.util.shared.mapCodeToID(data.maps);
+    this.objectMaps = {
+                        locations: this.util.shared.mapCodeToID(data.locations),
+                        checks: this.util.shared.mapCodeToID(data.checks),
+                        checkTypes: this.util.shared.mapCodeToID(data.checkTypes),
+                        obtainables: this.util.shared.mapCodeToID(data.obtainables),
+                        obtainableTypes: this.util.shared.mapCodeToID(data.obtainableTypes),
+                        progressives: this.util.shared.mapCodeToID(data.progressives),
+                        cycles: this.util.shared.mapCodeToID(data.cycles),
+                        states: this.util.shared.mapCodeToID(data.states),
+                        maps: this.util.shared.mapCodeToID(data.maps)
+                      };
+
 
 
     this.util.locations.linkAccess(data.locations, data.access);
@@ -118,7 +127,10 @@ class App extends Component {
 
         }
         else{
-          obtainable.count--;
+          if(obtainable.count > 0){
+            obtainable.count--;
+          }
+
 
         }
         obtainable.obtained = obtainable.count > 0 ? 1 : -1;
@@ -227,6 +239,16 @@ class App extends Component {
     //run the filter?
   }
 
+  handleClickRightOptions(id, data){
+
+    //change display
+    let update = {};
+    update.rightView = id;
+    update = assignIn(this.state.data, update);
+    this.setState({data: update});
+    //run the filter?
+  }
+
   handleChangeNotes(data){
     let update = {};
     update.notes = data;
@@ -273,8 +295,6 @@ class App extends Component {
     this.setState({ data: update });
 
     this.runFilter(update);
-
-    
     
   }
 
@@ -295,10 +315,7 @@ class App extends Component {
     let filteredChecks = this.util.checks.applyFilter(data, this.objectMaps);
     let filteredMaps = this.util.maps.filterMaps(filteredChecks, data, this.objectMaps);
 
-    for(let i = 0; i < data.locations.length; i++){
-      let location = data.locations[i];
-      this.util.checks.checksRemaining(location, data, this.objectMaps);
-    }
+    data.locations.forEach(location => this.util.checks.checksRemaining(location, data, this.objectMaps));
 
     if(data.activeMap === 0){
       this.util.maps.createMarkers(this.mapDisplay, data, this.objectMaps);
@@ -377,16 +394,24 @@ class App extends Component {
                   <MapComponent 
                   />
                 </div>
-                <div className="col-5" id="Checklist">
-                  <ChecklistComponent 
-                    checklistOnClick={(id) => this.handleClickChecklist(id)}
-                    util={this.util}
-                    data={this.state.data}
-                    objectMaps={this.objectMaps}
-                  />
+                <div className="col-5">
+                  <div className="row" id="SettingsNavRow">
+                    <SettingsNavComponent
+                      onClick={(id, data) => this.handleClickRightOptions(id, data)}
+                      views={this.state.data.views}
+                    />
+
+                  </div>
+                  <div className="row" id="Checklist">
+                    <RightViewComponent
+                      util={this.util}
+                      checklistOnClick={(id) => this.handleClickChecklist(id)}
+                      objectMaps={this.objectMaps}
+                      data={this.state.data}
+                    />
                 </div>
               </div>
-
+            </div>
             <div className="row" id="MapNavRow">
  
                 <MapNavComponent
