@@ -10,9 +10,7 @@ import {MapComponent} from './Components/MapComponent.js';
 import {MapNavComponent} from './Components/MapNavComponent.js';
 import {OptionsComponent} from './Components/OptionsComponent.js';
 import {ActiveViewComponent} from './Components/ActiveViewComponent.js';
-import {RightViewComponent} from './Components/RightViewComponent.js';
 import {ChecklistComponent} from './Components/Views/ChecklistComponent.js';
-import {SettingsNavComponent} from './Components/SettingsNavComponent.js';
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +24,10 @@ class App extends Component {
                   shared: require('./util/shared.js'),
                 };
 
-
+    this.views = {"Tracker": 0, "Notes": 1, "Filter": 2, "Save": 3, "Load" : 4, "Checklist": 5, "Settings": 6, "About": 7};
+    this.viewsLeft = ["Tracker", "Notes", "Filter", "Save", "Load"];
+    this.viewsRight = ["Checklist", "Settings", "About"];
+    this.centeredViews = [this.views.Save, this.views.Load];
     let data = {
                 access: require("./data/Access.json"),
                 locations: require("./data/Locations.json"),
@@ -42,13 +43,13 @@ class App extends Component {
                 maps: this.util.maps.generateMaps(require("./data/Maps.json")),
                 activeMap: 0,
                 activeLocation: 0,
-                activeView: 0,
-                rightView: 5,
-                views: {"tracker": 0, "checks": 1, "notes": 2, "save": 3, "load" : 4, "checklist": 5, "settings": 6, "about": 7},
+                activeView: {
+                              left: this.views.Tracker,
+                              right: this.views.Checklist
+                            },
                 notes: ""
               };
 
-    data.centeredViews = [data.views.save, data.views.load];
     data.filterOptions = this.util.shared.getAllFilterOptions(data);
 
     this.objectMaps = {
@@ -102,7 +103,7 @@ class App extends Component {
     loadData.progressives = this.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
     loadData.cycles = this.util.shared.copyKeys(["index", "obtained"], data.cycles, loadData.cycles);
     loadData.locations = cloneDeep(this.state.data.locations);
-    loadData.activeView = 0;
+    loadData.activeView.left = 0;
     loadData = assignIn(data, loadData);
 
     let filteredChecks = this.util.checks.applyFilter(loadData, this.objectMaps);
@@ -134,7 +135,7 @@ class App extends Component {
 
         }
         obtainable.obtained = obtainable.count > 0 ? 1 : -1;
-        break;
+        
       break;
       default:
         if(!ctrl){
@@ -229,11 +230,12 @@ class App extends Component {
   }
 
 
-  handleClickOptions(id, data){
+  handleClickOptions(side, id){
 
     //change display
-    let update = {};
-    update.activeView = id;
+    let update = {}
+    update.activeView = cloneDeep(this.state.data.activeView);
+    update.activeView[side] = id;
     update = assignIn(this.state.data, update);
     this.setState({data: update});
     //run the filter?
@@ -242,8 +244,9 @@ class App extends Component {
   handleClickRightOptions(id, data){
 
     //change display
-    let update = {};
-    update.rightView = id;
+    let update = {}
+    update.activeView = cloneDeep(this.state.data.activeView);
+    update.activeView.right = id;
     update = assignIn(this.state.data, update);
     this.setState({data: update});
     //run the filter?
@@ -363,13 +366,15 @@ class App extends Component {
             <div className="row" id="OptionsRow">
               <div className="col align-self-center">
                 <OptionsComponent
-                  onClick={(id, data) => this.handleClickOptions(id, data)}
-                  views={this.state.data.views}
+                  onClick={(id) => this.handleClickOptions("left", id)}
+                  views={this.views}
+                  options={this.viewsLeft}
+                  activeView={this.state.data.activeView.left}
                 />
               </div>
             </div>
             <div className="row" id="ViewRow">
-              <div className={"col" + (this.state.data.centeredViews.includes(this.state.data.activeView) ? " align-self-center" : "")}>
+              <div className={"col" + (this.centeredViews.includes(this.state.data.activeView.left) ? " align-self-center" : "")}>
                 <ActiveViewComponent
                   filteredChecks={this.state.filteredChecks}
                   util={this.util}
@@ -383,6 +388,8 @@ class App extends Component {
                   changeNotes={(data) => this.handleChangeNotes(data)}
                   objectMaps={this.objectMaps}
                   data={this.state.data}
+                  activeView={this.state.data.activeView.left}
+                  views={this.views}
                 />
               </div>
             </div>
@@ -396,18 +403,30 @@ class App extends Component {
                 </div>
                 <div className="col-5">
                   <div className="row" id="SettingsNavRow">
-                    <SettingsNavComponent
-                      onClick={(id, data) => this.handleClickRightOptions(id, data)}
-                      views={this.state.data.views}
+                    <OptionsComponent
+                      onClick={(id) => this.handleClickOptions("right", id)}
+                      views={this.views}
+                      options={this.viewsRight}
+                      activeView={this.state.data.activeView.right}
                     />
 
                   </div>
                   <div className="row" id="Checklist">
-                    <RightViewComponent
+                    <ActiveViewComponent
+                      filteredChecks={this.state.filteredChecks}
                       util={this.util}
-                      checklistOnClick={(id) => this.handleClickChecklist(id)}
+                      obtainablesOnClick={(id, ctrl) => this.handleClickObtainable(id, ctrl)}
+                      progressivesOnClick={(id, ctrl) => this.handleClickProgressive(id, ctrl)}
+                      cyclesOnClick={(id, ctrl, alt) => this.handleClickCycle(id, ctrl, alt)}
+                      loadOnClick={(data) => this.loadFile(data)}
+                      checklistOnClick={(id, data) => this.handleClickChecklist(id, data)}
+                      filterSelectOnChange={(key, data) => this.handleFilterSelectChange(key, data)}
+                      filterToggleOnChange={(key, data) => this.handleFilterToggleChange(key, data)}
+                      changeNotes={(data) => this.handleChangeNotes(data)}
                       objectMaps={this.objectMaps}
                       data={this.state.data}
+                      activeView={this.state.data.activeView.right}
+                      views={this.views}
                     />
                 </div>
               </div>

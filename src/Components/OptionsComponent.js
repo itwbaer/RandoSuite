@@ -2,21 +2,35 @@ import React, { Component } from 'react';
 
 export class OptionsComponent extends Component{
 
+  getOptions(){
+    let options = [];
+    for(let i = 0; i < this.props.options.length; i++){
+      let option = this.props.options[i];
+      let view = this.props.views[option];
+      options.push(
+                    <button
+                      type="button"
+                      className={"btn " + (this.props.activeView === view ? "btn-success" : "btn-light")}
+                      onClick={() => this.props.onClick(view)}>
+                      {option}
+                    </button>
+                    );
+
+      if(i < this.props.options.length - 1){
+        options.push(<span className="space"></span>);
+      }
+      
+    }
+
+    return options;
+  }
 
 
 	render() {
     return(
       <div className="container-fluid">
         <div className="row justify-content-center">
-          <button type="button" className="btn btn-primary" onClick={() => this.props.onClick(this.props.views.tracker)}>Tracker</button>
-          <span className="space"></span>
-          <button type="button" className="btn btn-secondary" onClick={() => this.props.onClick(this.props.views.notes)}>Notes</button>
-          <span className="space"></span>
-          <button type="button" className="btn btn-info" onClick={() => this.props.onClick(this.props.views.filter)}>Filter</button>
-          <span className="space"></span>
-          <button type="button" className="btn btn-success" onClick={() => this.props.onClick(this.props.views.save)}>Save</button>
-          <span className="space"></span>
-          <button type="button" className="btn btn-warning" onClick={() => this.props.onClick(this.props.views.load)}>Load</button>
+          {this.getOptions()}
         </div>
         
       </div>

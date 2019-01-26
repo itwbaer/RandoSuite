@@ -4,6 +4,9 @@ import {NotesComponent} from './Views/NotesComponent';
 import {FilterComponent} from './Views/FilterComponent';
 import {LoadComponent} from './Views/LoadComponent';
 import {SaveComponent} from './Views/SaveComponent';
+import {ChecklistComponent} from './Views/ChecklistComponent';
+import {AboutComponent} from './Views/AboutComponent';
+import {SettingsComponent} from './Views/SettingsComponent';
 
 import {PopupWindow} from './PopupWindow';
 
@@ -71,18 +74,52 @@ export class ActiveViewComponent extends Component{
    
   }
 
+  displayAbout(){
+    return(
+      <AboutComponent 
+
+        />
+    );
+  }
+
+  displaySettings(){
+    return(
+        <SettingsComponent 
+
+        />
+    );
+  }
+
+  displayChecklist(){
+    return(
+      <ChecklistComponent 
+        checklistOnClick={(id) => this.props.checklistOnClick(id)}
+        util={this.props.util}
+        data={this.props.data}
+        objectMaps={this.props.objectMaps}
+      />
+    );
+   
+  }
+
   getDisplay(){
-    switch(this.props.data.activeView) {
-              case this.props.data.views.notes:
+    switch(this.props.activeView) {
+              case this.props.views.Notes:
                 return this.displayNotes();
-              case this.props.data.views.filter:
+              case this.props.views.Filter:
                 return this.displayFilter();
-              case this.props.data.views.tracker:
+              case this.props.views.Tracker:
                 return this.displayTracker();
-              case this.props.data.views.save:
+              case this.props.views.Save:
                 return this.displaySave();
-              case this.props.data.views.load:
+              case this.props.views.Load:
                 return this.displayLoad();
+              case this.props.views.Checklist:
+                return this.displayChecklist();
+              case this.props.views.Settings:
+                return this.displaySettings();
+              case this.props.views.About:
+                return this.displayAbout();
               default:
                 return this.displayTracker();
     }
