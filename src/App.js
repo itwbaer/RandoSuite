@@ -103,6 +103,7 @@ class App extends Component {
     loadData.progressives = this.util.shared.copyKeys(["index"], data.progressives, loadData.progressives);
     loadData.cycles = this.util.shared.copyKeys(["index", "obtained"], data.cycles, loadData.cycles);
     loadData.locations = cloneDeep(this.state.data.locations);
+    loadData.activeView = cloneDeep(this.state.data.activeView);
     loadData.activeView.left = 0;
     loadData = assignIn(data, loadData);
 
@@ -236,17 +237,6 @@ class App extends Component {
     let update = {}
     update.activeView = cloneDeep(this.state.data.activeView);
     update.activeView[side] = id;
-    update = assignIn(this.state.data, update);
-    this.setState({data: update});
-    //run the filter?
-  }
-
-  handleClickRightOptions(id, data){
-
-    //change display
-    let update = {}
-    update.activeView = cloneDeep(this.state.data.activeView);
-    update.activeView.right = id;
     update = assignIn(this.state.data, update);
     this.setState({data: update});
     //run the filter?
