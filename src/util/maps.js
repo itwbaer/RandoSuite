@@ -25,7 +25,7 @@ function filterMaps(filteredChecks, data, objectMaps){
 			filteredMaps.push(current);
 			pushedMaps.push(current.id);
 		}
-		else if(current.location === -1 && !pushedMaps.includes(current.id)){
+		else if(current.location === "location_world" && !pushedMaps.includes(current.id)){
 			filteredMaps.push(current);
 			pushedMaps.push(current.id);
 		}

@@ -5,7 +5,7 @@
 		"name" : "Zeldas Lullaby",
 		"type" : 0,
 		"state" : [0],
-		"location" : 31,
+		"location" : "location_hyrule_castle",
 		"required": [{
 									"obtainables": [["item_child_cucco"]],
 									"checks" : null
@@ -18,7 +18,7 @@
 		"name" : "Eponas Song",
 		"type" : 0,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"required": [{
 									"obtainables": [["item_zelda_letter"]],
 									"checks" : null
@@ -31,7 +31,7 @@
 		"name" : "Sarias Song",
 		"type" : 0,
 		"state" : [0],
-		"location" : 3,
+		"location" : "location_sacred_meadow",
 		"required": [{
 									"obtainables": [["item_zelda_letter", "item_fairy_ocarina"]],
 									"checks" : null
@@ -44,7 +44,7 @@
 		"name" : "Sun Song",
 		"type" : 0,
 		"state" : [0, 1],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -57,7 +57,7 @@
 		"name" : "Ocarina of Time",
 		"type" : 0,
 		"state" : [0],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["stone_emerald", "stone_ruby", "stone_sapphire"]],
 									"checks" : null
@@ -70,7 +70,7 @@
 		"name" : "Song of Storms",
 		"type" : 0,
 		"state" : [1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -79,7 +79,7 @@
 		"name" : "Minute of Forest",
 		"type" : 0,
 		"state" : [1],
-		"location" : 3,
+		"location" : "location_sacred_meadow",
 		"checked" : -1
 	},
 	{
@@ -88,7 +88,7 @@
 		"name" : "Bolero of Fire",
 		"type" : 0,
 		"state" : [0, 1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["song_fire"], ["item_hookshot"], ["item_hover_boots"]],
 									"checks" : null
@@ -101,7 +101,7 @@
 		"name" : "Sernade of Water",
 		"type" : 0,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"checked" : -1
 	},
 	{
@@ -110,7 +110,7 @@
 		"name" : "Nocturne of Shadow",
 		"type" : 0,
 		"state" : [1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["medallion_forest", "medallion_fire", "medallion_water"]],
 									"checks" : null
@@ -123,7 +123,7 @@
 		"name" : "Requiem of Spirit",
 		"type" : 0,
 		"state" : [0, 1],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"checked" : -1
 	},
 	{
@@ -132,7 +132,7 @@
 		"name" : "Prelude of Light",
 		"type" : 0,
 		"state" : [1],
-		"location" : 35,
+		"location" : "location_temple_of_time",
 		"required_obtainables" : "3",
 		"required_checks" : "",
 		"required": [{
@@ -147,7 +147,7 @@
 		"name" : "Lobby Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"checked" : -1
 	},
 	{
@@ -156,7 +156,7 @@
 		"name" : "Slingshot Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"required": [{
 									"obtainables": [["item_deku_shield"]],
 									"checks" : null
@@ -169,7 +169,7 @@
 		"name" : "Chest Above Slingshot",
 		"type" : 1,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"required": [{
 									"obtainables": [["item_deku_shield"]],
 									"checks" : null
@@ -182,7 +182,7 @@
 		"name" : "Compass Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"checked" : -1
 	},
 	{
@@ -191,7 +191,7 @@
 		"name" : "Small Chest Near Compass",
 		"type" : 1,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"checked" : -1
 	},
 	{
@@ -200,7 +200,7 @@
 		"name" : "Basement Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"checked" : -1
 	},
 	{
@@ -209,7 +209,7 @@
 		"name" : "Ghoma Heartpiece",
 		"type" : 2,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"required": [{
 									"obtainables": [["item_slingshot", "item_deku_shield", "item_deku_stick"]],
 									"checks" : null
@@ -222,7 +222,7 @@
 		"name" : "Chest in Lobby",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"checked" : -1
 	},
 	{
@@ -231,7 +231,7 @@
 		"name" : "Chest in Room Near Stairs",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"checked" : -1
 	},
 	{
@@ -240,7 +240,7 @@
 		"name" : "Chest Before Bomb Bag",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_bracelet"]],
 									"checks" : null
@@ -253,7 +253,7 @@
 		"name" : "Bomb Bag Chest",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_bracelet"]],
 									"checks" : null
@@ -266,7 +266,7 @@
 		"name" : "Chest at End of Bridge",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -279,7 +279,7 @@
 		"name" : "Chest Above Dodongo",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -292,7 +292,7 @@
 		"name" : "Dodongo Heartpiece",
 		"type" : 2,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -305,7 +305,7 @@
 		"name" : "Boomerang Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"checked" : -1
 	},
 	{
@@ -314,7 +314,7 @@
 		"name" : "Map Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -327,7 +327,7 @@
 		"name" : "Compass Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -340,7 +340,7 @@
 		"name" : "Barinade Heartpiece",
 		"type" : 2,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"required_obtainables" : "30",
 		"required_checks" : "",
 		"required": [{
@@ -355,7 +355,7 @@
 		"name" : "Chest in First Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"checked" : -1
 	},
 	{
@@ -364,7 +364,7 @@
 		"name" : "Chest Room Behind Lobby",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"checked" : -1
 	},
 	{
@@ -373,7 +373,7 @@
 		"name" : "Well Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"], ["song_time"]],
 									"checks" : null
@@ -386,7 +386,7 @@
 		"name" : "Forest Map Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"], ["song_time"]],
 									"checks" : null
@@ -399,7 +399,7 @@
 		"name" : "Outside Hookshot Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["song_time"], ["item_bow"]],
 									"checks" : null
@@ -412,7 +412,7 @@
 		"name" : "Block Area Target Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -425,7 +425,7 @@
 		"name" : "Boss Key Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -438,7 +438,7 @@
 		"name" : "Floormaster Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -451,7 +451,7 @@
 		"name" : "Bow Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bracelet"]],
 									"checks" : null
@@ -464,7 +464,7 @@
 		"name" : "Red Poe Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -477,7 +477,7 @@
 		"name" : "Blue Poe Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -490,7 +490,7 @@
 		"name" : "Falling Ceiling Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -503,7 +503,7 @@
 		"name" : "Rotating Room Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -516,7 +516,7 @@
 		"name" : "Phantom Ganon Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet", "item_boss_key_forest"]],
 									"checks" : null
@@ -529,7 +529,7 @@
 		"name" : "Chest Near Boss",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"checked" : -1
 	},
 	{
@@ -538,7 +538,7 @@
 		"name" : "Fire Dancer Boss Key",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -551,7 +551,7 @@
 		"name" : "Boss Key chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -564,7 +564,7 @@
 		"name" : "North of Lava Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"checked" : -1
 	},
 	{
@@ -573,7 +573,7 @@
 		"name" : "South of Lava Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -586,7 +586,7 @@
 		"name" : "Drop Down Bolder Maze",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet", "item_bombs"]],
 									"checks" : null
@@ -599,7 +599,7 @@
 		"name" : "Side Room Bolder Maze",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet"]],
 									"checks" : null
@@ -612,7 +612,7 @@
 		"name" : "Goron Above in Bolder Maze",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet"]],
 									"checks" : null
@@ -625,7 +625,7 @@
 		"name" : "Goron in Bolder Maze Bombable",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet", "item_bombs"]],
 									"checks" : null
@@ -638,7 +638,7 @@
 		"name" : "Scarecrow Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_hookshot", "song_scarecrow", "item_bracelet"]],
 									"checks" : null
@@ -651,7 +651,7 @@
 		"name" : "Map Chest Firewall Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet"]],
 									"checks" : null
@@ -664,7 +664,7 @@
 		"name" : "Fire Maze Compass",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet"]],
 									"checks" : null
@@ -677,7 +677,7 @@
 		"name" : "Fire Maze Center Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet", "song_time", "item_hammer"]],
 									"checks" : null
@@ -690,7 +690,7 @@
 		"name" : "Hammer Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bracelet", "item_bombs"]],
 									"checks" : null
@@ -703,7 +703,7 @@
 		"name" : "Volvagia Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_hammer", "item_bracelet", "item_boss_key_fire"], ["item_hammer", "item_hover_boots", "item_boss_key_fire"]],
 									"checks" : null
@@ -716,7 +716,7 @@
 		"name" : "Ice Cavern Map Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"checked" : -1
 	},
 	{
@@ -725,7 +725,7 @@
 		"name" : "Ice Cavern Compass Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"checked" : -1
 	},
 	{
@@ -734,7 +734,7 @@
 		"name" : "Frozen Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"checked" : -1
 	},
 	{
@@ -743,7 +743,7 @@
 		"name" : "Iron Boots Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"checked" : -1
 	},
 	{
@@ -752,7 +752,7 @@
 		"name" : "Water Map Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"checked" : -1
 	},
 	{
@@ -761,7 +761,7 @@
 		"name" : "Water Compass Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -774,7 +774,7 @@
 		"name" : "Torches Room Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda", "item_bow"], ["song_zelda", "item_dins"]],
 									"checks" : null
@@ -787,7 +787,7 @@
 		"name" : "Dragon Head Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_time"], ["song_zelda", "item_bracelet"]],
 									"checks" : null
@@ -800,7 +800,7 @@
 		"name" : "Mid Level Eye Target",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda", "item_bow", "item_bracelet"]],
 									"checks" : null
@@ -813,7 +813,7 @@
 		"name" : "Central Pillar Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -826,7 +826,7 @@
 		"name" : "Mid Level Cracked Wall",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda", "item_bombs"]],
 									"checks" : null
@@ -839,7 +839,7 @@
 		"name" : "Water Boss Key",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda", "item_longshot", "item_bombs", "item_bracelet"], ["song_zelda", "item_hover_boots"]],
 									"checks" : null
@@ -852,7 +852,7 @@
 		"name" : "Longshot Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"checked" : -1
 	},
 	{
@@ -861,7 +861,7 @@
 		"name" : "River Eye Target",
 		"type" : 1,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["item_bow", "song_time"]],
 									"checks" : null
@@ -874,7 +874,7 @@
 		"name" : "Morpha Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["item_longshot", "item_boss_key_water"]],
 									"checks" : null
@@ -887,7 +887,7 @@
 		"name" : "Left Hidden Room",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"checked" : -1
 	},
 	{
@@ -896,7 +896,7 @@
 		"name" : "Right Hidden Room",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"checked" : -1
 	},
 	{
@@ -905,7 +905,7 @@
 		"name" : "Front Bomb Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -918,7 +918,7 @@
 		"name" : "Center Large Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"checked" : -1
 	},
 	{
@@ -927,7 +927,7 @@
 		"name" : "Center Small Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"checked" : -1
 	},
 	{
@@ -936,7 +936,7 @@
 		"name" : "Back Left Bomb Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -949,7 +949,7 @@
 		"name" : "Well Basement Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_bracelet"]],
 									"checks" : null
@@ -962,7 +962,7 @@
 		"name" : "Casket Key",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"checked" : -1
 	},
 	{
@@ -971,7 +971,7 @@
 		"name" : "Underwater Chest Left",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -984,7 +984,7 @@
 		"name" : "Underwater Chest Front",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -997,7 +997,7 @@
 		"name" : "Lens of Truth Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -1010,7 +1010,7 @@
 		"name" : "Deadhand Invisible Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -1023,7 +1023,7 @@
 		"name" : "Locked Pits Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"checked" : -1
 	},
 	{
@@ -1032,7 +1032,7 @@
 		"name" : "Room Beyond Pits",
 		"type" : 1,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"checked" : -1
 	},
 	{
@@ -1041,7 +1041,7 @@
 		"name" : "Shadow Map Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"checked" : -1
 	},
 	{
@@ -1050,7 +1050,7 @@
 		"name" : "Hover Boots Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"checked" : -1
 	},
 	{
@@ -1059,7 +1059,7 @@
 		"name" : "Shadow Compass Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots"]],
 									"checks" : null
@@ -1072,7 +1072,7 @@
 		"name" : "First Silver Rupees",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_hookshot"]],
 									"checks" : null
@@ -1085,7 +1085,7 @@
 		"name" : "Invisible Blade Room One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs"]],
 									"checks" : null
@@ -1098,7 +1098,7 @@
 		"name" : "Invisible Blade Room Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs"]],
 									"checks" : null
@@ -1111,7 +1111,7 @@
 		"name" : "Falling Spikes Lower",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs"]],
 									"checks" : null
@@ -1124,7 +1124,7 @@
 		"name" : "Falling Spikes Upper One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_bracelet"]],
 									"checks" : null
@@ -1137,7 +1137,7 @@
 		"name" : "Falling Spikes Upper Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_bracelet"]],
 									"checks" : null
@@ -1150,7 +1150,7 @@
 		"name" : "Invisible Spike Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs"]],
 									"checks" : null
@@ -1163,7 +1163,7 @@
 		"name" : "Skull Pot Key",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"]],
 									"checks" : null
@@ -1176,7 +1176,7 @@
 		"name" : "Wind Room Invisible",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"]],
 									"checks" : null
@@ -1189,7 +1189,7 @@
 		"name" : "After Wind Bomb",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"]],
 									"checks" : null
@@ -1202,7 +1202,7 @@
 		"name" : "After Wind Redeads",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"]],
 									"checks" : null
@@ -1215,7 +1215,7 @@
 		"name" : "Floormaster Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"]],
 									"checks" : null
@@ -1228,7 +1228,7 @@
 		"name" : "Shadow Boss Key",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"]],
 									"checks" : null
@@ -1241,7 +1241,7 @@
 		"name" : "Chest in Boss Key Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"]],
 									"checks" : null
@@ -1254,7 +1254,7 @@
 		"name" : "Bongo Bongo Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot", "item_bow", "item_boss_key_shadow"]],
 									"checks" : null
@@ -1267,7 +1267,7 @@
 		"name" : "Child First Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"]],
 									"checks" : null
@@ -1280,7 +1280,7 @@
 		"name" : "Child Second Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"]],
 									"checks" : null
@@ -1293,7 +1293,7 @@
 		"name" : "Spider Bomb Wall One",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"], ["item_bombs"], ["item_bow"], ["item_hookshot"]],
 									"checks" : null
@@ -1306,7 +1306,7 @@
 		"name" : "Spider Bomb Wall Two",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"], ["item_bombs"], ["item_bow"], ["item_hookshot"]],
 									"checks" : null
@@ -1319,7 +1319,7 @@
 		"name" : "Statue Base Torches",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"checked" : -1
 	},
 	{
@@ -1328,7 +1328,7 @@
 		"name" : "Statue Hands Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"checked" : -1
 	},
 	{
@@ -1337,7 +1337,7 @@
 		"name" : "Statue Zelda Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["song_zelda", "item_hookshot"], ["song_zelda", "item_hover_boots"]],
 									"checks" : null
@@ -1350,7 +1350,7 @@
 		"name" : "Zelda Compass Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["song_zelda", "item_hookshot"]],
 									"checks" : null
@@ -1363,7 +1363,7 @@
 		"name" : "Silver Rupees Bolder Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"checked" : -1
 	},
 	{
@@ -1372,7 +1372,7 @@
 		"name" : "Suns Wall One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"checked" : -1
 	},
 	{
@@ -1381,7 +1381,7 @@
 		"name" : "Suns Wall Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"checked" : -1
 	},
 	{
@@ -1390,7 +1390,7 @@
 		"name" : "Sun Block Silver Rupees",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"checked" : -1
 	},
 	{
@@ -1399,7 +1399,7 @@
 		"name" : "Silver Gauntlets Chest",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"checked" : -1
 	},
 	{
@@ -1408,7 +1408,7 @@
 		"name" : "Mirror Shield Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -1421,7 +1421,7 @@
 		"name" : "Sun Wall Outside Mirror Shield",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_mirror_shield", "item_bombs"]],
 									"checks" : null
@@ -1434,7 +1434,7 @@
 		"name" : "Invisible Before Mirror Shield One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -1447,7 +1447,7 @@
 		"name" : "Invisible Before Mirror Shield Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -1460,7 +1460,7 @@
 		"name" : "Spirit Boss Key",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -1473,7 +1473,7 @@
 		"name" : "Mirror Shield Sun Before Snake Mirror",
 		"type" : 1,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_mirror_shield"]],
 									"checks" : null
@@ -1486,7 +1486,7 @@
 		"name" : "Twinrova Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_mirror_shield", "item_hookshot", "item_boss_key_spirit"]],
 									"checks" : null
@@ -1499,7 +1499,7 @@
 		"name" : "Water Trial One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"checked" : -1
 	},
 	{
@@ -1508,7 +1508,7 @@
 		"name" : "Water Trial Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"checked" : -1
 	},
 	{
@@ -1517,7 +1517,7 @@
 		"name" : "Shadow Trial Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_longshot"]],
 									"checks" : null
@@ -1530,7 +1530,7 @@
 		"name" : "Gold Gauntlets Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_longshot", "item_hover_boots"]],
 									"checks" : null
@@ -1543,7 +1543,7 @@
 		"name" : "Spirit Trial Bombchu Switch",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_bombchus"]],
 									"checks" : null
@@ -1556,7 +1556,7 @@
 		"name" : "Spirit Trial Invisible",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -1569,7 +1569,7 @@
 		"name" : "Light Trial First Room One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds"]],
 									"checks" : null
@@ -1582,7 +1582,7 @@
 		"name" : "Light Trial First Room Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds"]],
 									"checks" : null
@@ -1595,7 +1595,7 @@
 		"name" : "Light Trial First Room Three",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds"]],
 									"checks" : null
@@ -1608,7 +1608,7 @@
 		"name" : "Light Trial First Room Four",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds"]],
 									"checks" : null
@@ -1621,7 +1621,7 @@
 		"name" : "Light Trial First Room Five",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds"]],
 									"checks" : null
@@ -1634,7 +1634,7 @@
 		"name" : "Light Trial First Room Six",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds"]],
 									"checks" : null
@@ -1647,7 +1647,7 @@
 		"name" : "Light Trial First Room Seven",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds"]],
 									"checks" : null
@@ -1660,7 +1660,7 @@
 		"name" : "Light Trial Second Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required": [{
 									"obtainables": [["item_golds", "song_zelda"]],
 									"checks" : null
@@ -1673,7 +1673,7 @@
 		"name" : "Ganons Castle Boss Key",
 		"type" : 1,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"checked" : -1
 	},
 	{
@@ -1682,7 +1682,7 @@
 		"name" : "Midos House One",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"checked" : -1
 	},
 	{
@@ -1691,7 +1691,7 @@
 		"name" : "Midos House Two",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"checked" : -1
 	},
 	{
@@ -1700,7 +1700,7 @@
 		"name" : "Midos House Three",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"checked" : -1
 	},
 	{
@@ -1709,7 +1709,7 @@
 		"name" : "Midos House Four",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"checked" : -1
 	},
 	{
@@ -1718,7 +1718,7 @@
 		"name" : "Kokiri Sword Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"checked" : -1
 	},
 	{
@@ -1727,7 +1727,7 @@
 		"name" : "Shield Grave Chest",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"checked" : -1
 	},
 	{
@@ -1736,7 +1736,7 @@
 		"name" : "Redead Grave Chest",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"required": [{
 									"obtainables": [["song_sun"]],
 									"checks" : null
@@ -1749,7 +1749,7 @@
 		"name" : "Royal Tomb Torches",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"required": [{
 									"obtainables": [["song_zelda", "item_dins"], ["song_zelda", "item_fire_arrows"]],
 									"checks" : null
@@ -1762,7 +1762,7 @@
 		"name" : "Mountain Trail Bomb Wall",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -1775,7 +1775,7 @@
 		"name" : "Right Side Goron Maze One",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"], ["item_silvers"]],
 									"checks" : null
@@ -1788,7 +1788,7 @@
 		"name" : "Right Side Goron Maze Two",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"], ["item_silvers"]],
 									"checks" : null
@@ -1801,7 +1801,7 @@
 		"name" : "Left Side Goron Maze",
 		"type" : 1,
 		"state" : [1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_hammer"], ["item_silvers"]],
 									"checks" : null
@@ -1814,7 +1814,7 @@
 		"name" : "Zora Torches Chest",
 		"type" : 1,
 		"state" : [0],
-		"location" : 11,
+		"location" : "location_zoras_domain",
 		"checked" : -1
 	},
 	{
@@ -1823,7 +1823,7 @@
 		"name" : "Hammer Rocks Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"required": [{
 									"obtainables": [["item_hammer", "song_epona"], ["item_hammer", "item_longshot"]],
 									"checks" : null
@@ -1836,7 +1836,7 @@
 		"name" : "Chest on Gerudo Roof",
 		"type" : 1,
 		"state" : [1],
-		"location" : 23,
+		"location" : "location_gerudo_fortress",
 		"required": [{
 									"obtainables": [["item_hover_boots"], ["item_longshot"], ["item_hookshot", "song_scarecrow"]],
 									"checks" : null
@@ -1849,7 +1849,7 @@
 		"name" : "Torch Chest Wasteland Building",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 25,
+		"location" : "location_haunted_wasteland",
 		"required": [{
 									"obtainables": [["item_dins"], ["item_fire_arrows"]],
 									"checks" : null
@@ -1862,7 +1862,7 @@
 		"name" : "First Lobby Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_bow"]],
 									"checks" : null
@@ -1875,7 +1875,7 @@
 		"name" : "Second Lobby Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_bow"]],
 									"checks" : null
@@ -1888,7 +1888,7 @@
 		"name" : "Stalfos Room Enemies",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1897,7 +1897,7 @@
 		"name" : "Beamos Room Enemies",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -1910,7 +1910,7 @@
 		"name" : "Hidden Ceiling Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1919,7 +1919,7 @@
 		"name" : "Maze First Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1928,7 +1928,7 @@
 		"name" : "Maze Second Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1937,7 +1937,7 @@
 		"name" : "Maze Third Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1946,7 +1946,7 @@
 		"name" : "Ice Arrows Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1955,7 +1955,7 @@
 		"name" : "Maze Ledge One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1964,7 +1964,7 @@
 		"name" : "Maze Ledge Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1973,7 +1973,7 @@
 		"name" : "Key on Ledge",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"checked" : -1
 	},
 	{
@@ -1982,7 +1982,7 @@
 		"name" : "Toilet Bowl",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_iron_boots", "song_time"]],
 									"checks" : null
@@ -1995,7 +1995,7 @@
 		"name" : "Hammer Room Burning Chest",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -2008,7 +2008,7 @@
 		"name" : "Hammer Room Enemies",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -2021,7 +2021,7 @@
 		"name" : "Eye Statue",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_bow", "item_hookshot"]],
 									"checks" : null
@@ -2034,7 +2034,7 @@
 		"name" : "Ledge By Eye Statue",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_hookshot", "item_bow"]],
 									"checks" : null
@@ -2047,7 +2047,7 @@
 		"name" : "Wolfos Room",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -2060,7 +2060,7 @@
 		"name" : "First Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_silvers", "item_hookshot"]],
 									"checks" : null
@@ -2073,7 +2073,7 @@
 		"name" : "Second Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_silvers", "item_hookshot"]],
 									"checks" : null
@@ -2086,7 +2086,7 @@
 		"name" : "Third Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_silvers", "item_hookshot"]],
 									"checks" : null
@@ -2099,7 +2099,7 @@
 		"name" : "Fourth Chest Behind Block",
 		"type" : 1,
 		"state" : [1],
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required": [{
 									"obtainables": [["item_silvers", "item_hookshot"]],
 									"checks" : null
@@ -2112,7 +2112,7 @@
 		"name" : "Richard",
 		"type" : 1,
 		"state" : [0],
-		"location" : 30,
+		"location" : "location_hyrule_market",
 		"checked" : -1
 	},
 	{
@@ -2121,7 +2121,7 @@
 		"name" : "Man on Rooftop",
 		"type" : 1,
 		"state" : [1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -2134,7 +2134,7 @@
 		"name" : "Anjus Chickens",
 		"type" : 1,
 		"state" : [0],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -2143,7 +2143,7 @@
 		"name" : "Anju",
 		"type" : 1,
 		"state" : [1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -2152,7 +2152,7 @@
 		"name" : "Slingshot Target",
 		"type" : 1,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_slingshot"]],
 									"checks" : null
@@ -2165,7 +2165,7 @@
 		"name" : "Skull Kid",
 		"type" : 1,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["song_saria"]],
 									"checks" : null
@@ -2178,7 +2178,7 @@
 		"name" : "Skull Mask",
 		"type" : 1,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_skull_mask"]],
 									"checks" : null
@@ -2191,7 +2191,7 @@
 		"name" : "Mask of Truth",
 		"type" : 1,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_mask_truth"]],
 									"checks" : null
@@ -2204,7 +2204,7 @@
 		"name" : "Diving Hylia Lab",
 		"type" : 1,
 		"state" : [1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_gold_scale"], ["item_iron_boots", "item_hookshot"]],
 									"checks" : null
@@ -2217,7 +2217,7 @@
 		"name" : "Link the Goron",
 		"type" : 1,
 		"state" : [1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_bow"], ["item_bombs"], ["item_bracelet"]],
 									"checks" : null
@@ -2230,7 +2230,7 @@
 		"name" : "Large Rolling Goron",
 		"type" : 1,
 		"state" : [0],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -2243,7 +2243,7 @@
 		"name" : "Sarias Song Darunia",
 		"type" : 1,
 		"state" : [0],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["song_zelda", "song_saria"]],
 									"checks" : null
@@ -2256,7 +2256,7 @@
 		"name" : "Unfreezing King Zora",
 		"type" : 1,
 		"state" : [1],
-		"location" : 11,
+		"location" : "location_zoras_domain",
 		"required": [{
 									"obtainables": [["item_letter"]],
 									"checks" : null
@@ -2269,7 +2269,7 @@
 		"name" : "Frogs Song of Storms",
 		"type" : 1,
 		"state" : [0],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -2282,7 +2282,7 @@
 		"name" : "Ten Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_skulltulas"]],
 									"checks" : null,
@@ -2296,7 +2296,7 @@
 		"name" : "Twenty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_skulltulas"]],
 									"checks" : null,
@@ -2310,7 +2310,7 @@
 		"name" : "Thirty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_skulltulas"]],
 									"checks" : null,
@@ -2324,7 +2324,7 @@
 		"name" : "Fourty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_skulltulas"]],
 									"checks" : null,
@@ -2338,7 +2338,7 @@
 		"name" : "Fifty Skulltulas",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_skulltulas"]],
 									"checks" : null,
@@ -2352,7 +2352,7 @@
 		"name" : "Big Poes",
 		"type" : 1,
 		"state" : [1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["item_bow", "item_bottle"]],
 									"checks" : null
@@ -2365,7 +2365,7 @@
 		"name" : "Big Goron Sword",
 		"type" : 1,
 		"state" : [1],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"required": [{
 									"obtainables": [["item_claim"]],
 									"checks" : null
@@ -2378,7 +2378,7 @@
 		"name" : "Light Arrows",
 		"type" : 1,
 		"state" : [1],
-		"location" : 35,
+		"location" : "location_temple_of_time",
 		"required": [{
 									"obtainables": [["medallion_spirit"]],
 									"checks" : null
@@ -2391,7 +2391,7 @@
 		"name" : "Lost Woods Deku Salesman",
 		"type" : 1,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_deku_shield"], ["item_nuts"]],
 									"checks" : null
@@ -2404,7 +2404,7 @@
 		"name" : "Rutos Letter Bottle",
 		"type" : 1,
 		"state" : [0],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_silver_scale"]],
 									"checks" : null
@@ -2417,7 +2417,7 @@
 		"name" : "Shoot the Sun",
 		"type" : 1,
 		"state" : [1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_bow"]],
 									"checks" : null
@@ -2430,7 +2430,7 @@
 		"name" : "Hyrule Castle Fairy",
 		"type" : 1,
 		"state" : [0],
-		"location" : 31,
+		"location" : "location_hyrule_castle",
 		"required": [{
 									"obtainables": [["song_zelda", "item_bombs"]],
 									"checks" : null
@@ -2443,7 +2443,7 @@
 		"name" : "Fountain Fairy",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"required": [{
 									"obtainables": [["song_zelda", "item_bombs"]],
 									"checks" : null
@@ -2456,7 +2456,7 @@
 		"name" : "Desert Fairy",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required": [{
 									"obtainables": [["song_zelda", "item_bombs"]],
 									"checks" : null
@@ -2469,7 +2469,7 @@
 		"name" : "Mountain Summit Fairy",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"required": [{
 									"obtainables": [["song_zelda", "item_bombs"], ["song_zelda", "item_hammer"]],
 									"checks" : null
@@ -2482,7 +2482,7 @@
 		"name" : "Crater Fairy",
 		"type" : 1,
 		"state" : [1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["song_zelda", "item_hammer"]],
 									"checks" : null
@@ -2495,7 +2495,7 @@
 		"name" : "Ganons Castle Fairy",
 		"type" : 1,
 		"state" : [1],
-		"location" : 33,
+		"location" : "location_ganons_castle",
 		"required": [{
 									"obtainables": [["song_zelda", "item_golds"]],
 									"checks" : null
@@ -2508,7 +2508,7 @@
 		"name" : "Grotto Near Tree",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2521,7 +2521,7 @@
 		"name" : "Grotto Behind Potion Shop",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -2530,7 +2530,7 @@
 		"name" : "Storms Grotto Before Lost Woods",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -2543,7 +2543,7 @@
 		"name" : "Grotto Near Goron Passage",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2556,7 +2556,7 @@
 		"name" : "Deku Salesman Grotto",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2569,7 +2569,7 @@
 		"name" : "Grotto Forest Meadow Entrance",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 3,
+		"location" : "location_sacred_meadow",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2582,7 +2582,7 @@
 		"name" : "Storms Grotto Near Goron City",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -2595,7 +2595,7 @@
 		"name" : "Crater Grotto",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2608,7 +2608,7 @@
 		"name" : "Grotto Above River",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"checked" : -1
 	},
 	{
@@ -2617,7 +2617,7 @@
 		"name" : "South Bolder",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2631,7 +2631,7 @@
 		"name" : "Deku Salesman Near Hylia",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2644,7 +2644,7 @@
 		"name" : "Open Grotto Near Hylia",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"checked" : -1
 	},
 	{
@@ -2653,7 +2653,7 @@
 		"name" : "Grotto Near Drawbridge",
 		"type" : 1,
 		"state" : [0, 1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -2666,7 +2666,7 @@
 		"name" : "Tektite Grotto",
 		"type" : 1,
 		"state" : [1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["item_bombs", "item_iron_boots"], ["item_hammer", "item_iron_boots"], ["item_bombs", "item_gold_scale"], ["item_hammer", "item_gold_scale"]],
 									"checks" : null
@@ -2679,7 +2679,7 @@
 		"name" : "Heartpiece in Barn",
 		"type" : 2,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"checked" : -1
 	},
 	{
@@ -2688,7 +2688,7 @@
 		"name" : "Heartpiece in Impas House",
 		"type" : 2,
 		"state" : [0, 1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -2697,7 +2697,7 @@
 		"name" : "Heartpiece in Windmill",
 		"type" : 2,
 		"state" : [1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["song_time"]],
 									"checks" : null
@@ -2710,7 +2710,7 @@
 		"name" : "Graveyard Bean Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"required": [{
 									"obtainables": [["item_bean"], ["item_longshot"]],
 									"checks" : null
@@ -2723,7 +2723,7 @@
 		"name" : "Heartpiece Above Dodongos",
 		"type" : 2,
 		"state" : [0, 1],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"checked" : -1
 	},
 	{
@@ -2732,7 +2732,7 @@
 		"name" : "Spinning Pot Heartpiece",
 		"type" : 2,
 		"state" : [0],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_bombs", "song_zelda"]],
 									"checks" : null
@@ -2745,7 +2745,7 @@
 		"name" : "Wall Heartpiece",
 		"type" : 2,
 		"state" : [0, 1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"checked" : -1
 	},
 	{
@@ -2754,7 +2754,7 @@
 		"name" : "Crater Bean Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["song_fire", "item_bean"], ["item_hover_boots"]],
 									"checks" : null
@@ -2767,7 +2767,7 @@
 		"name" : "Heartpiece Lower River",
 		"type" : 2,
 		"state" : [0, 1],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hover_boots"], ["item_silver_scale"]],
 									"checks" : null
@@ -2780,7 +2780,7 @@
 		"name" : "Heartpiece Upper River",
 		"type" : 2,
 		"state" : [0, 1],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hover_boots"], ["item_silver_scale"]],
 									"checks" : null
@@ -2793,7 +2793,7 @@
 		"name" : "Heartpiece Above Lab",
 		"type" : 2,
 		"state" : [1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_bean"], ["item_hookshot", "song_scarecrow"]],
 									"checks" : null
@@ -2806,7 +2806,7 @@
 		"name" : "Iceberg Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"checked" : -1
 	},
 	{
@@ -2815,7 +2815,7 @@
 		"name" : "Fountain Bottom Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"required": [{
 									"obtainables": [["item_iron_boots"]],
 									"checks" : null
@@ -2828,7 +2828,7 @@
 		"name" : "Waterfall Heartpiece",
 		"type" : 2,
 		"state" : [0],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"checked" : -1
 	},
 	{
@@ -2837,7 +2837,7 @@
 		"name" : "Chicken Heartpiece",
 		"type" : 2,
 		"state" : [0],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"checked" : -1
 	},
 	{
@@ -2846,7 +2846,7 @@
 		"name" : "Desert Bean Heartpiece",
 		"type" : 2,
 		"state" : [1],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required": [{
 									"obtainables": [["song_spirit", "item_bean"]],
 									"checks" : null
@@ -2859,7 +2859,7 @@
 		"name" : "Chest Game",
 		"type" : 1,
 		"state" : [0],
-		"location" : 30,
+		"location" : "location_hyrule_market",
 		"required": [{
 									"obtainables": [["item_lens"]],
 									"checks" : null
@@ -2872,7 +2872,7 @@
 		"name" : "Slingshot Shooting Gallery",
 		"type" : 1,
 		"state" : [0],
-		"location" : 30,
+		"location" : "location_hyrule_market",
 		"checked" : -1
 	},
 	{
@@ -2881,7 +2881,7 @@
 		"name" : "Archery Shooting Gallery",
 		"type" : 1,
 		"state" : [1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_bow"]],
 									"checks" : null
@@ -2894,7 +2894,7 @@
 		"name" : "Bombchu Bowling One",
 		"type" : 1,
 		"state" : [0],
-		"location" : 30,
+		"location" : "location_hyrule_market",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -2907,7 +2907,7 @@
 		"name" : "Bombchu Bowling Two",
 		"type" : 1,
 		"state" : [0],
-		"location" : 30,
+		"location" : "location_hyrule_market",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -2920,7 +2920,7 @@
 		"name" : "Ranch Chicken Game",
 		"type" : 1,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"required": [{
 									"obtainables": [["item_zelda_letter"]],
 									"checks" : null
@@ -2933,7 +2933,7 @@
 		"name" : "Ocarina Memory Game",
 		"type" : 1,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_fairy_ocarina"]],
 									"checks" : null
@@ -2946,7 +2946,7 @@
 		"name" : "Zora Diving Game",
 		"type" : 1,
 		"state" : [0],
-		"location" : 11,
+		"location" : "location_zoras_domain",
 		"checked" : -1
 	},
 	{
@@ -2955,7 +2955,7 @@
 		"name" : "Child Fishing",
 		"type" : 1,
 		"state" : [0],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_kokiri_sword"]],
 									"checks" : null
@@ -2968,7 +2968,7 @@
 		"name" : "Adult Fishing",
 		"type" : 1,
 		"state" : [1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_bean"], ["song_scarecrow", "item_hookshot"]],
 									"checks" : null
@@ -2981,7 +2981,7 @@
 		"name" : "Horseback Archery One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 23,
+		"location" : "location_gerudo_fortress",
 		"required": [{
 									"obtainables": [["item_bow", "song_epona"]],
 									"checks" : null
@@ -2994,7 +2994,7 @@
 		"name" : "Horseback Archery Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 23,
+		"location" : "location_gerudo_fortress",
 		"required": [{
 									"obtainables": [[ "item_bow", "song_epona"]],
 									"checks" : null
@@ -3007,7 +3007,7 @@
 		"name" : "Frogs Two",
 		"type" : 1,
 		"state" : [0],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["song_zelda", "song_epona", "song_saria", "song_sun", "song_time"]],
 									"checks" : null
@@ -3020,7 +3020,7 @@
 		"name" : "Dampe Gravedigging",
 		"type" : 1,
 		"state" : [0],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"checked" : -1
 	},
 	{
@@ -3029,7 +3029,7 @@
 		"name" : "Dampe Race One",
 		"type" : 1,
 		"state" : [1],
-		"location" : 21,
+		"location" : "location_dampes_grave",
 		"checked" : -1
 	},
 	{
@@ -3038,7 +3038,7 @@
 		"name" : "Dampe Race Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : 21,
+		"location" : "location_dampes_grave",
 		"checked" : -1
 	},
 	{
@@ -3047,7 +3047,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"checked" : -1
 	},
 	{
@@ -3056,7 +3056,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 30,
+		"location" : "location_hyrule_market",
 		"checked" : -1
 	},
 	{
@@ -3065,7 +3065,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 31,
+		"location" : "location_hyrule_castle",
 		"checked" : -1
 	},
 	{
@@ -3074,7 +3074,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 31,
+		"location" : "location_hyrule_castle",
 		"required": [{
 									"obtainables": [["song_storm", "item_bombs", "item_boomerang"]],
 									"checks" : null
@@ -3087,7 +3087,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"checked" : -1
 	},
 	{
@@ -3096,7 +3096,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3109,7 +3109,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"checked" : -1
 	},
 	{
@@ -3118,7 +3118,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3131,7 +3131,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -3140,7 +3140,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -3149,7 +3149,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -3158,7 +3158,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"checked" : -1
 	},
 	{
@@ -3167,7 +3167,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_slingshot"]],
 									"checks" : null
@@ -3180,7 +3180,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3193,7 +3193,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -3206,7 +3206,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -3219,7 +3219,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"checked" : -1
 	},
 	{
@@ -3228,7 +3228,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"checked" : -1
 	},
 	{
@@ -3237,7 +3237,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3250,7 +3250,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"checked" : -1
 	},
 	{
@@ -3259,7 +3259,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3272,7 +3272,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"checked" : -1
 	},
 	{
@@ -3281,7 +3281,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [0],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3294,7 +3294,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3307,7 +3307,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3320,7 +3320,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3333,7 +3333,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 20,
+		"location" : "location_graveyard",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3346,7 +3346,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3359,7 +3359,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_bottle", "song_fire"]],
 									"checks" : null
@@ -3372,7 +3372,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3385,7 +3385,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3398,7 +3398,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required": [{
 									"obtainables": [["item_bottle"]],
 									"checks" : null
@@ -3411,7 +3411,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["item_bombs", "item_boomerang"], ["item_bombs", "item_hookshot"], ["item_hammer", "item_hookshot"]],
 									"checks" : null
@@ -3424,7 +3424,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 28,
+		"location" : "location_hyrule_field",
 		"required": [{
 									"obtainables": [["item_bombs", "item_dins", "item_hookshot"], ["item_bombs", "item_fire_arrows", "item_hookshot"], ["item_bombs", "item_dins", "item_boomerang"], ["item_hammer", "item_dins", "item_hookshot"], ["item_hammer", "item_fire_arrows", "item_hookshot"]],
 									"checks" : null
@@ -3437,7 +3437,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_bombs"], [ "item_hammer"]],
 									"checks" : null
@@ -3450,7 +3450,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 25,
+		"location" : "location_haunted_wasteland",
 		"required": [{
 									"obtainables": [["item_boomerang"], ["item_hookshot"]],
 									"checks" : null
@@ -3463,7 +3463,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 0,
+		"location" : "location_kokiri_forest",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3476,7 +3476,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_bean"]],
 									"checks" : null
@@ -3489,7 +3489,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 3,
+		"location" : "location_sacred_meadow",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3502,7 +3502,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 33,
+		"location" : "location_ganons_castle",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3515,7 +3515,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -3528,7 +3528,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 5,
+		"location" : "location_death_mountain_trail",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -3541,7 +3541,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3554,7 +3554,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["item_longshot"], ["item_bean", "item_hookshot"]],
 									"checks" : null
@@ -3567,7 +3567,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3580,7 +3580,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 11,
+		"location" : "location_zoras_domain",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3593,7 +3593,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"required": [{
 									"obtainables": [["item_silvers", "item_hookshot"]],
 									"checks" : null
@@ -3606,7 +3606,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_longshot"]],
 									"checks" : null
@@ -3619,7 +3619,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3632,7 +3632,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3645,7 +3645,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 23,
+		"location" : "location_gerudo_fortress",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3658,7 +3658,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 23,
+		"location" : "location_gerudo_fortress",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3671,7 +3671,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required": [{
 									"obtainables": [["item_bean"]],
 									"checks" : null
@@ -3684,7 +3684,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3697,7 +3697,7 @@
 		"name" : "Skulltula (N)",
 		"type" : 3,
 		"state" : [1],
-		"location" : 17,
+		"location" : "location_kakariko_village",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -3710,7 +3710,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"checked" : -1
 	},
 	{
@@ -3719,7 +3719,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"]],
 									"checks" : null
@@ -3732,7 +3732,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"checked" : -1
 	},
 	{
@@ -3741,7 +3741,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 1,
+		"location" : "location_deku_tree",
 		"required": [{
 									"obtainables": [["item_bombs", "item_boomerang", "item_slingshot"]],
 									"checks" : null
@@ -3754,7 +3754,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -3767,7 +3767,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["song_scarecrow", "item_hookshot"]],
 									"checks" : null
@@ -3780,7 +3780,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"], ["item_hookshot"], ["item_bow"]],
 									"checks" : null
@@ -3793,7 +3793,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_longshot"]],
 									"checks" : null
@@ -3806,7 +3806,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -3819,7 +3819,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"]],
 									"checks" : null
@@ -3832,7 +3832,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3845,7 +3845,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -3858,7 +3858,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"required": [{
 									"obtainables": [["item_slingshot"], ["item_boomerang"]],
 									"checks" : null
@@ -3871,7 +3871,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"checked" : -1
 	},
 	{
@@ -3880,7 +3880,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"checked" : -1
 	},
 	{
@@ -3889,7 +3889,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["song_time"], ["item_bow"]],
 									"obtainables": [["item_bow", "item_bracelet"], ["song_time", "item_longshot"]],
@@ -3903,7 +3903,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"], ["song_time"], ["item_bow"]],
 									"checks" : null
@@ -3916,7 +3916,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required": [{
 									"obtainables": [["item_bow", "item_bracelet"]],
 									"checks" : null
@@ -3929,7 +3929,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["song_time"]],
 									"checks" : null
@@ -3942,7 +3942,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -3955,7 +3955,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["item_bombs", "item_bracelet"]],
 									"checks" : null
@@ -3968,7 +3968,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["song_scarecrow", "item_bow", "item_bracelet"], ["song_scarecrow", "item_hookshot", "item_bracelet"]],
 									"checks" : null
@@ -3981,7 +3981,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required": [{
 									"obtainables": [["song_scarecrow", "item_hookshot", "item_bracelet"]],
 									"checks" : null
@@ -3994,7 +3994,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -4007,7 +4007,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda", "item_longshot", "item_bombs", "item_bracelet"], ["song_zelda", "item_hover_boots"]],
 									"checks" : null
@@ -4020,7 +4020,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_zelda"]],
 									"checks" : null
@@ -4033,7 +4033,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["item_longshot"]],
 									"checks" : null
@@ -4046,7 +4046,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required": [{
 									"obtainables": [["song_time"]],
 									"checks" : null
@@ -4059,7 +4059,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -4072,7 +4072,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -4085,7 +4085,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"required": [{
 									"obtainables": [["item_hookshot"]],
 									"checks" : null
@@ -4098,7 +4098,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -4111,7 +4111,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -4124,7 +4124,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 19,
+		"location" : "location_well",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -4137,7 +4137,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs"]],
 									"checks" : null
@@ -4150,7 +4150,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs"]],
 									"checks" : null
@@ -4163,7 +4163,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_hookshot"]],
 									"checks" : null
@@ -4176,7 +4176,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "item_longshot", "song_scarecrow"]],
 									"checks" : null
@@ -4189,7 +4189,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required": [{
 									"obtainables": [["item_hover_boots", "item_bombs", "song_zelda", "item_hookshot"]],
 									"checks" : null
@@ -4202,7 +4202,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_boomerang"]],
 									"checks" : null
@@ -4215,7 +4215,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_boomerang", "item_hookshot"]],
 									"checks" : null
@@ -4228,7 +4228,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [0, 1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_boomerang"], ["item_hookshot"]],
 									"checks" : null
@@ -4241,7 +4241,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["song_time"]],
 									"checks" : null
@@ -4254,7 +4254,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required": [{
 									"obtainables": [["item_hookshot", "song_scarecrow"]],
 									"checks" : null
@@ -4267,7 +4267,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -4280,7 +4280,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -4293,7 +4293,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -4306,7 +4306,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -4319,7 +4319,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0],
-		"location" : 13,
+		"location" : "location_jabu",
 		"checked" : -1
 	},
 	{
@@ -4328,7 +4328,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"checked" : -1
 	},
 	{
@@ -4337,7 +4337,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"checked" : -1
 	},
 	{
@@ -4346,7 +4346,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"checked" : -1
 	},
 	{
@@ -4355,7 +4355,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"checked" : -1
 	},
 	{
@@ -4364,7 +4364,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"required": [{
 									"obtainables": [["item_bombs"], ["item_hammer"]],
 									"checks" : null
@@ -4377,7 +4377,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"checked" : -1
 	},
 	{
@@ -4386,7 +4386,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 2,
+		"location" : "location_lost_woods",
 		"checked" : -1
 	},
 	{
@@ -4395,7 +4395,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 3,
+		"location" : "location_sacred_meadow",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -4408,7 +4408,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 3,
+		"location" : "location_sacred_meadow",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -4421,7 +4421,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"checked" : -1
 	},
 	{
@@ -4430,7 +4430,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"checked" : -1
 	},
 	{
@@ -4439,7 +4439,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0],
-		"location" : 29,
+		"location" : "location_lon_lon_ranch",
 		"checked" : -1
 	},
 	{
@@ -4448,7 +4448,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["song_time"], ["item_hookshot"]],
 									"checks" : null
@@ -4461,7 +4461,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["song_time"], ["item_hookshot"]],
 									"checks" : null
@@ -4474,7 +4474,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 7,
+		"location" : "location_goron_city",
 		"required": [{
 									"obtainables": [["song_time"], ["item_hookshot"]],
 									"checks" : null
@@ -4487,7 +4487,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_bombs"]],
 									"checks" : null
@@ -4500,7 +4500,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -4513,7 +4513,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -4526,7 +4526,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 8,
+		"location" : "location_death_mountain_crater",
 		"required": [{
 									"obtainables": [["item_hammer"]],
 									"checks" : null
@@ -4539,7 +4539,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -4552,7 +4552,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -4565,7 +4565,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"checked" : -1
 	},
 	{
@@ -4574,7 +4574,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"checked" : -1
 	},
 	{
@@ -4583,7 +4583,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [0, 1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"checked" : -1
 	},
 	{
@@ -4592,7 +4592,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -4605,7 +4605,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 22,
+		"location" : "location_gerudo_valley",
 		"required": [{
 									"obtainables": [["song_storm"]],
 									"checks" : null
@@ -4618,7 +4618,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required": [{
 									"obtainables": [["item_silvers"]],
 									"checks" : null
@@ -4631,7 +4631,7 @@
 		"name" : "Scrub",
 		"type" : 4,
 		"state" : [1],
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required": [{
 									"obtainables": [["item_silvers"]],
 									"checks" : null
@@ -4644,7 +4644,7 @@
 		"name" : "Skulltula",
 		"type" : 3,
 		"state" : [1],
-		"location" : 15,
+		"location" : "location_lake_hylia",
 		"required": [{
 									"obtainables": [["item_iron_boots", "item_hookshot"]],
 									"checks" : null

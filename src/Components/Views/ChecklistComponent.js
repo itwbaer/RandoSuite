@@ -9,17 +9,17 @@ export class ChecklistComponent extends Component{
     if(this.props.data.activeLocation === -1){ return checklist; }
     //first group the checks
     let filteredChecks = this.props.util.checks.applyFilterType(this.props.data);
-    let groupedChecks = this.props.util.checks.groupByLocation(filteredChecks, this.props.data.locations);
-
+    let groupedChecks = this.props.util.checks.groupByLocation(filteredChecks, this.props.data.locations, this.props.objectMaps);
     let location = this.props.data.locations[this.props.data.activeLocation];
     checklist.push(<h5 key={"heading-" + location.name}>{location.name}</h5>);
 
     let locationChecks = groupedChecks[location.id];
+
     for(let j = 0; j < locationChecks.length; j++){
       let currentCheck = locationChecks[j];
 
       let checkName = currentCheck.name;
-      let checkLocation = this.props.data.locations[currentCheck.location].name;
+      let checkLocation = this.props.data.locations[this.props.objectMaps.locations[currentCheck.location]].name;
       let checkType = this.props.data.checkTypes[currentCheck.type].name;
       let checkState = "";
       let canCheck = [];

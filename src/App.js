@@ -28,6 +28,7 @@ class App extends Component {
     this.viewsLeft = ["Tracker", "Notes", "Filter", "Save", "Load"];
     this.viewsRight = ["Checklist", "Settings", "About"];
     this.centeredViews = [this.views.Save, this.views.Load];
+    
     let data = {
                 access: require("./data/Access.json"),
                 locations: require("./data/Locations.json"),
@@ -66,7 +67,7 @@ class App extends Component {
 
 
 
-    this.util.locations.linkAccess(data.locations, data.access);
+    this.util.locations.linkAccess(data.locations, data.access, this.objectMaps);
     
     this.util.maps.linkMarkers(data.maps, require("./data/Markers.json"), this.objectMaps);
     this.util.maps.linkMarkers(data.maps, require("./data/Links.json"), this.objectMaps);
@@ -295,7 +296,7 @@ class App extends Component {
     let update = {};
     update.filter = filter || cloneDeep(this.state.data.filter);
     update.activeMap = id;
-    update.activeLocation = id > 0 ? this.state.data.maps[id].location : this.state.data.activeLocation;
+    update.activeLocation = id > 0 ? this.state.data.locations[this.objectMaps.locations[this.state.data.maps[id].location]].id : this.state.data.activeLocation;
     //update.activeLocation = this.state.data.maps[id].location;
     update = assignIn(this.state.data, update);
     this.setState({data: update});

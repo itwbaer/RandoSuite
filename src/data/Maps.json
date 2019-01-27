@@ -4,7 +4,7 @@
 		"code": "map_world",
 		"name": "Map of Hyrule",
 		"extension": "jpg",
-		"location": -1,
+		"location": "location_world",
 		"state": [0, 1]
 	},
 	{
@@ -12,7 +12,7 @@
 		"code": "map_dampes_grave",
 		"name": "Dampe's Grave",
 		"extension": "jpg",
-		"location": 21,
+		"location": "location_dampes_grave",
 		"state": [1]
 	},
 	{
@@ -20,7 +20,7 @@
 		"code": "map_death_mountain_crater",
 		"name": "Death Mountain Crater",
 		"extension": "jpg",
-		"location": 8,
+		"location": "location_death_mountain_crater",
 		"state": [0, 1]
 	},
 	{
@@ -28,7 +28,7 @@
 		"code": "map_deku_tree",
 		"name": "Deku Tree",
 		"extension": "jpg",
-		"location": 1,
+		"location": "location_deku_tree",
 		"state": [0]
 	},
 	{
@@ -36,7 +36,7 @@
 		"code": "map_desert_colossus",
 		"name": "Desert Colossus",
 		"extension": "jpg",
-		"location": 26,
+		"location": "location_desert_colossus",
 		"state": [0, 1]
 	},
 	{
@@ -44,7 +44,7 @@
 		"code": "map_dodongos",
 		"name": "Dodongos Cavern",
 		"extension": "jpg",
-		"location": 6,
+		"location": "location_dodongos",
 		"state": [0, 1]
 	},
 	{
@@ -52,7 +52,7 @@
 		"code": "map_fire_temple",
 		"name": "Fire Temple",
 		"extension": "jpg",
-		"location": 9,
+		"location": "location_fire_temple",
 		"state": [1]
 	},
 	{
@@ -60,7 +60,7 @@
 		"code": "map_forest_temple",
 		"name": "Forest Temple",
 		"extension": "jpg",
-		"location": 4,
+		"location": "location_forest_temple",
 		"state": [1]
 	},
 	{
@@ -68,7 +68,7 @@
 		"code": "map_fountain_adult",
 		"name": "Zora's Fountain Adult",
 		"extension": "jpg",
-		"location": 12,
+		"location": "location_zoras_fountain",
 		"state": [1]
 	},
 	{
@@ -76,7 +76,7 @@
 		"code": "map_fountain_child",
 		"name": "Zora's Fountain Child",
 		"extension": "jpg",
-		"location": 12,
+		"location": "location_zoras_fountain",
 		"state": [0]
 	},
 	{
@@ -84,7 +84,7 @@
 		"code": "map_ganons_castle",
 		"name": "Ganon's Castle",
 		"extension": "jpg",
-		"location": 33,
+		"location": "location_ganons_castle",
 		"state": [1]
 	},
 	{
@@ -92,7 +92,7 @@
 		"code": "map_ganons_trials",
 		"name": "Ganon's Trials",
 		"extension": "jpg",
-		"location": 34,
+		"location": "location_inside_ganons_castle",
 		"state": [1]
 	},
 	{
@@ -100,7 +100,7 @@
 		"code": "map_gerudo_valley_child",
 		"name": "Gerudo Valley Child",
 		"extension": "jpg",
-		"location": 22,
+		"location": "location_gerudo_valley",
 		"state": [0]
 	},
 	{
@@ -108,7 +108,7 @@
 		"code": "map_gerudo_fortress",
 		"name": "Gerudo Fortress",
 		"extension": "jpg",
-		"location": 23,
+		"location": "location_gerudo_fortress",
 		"state": [1]
 	},
 	{
@@ -116,7 +116,7 @@
 		"code": "map_goron_city",
 		"name": "Goron City",
 		"extension": "jpg",
-		"location": 7,
+		"location": "location_goron_city",
 		"state": [0, 1]
 	},
 	{
@@ -124,7 +124,7 @@
 		"code": "map_graveyard",
 		"name": "Graveyard",
 		"extension": "jpg",
-		"location": 20,
+		"location": "location_graveyard",
 		"state": [0, 1]
 	},
 	{
@@ -132,7 +132,7 @@
 		"code": "map_gtg",
 		"name": "Gerudo Training Grounds",
 		"extension": "jpg",
-		"location": 24,
+		"location": "location_gerudo_training_grounds",
 		"state": [1]
 	},
 	{
@@ -140,7 +140,7 @@
 		"code": "map_haunted_wasteland",
 		"name": "Haunted Wasteland",
 		"extension": "jpg",
-		"location": 25,
+		"location": "location_haunted_wasteland",
 		"state": [0, 1]
 	},
 	{
@@ -148,7 +148,7 @@
 		"code": "map_hylia_adult",
 		"name": "Lake Hylia Adult",
 		"extension": "jpg",
-		"location": 15,
+		"location": "location_lake_hylia",
 		"state": [1]
 	},
 	{
@@ -164,7 +164,7 @@
 		"code": "map_hyrule_castle",
 		"name": "Hyrule Castle",
 		"extension": "jpg",
-		"location": 31,
+		"location": "location_hyrule_castle",
 		"state": [0]
 	},
 	{
@@ -172,7 +172,7 @@
 		"code": "map_hyrule_field",
 		"name": "Hyrule Field",
 		"extension": "jpg",
-		"location": 28,
+		"location": "location_hyrule_field",
 		"state": [0, 1]
 	},
 	{
@@ -180,7 +180,7 @@
 		"code": "map_ice_cavern",
 		"name": "Ice Cavern",
 		"extension": "jpg",
-		"location": 14,
+		"location": "location_ice_cavern",
 		"state": [1]
 	},
 	{
@@ -188,7 +188,7 @@
 		"code": "map_jabu",
 		"name": "Jabu",
 		"extension": "jpg",
-		"location": 13,
+		"location": "location_jabu",
 		"state": [0]
 	},
 	{
@@ -196,7 +196,7 @@
 		"code": "map_kakariko_adult",
 		"name": "Kakariko Village Adult",
 		"extension": "jpg",
-		"location": 17,
+		"location": "location_kakariko_village",
 		"state": [1]
 	},
 	{
@@ -204,7 +204,7 @@
 		"code": "map_kakariko_child",
 		"name": "Kakariko Village Child",
 		"extension": "jpg",
-		"location": 17,
+		"location": "location_kakariko_village",
 		"state": [0]
 	},
 	{
@@ -212,7 +212,7 @@
 		"code": "map_kokiri_forest",
 		"name": "Kokiri Forest",
 		"extension": "jpg",
-		"location": 0,
+		"location": "location_kokiri_forest",
 		"state": [0, 1]
 	},
 	{
@@ -220,7 +220,7 @@
 		"code": "map_lon_lon_ranch",
 		"name": "Lon Lon Ranch",
 		"extension": "jpg",
-		"location": 29,
+		"location": "location_lon_lon_ranch",
 		"state": [0, 1]
 	},
 	{
@@ -228,7 +228,7 @@
 		"code": "map_lost_woods",
 		"name": "Lost Woods",
 		"extension": "jpg",
-		"location": 2,
+		"location": "location_lost_woods",
 		"state": [0, 1]
 	},
 	{
@@ -236,7 +236,7 @@
 		"code": "map_market_child",
 		"name": "Hyrule Market Child",
 		"extension": "jpg",
-		"location": 30,
+		"location": "location_hyrule_market",
 		"state": [0]
 	},
 	{
@@ -244,7 +244,7 @@
 		"code": "map_sacred_forest",
 		"name": "Sacred Forest Meadow",
 		"extension": "jpg",
-		"location": 3,
+		"location": "location_sacred_meadow",
 		"state": [0, 1]
 	},
 	{
@@ -252,7 +252,7 @@
 		"code": "map_shadow_temple",
 		"name": "Shadow Temple",
 		"extension": "jpg",
-		"location": 18,
+		"location": "location_shadow_temple",
 		"state": [1]
 	},
 	{
@@ -260,7 +260,7 @@
 		"code": "map_spirit_temple",
 		"name": "Spirit Temple",
 		"extension": "jpg",
-		"location": 27,
+		"location": "location_spirit_temple",
 		"state": [0, 1]
 	},
 	{
@@ -268,7 +268,7 @@
 		"code": "map_temple_of_time",
 		"name": "Temple of Time",
 		"extension": "jpg",
-		"location": 35,
+		"location": "location_temple_of_time",
 		"state": [0, 1]
 	},
 	{
@@ -276,7 +276,7 @@
 		"code": "map_water_temple",
 		"name": "Water Temple",
 		"extension": "jpg",
-		"location": 16,
+		"location": "location_water_temple",
 		"state": [1]
 	},
 	{
@@ -284,7 +284,7 @@
 		"code": "map_well",
 		"name": "Bottom of the Well",
 		"extension": "jpg",
-		"location": 19,
+		"location": "location_well",
 		"state": [0]
 	},
 	{
@@ -292,7 +292,7 @@
 		"code": "map_zoras_domain_adult",
 		"name": "Zora's Domain Adult",
 		"extension": "jpg",
-		"location": 11,
+		"location": "location_zoras_domain",
 		"state": [1]
 	},
 	{
@@ -300,7 +300,7 @@
 		"code": "map_zoras_domain_child",
 		"name": "Zora's Domain Child",
 		"extension": "jpg",
-		"location": 11,
+		"location": "location_zoras_domain",
 		"state": [0]
 	},
 	{
@@ -308,7 +308,7 @@
 		"code": "map_zoras_river",
 		"name": "Zora's River",
 		"extension": "jpg",
-		"location": 10,
+		"location": "location_zoras_river",
 		"state": [0, 1]
 	},
 	{
@@ -316,7 +316,7 @@
 		"code": "map_death_mountain_trail",
 		"name": "Death Mountain Trail",
 		"extension": "jpg",
-		"location": 5,
+		"location": "location_death_mountain_trail",
 		"state": [0, 1]
 	},
 	{
@@ -324,7 +324,7 @@
 		"code": "map_market_adult",
 		"name": "Hyrule Market Adult",
 		"extension": "jpg",
-		"location": 30,
+		"location": "location_hyrule_market",
 		"state": [1]
 	},
 	{
@@ -332,7 +332,7 @@
 		"code": "map_gerudo_valley_adult",
 		"name": "Gerudo Valley Adult",
 		"extension": "jpg",
-		"location": 22,
+		"location": "location_gerudo_valley",
 		"state": [1]
 	}
 

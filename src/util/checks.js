@@ -3,7 +3,7 @@ util.obtainables = require('./obtainables.js');
 util.locations = require('./locations.js');
 
 //this needs to be done after filtering
-function groupByLocation(checks, locations){
+function groupByLocation(checks, locations, objectMaps){
 	let groupedChecks = {};
 
 	//initialize
@@ -14,7 +14,8 @@ function groupByLocation(checks, locations){
 	//need to sort locations, then go
 	for(let i = 0; i < checks.length; i++){
 		let check = checks[i];
-		groupedChecks[check.location].push(check);
+		let location = locations[objectMaps.locations[check.location]];
+		groupedChecks[location.id].push(check);
 	}
 
 	return groupedChecks;
@@ -49,8 +50,8 @@ function applyFilter(data, objectMaps){
 	for(let i = 0; i < checks.length; i++){
 		//for every state in the filter
 		let check = checks[i];
-
-		let inLocation = filter.location.includes(check.location);
+		let location = locations[objectMaps.locations[check.location]];
+		let inLocation = filter.location.includes(location.id);
 		let hasChecked = filter.checked.includes(check.checked);
 		let isType = filter.checkType.includes(check.type);
 		//for each state, see if check falls in accessible rule
@@ -59,7 +60,7 @@ function applyFilter(data, objectMaps){
 		for(let j = 0; j < filter.state.length; j++){
 			let currentState = filter.state[j]
 			canCheck.push(filter.accessible.includes(this.canCheck(currentState, check, locations, obtainables, checks, 
-				objectMaps)))
+				objectMaps)));
 			inState.push(check.state.includes(currentState));
 		}
 		check["canCheck"] = canCheck.includes(true);
@@ -90,7 +91,7 @@ function canCheck(state, check, locations, obtainables, checks, objectMaps){
 	}
 
 	//check if we can reach location
-	let location = locations[check.location];
+	let location = locations[objectMaps.locations[check.location]];
 	if(!util.locations.canAccess(state, location, locations, obtainables, objectMaps)){
 		return false;
 	}
@@ -213,7 +214,7 @@ function checksRemaining(location, data, objectMaps){
 	let hasChecked = 0;
 	for(let i = 0; i < data.checks.length; i++){
 		let check = data.checks[i];
-		if(data.filter.checkType.includes(check.type) && check.location === location.id){
+		if(data.filter.checkType.includes(check.type) && data.locations[objectMaps.locations[check.location]].id === location.id){
 			if(check.checked > 0){
 				hasChecked++;
 			}

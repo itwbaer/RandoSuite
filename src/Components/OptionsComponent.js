@@ -9,6 +9,7 @@ export class OptionsComponent extends Component{
       let view = this.props.views[option];
       options.push(
                     <button
+                      key={"option-"+ view}
                       type="button"
                       className={"btn " + (this.props.activeView === view ? "btn-success" : "btn-light")}
                       onClick={() => this.props.onClick(view)}>
@@ -17,7 +18,7 @@ export class OptionsComponent extends Component{
                     );
 
       if(i < this.props.options.length - 1){
-        options.push(<span className="space"></span>);
+        options.push(<span key={"space-"+ view} className="space"></span>);
       }
       
     }
