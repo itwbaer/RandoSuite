@@ -2,7 +2,7 @@
 	{
 		"id" : 0,
 		"code" : "access_sacred_meadow_adult",
-		"location" : 3,
+		"location" : "location_sacred_meadow",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["song_saria"], ["song_forest"]]
@@ -12,7 +12,7 @@
 	{
 		"id" : 1,
 		"code" : "access_forest_temple",
-		"location" : 4,
+		"location" : "location_forest_temple",
 		"required" : [{
 			          		"location": "location_sacred_meadow",
 					  				"obtainables": [["item_hookshot"]]
@@ -22,7 +22,7 @@
 	{
 		"id" : 2,
 		"code" : "access_dodongos_child",
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["item_bombs"], ["item_bracelet"]]
@@ -32,7 +32,7 @@
 	{
 		"id" : 3,
 		"code" : "access_dodongos_adult",
-		"location" : 6,
+		"location" : "location_dodongos",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["item_bombs"], ["item_bracelet"], ["item_hammer"]]
@@ -42,7 +42,7 @@
 	{
 		"id" : 4,
 		"code" : "access_fire_temple",
-		"location" : 9,
+		"location" : "location_fire_temple",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["item_hookshot"], ["item_hover_boots"], ["song_fire"]]
@@ -52,7 +52,7 @@
 	{
 		"id" : 5,
 		"code" : "access_zoras_river_child",
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["item_bombs"], ["item_silver_scale"]]
@@ -62,7 +62,7 @@
 	{
 		"id" : 6,
 		"code" : "access_zoras_river_adult",
-		"location" : 10,
+		"location" : "location_zoras_river",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": null
@@ -72,7 +72,7 @@
 	{
 		"id" : 7,
 		"code" : "access_zoras_domain_child",
-		"location" : 11,
+		"location" : "location_zoras_domain",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["item_silver_scale"]]
@@ -87,7 +87,7 @@
 	{
 		"id" : 8,
 		"code" : "access_zoras_domain_adult",
-		"location" : 11,
+		"location" : "location_zoras_domain",
 		"required" : [{
 			          		"location": "location_zoras_river",
 					  				"obtainables": [["song_zelda"]]
@@ -97,7 +97,7 @@
 	{
 		"id" : 9,
 		"code" : "access_zoras_fountain_child",
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"required" : [{
 			          		"location": "location_zoras_domain",
 					  				"obtainables": [["item_letter"]]
@@ -107,7 +107,7 @@
 	{
 		"id" : 10,
 		"code" : "access_zoras_fountain_adult",
-		"location" : 12,
+		"location" : "location_zoras_fountain",
 		"required" : [{
 			          		"location": "location_zoras_domain",
 					  				"obtainables": [["item_letter"]]
@@ -117,7 +117,7 @@
 	{
 		"id" : 11,
 		"code" : "access_jabu",
-		"location" : 13,
+		"location" : "location_jabu",
 		"required" : [{
 			          		"location": "location_zoras_fountain",
 					  				"obtainables": [["item_slingshot"], ["item_boomerang"]]
@@ -127,7 +127,7 @@
 	{
 		"id" : 12,
 		"code" : "access_ice_cavern",
-		"location" : 14,
+		"location" : "location_ice_cavern",
 		"required" : [{
 			          		"location": "location_zoras_fountain",
 					  				"obtainables": null
@@ -137,7 +137,7 @@
 	{
 		"id" : 13,
 		"code" : "access_water_temple",
-		"location" : 16,
+		"location" : "location_water_temple",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["item_iron_boots", "item_hookshot"]]
@@ -147,7 +147,7 @@
 	{
 		"id" : 14,
 		"code" : "access_shadow_temple",
-		"location" : 18,
+		"location" : "location_shadow_temple",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["song_shadow", "item_dins", "item_hookshot"], ["song_shadow", "item_dins", "item_hover_boots"]]
@@ -157,7 +157,7 @@
 	{
 		"id" : 15,
 		"code" : "access_well",
-		"location" : 19,
+		"location" : "location_well",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["song_storm"]]
@@ -167,7 +167,7 @@
 	{
 		"id" : 16,
 		"code" : "access_gerudo_fortress",
-		"location" : 23,
+		"location" : "location_gerudo_fortress",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["song_epona"], ["item_longshot"]]
@@ -177,7 +177,7 @@
 	{
 		"id" : 17,
 		"code" : "access_gerudo_training_grounds",
-		"location" : 24,
+		"location" : "location_gerudo_training_grounds",
 		"required" : [{
 			          		"location": "location_gerudo_fortress",
 					  				"obtainables": [["item_gerudo_card"]]
@@ -187,7 +187,7 @@
 	{
 		"id" : 18,
 		"code" : "access_haunted_wasteland_child",
-		"location" : 25,
+		"location" : "location_haunted_wasteland",
 		"required" : [
 					 			  {
 			          		"location": "location_desert_colossus",
@@ -199,7 +199,7 @@
 	{
 		"id" : 19,
 		"code" : "access_haunted_wasteland_adult",
-		"location" : 25,
+		"location" : "location_haunted_wasteland",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["item_longshot", "item_gerudo_card"]]
@@ -214,7 +214,7 @@
 	{
 		"id" : 20,
 		"code" : "access_desert_colossus_child",
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["song_spirit"]]
@@ -224,7 +224,7 @@
 	{
 		"id" : 21,
 		"code" : "access_desert_colossus_adult",
-		"location" : 26,
+		"location" : "location_desert_colossus",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["song_spirit"]]
@@ -239,7 +239,7 @@
 	{
 		"id" : 22,
 		"code" : "access_spirit_temple_child",
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required" : [{
 			          		"location": "location_desert_colossus",
 					  				"obtainables": null
@@ -249,7 +249,7 @@
 	{
 		"id" : 23,
 		"code" : "access_spirit_temple_adult",
-		"location" : 27,
+		"location" : "location_spirit_temple",
 		"required" : [{
 			          		"location": "location_desert_colossus",
 					  				"obtainables": [["item_silvers"]]
@@ -259,7 +259,7 @@
 	{
 		"id" : 24,
 		"code" : "access_inside_ganons_castle",
-		"location" : 34,
+		"location" : "location_inside_ganons_castle",
 		"required" : [{
 			          		"location": null,
 					  				"obtainables": [["medallion_forest", "medallion_fire", "medallion_water", "medallion_shadow", "medallion_spirit", "medallion_light"]]

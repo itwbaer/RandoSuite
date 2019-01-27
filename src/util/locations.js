@@ -19,16 +19,16 @@ function sortLocations(locations, objectMaps){
 	return sortedLocations;
 }
 
-function linkAccess(locations, access){
+function linkAccess(locations, access, objectMaps){
 
 	//for each access, attach to location.access
 	access.forEach(function(a){
-
-		if(locations[a.location]["access"] === undefined || locations[a.location]["access"] === null){
-			locations[a.location]["access"] = {};
+		let location = locations[objectMaps.locations[a.location]];
+		if(location["access"] === undefined || location["access"] === null){
+			location["access"] = {};
 		}
-		locations[a.location]["access"][a.state.toString()] = {};
-		locations[a.location]["access"][a.state.toString()]["required"] = a.required;
+		location["access"][a.state.toString()] = {};
+		location["access"][a.state.toString()]["required"] = a.required;
 	});
 
 }

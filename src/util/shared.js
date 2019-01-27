@@ -21,7 +21,7 @@ function mapCodeToID(obj){
 	let codeMap = {} 
 	for(let i = 0; i < obj.length; i++){
 	  let current = obj[i];
-	  codeMap[current.code] = current.id;
+	  codeMap[current.code] = i;
 	}
 
 	return codeMap;
