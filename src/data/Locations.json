@@ -127,90 +127,78 @@
 	},
 	{
 		"id" : 21,
-		"code" : "location_dampes_grave",
-		"name" : "Dampes Grave",
-		"state" : [1]
-	},
-	{
-		"id" : 22,
 		"code" : "location_gerudo_valley",
 		"name" : "Gerudo Valley",
 		"state": [0, 1]
 	},
 	{
-		"id" : 23,
+		"id" : 22,
 		"code" : "location_gerudo_fortress",
 		"name" : "Gerudo Fortress",
 		"state" : [1]
 	},
 	{
-		"id" : 24,
+		"id" : 23,
 		"code" : "location_gerudo_training_grounds",
 		"name" : "Gerudo Training Grounds",
 		"state" : [1]
 	},
 	{
-		"id" : 25,
+		"id" : 24,
 		"code" : "location_haunted_wasteland",
 		"name" : "Haunted Wasteland",
 		"state": [0, 1]
 	},
 	{
-		"id" : 26,
+		"id" : 25,
 		"code" : "location_desert_colossus",
 		"name" : "Desert Colossus",
 		"state": [0, 1]
 	},
 	{
-		"id" : 27,
+		"id" : 26,
 		"code" : "location_spirit_temple",
 		"name" : "Spirit Temple",
 		"state": [0, 1]
 	},
 	{
-		"id" : 28,
+		"id" : 27,
 		"code" : "location_hyrule_field",
 		"name" : "Hyrule Field",
 		"state": [0, 1]
 	},
 	{
-		"id" : 29,
+		"id" : 28,
 		"code" : "location_lon_lon_ranch",
 		"name" : "Lon Lon Ranch",
 		"state": [0, 1]
 	},
 	{
-		"id" : 30,
+		"id" : 29,
 		"code" : "location_hyrule_market",
 		"name" : "Hyrule Market",
 		"state": [0, 1]
 	},
 	{
-		"id" : 31,
+		"id" : 30,
 		"code" : "location_hyrule_castle",
 		"name" : "Hyrule Castle",
 		"state": [0]
 	},
 	{
-		"id" : 32,
-		"code" : "location_zeldas_garden",
-		"name" : "Zeldas Garden",
-		"state": [0]
-	},
-	{
-		"id" : 33,
+		"id" : 31,
 		"code" : "location_ganons_castle",
 		"name" : "Ganons Castle",
 		"state" : [1]
 	},
 	{
-		"id" : 34,
+		"id" : 32,
 		"code" : "location_inside_ganons_castle",
 		"name" : "Inside Ganons Castle",
 		"state" : [1]
 	},
 	{
-		"id" : 35,
+		"id" : 33,
 		"code" : "location_temple_of_time",
 		"name" : "Temple of Time",
 		"state": [0, 1]

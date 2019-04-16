@@ -3029,7 +3029,7 @@
 		"name" : "Dampe Race One",
 		"type" : 1,
 		"state" : [1],
-		"location" : "location_dampes_grave",
+		"location" : "location_graveyard",
 		"checked" : -1
 	},
 	{
@@ -3038,7 +3038,7 @@
 		"name" : "Dampe Race Two",
 		"type" : 1,
 		"state" : [1],
-		"location" : "location_dampes_grave",
+		"location" : "location_graveyard",
 		"checked" : -1
 	},
 	{

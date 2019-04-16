@@ -481,30 +481,6 @@
 	},
 	{
 		"id" : 60,
-		"key" : "map_dampes_grave",
-		"map" : ["map_graveyard"],
-		"lat" : [419],
-		"lon" : [673],
-		"type": "link"
-	},
-	{
-		"id" : 61,
-		"key" : "map_graveyard",
-		"map" : ["map_dampes_grave"],
-		"lat" : [174],
-		"lon" : [539],
-		"type": "link"
-	},
-	{
-		"id" : 62,
-		"key" : "map_kakariko_adult",
-		"map" : ["map_dampes_grave"],
-		"lat" : [1356],
-		"lon" : [179],
-		"type": "link"
-	},
-	{
-		"id" : 63,
 		"key" : "map_shadow_temple",
 		"map" : ["map_graveyard"],
 		"lat" : [582],
@@ -512,7 +488,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 64,
+		"id" : 61,
 		"key" : "map_graveyard",
 		"map" : ["map_shadow_temple"],
 		"lat" : [991],
@@ -520,7 +496,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 65,
+		"id" : 62,
 		"key" : "map_kakariko_child",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [3818],
@@ -528,7 +504,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 66,
+		"id" : 63,
 		"key" : "map_kakariko_adult",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [3818],
@@ -536,7 +512,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 67,
+		"id" : 64,
 		"key" : "map_dodongos",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [2333],
@@ -544,7 +520,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 68,
+		"id" : 65,
 		"key" : "map_goron_city",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [1983],
@@ -552,7 +528,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 69,
+		"id" : 66,
 		"key" : "map_death_mountain_crater",
 		"map" : ["map_death_mountain_trail"],
 		"lat" : [578],
@@ -560,7 +536,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 70,
+		"id" : 67,
 		"key" : "map_death_mountain_trail",
 		"map" : ["map_dodongos"],
 		"lat" : [3321],
@@ -568,7 +544,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 71,
+		"id" : 68,
 		"key" : "map_death_mountain_trail",
 		"map" : ["map_goron_city"],
 		"lat" : [1450],
@@ -576,7 +552,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 72,
+		"id" : 69,
 		"key" : "map_death_mountain_crater",
 		"map" : ["map_goron_city"],
 		"lat" : [95],
@@ -584,7 +560,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 73,
+		"id" : 70,
 		"key" : "map_lost_woods",
 		"map" : ["map_goron_city"],
 		"lat" : [1426],
@@ -592,7 +568,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 74,
+		"id" : 71,
 		"key" : "map_death_mountain_trail",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [1771],
@@ -600,7 +576,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 75,
+		"id" : 72,
 		"key" : "map_goron_city",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [865],
@@ -608,7 +584,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 76,
+		"id" : 73,
 		"key" : "map_fire_temple",
 		"map" : ["map_death_mountain_crater"],
 		"lat" : [107],
@@ -616,7 +592,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 77,
+		"id" : 74,
 		"key" : "map_death_mountain_crater",
 		"map" : ["map_fire_temple"],
 		"lat" : [3949],
@@ -624,7 +600,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 78,
+		"id" : 75,
 		"key" : "map_hyrule_field",
 		"map" : ["map_gerudo_valley_adult", "map_gerudo_valley_child"],
 		"lat" : [2451, 2451],
@@ -632,7 +608,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 79,
+		"id" : 76,
 		"key" : "map_hylia_adult",
 		"map" : ["map_gerudo_valley_adult"],
 		"lat" : [3591],
@@ -640,7 +616,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 79,
+		"id" : 77,
 		"key" : "map_hylia_child",
 		"map" : ["map_gerudo_valley_child"],
 		"lat" : [3591],
@@ -648,7 +624,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 80,
+		"id" : 78,
 		"key" : "map_gerudo_fortress",
 		"map" : ["map_gerudo_valley_adult"],
 		"lat" : [1436],
@@ -656,7 +632,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 81,
+		"id" : 79,
 		"key" : "map_gtg",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [1531],
@@ -664,7 +640,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 82,
+		"id" : 80,
 		"key" : "map_haunted_wasteland",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [953],
@@ -672,7 +648,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 83,
+		"id" : 81,
 		"key" : "map_gerudo_valley_adult",
 		"map" : ["map_gerudo_fortress"],
 		"lat" : [1932],
@@ -680,7 +656,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 84,
+		"id" : 82,
 		"key" : "map_gerudo_fortress",
 		"map" : ["map_gtg"],
 		"lat" : [1786],
@@ -688,7 +664,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 85,
+		"id" : 83,
 		"key" : "map_gerudo_fortress",
 		"map" : ["map_haunted_wasteland"],
 		"lat" : [3921],
@@ -696,7 +672,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 86,
+		"id" : 84,
 		"key" : "map_desert_colossus",
 		"map" : ["map_haunted_wasteland"],
 		"lat" : [2220],
@@ -704,7 +680,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 87,
+		"id" : 85,
 		"key" : "map_haunted_wasteland",
 		"map" : ["map_desert_colossus"],
 		"lat" : [1376],
@@ -712,7 +688,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 88,
+		"id" : 86,
 		"key" : "map_spirit_temple",
 		"map" : ["map_desert_colossus"],
 		"lat" : [1445],
@@ -720,7 +696,7 @@
 		"type": "link"
 	},
 	{
-		"id" : 89,
+		"id" : 87,
 		"key" : "map_desert_colossus",
 		"map" : ["map_spirit_temple"],
 		"lat" : [2267],

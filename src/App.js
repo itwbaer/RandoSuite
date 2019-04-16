@@ -110,6 +110,7 @@ class App extends Component {
 
     let filteredChecks = this.util.checks.applyFilter(loadData, this.objectMaps);
     let filteredMaps = this.util.maps.filterMaps(filteredChecks, loadData, this.objectMaps);
+
     this.handleClickMap(loadData.activeMap, loadData.filter);
     this.runFilter(loadData);
     this.setState({ data: loadData,
@@ -335,6 +336,9 @@ class App extends Component {
     container.setMinZoom(8);
     container.setMaxZoom(10);
     this.mapDisplay.container = container;
+    this.util.maps.setMapImage(this.mapDisplay, this.state.data);
+    this.runFilter(this.state.data);
+    this.util.maps.createMarkers(this.mapDisplay, this.state.data, this.objectMaps);
   }
 
 
@@ -342,10 +346,6 @@ class App extends Component {
 
     require('./util/scrollbar.js');
     this.initializeMap();
-    this.util.maps.setMapImage(this.mapDisplay, this.state.data);
-    
-    this.runFilter(this.state.data);
-    this.util.maps.createMarkers(this.mapDisplay, this.state.data, this.objectMaps);
   }
 
 

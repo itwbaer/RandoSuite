@@ -129,6 +129,7 @@ function generateMaps(maps){
 		let image = new Image();
 		image.src = require("../maps/" + map.code + "." + map.extension);
 		map.image = image
+
 	}
 
 	return maps;

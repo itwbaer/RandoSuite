@@ -1173,7 +1173,7 @@
 		"key" : "check_item_overworld_chest_shield_grave",
 		"map" : ["map_graveyard"],
 		"lat" : [625],
-		"lon" : [715],
+		"lon" : [740],
 		"type": "check"
 	},
 	{
@@ -2030,23 +2030,23 @@
 		"key" : "check_item_minigame_gravedigging",
 		"map" : ["map_graveyard"],
 		"lat" : [634],
-		"lon" : [667],
+		"lon" : [660],
 		"type": "check"
 	},
 	{
 		"id" : 254,
 		"key" : "check_item_minigame_dampe_race_one",
-		"map" : ["map_dampes_grave"],
-		"lat" : [1355],
-		"lon" : [503],
+		"map" : ["map_graveyard"],
+		"lat" : [365],
+		"lon" : [668],
 		"type": "check"
 	},
 	{
 		"id" : 255,
 		"key" : "check_item_minigame_dampe_race_two",
-		"map" : ["map_dampes_grave"],
-		"lat" : [1407],
-		"lon" : [502],
+		"map" : ["map_graveyard"],
+		"lat" : [365],
+		"lon" : [740],
 		"type": "check"
 	},
 	{

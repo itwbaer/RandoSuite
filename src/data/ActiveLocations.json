@@ -185,20 +185,11 @@
 		"name" : "Graveyard",
 		"map": ["map_world"],
 		"lat" : [237],
-		"lon" : [622],
+		"lon" : [630],
 		"type": "location"
 	},
 	{
 		"id" : 21,
-		"key" : "location_dampes_grave",
-		"name" : "Dampes Grave",
-		"map": ["map_world"],
-		"lat" : [220],
-		"lon" : [624],
-		"type": "location"
-	},
-	{
-		"id" : 22,
 		"key" : "location_gerudo_valley",
 		"name" : "Gerudo Valley",
 		"map": ["map_world"],
@@ -207,7 +198,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 23,
+		"id" : 22,
 		"key" : "location_gerudo_fortress",
 		"name" : "Gerudo Fortress",
 		"map": ["map_world"],
@@ -216,7 +207,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 24,
+		"id" : 23,
 		"key" : "location_gerudo_training_grounds",
 		"name" : "Gerudo Training Grounds",
 		"map": ["map_world"],
@@ -225,7 +216,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 25,
+		"id" : 24,
 		"key" : "location_haunted_wasteland",
 		"name" : "Haunted Wasteland",
 		"map": ["map_world"],
@@ -234,7 +225,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 26,
+		"id" : 25,
 		"key" : "location_desert_colossus",
 		"name" : "Desert Colossus",
 		"map": ["map_world"],
@@ -243,7 +234,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 27,
+		"id" : 26,
 		"key" : "location_spirit_temple",
 		"name" : "Spirit Temple",
 		"map": ["map_world"],
@@ -252,7 +243,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 28,
+		"id" : 27,
 		"key" : "location_hyrule_field",
 		"name" : "Hyrule Field",
 		"map": ["map_world"],
@@ -261,7 +252,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 29,
+		"id" : 28,
 		"key" : "location_lon_lon_ranch",
 		"name" : "Lon Lon Ranch",
 		"map": ["map_world"],
@@ -270,7 +261,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 30,
+		"id" : 29,
 		"key" : "location_hyrule_market",
 		"name" : "Hyrule Market",
 		"map": ["map_world"],
@@ -279,7 +270,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 31,
+		"id" : 30,
 		"key" : "location_hyrule_castle",
 		"name" : "Hyrule Castle",
 		"map": ["map_world"],
@@ -288,16 +279,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 32,
-		"key" : "location_zeldas_garden",
-		"name" : "Zeldas Garden",
-		"map": ["map_world"],
-		"lat" : [-99999],
-		"lon" : [-99999],
-		"type": "location"
-	},
-	{
-		"id" : 33,
+		"id" : 31,
 		"key" : "location_ganons_castle",
 		"name" : "Ganons Castle",
 		"map": ["map_world"],
@@ -306,7 +288,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 34,
+		"id" : 32,
 		"key" : "location_inside_ganons_castle",
 		"name" : "Inside Ganons Castle",
 		"map": ["map_world"],
@@ -315,7 +297,7 @@
 		"type": "location"
 	},
 	{
-		"id" : 35,
+		"id" : 33,
 		"key" : "location_temple_of_time",
 		"name" : "Temple of Time",
 		"map": ["map_world"],
